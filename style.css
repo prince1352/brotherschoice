@@ -378,14 +378,14 @@ body {
 }
 
 .contact-container {
-  max-width: 1800px;    /* or go larger: try 1600px if needed */
+  max-width: 2000px;    /* or go larger: try 1600px if needed */
   width: 95%;
   margin: 0 auto;
   display: flex;
   gap: 60px;
   flex-wrap: wrap;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .contact-info {
