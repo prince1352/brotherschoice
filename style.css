@@ -27,7 +27,7 @@ body {
   background-color: #fff;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   display: flex;
-  align-items: center;
+  align-items: stretch; /* ensures children match header height */
   justify-content: space-between;
   padding: 15px 30px;
   position: relative;
@@ -35,6 +35,7 @@ body {
   min-height: 70px;
 }
 
+/* Logo */
 .logo-link {
   display: flex;
   align-items: center;
@@ -50,70 +51,53 @@ body {
   width: auto;
 }
 
+/* Navigation */
 .main-nav {
-  height: 100%;
   display: flex;
-  align-items: stretch;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 .main-nav ul {
   list-style: none;
   display: flex;
-  gap: 40px;
-  height: 100%;
-  align-items: stretch;
+  gap: 40px; /* spacing between menu items */
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
-.main-nav li {
-  position: relative;
-}
-
-.main-nav li::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: var(--red);
-  z-index: 0;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.main-nav li:hover::before {
-  opacity: 1;
-}
-
-.main-nav a {
-  position: relative;
-  padding: 0 20px;
+.menu-item {
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+.menu-item:hover {
+  background-color: var(--red);
+}
+
+.menu-item a {
   text-decoration: none;
   color: #000;
   font-weight: var(--font-light);
   transition: color 0.3s ease;
-  z-index: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
 }
 
-.main-nav li:hover a {
+.menu-item:hover a {
   color: #fff;
 }
 
-.main-nav li:hover {
-  background-color: var(--red);
-}
-
-.main-nav li:hover a {
-  color: #fff;
-}
-
-/* Place an Order Button */
+/* Order Button */
 .order-button-wrapper {
   display: flex;
   align-items: center;
@@ -136,4 +120,3 @@ body {
   color: var(--red);
   border-color: var(--red);
 }
-
