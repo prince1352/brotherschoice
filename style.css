@@ -1,6 +1,5 @@
 :root {
   --red: #d01c41;
-  --yellow: #ffc800;
   --font-light: 300;
   --font-family: 'Inter', sans-serif;
 }
@@ -17,36 +16,30 @@ body {
 }
 
 /* ----------------------------------------------
-                 Header Layout
+                 Header 
 ------------------------------------------------*/
 
 .main-header {
   width: 100%;
   background-color: #fff;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  display: grid;
-  grid-template-columns: auto 1fr auto; /* brand | nav | button */
-  align-items: center;
+  display: flex;
+  align-items: center; /* ✅ center everything vertically */
+  justify-content: space-between;
   padding: 0 30px;
   position: relative;
   z-index: 100;
-  height: 80px;
-  column-gap: 40px;
+  height: 80px; /* ✅ fixed height for perfect alignment */
 }
 
-/* ----------------------------------------------
-                 Brand Section
-------------------------------------------------*/
-
-.brand-wrapper {
+/* Logo */
+.logo-link {
   display: flex;
   align-items: center;
-  gap: 15px;
-  text-decoration: none;
   transition: transform 0.3s ease;
 }
 
-.brand-wrapper:hover {
+.logo-link:hover {
   transform: scale(1.05);
 }
 
@@ -55,30 +48,7 @@ body {
   width: auto;
 }
 
-.brand-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  line-height: 1.2;
-}
-
-.brand-line-1 {
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: var(--red);
-}
-
-.brand-line-2 {
-  font-size: 0.9rem;
-  font-weight: 400;
-  color: var(--yellow);
-  margin-top: 2px;
-}
-
-/* ----------------------------------------------
-                 Navigation Menu
-------------------------------------------------*/
-
+/* Navigation */
 .main-nav {
   display: flex;
   align-items: center;
@@ -134,10 +104,7 @@ body {
   color: #fff;
 }
 
-/* ----------------------------------------------
-                 Order Button
-------------------------------------------------*/
-
+/* Place an Order Button */
 .order-button-wrapper {
   display: flex;
   align-items: center;
