@@ -52,13 +52,12 @@ body {
 .main-nav ul {
   list-style: none;
   display: flex;
-  height: 100%;
   gap: 40px
 }
 
 .main-nav li {
   position: relative;
-  height: 100%;
+  height: auto;
   display: flex;
   align-items: center;
 }
