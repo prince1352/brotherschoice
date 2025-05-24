@@ -412,7 +412,7 @@ body {
 }
 
 .contact-form {
-  flex: 1.2;
+  flex: 1.8;
   min-width: 300px;
   display: flex;
   flex-direction: column;
