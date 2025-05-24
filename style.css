@@ -233,24 +233,24 @@ body {
 .landing-content {
   position: relative;
   z-index: 2;
-  color: black;
+  color: white;
   max-width: none;
 }
 
 .landing-title {
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: 800;
   margin-bottom: 20px;
 }
 
 .landing-subheading {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: var(--font-light);
   margin-bottom: 10px;
 }
 
 .landing-location {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: var(--font-light);
   margin-bottom: 30px;
 }
@@ -258,8 +258,8 @@ body {
 .landing-title,
 .landing-subheading,
 .landing-location {
-  color: #000;
-  text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.6);
+  color: #fff;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
   font-weight: 400;
 }
 
@@ -629,15 +629,15 @@ body {
   }
 
   .landing-title {
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 .landing-subheading {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .landing-location {
-  font-size: 0.7rem;
+  font-size: 1rem;
 }
 
 .specialize-cards {
