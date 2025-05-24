@@ -640,6 +640,12 @@ body {
   font-size: 1rem;
 }
 
+.landing-title,
+.landing-subheading,
+.landing-location {
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
+}
+
 .specialize-cards {
     grid-template-columns: 1fr;
     gap: 20px;
