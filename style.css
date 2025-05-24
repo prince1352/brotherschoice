@@ -29,9 +29,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 30px;
+  padding: 0px 30px;
   position: relative;
   z-index: 100;
+  min-height: 70px;
 }
 
 .logo-link {
@@ -52,30 +53,30 @@ body {
 .main-nav ul {
   list-style: none;
   display: flex;
-  gap: 40px
+  gap: 40px;
   height: 100%;
   align-items: stretch;
 }
 
 .main-nav li {
-  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+
+.main-nav a {
+  padding: 0 20px;
   display: flex;
   align-items: center;
   height: 100%;
-  padding: 0 20px;
-}
-
-.main-nav a {
+  width: 100%;
   text-decoration: none;
   color: #000;
   font-weight: var(--font-light);
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   transition: all 0.3s ease;
-  width: 100%;
 }
+
 
 .main-nav li:hover {
   background-color: var(--red);
