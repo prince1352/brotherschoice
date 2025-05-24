@@ -604,4 +604,23 @@ body {
   }
 }
 
+.specialize-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .card {
+    height: 200px;
+  }
+
+  .specialize-title {
+    font-size: 1.5rem;
+  }
+
+  .specialize-button {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+
 
