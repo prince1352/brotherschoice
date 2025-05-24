@@ -595,6 +595,23 @@ body {
 }
 
 /* ----------------------------------------------
+                    Footer
+------------------------------------------------*/
+
+.site-footer {
+  background-color: #f8f8f8;
+  color: #333;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 0.95rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+/* ----------------------------------------------
                  Mobile Transitions
 ------------------------------------------------*/
 
