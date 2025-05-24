@@ -161,7 +161,7 @@ body {
   right: 10px;
   left: 10px;
   background: #fff;
-  border-radius: 12px;
+  border-radius: 0 0 8px 8px; /* bottom corners only */
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
   flex-direction: column;
   padding: 20px;
