@@ -24,12 +24,12 @@ body {
   background-color: #fff;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   display: flex;
-  align-items: stretch; /* 🔑 makes children full height */
+  align-items: center; /* ✅ center everything vertically */
   justify-content: space-between;
-  padding: 0 30px; /* No top/bottom padding! Use min-height */
+  padding: 0 30px;
   position: relative;
   z-index: 100;
-  min-height: 80px; /* sets consistent header height */
+  height: 80px; /* ✅ fixed height for perfect alignment */
 }
 
 /* Logo */
@@ -44,14 +44,14 @@ body {
 }
 
 .logo {
-  height: 70px;
+  height: 60px;
   width: auto;
 }
 
 /* Navigation */
 .main-nav {
   display: flex;
-  align-items: stretch;
+  align-items: center;
   justify-content: center;
   height: 100%;
 }
@@ -66,24 +66,10 @@ body {
 }
 
 .menu-item {
-  display: flex;
-  align-items: stretch;
   position: relative;
   height: 100%;
-}
-
-.menu-item a {
-  text-decoration: none;
-  color: #000;
-  font-weight: var(--font-light);
-  padding: 0 20px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: 100%;
-  transition: color 0.3s ease;
-  z-index: 1;
-  position: relative;
 }
 
 .menu-item::before {
@@ -98,6 +84,20 @@ body {
 
 .menu-item:hover::before {
   opacity: 1;
+}
+
+.menu-item a {
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  color: #000;
+  font-weight: var(--font-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  height: 100%;
+  transition: color 0.3s ease;
 }
 
 .menu-item:hover a {
