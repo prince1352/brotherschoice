@@ -460,7 +460,8 @@ body {
 }
 
 .contact-form button {
-  align-self: flex-start;
+  width: 100%;
+  align-self: stretch;
   background-color: var(--yellow);
   color: #fff;
   border: 2px solid transparent;
@@ -484,6 +485,37 @@ body {
   color: green;
   font-weight: 500;
   font-size: 1rem;
+}
+
+.map-container {
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.map-button-wrapper {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.map-button {
+  background-color: var(--yellow);
+  color: #fff;
+  font-size: 1rem;
+  padding: 12px 24px;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.map-button:hover {
+  background-color: transparent;
+  color: var(--yellow);
+  border: 2px solid var(--yellow);
 }
 
 
