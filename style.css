@@ -67,12 +67,28 @@ body {
 }
 
 .main-nav li {
-  height: 100%;
-  display: flex;
-  align-items: stretch;
+  position: relative;
+}
+
+.main-nav li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--red);
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.main-nav li:hover::before {
+  opacity: 1;
 }
 
 .main-nav a {
+  position: relative;
   padding: 0 20px;
   display: flex;
   align-items: center;
@@ -81,7 +97,12 @@ body {
   text-decoration: none;
   color: #000;
   font-weight: var(--font-light);
-  transition: all 0.3s ease;
+  transition: color 0.3s ease;
+  z-index: 1;
+}
+
+.main-nav li:hover a {
+  color: #fff;
 }
 
 .main-nav li:hover {
