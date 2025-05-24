@@ -29,7 +29,7 @@ body {
   padding: 0 30px;
   position: relative;
   z-index: 100;
-  height: 80px; /* ✅ fixed height for perfect alignment */
+  height: 120px; /* ✅ fixed height for perfect alignment */
 }
 
 /* Logo */
@@ -44,7 +44,7 @@ body {
 }
 
 .logo {
-  height: 60px;
+  height: 90px;
   width: auto;
 }
 
@@ -113,13 +113,13 @@ body {
 .order-button {
   background-color: var(--red);
   color: #fff;
-  padding: 12px 32px;
+  padding: 18px 48px;
   text-decoration: none;
   font-weight: var(--font-light);
   border: 2px solid var(--red);
   border-radius: 6px;
   transition: all 0.3s ease;
-  font-size: 1.1rem;
+  font-size: 1.65rem;
 }
 
 .order-button:hover {
