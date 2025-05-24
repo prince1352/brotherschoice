@@ -114,12 +114,12 @@ body {
 }
 
 .order-button {
-  background-color: var(--yellow);
+  background-color: var(--red);
   color: #fff;
   padding: 15px 40px;
   text-decoration: none;
   font-weight: var(--font-light);
-  border: 2px solid var(--yellow);
+  border: 2px solid var(--red);
   border-radius: 6px;
   transition: all 0.3s ease;
   font-size: 1.375rem;
@@ -127,8 +127,8 @@ body {
 
 .order-button:hover {
   background-color: #fff;
-  color: var(--yellow);
-  border-color: var(--yellow);
+  color: var(--red);
+  border-color: var(--red);
 }
 
 /* ----------------------------------------------
@@ -153,14 +153,14 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, var(--red) 0%, transparent 100%);
+  background: linear-gradient(to right, var(--yellow) 0%, transparent 100%);
   z-index: 1;
 }
 
 .landing-content {
   position: relative;
   z-index: 2;
-  color: #fff;
+  color: black;
   max-width: none;
 }
 
@@ -185,7 +185,7 @@ body {
 .browse-button {
   display: inline-block;
   padding: 14px 32px;
-  background-color: var(--yellow);
+  background-color: var(--red);
   color: #fff;
   font-size: 1.1rem;
   font-weight: 500;
@@ -228,11 +228,10 @@ body {
   max-width: 960px;
 }
 
-/* Yellow About Button */
 .about-button {
   display: inline-block;
   padding: 14px 32px;
-  background-color: var(--yellow);
+  background-color: var(--red);
   color: #fff;
   font-size: 1.1rem;
   font-weight: 500;
@@ -244,8 +243,8 @@ body {
 
 .about-button:hover {
   background-color: transparent;
-  border: 2px solid var(--yellow);
-  color: var(--yellow);
+  border: 2px solid var(--red);
+  color: var(--red);
 }
 
 /* ----------------------------------------------
@@ -351,7 +350,7 @@ body {
 .specialize-button {
   display: inline-block;
   padding: 14px 32px;
-  background-color: var(--yellow);
+  background-color: var(--red);
   color: #fff;
   font-size: 1.1rem;
   font-weight: 500;
@@ -363,8 +362,8 @@ body {
 
 .specialize-button:hover {
   background-color: transparent;
-  border: 2px solid var(--yellow);
-  color: var(--yellow);
+  border: 2px solid #fff;
+  color: #fff;
 }
 
 /* ----------------------------------------------
@@ -412,7 +411,7 @@ body {
 }
 
 .contact-form {
-  flex: 2.2rem;
+  flex: 2.2;
   min-width: 300px;
   display: flex;
   flex-direction: column;
@@ -458,7 +457,7 @@ body {
 .contact-form button {
   width: 100%;
   align-self: stretch;
-  background-color: var(--yellow);
+  background-color: var(--red);
   color: #fff;
   border: 2px solid transparent;
   border-radius: 6px;
@@ -471,8 +470,8 @@ body {
 
 .contact-form button:hover {
   background-color: transparent;
-  color: var(--yellow);
-  border: 2px solid var(--yellow);
+  color: var(--red);
+  border: 2px solid var(--red);
 }
 
 #form-confirmation {
@@ -497,7 +496,7 @@ body {
 }
 
 .map-button {
-  background-color: var(--yellow);
+  background-color: var(--red);
   color: #fff;
   font-size: 1rem;
   padding: 12px 24px;
@@ -511,7 +510,7 @@ body {
 .map-button:hover {
   background-color: transparent;
   color: var(--yellow);
-  border: 2px solid var(--yellow);
+  border: 2px solid var(--red);
 }
 
 
