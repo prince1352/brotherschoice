@@ -255,6 +255,12 @@ body {
   margin-bottom: 30px;
 }
 
+.landing-title,
+.landing-subheading,
+.landing-location {
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
 .browse-button {
   display: inline-block;
   padding: 14px 32px;
@@ -619,6 +625,18 @@ body {
     left: 50%;
     transform: translateX(-50%);
   }
+
+  .landing-title {
+  font-size: 2rem;
+}
+
+.landing-subheading {
+  font-size: 1rem;
+}
+
+.landing-location {
+  font-size: 0.7rem;
+}
 
 .specialize-cards {
     grid-template-columns: 1fr;
