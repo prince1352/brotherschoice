@@ -15,7 +15,8 @@
       <img src="images/Logo.png" alt="Company Logo" class="logo" />
     </a>
 
-   <nav class="main-nav">
+  <!-- Desktop Navigation (hidden on mobile) -->
+<nav class="main-nav desktop-nav">
   <ul>
     <li class="menu-item"><a href="about.html">About</a></li>
     <li class="menu-item"><a href="products.html">Products</a></li>
@@ -23,6 +24,21 @@
     <li class="menu-item"><a href="contact.html">Contact Us</a></li>
   </ul>
 </nav>
+
+    <!-- Hamburger Icon (only visible on mobile) -->
+<button class="hamburger" id="hamburger" aria-label="Toggle menu">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+
+  <!-- Mobile Dropdown Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="about.html">About</a>
+  <a href="products.html">Products</a>
+  <a href="customers.html">Customers</a>
+  <a href="contact.html">Contact Us</a>
+</div>
 
     <div class="order-button-wrapper">
       <a href="order.html" class="order-button">Place an Order</a>
@@ -155,7 +171,27 @@
   });
 </script>
 
+<!-- Mobile Menu -->
+  
+<script>
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
 
+let isOpen = false;
+
+hamburger.addEventListener('click', () => {
+  if (isOpen) {
+    mobileMenu.style.animation = 'slideUp 0.3s ease forwards';
+    setTimeout(() => {
+      mobileMenu.style.display = 'none';
+    }, 300);
+  } else {
+    mobileMenu.style.display = 'flex';
+    mobileMenu.style.animation = 'slideDown 0.3s ease forwards';
+  }
+  isOpen = !isOpen;
+});
+</script>
 
 </body>
 </html>
