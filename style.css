@@ -191,6 +191,7 @@ body {
   text-decoration: none;
   border: 2px solid transparent;
   transition: all 0.3s ease;
+  border-radius: 6px;
 }
 
 .browse-button:hover {
