@@ -1,1 +1,101 @@
+/* ----------------------------------------------
+                  Root Variables 
+------------------------------------------------*/
+:root {
+  --red: #d01c41;
+  --font-light: 300;
+  --font-family: 'Inter', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: #fff;
+}
+
+/* ----------------------------------------------
+                 Header 
+------------------------------------------------*/
+
+.main-header {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  position: relative;
+  z-index: 100;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.logo-link:hover {
+  transform: scale(1.05);
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.main-nav li {
+  position: relative;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: var(--font-light);
+  padding: 10px 20px;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.main-nav li:hover {
+  background-color: var(--red);
+}
+
+.main-nav li:hover a {
+  color: #fff;
+}
+
+/* Place an Order Button */
+.order-button-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.order-button {
+  background-color: var(--red);
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: var(--font-light);
+  border: 2px solid var(--red);
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.order-button:hover {
+  background-color: #fff;
+  color: var(--red);
+  border-color: var(--red);
+}
 
