@@ -580,19 +580,27 @@ body {
 
   .hamburger {
     display: flex;
+    margin-left: auto;
   }
 
   .main-header {
     padding: 0 10px;
+    justify-content: center;
+    position: relative;
   }
 
   .logo {
     height: 60px;
   }
 
-  .order-button {
-    font-size: 1rem;
-    padding: 10px 20px;
+  .order-button-wrapper {
+    display: none;
+  }
+
+  .logo-link {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
