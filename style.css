@@ -107,13 +107,13 @@ body {
   color: #fff;
 }
 
-/* Place an Order Button */
-.order-button-wrapper {
+/* Quote Button */
+.quote-button-wrapper {
   display: flex;
   align-items: center;
 }
 
-.order-button {
+.quote-button {
   background-color: var(--red);
   color: #fff;
   padding: 15px 40px;
@@ -125,7 +125,7 @@ body {
   font-size: 1.375rem;
 }
 
-.order-button:hover {
+.quote-button:hover {
   background-color: #fff;
   color: var(--red);
   border-color: var(--red);
@@ -610,7 +610,7 @@ body {
     height: 60px;
   }
 
-  .order-button-wrapper {
+  .quote-button-wrapper {
     display: none;
   }
 
