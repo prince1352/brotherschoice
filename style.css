@@ -446,7 +446,6 @@ body {
   background-color: var(--yellow);
   padding: 60px 5%;
   text-align: center;
-  color: var(--black, #252328);
 }
 
 .reviews-title {
@@ -462,14 +461,11 @@ body {
   position: relative;
 }
 
-.swiper-wrapper {
-  height: 250px;
-}
-
 .swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
+  perspective: 1200px;
 }
 
 .review-card {
@@ -485,7 +481,6 @@ body {
   justify-content: center;
   align-items: flex-start;
   text-align: left;
-  transition: transform 0.5s ease;
 }
 
 .review-stars {
@@ -499,7 +494,6 @@ body {
   line-height: 1.6;
   margin-bottom: 16px;
   color: #333;
-  word-break: break-word;
 }
 
 .review-author {
@@ -508,7 +502,6 @@ body {
   color: #666;
 }
 
-/* Navigation Arrows */
 .swiper-button-next,
 .swiper-button-prev {
   color: var(--red);
@@ -520,15 +513,6 @@ body {
   transform: scale(1.25);
 }
 
-/* Flip Effect */
-.swiper-slide {
-  perspective: 2000px;
-}
-
-.swiper-slide .swiper-slide-shadow-left,
-.swiper-slide .swiper-slide-shadow-right {
-  background-image: none !important;
-}
 
 /* ----------------------------------------------
          We Specialize In Section
