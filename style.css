@@ -932,12 +932,19 @@ body {
   flex-wrap: wrap;
 }
 
+.founder-image {
+  flex: 1 1 auto;
+  align-self: stretch; /* ✅ match height of text column */
+  display: flex;
+}
+
 .founder-image picture img {
   max-width: 350px;
   width: 100%;
   border-radius: 16px;
   box-shadow: 0 8px 24px rgba(255, 255, 255, 0.15);
   object-fit: cover;
+  height: 100%;
 }
 
 .founder-text {
