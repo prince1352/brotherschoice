@@ -352,25 +352,24 @@
   
 <script>
   let currentPair = 0;
-  const totalPairs = 4;
+  const totalPairs = document.querySelectorAll('.review-pair').length;
   const pairs = document.querySelectorAll('.review-pair');
 
   function showPair(index, direction = 'next') {
-    // Remove active class and reset transforms
+    // Deactivate all pairs
     pairs.forEach(pair => {
       pair.classList.remove('active');
       const flipper = pair.querySelector('.review-flipper');
       flipper.classList.remove('flip-forward', 'flip-backward');
     });
 
-    // Show new review pair
-    const newPair = pairs[index];
-    newPair.classList.add('active');
+    // Activate the target pair
+    const current = pairs[index];
+    current.classList.add('active');
 
-    const flipper = newPair.querySelector('.review-flipper');
-
-    // Delay to allow DOM paint before triggering the animation
+    // Wait for next animation frame to trigger transition
     requestAnimationFrame(() => {
+      const flipper = current.querySelector('.review-flipper');
       if (direction === 'next') {
         flipper.classList.add('flip-forward');
       } else {
@@ -393,6 +392,7 @@
     showPair(currentPair);
   });
 </script>
+
 
 
 
