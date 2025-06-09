@@ -915,6 +915,50 @@ body {
   margin: 0;
 }
 
+
+/* ----------------------------------------------
+            ABOUT PAGE ABOUT SECTION
+------------------------------------------------*/
+
+.founder-section {
+  padding: 80px 15%;
+}
+
+.founder-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.founder-image picture img {
+  max-width: 350px;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.15);
+  object-fit: cover;
+}
+
+.founder-text {
+  max-width: 600px;
+}
+
+.founder-title {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: var(--red);
+  margin-bottom: 20px;
+}
+
+.founder-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  font-weight: 300;
+  margin-bottom: 20px;
+  color: #333;
+}
+
 /* ----------------------------------------------
                  Mobile Transitions
 ------------------------------------------------*/
