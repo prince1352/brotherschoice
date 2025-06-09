@@ -456,12 +456,10 @@ body {
 }
 
 .reviews-swiper {
-  position: relative;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 40px; /* space between arrows and screen edges */
-  max-width: 100%;
+  position: relative;
 }
 
 .swiper-slide {
@@ -510,15 +508,15 @@ body {
 
 .swiper-button-prev,
 .swiper-button-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 2rem;
   color: var(--red);
+  font-size: 2rem;
   background: none;
   border: none;
   cursor: pointer;
   z-index: 10;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .swiper-button-next::after,
@@ -528,11 +526,11 @@ body {
 }
 
 .swiper-button-prev {
-  left: 40px;
+  left: 0; /* Position just outside the card */
 }
 
 .swiper-button-next {
-  right: 40px;
+  right: 0; /* Position just outside the card */
 }
 
 .swiper-slide-shadow-left,
