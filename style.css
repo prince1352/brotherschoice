@@ -296,7 +296,7 @@ body {
   justify-content: top;
   align-items: center;
   flex-wrap: wrap; /* allows it to stack on smaller screens */
-  gap: 40px;
+  gap: 30px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -308,7 +308,7 @@ body {
   font-size: 0.8rem;
   font-weight: 250;
   color: #333;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 .brand-showcase-text h2 {
@@ -320,7 +320,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
-  gap: 60px 60px;
+  gap: 40px 40px;
   flex: 1;
 }
 
