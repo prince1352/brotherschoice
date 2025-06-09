@@ -356,24 +356,22 @@
   const pairs = document.querySelectorAll('.review-pair');
 
   function showPair(index, direction = 'next') {
-    // Hide all review pairs
-    pairs.forEach((pair) => {
+    // Reset all review pairs
+    pairs.forEach(pair => {
       pair.classList.remove('active');
       const flipper = pair.querySelector('.review-flipper');
       flipper.classList.remove('flip-forward', 'flip-back');
     });
 
-    // Show the selected review pair
+    // Show the new pair
     const current = pairs[index];
     current.classList.add('active');
 
-    // Apply flip direction
+    // Wait for next paint cycle before applying flip class
     const flipper = current.querySelector('.review-flipper');
-    if (direction === 'next') {
-      flipper.classList.add('flip-forward');
-    } else {
-      flipper.classList.add('flip-back');
-    }
+    requestAnimationFrame(() => {
+      flipper.classList.add(direction === 'next' ? 'flip-forward' : 'flip-back');
+    });
   }
 
   function nextReview() {
@@ -386,11 +384,11 @@
     showPair(currentPair, 'prev');
   }
 
-  // Initial load
   document.addEventListener('DOMContentLoaded', () => {
     showPair(currentPair);
   });
 </script>
+
 
 
 
