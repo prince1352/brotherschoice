@@ -459,7 +459,7 @@ body {
   position: relative;
   max-width: auto;
   margin: 0 auto;
-  padding: 0 100px
+  padding: 0;
 }
 
 .swiper-slide {
@@ -511,22 +511,27 @@ body {
 
 }
 
-.swiper-button-next,
-.swiper-button-prev {
+.swiper-button-prev,
+.swiper-button-next {
   color: var(--red);
-  position: relative;
+  position: absolute;
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
-  font-size: 1rem;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: var(--red);
+  font-size: 24px;
 }
 
 .swiper-button-prev {
-  left: 5%;
+  left: -40px; /* push to the left outside the card */
 }
 
 .swiper-button-next {
-  right: 5%;
+  right: -40px; /* push to the right outside the card */
 }
 
 
