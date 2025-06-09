@@ -286,7 +286,7 @@ body {
 ------------------------------------------------*/
 .brand-showcase-section {
   background-color: #f8f8f5;
-  padding: 40px 5% 50px;
+  padding: 40px 5% 40px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
 }
@@ -308,7 +308,7 @@ body {
   font-size: 1.25rem;
   font-weight: 500;
   color: var(--red);
-  margin-left: 60px;
+  margin-left: 20px;
 }
 
 .brand-showcase-text h2 {
@@ -325,7 +325,7 @@ body {
 }
 
 .brand-logo-row img {
-  height: 55px;
+  height: 40px;
   display: block;
   transition: transform 0.3s ease;
 }
