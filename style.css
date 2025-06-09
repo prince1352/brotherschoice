@@ -473,7 +473,7 @@ body {
 
 .review-card {
   background-color: var(--yellow); /* Match section background */
-  padding: 0px 24px;
+  padding: 10px 24px;
   height: 100%; /* Or keep as needed */
   display: flex;
   flex-direction: column;
@@ -533,6 +533,12 @@ body {
 
 .swiper-button-next {
   right: 40px;
+}
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.15), transparent);
+  background: rgba(0, 0, 0, 0.25);
 }
 
 
