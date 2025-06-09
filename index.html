@@ -6,7 +6,10 @@
   <title>Homepage</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link
+  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
 </head>
 <body>
 
@@ -105,45 +108,33 @@
   <h2 class="reviews-title">What Our Customers Are Saying</h2>
   <div class="swiper reviews-swiper">
     <div class="swiper-wrapper">
-      <div class="swiper-slide review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">Amazing quality and fantastic service. Everything arrived on time!</p>
-        <p class="review-author">– Priya K.</p>
+      <div class="swiper-slide">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">Amazing quality and fantastic service. Everything arrived on time!</p>
+          <p class="review-author">– Priya K.</p>
+        </div>
       </div>
-      <div class="swiper-slide review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">Top-notch products and fast delivery. Will definitely order again!</p>
-        <p class="review-author">– Ravi D.</p>
+      <div class="swiper-slide">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">Top-notch products and fast delivery. Will definitely order again!</p>
+          <p class="review-author">– Ravi D.</p>
+        </div>
       </div>
-      <div class="swiper-slide review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">Highly recommend Brothers Choice Foods — consistent and reliable every time.</p>
-        <p class="review-author">– Aman S.</p>
+      <div class="swiper-slide">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">Highly recommend Brothers Choice Foods — consistent and reliable every time.</p>
+          <p class="review-author">– Aman S.</p>
+        </div>
       </div>
-      <div class="swiper-slide review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">Loved the packaging and the taste. Great experience!</p>
-        <p class="review-author">– Jasleen M.</p>
-      </div>
-      <div class="swiper-slide review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">Professional service and premium quality products. Impressed!</p>
-        <p class="review-author">– Harpreet G.</p>
-      </div>
-      <div class="swiper-slide review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">Perfect for our store shelves. Customers are happy too!</p>
-        <p class="review-author">– Baljit P.</p>
-      </div>
-      <div class="swiper-slide review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">Fantastic local supplier with excellent prices and dependable delivery.</p>
-        <p class="review-author">– Navraj T.</p>
-      </div>
-      <div class="swiper-slide review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">Brothers Choice is our go-to brand for authentic goods!</p>
-        <p class="review-author">– Simran J.</p>
+      <div class="swiper-slide">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">Fantastic local supplier with excellent prices and dependable delivery.</p>
+          <p class="review-author">– Navraj T.</p>
+        </div>
       </div>
     </div>
 
@@ -151,6 +142,7 @@
     <div class="swiper-button-prev"></div>
   </div>
 </section>
+
   
   <!-- WHERE TO FIND US SECTION -->
 <section class="brand-showcase-section">
@@ -332,18 +324,18 @@
 <!--  Script Reviews Section -->
   
 <script>
-  const swiper = new Swiper('.swiper', {
+  const swiper = new Swiper('.reviews-swiper', {
     effect: 'flip',
-    grabCursor: true,
-    loop: true,
+    flipEffect: {
+      slideShadows: false,
+    },
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
-    }
+    },
+    loop: true,
   });
 </script>
-
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 
 </body>
