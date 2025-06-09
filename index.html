@@ -6,6 +6,7 @@
   <title>Homepage</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 <body>
 
@@ -102,74 +103,54 @@
 <!-- REVIEWS SECTION -->
 <section class="reviews-section">
   <h2 class="reviews-title">What Our Customers Are Saying</h2>
-  <div class="review-card-wrapper">
-    <button class="review-arrow left" onclick="prevReview()">&#10094;</button>
-
-    <div class="review-stage">
-      <div class="review-pair active" id="pair-0">
-        <div class="review-flipper">
-          <div class="review-card front">
-            <div class="review-stars">★★★★★</div>
-            <p class="review-text">Amazing quality and fantastic service. Everything arrived on time!</p>
-            <p class="review-author">– Priya K.</p>
-          </div>
-          <div class="review-card back">
-            <div class="review-stars">★★★★★</div>
-            <p class="review-text">Top-notch products and fast delivery. Will definitely order again!</p>
-            <p class="review-author">– Ravi D.</p>
-          </div>
-        </div>
+  <div class="swiper reviews-swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Amazing quality and fantastic service. Everything arrived on time!</p>
+        <p class="review-author">– Priya K.</p>
       </div>
-
-      <div class="review-pair" id="pair-1">
-        <div class="review-flipper">
-          <div class="review-card front">
-            <div class="review-stars">★★★★★</div>
-            <p class="review-text">Highly recommend Brothers Choice Foods — consistent and reliable every time.</p>
-            <p class="review-author">– Aman S.</p>
-          </div>
-          <div class="review-card back">
-            <div class="review-stars">★★★★★</div>
-            <p class="review-text">Loved the packaging and the taste. Great experience!</p>
-            <p class="review-author">– Jasleen M.</p>
-          </div>
-        </div>
+      <div class="swiper-slide review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Top-notch products and fast delivery. Will definitely order again!</p>
+        <p class="review-author">– Ravi D.</p>
       </div>
-
-      <div class="review-pair" id="pair-2">
-        <div class="review-flipper">
-          <div class="review-card front">
-            <div class="review-stars">★★★★★</div>
-            <p class="review-text">Professional service and premium quality products. Impressed!</p>
-            <p class="review-author">– Harpreet G.</p>
-          </div>
-          <div class="review-card back">
-            <div class="review-stars">★★★★★</div>
-            <p class="review-text">Perfect for our store shelves. Customers are happy too!</p>
-            <p class="review-author">– Baljit P.</p>
-          </div>
-        </div>
+      <div class="swiper-slide review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Highly recommend Brothers Choice Foods — consistent and reliable every time.</p>
+        <p class="review-author">– Aman S.</p>
       </div>
-
-      <div class="review-pair" id="pair-3">
-        <div class="review-flipper">
-          <div class="review-card front">
-            <div class="review-stars">★★★★★</div>
-            <p class="review-text">Fantastic local supplier with excellent prices and dependable delivery.</p>
-            <p class="review-author">– Navraj T.</p>
-          </div>
-          <div class="review-card back">
-            <div class="review-stars">★★★★★</div>
-            <p class="review-text">Brothers Choice is our go-to brand for authentic goods!</p>
-            <p class="review-author">– Simran J.</p>
-          </div>
-        </div>
+      <div class="swiper-slide review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Loved the packaging and the taste. Great experience!</p>
+        <p class="review-author">– Jasleen M.</p>
+      </div>
+      <div class="swiper-slide review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Professional service and premium quality products. Impressed!</p>
+        <p class="review-author">– Harpreet G.</p>
+      </div>
+      <div class="swiper-slide review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Perfect for our store shelves. Customers are happy too!</p>
+        <p class="review-author">– Baljit P.</p>
+      </div>
+      <div class="swiper-slide review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Fantastic local supplier with excellent prices and dependable delivery.</p>
+        <p class="review-author">– Navraj T.</p>
+      </div>
+      <div class="swiper-slide review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Brothers Choice is our go-to brand for authentic goods!</p>
+        <p class="review-author">– Simran J.</p>
       </div>
     </div>
 
-    <button class="review-arrow right" onclick="nextReview()">&#10095;</button>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
   </div>
-  </section>
+</section>
   
   <!-- WHERE TO FIND US SECTION -->
 <section class="brand-showcase-section">
@@ -351,52 +332,18 @@
 <!--  Script Reviews Section -->
   
 <script>
-  let currentPair = 0;
-  const totalPairs = document.querySelectorAll('.review-pair').length;
-  const pairs = document.querySelectorAll('.review-pair');
-
-  function showPair(index, direction = 'next') {
-    // Deactivate all pairs
-    pairs.forEach(pair => {
-      pair.classList.remove('active');
-      const flipper = pair.querySelector('.review-flipper');
-      flipper.classList.remove('flip-forward', 'flip-backward');
-    });
-
-    // Activate the target pair
-    const current = pairs[index];
-    current.classList.add('active');
-
-    // Wait for next animation frame to trigger transition
-    requestAnimationFrame(() => {
-      const flipper = current.querySelector('.review-flipper');
-      if (direction === 'next') {
-        flipper.classList.add('flip-forward');
-      } else {
-        flipper.classList.add('flip-backward');
-      }
-    });
-  }
-
-  function nextReview() {
-    currentPair = (currentPair + 1) % totalPairs;
-    showPair(currentPair, 'next');
-  }
-
-  function prevReview() {
-    currentPair = (currentPair - 1 + totalPairs) % totalPairs;
-    showPair(currentPair, 'prev');
-  }
-
-  document.addEventListener('DOMContentLoaded', () => {
-    showPair(currentPair);
+  const swiper = new Swiper('.swiper', {
+    effect: 'flip',
+    grabCursor: true,
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    }
   });
 </script>
 
-
-
-
-
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 
 </body>
