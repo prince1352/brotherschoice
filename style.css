@@ -284,8 +284,9 @@ body {
 /* ----------------------------------------------
          Where to Find Us Section
 ------------------------------------------------*/
+
 .brand-showcase-section {
-  background-color: #f5f5f5;
+  background-color: #f8f8f5;
   padding: 40px 5% 50px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
@@ -317,13 +318,11 @@ body {
 
 .brand-logo-row img {
   height: 55px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .brand-logo-row img:hover {
   transform: scale(1.15);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-  background-color: transparent;
 }
 
 
