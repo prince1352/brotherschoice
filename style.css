@@ -27,7 +27,7 @@ body {
   display: flex;
   align-items: center; /* ✅ center everything vertically */
   justify-content: space-between;
-  padding: 0 150px;
+  padding: 0 50px;
   position: sticky; /* ✅ keeps it on screen */
   top: 0;            /* ✅ stick to top edge */
   z-index: 999;      /* ✅ stay above other elements */
