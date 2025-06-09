@@ -516,11 +516,11 @@ body {
 }
 
 .swiper-button-prev {
-  left: 5%;
+  right: 5%;
 }
 
 .swiper-button-next {
-  right: 5%;
+  left: 5%;
 }
 
 
