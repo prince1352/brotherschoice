@@ -356,24 +356,28 @@
   const pairs = document.querySelectorAll('.review-pair');
 
   function showPair(index, direction = 'next') {
-    // Reset all pairs
     pairs.forEach((pair, i) => {
-      pair.classList.remove('active');
       const flipper = pair.querySelector('.review-flipper');
-      flipper.classList.remove('flipped');
+
+      if (i === index) {
+        pair.classList.add('active');
+
+        // Apply appropriate flip class based on direction
+        if (direction === 'next') {
+          flipper.classList.remove('flip-back');
+          flipper.classList.add('flip-forward');
+        } else {
+          flipper.classList.remove('flip-forward');
+          flipper.classList.add('flip-back');
+        }
+
+      } else {
+        pair.classList.remove('active');
+
+        // Reset flipper rotation classes
+        flipper.classList.remove('flip-forward', 'flip-back');
+      }
     });
-
-    // Activate the new pair
-    const current = pairs[index];
-    current.classList.add('active');
-
-    // Flip the card forward or backward
-    const flipper = current.querySelector('.review-flipper');
-    if (direction === 'next') {
-      flipper.classList.add('flipped');
-    } else {
-      flipper.classList.remove('flipped');
-    }
   }
 
   function nextReview() {
@@ -386,6 +390,7 @@
     showPair(currentPair, 'prev');
   }
 
+  // Initialize on page load
   document.addEventListener('DOMContentLoaded', () => {
     showPair(currentPair);
   });
