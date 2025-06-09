@@ -104,7 +104,8 @@
   <h2 class="reviews-title">What Our Customers Are Saying</h2>
   <div class="review-card-wrapper">
     <button class="review-arrow left" onclick="prevReview()">&#10094;</button>
-
+    
+    <div class="review-stage">
     <div class="review-cards">
       <div class="review-card active">
         <div class="review-stars">★★★★★</div>
@@ -153,6 +154,7 @@
         <p class="review-text">Brothers Choice is our go-to brand for authentic goods!</p>
         <p class="review-author">– Simran J.</p>
       </div>
+    </div>
     </div>
 
     <button class="review-arrow right" onclick="nextReview()">&#10095;</button>
@@ -344,10 +346,8 @@ const cards = document.querySelectorAll('.review-card');
 
 function showReview(index) {
   cards.forEach((card, i) => {
-    card.classList.remove('active');
+    card.classList.toggle('active', i === index);
   });
-
-  cards[index].classList.add('active');
 }
 
 function nextReview() {
@@ -360,7 +360,7 @@ function prevReview() {
   showReview(currentReview);
 }
 
-showReview(currentReview); // Initialize
+showReview(currentReview); // show first one on load
 </script>
 
 
