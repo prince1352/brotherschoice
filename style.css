@@ -152,31 +152,34 @@ body {
   transition: 0.3s;
 }
 
-/* Mobile Menu */
+/* Side Slide Mobile Menu */
 .mobile-menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  right: 10px;
-  left: 10px;
-  background: #f8f8f5;
-  border-radius: 0 0 8px 8px; /* bottom corners only */
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+  display: flex;
   flex-direction: column;
-  padding: 20px;
+  position: fixed;
+  top: 0;
+  right: -100%; /* start off-screen */
+  width: 75%;
+  height: 100vh;
+  background-color: #111; /* blackish background */
+  padding: 60px 20px;
   z-index: 1000;
-  animation: fadeSlideDown 0.3s ease forwards;
-  overflow: hidden;
+  transition: right 0.4s ease;
+  box-shadow: -4px 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.mobile-menu.open {
+  right: 0; /* slide in */
 }
 
 .mobile-menu a {
-  color: var(--red);
+  color: #fff; /* white text */
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: 500;
-  padding: 14px 0;
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   transition: color 0.2s ease;
-  border-bottom: 1px solid #eee;
 }
 
 .mobile-menu a:last-child {
@@ -184,25 +187,8 @@ body {
 }
 
 .mobile-menu a:hover {
-  color: #000;
+  color: var(--red);
 }
-
-@keyframes fadeSlideDown {
-  from {
-    opacity: 0;
-    transform: translateY(-12px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes slideUp {
-  from { opacity: 1; transform: translateY(0); }
-  to { opacity: 0; transform: translateY(-10px); }
-}
-
 /* ----------------------------------------------
                  Landing Section
 ------------------------------------------------*/
