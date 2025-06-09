@@ -13,7 +13,7 @@
 
 body {
   font-family: var(--font-family);
-  background-color: #fff;
+  background-color: #f8f8f5;
 }
 
 /* ----------------------------------------------
@@ -22,7 +22,7 @@ body {
 
 .main-header {
   width: 100%;
-  background-color: #fff;
+  background-color: #f8f8f5;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   display: flex;
   align-items: center; /* ✅ center everything vertically */
@@ -78,7 +78,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: var(--red);
+  : var(--red);
   opacity: 0;
   transition: opacity 0.3s ease;
   z-index: 0;
@@ -104,7 +104,7 @@ body {
 }
 
 .menu-item:hover a {
-  color: #fff;
+  color: #f8f8f5;
 }
 
 /* Quote Button */
@@ -114,8 +114,8 @@ body {
 }
 
 .quote-button {
-  background-color: var(--red);
-  color: #fff;
+  : var(--red);
+  color: #f8f8f5;
   padding: 15px 40px;
   text-decoration: none;
   font-weight: var(--font-light);
@@ -126,7 +126,7 @@ body {
 }
 
 .quote-button:hover {
-  background-color: #fff;
+  background-color: #f8f8f5;
   color: var(--red);
   border-color: var(--red);
 }
@@ -160,7 +160,7 @@ body {
   top: 100%;
   right: 10px;
   left: 10px;
-  background: #fff;
+  background: #f8f8f5;
   border-radius: 0 0 8px 8px; /* bottom corners only */
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
   flex-direction: column;
@@ -258,7 +258,7 @@ body {
 .landing-title,
 .landing-subheading,
 .landing-location {
-  color: #fff;
+  color: #f8f8f5;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
   font-weight: 400;
 }
@@ -267,7 +267,7 @@ body {
   display: inline-block;
   padding: 14px 32px;
   background-color: var(--red);
-  color: #fff;
+  color: #f8f8f5;
   font-size: 1.1rem;
   font-weight: 500;
   text-decoration: none;
@@ -278,8 +278,8 @@ body {
 
 .browse-button:hover {
   background-color: transparent;
-  border: 2px solid #fff;
-  color: #fff;
+  border: 2px solid #f8f8f5;
+  color: #f8f8f5;
 }
 
 /* ----------------------------------------------
@@ -287,7 +287,7 @@ body {
 ------------------------------------------------*/
 
 .featured-products-section {
-  background-color: #fff;
+  background-color: #f8f8f5;
   padding: 100px 5% 80px;
   text-align: center;
 }
@@ -353,7 +353,7 @@ body {
 ------------------------------------------------*/
 
 .why-section {
-  background-color: #fff;
+  background-color: #f8f8f5;
   text-align: center;
   padding: 40px 10% 40px;
   box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
@@ -379,7 +379,7 @@ body {
   display: inline-block;
   padding: 14px 32px;
   background-color: var(--red);
-  color: #fff;
+  color: #f8f8f5;
   font-size: 1.1rem;
   font-weight: 500;
   text-decoration: none;
@@ -402,7 +402,7 @@ body {
   position: relative;
   background: url('images/specialize-background.jpg') no-repeat center center/cover;
   padding: 100px 10% 80px;
-  color: #fff;
+  color: #f8f8f5;
   overflow: hidden;
 }
 
@@ -447,7 +447,7 @@ body {
 .specialize-title {
   font-size: 2rem;
   font-weight: 500;
-  color: #fff;
+  color: #f8f8f5;
   margin-bottom: 50px;
 }
 
@@ -473,7 +473,7 @@ body {
 }
 
 .card span {
-  color: #fff;
+  color: #f8f8f5;
   font-size: 1.1rem;
   font-weight: 500;
   text-align: center;
@@ -498,7 +498,7 @@ body {
   display: inline-block;
   padding: 14px 32px;
   background-color: var(--red);
-  color: #fff;
+  color: #f8f8f5;
   font-size: 1.1rem;
   font-weight: 500;
   text-decoration: none;
@@ -509,8 +509,8 @@ body {
 
 .specialize-button:hover {
   background-color: transparent;
-  border: 2px solid #fff;
-  color: #fff;
+  border: 2px solid #f8f8f5;
+  color: #f8f8f5;
 }
 
 /* ----------------------------------------------
@@ -518,7 +518,7 @@ body {
 ------------------------------------------------*/
 
 .contact-section {
-  background-color: #fff;
+  background-color: #f8f8f5;
   padding: 30px 10%;
   border-top: 1px solid #eee;
 }
@@ -593,7 +593,7 @@ body {
   outline: none;
   border-color: var(--red);
   box-shadow: 0 0 0 2px rgba(208, 28, 65, 0.15);
-  background-color: #fff;
+  background-color: #f8f8f5;
 }
 
 .contact-form textarea {
@@ -605,7 +605,7 @@ body {
   width: 100%;
   align-self: stretch;
   background-color: var(--red);
-  color: #fff;
+  color: #f8f8f5;
   border: 2px solid transparent;
   border-radius: 6px;
   padding: 14px 32px;
@@ -644,7 +644,7 @@ body {
 
 .map-button {
   background-color: var(--red);
-  color: #fff;
+  color: #f8f8f5;
   font-size: 1rem;
   padding: 12px 24px;
   border: 2px solid transparent;
