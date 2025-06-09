@@ -456,10 +456,11 @@ body {
 }
 
 .reviews-swiper {
+  position: relative; /* Needed for absolute child positioning */
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 0 30px;
+  padding: 0 100px; /* space for arrows on both sides */
   max-width: 100%;
 }
 
@@ -468,13 +469,6 @@ body {
   justify-content: center;
   align-items: center;
   perspective: 1200px;
-}
-
-.review-card-container {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  padding: 0 30px;
 }
 
 .review-card {
@@ -521,12 +515,14 @@ body {
 
 .swiper-button-prev,
 .swiper-button-next {
+  position: absolute; /* This makes left/right work */
+  top: 50%;
+  transform: translateY(-50%);
   color: var(--red);
   font-size: 2rem;
   background: none;
   border: none;
   cursor: pointer;
-  padding: 0 20px;
   z-index: 10;
 }
 
@@ -537,11 +533,11 @@ body {
 }
 
 .swiper-button-prev {
-  left: -40px; /* push to the left outside the card */
+  left: 10px;
 }
 
 .swiper-button-next {
-  right: -40px; /* push to the right outside the card */
+  right: 10px;
 }
 
 
