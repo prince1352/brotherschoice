@@ -246,3 +246,21 @@
     });
   });
 </script>
+
+<!--  Script Reviews Section -->
+  
+<script>
+  const swiper = new Swiper('.reviews-swiper', {
+  effect: 'flip',
+  speed: 1000,
+  flipEffect: {
+    slideShadows: true, // enable built-in shadow during flip
+    limitRotation: true
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  loop: true,
+});
+</script>
