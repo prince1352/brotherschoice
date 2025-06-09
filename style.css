@@ -286,7 +286,7 @@ body {
 ------------------------------------------------*/
 .brand-showcase-section {
   background-color: #f8f8f5;
-  padding: 60px 5% 60px;
+  padding: 40px 5% 50px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
 }
@@ -296,7 +296,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap; /* allows it to stack on smaller screens */
-  gap: 60px;
+  gap: 80px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -308,6 +308,7 @@ body {
   font-size: 1.25rem;
   font-weight: 500;
   color: var(--red);
+  margin-left: 60px;
 }
 
 .brand-showcase-text h2 {
@@ -672,13 +673,12 @@ body {
 
 .contact-section {
   background-color: #f8f8f5;
-  padding: 30px 10%;
+  padding: 60px 10%;
   border-top: 1px solid #eee;
 }
 
 .contact-container {
-  max-width: 2000px;    /* or go larger: try 1600px if needed */
-  width: 95%;
+  max-width: 100%;    /* or go larger: try 1600px if needed */
   margin: 0 auto;
   display: flex;
   gap: 60px;
