@@ -468,28 +468,29 @@ body {
   position: relative;
   width: 100%;
   max-width: 650px;
-  min-height: 160px;
+  min-height: 180px;
+  perspective: 1000px; /* 3D effect */
 }
 
 .review-card {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  background-color: #fff;
-  border-left: 6px solid var(--red);
+  height: 100%;
   padding: 24px 32px;
   border-radius: 12px;
+  background-color: #fff;
+  border-left: 6px solid var(--red);
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  backface-visibility: hidden;
   opacity: 0;
-  transform: scale(0.95);
-  transition: opacity 0.4s ease, transform 0.4s ease;
+  transform: rotateY(180deg);
+  transition: transform 0.6s ease, opacity 0.6s ease;
   z-index: 0;
 }
 
 .review-card.active {
   opacity: 1;
-  transform: scale(1);
+  transform: rotateY(0deg);
   z-index: 1;
 }
 
