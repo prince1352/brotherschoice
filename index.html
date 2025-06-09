@@ -349,21 +349,32 @@
 </script>
 
 <!--  Script Reviews Section -->
+  
 <script>
-    let currentPair = 0;
-    const totalPairs = 4;
+  let currentPair = 0;
+  const totalPairs = 4; // 4 pairs = 8 reviews
+  const pairs = document.querySelectorAll('.review-pair');
 
-    function nextReview() {
-      document.getElementById(`pair-${currentPair}`).classList.remove("active");
-      currentPair = (currentPair + 1) % totalPairs;
-      document.getElementById(`pair-${currentPair}`).classList.add("active");
-    }
+  function showPair(index) {
+    pairs.forEach((pair, i) => {
+      pair.classList.toggle('active', i === index);
+    });
+  }
 
-    function prevReview() {
-      document.getElementById(`pair-${currentPair}`).classList.remove("active");
-      currentPair = (currentPair - 1 + totalPairs) % totalPairs;
-      document.getElementById(`pair-${currentPair}`).classList.add("active");
-    }
+  function nextReview() {
+    currentPair = (currentPair + 1) % totalPairs;
+    showPair(currentPair);
+  }
+
+  function prevReview() {
+    currentPair = (currentPair - 1 + totalPairs) % totalPairs;
+    showPair(currentPair);
+  }
+
+  // Optional: Show first pair on load
+  document.addEventListener('DOMContentLoaded', () => {
+    showPair(currentPair);
+  });
 </script>
 
 
