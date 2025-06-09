@@ -104,62 +104,71 @@
   <h2 class="reviews-title">What Our Customers Are Saying</h2>
   <div class="review-card-wrapper">
     <button class="review-arrow left" onclick="prevReview()">&#10094;</button>
-    
+
     <div class="review-stage">
-    <div class="review-cards">
-      <div class="review-card active">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">Amazing quality and fantastic service. Everything arrived on time and in perfect condition!</p>
-        <p class="review-author">– Priya K.</p>
+      <div class="review-pair active" id="pair-0">
+        <div class="review-flipper">
+          <div class="review-card front">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">Amazing quality and fantastic service. Everything arrived on time!</p>
+            <p class="review-author">– Priya K.</p>
+          </div>
+          <div class="review-card back">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">Top-notch products and fast delivery. Will definitely order again!</p>
+            <p class="review-author">– Ravi D.</p>
+          </div>
+        </div>
       </div>
 
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">Top-notch products and fast delivery. Will definitely order again!</p>
-        <p class="review-author">– Ravi D.</p>
+      <div class="review-pair" id="pair-1">
+        <div class="review-flipper">
+          <div class="review-card front">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">Highly recommend Brothers Choice Foods — consistent and reliable every time.</p>
+            <p class="review-author">– Aman S.</p>
+          </div>
+          <div class="review-card back">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">Loved the packaging and the taste. Great experience!</p>
+            <p class="review-author">– Jasleen M.</p>
+          </div>
+        </div>
       </div>
 
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">Highly recommend Brothers Choice Foods — consistent and reliable every time.</p>
-        <p class="review-author">– Aman S.</p>
+      <div class="review-pair" id="pair-2">
+        <div class="review-flipper">
+          <div class="review-card front">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">Professional service and premium quality products. Impressed!</p>
+            <p class="review-author">– Harpreet G.</p>
+          </div>
+          <div class="review-card back">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">Perfect for our store shelves. Customers are happy too!</p>
+            <p class="review-author">– Baljit P.</p>
+          </div>
+        </div>
       </div>
 
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">Loved the packaging and the taste. Great experience!</p>
-        <p class="review-author">– Jasleen M.</p>
+      <div class="review-pair" id="pair-3">
+        <div class="review-flipper">
+          <div class="review-card front">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">Fantastic local supplier with excellent prices and dependable delivery.</p>
+            <p class="review-author">– Navraj T.</p>
+          </div>
+          <div class="review-card back">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">Brothers Choice is our go-to brand for authentic goods!</p>
+            <p class="review-author">– Simran J.</p>
+          </div>
+        </div>
       </div>
-
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">Professional service and premium quality products. Impressed!</p>
-        <p class="review-author">– Harpreet G.</p>
-      </div>
-
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">Perfect for our store shelves. Customers are happy too!</p>
-        <p class="review-author">– Baljit P.</p>
-      </div>
-
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">Fantastic local supplier with excellent prices and dependable delivery.</p>
-        <p class="review-author">– Navraj T.</p>
-      </div>
-
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">Brothers Choice is our go-to brand for authentic goods!</p>
-        <p class="review-author">– Simran J.</p>
-      </div>
-    </div>
     </div>
 
     <button class="review-arrow right" onclick="nextReview()">&#10095;</button>
   </div>
-</section>
   
   <!-- WHERE TO FIND US SECTION -->
 <section class="brand-showcase-section">
@@ -339,28 +348,21 @@
 </script>
 
 <!--  Script Reviews Section -->
-
 <script>
-let currentReview = 0;
-const cards = document.querySelectorAll('.review-card');
+    let currentPair = 0;
+    const totalPairs = 4;
 
-function showReview(index) {
-  cards.forEach((card, i) => {
-    card.classList.toggle('active', i === index);
-  });
-}
+    function nextReview() {
+      document.getElementById(`pair-${currentPair}`).classList.remove("active");
+      currentPair = (currentPair + 1) % totalPairs;
+      document.getElementById(`pair-${currentPair}`).classList.add("active");
+    }
 
-function nextReview() {
-  currentReview = (currentReview + 1) % cards.length;
-  showReview(currentReview);
-}
-
-function prevReview() {
-  currentReview = (currentReview - 1 + cards.length) % cards.length;
-  showReview(currentReview);
-}
-
-showReview(currentReview); // show first one on load
+    function prevReview() {
+      document.getElementById(`pair-${currentPair}`).classList.remove("active");
+      currentPair = (currentPair - 1 + totalPairs) % totalPairs;
+      document.getElementById(`pair-${currentPair}`).classList.add("active");
+    }
 </script>
 
 
