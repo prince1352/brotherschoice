@@ -356,28 +356,24 @@
   const pairs = document.querySelectorAll('.review-pair');
 
   function showPair(index, direction = 'next') {
-    pairs.forEach((pair, i) => {
+    // Hide all review pairs
+    pairs.forEach((pair) => {
+      pair.classList.remove('active');
       const flipper = pair.querySelector('.review-flipper');
-
-      if (i === index) {
-        pair.classList.add('active');
-
-        // Apply appropriate flip class based on direction
-        if (direction === 'next') {
-          flipper.classList.remove('flip-back');
-          flipper.classList.add('flip-forward');
-        } else {
-          flipper.classList.remove('flip-forward');
-          flipper.classList.add('flip-back');
-        }
-
-      } else {
-        pair.classList.remove('active');
-
-        // Reset flipper rotation classes
-        flipper.classList.remove('flip-forward', 'flip-back');
-      }
+      flipper.classList.remove('flip-forward', 'flip-back');
     });
+
+    // Show the selected review pair
+    const current = pairs[index];
+    current.classList.add('active');
+
+    // Apply flip direction
+    const flipper = current.querySelector('.review-flipper');
+    if (direction === 'next') {
+      flipper.classList.add('flip-forward');
+    } else {
+      flipper.classList.add('flip-back');
+    }
   }
 
   function nextReview() {
@@ -390,11 +386,12 @@
     showPair(currentPair, 'prev');
   }
 
-  // Initialize on page load
+  // Initial load
   document.addEventListener('DOMContentLoaded', () => {
     showPair(currentPair);
   });
 </script>
+
 
 
 
