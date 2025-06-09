@@ -311,7 +311,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 60px; /* Increased spacing between logos */
+  gap: 90px; /* Increased spacing between logos */
   max-width: 1100px;
 }
 
