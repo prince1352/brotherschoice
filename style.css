@@ -493,6 +493,8 @@ body {
   backface-visibility: hidden;
   transform: rotateY(180deg);
   transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 0.4s ease;
+  transform-style: preserve-3d; /* Add this inside .review-card */
+
 }
 
 .review-card.active {
