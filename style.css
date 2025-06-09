@@ -286,17 +286,17 @@ body {
 ------------------------------------------------*/
 .brand-showcase-section {
   background-color: #f8f8f5;
-  padding: 40px 5% 40px;
+  padding: 40px 2% 40px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
 }
 
 .brand-showcase-row {
   display: flex;
-  justify-content: center;
+  justify-content: top;
   align-items: center;
   flex-wrap: wrap; /* allows it to stack on smaller screens */
-  gap: 120px;
+  gap: 80px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -305,8 +305,8 @@ body {
   flex: 0 0 auto;
   max-width: 280px;
   text-align: left;
-  font-size: 1rem;
-  font-weight: 400;
+  font-size: 0.8rem;
+  font-weight: 350;
   color: #333;
   margin-left: 20px;
 }
@@ -325,7 +325,7 @@ body {
 }
 
 .brand-logo-row img {
-  height: 30px;
+  height: 25px;
   display: block;
   transition: transform 0.3s ease;
 }
