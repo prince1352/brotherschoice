@@ -54,6 +54,84 @@
   </header>
 
 
+
+
+<section class="customer-section fade-in">
+  <div class="customer-content">
+    <div class="customer-image">
+      <picture>
+        <source srcset="/brotherschoice/images/customers/grocery.webp" type="image/webp">
+        <img src="/brotherschoice/images/customers/grocery.jpg" alt="Grocery Store" loading="lazy" />
+      </picture>
+    </div>
+    <div class="customer-text">
+      <h2>Grocery Stores</h2>
+      <p>Brothers Choice Foods proudly supplies South Asian staples to grocery stores across Western Canada. Our products — from rice, flour, and lentils to packaged snacks, spices, and beverages — are shelf-ready and trusted by store owners and shoppers alike.</p>
+      <a href="https://allindiasupermarket.ca" target="_blank" class="customer-button">Visit All India Supermarket</a>
+    </div>
+  </div>
+</section>
+
+<section class="customer-section fade-in reverse">
+  <div class="customer-content">
+    <div class="customer-image">
+      <picture>
+        <source srcset="/brotherschoice/images/customers/restaurant.webp" type="image/webp">
+        <img src="/brotherschoice/images/customers/restaurant.jpg" alt="Restaurants We Serve" loading="lazy" />
+      </picture>
+    </div>
+    <div class="customer-text">
+      <h2>Restaurants</h2>
+      <p>We partner with local and regional restaurants to provide essential ingredients like basmati rice, specialty flours, bulk spices, paneer, and ready-made sauces. Trusted by chefs who value authentic flavours and consistent supply.</p>
+      <ul class="customer-list">
+        <li>Tandoori House</li>
+        <li>Saffron Indian Cuisine</li>
+        <li>Biryani Junction</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="customer-section fade-in">
+  <div class="customer-content">
+    <div class="customer-image">
+      <picture>
+        <source srcset="/brotherschoice/images/customers/catering.webp" type="image/webp">
+        <img src="/brotherschoice/images/customers/catering.jpg" alt="Catering Clients" loading="lazy" />
+      </picture>
+    </div>
+    <div class="customer-text">
+      <h2>Catering Services</h2>
+      <p>We supply catering companies with high-volume essentials — from premium rice and lentils to bulk oil, dairy, and specialty flours — ensuring they’re ready for weddings, festivals, and large-scale events.</p>
+      <ul class="customer-list">
+        <li>Punjabi Events Catering</li>
+        <li>Flavourful Gatherings</li>
+        <li>Royal Feast Catering</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="customer-section fade-in reverse">
+  <div class="customer-content">
+    <div class="customer-image">
+      <picture>
+        <source srcset="/brotherschoice/images/customers/hospitality.webp" type="image/webp">
+        <img src="/brotherschoice/images/customers/hospitality.jpg" alt="Hospitality and Institutions" loading="lazy" />
+      </picture>
+    </div>
+    <div class="customer-text">
+      <h2>Hospitality & Institutions</h2>
+      <p>From hotels and hostels to schools and community kitchens, Brothers Choice Foods is proud to provide bulk dry goods, pantry staples, and ready-to-cook products tailored for large-scale operations.</p>
+      <ul class="customer-list">
+        <li>Golden Tree Inn</li>
+        <li>Ridgeway Hostel</li>
+        <li>Prairie Food Services</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
 <!-- REVIEWS SECTION -->
 <section class="reviews-section">
   <h2 class="reviews-title">What Our Customers Are Saying</h2>
@@ -262,4 +340,20 @@
   },
   loop: true,
 });
+</script>
+
+<!--  Script Customers Section -->
+
+<script>
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.fade-in').forEach(section => {
+    observer.observe(section);
+  });
 </script>
