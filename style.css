@@ -293,22 +293,20 @@ body {
 
 .brand-showcase-row {
   display: flex;
-  justify-content: top;
+  flex-wrap: nowrap; /* ✅ keep in one row */
   align-items: center;
-  flex-wrap: wrap; /* allows it to stack on smaller screens */
-  gap: 80px;
-  max-width: 1200px;
-  margin: 0 auto;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 100%;
+  padding: 0 2%;
 }
 
 .brand-showcase-text {
-  flex: 0 0 auto;
-  max-width: 280px;
-  text-align: left;
-  font-size: 0.8rem;
-  font-weight: 350;
+  flex-shrink: 1; /* ✅ allow shrinking */
+  white-space: nowrap; /* ✅ keep text on one line */
+  font-size: clamp(0.6rem, 1.5vw, 1rem); /* ✅ responsive font sizing */
+  font-weight: 400;
   color: #333;
-  margin-left: 20px;
 }
 
 .brand-showcase-text h2 {
@@ -317,16 +315,15 @@ body {
 
 .brand-logo-row {
   display: flex;
-  justify-content: flex-start;
+  flex-wrap: nowrap; /* ✅ keep in one line */
   align-items: center;
-  flex-wrap: wrap;
-  gap: 60px 60px;
-  flex: 1;
+  gap: 40px;
+  flex-shrink: 1;
 }
 
 .brand-logo-row img {
-  height: 25px;
-  display: block;
+  height: clamp(20px, 3vw, 40px); /* ✅ shrink between 20px–40px */
+  flex-shrink: 1;
   transition: transform 0.3s ease;
 }
 
