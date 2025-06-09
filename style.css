@@ -370,7 +370,7 @@ body {
 .featured-products-title {
   font-size: 2rem;
   font-weight: 500;
-  color: var(--red);
+  color: white;
   margin-bottom: 40px;
 }
 
@@ -402,7 +402,7 @@ body {
 
 .product-card img {
   width: 100%;
-  height: 180px;               /* or any fixed height you prefer */
+  height: 200px;               /* or any fixed height you prefer */
   object-fit: cover;           /* crop edges to fill the box */
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -601,7 +601,7 @@ body {
 .specialize-section {
   position: relative;
   background: transparent;
-  padding: 100px 10% 80px;
+  padding: 100px 5% 100px;
   color: #f8f8f5;
   z-index: 2;
 }
@@ -636,7 +636,7 @@ body {
 .specialize-title {
   font-size: 2rem;
   font-weight: 500;
-  color: #f8f8f5;
+  color: var(--red);
   margin-bottom: 50px;
 }
 
