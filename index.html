@@ -352,26 +352,40 @@
   
 <script>
   let currentPair = 0;
-  const totalPairs = 4; // 4 pairs = 8 reviews
+  const totalPairs = 4;
   const pairs = document.querySelectorAll('.review-pair');
 
-  function showPair(index) {
+  function showPair(index, direction = 'next') {
+    // Reset all pairs
     pairs.forEach((pair, i) => {
-      pair.classList.toggle('active', i === index);
+      pair.classList.remove('active');
+      const flipper = pair.querySelector('.review-flipper');
+      flipper.classList.remove('flipped');
     });
+
+    // Activate the new pair
+    const current = pairs[index];
+    current.classList.add('active');
+
+    // Flip the card forward or backward
+    const flipper = current.querySelector('.review-flipper');
+    if (direction === 'next') {
+      flipper.classList.add('flipped');
+    } else {
+      flipper.classList.remove('flipped');
+    }
   }
 
   function nextReview() {
     currentPair = (currentPair + 1) % totalPairs;
-    showPair(currentPair);
+    showPair(currentPair, 'next');
   }
 
   function prevReview() {
     currentPair = (currentPair - 1 + totalPairs) % totalPairs;
-    showPair(currentPair);
+    showPair(currentPair, 'prev');
   }
 
-  // Optional: Show first pair on load
   document.addEventListener('DOMContentLoaded', () => {
     showPair(currentPair);
   });
