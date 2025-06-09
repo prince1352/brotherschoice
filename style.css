@@ -1058,6 +1058,7 @@ body {
   font-weight: 600;
   color: #222;
   margin-bottom: 12px;
+  text-align: center;
 }
 
 .supplier-box p {
@@ -1065,6 +1066,8 @@ body {
   color: #444;
   line-height: 1.6;
   font-weight: 300;
+  text-align: center;
+
 }
 
 
