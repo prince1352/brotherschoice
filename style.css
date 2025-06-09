@@ -338,39 +338,15 @@ body {
 ------------------------------------------------*/
 
 .featured-products-section {
-  position: relative;
+  background-color: #f8f8f5;
   padding: 100px 5% 80px;
   text-align: center;
-  color: #f8f8f5; /* white text on dark background */
-  overflow: hidden;
-  background: none; /* remove old background */
-  z-index: 0;
-  background-image: url('images/specialize-background.jpg');
-  background-size: cover;
-  background-position: center;
-}
-
-.featured-products-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  backdrop-filter: blur(6px); /* ✅ blur effect */
-  background-color: rgba(0, 0, 0, 0.4); /* optional tint */
-  z-index: 1;
-}
-
-.featured-products-title,
-.featured-products-row {
-  position: relative;
-  z-index: 2;
 }
 
 .featured-products-title {
   font-size: 2rem;
   font-weight: 500;
-  color: white;
+  color: var(--red);
   margin-bottom: 40px;
 }
 
@@ -402,7 +378,7 @@ body {
 
 .product-card img {
   width: 100%;
-  height: 200px;               /* or any fixed height you prefer */
+  height: 180px;               /* or any fixed height you prefer */
   object-fit: cover;           /* crop edges to fill the box */
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -422,6 +398,7 @@ body {
   font-size: 0.95rem;
   color: #777;
 }
+
 
 /* ----------------------------------------------
            Why Us Section
@@ -484,6 +461,7 @@ body {
   border: 2px solid transparent;
   border-radius: 6px;
   transition: all 0.3s ease;
+  max-width: 100px;
 }
 
 .about-button:hover {
@@ -600,10 +578,21 @@ body {
 
 .specialize-section {
   position: relative;
-  background: transparent;
-  padding: 100px 5% 100px;
+  background: url('images/specialize-background.jpg') no-repeat center center/cover;
+  padding: 100px 10% 80px;
   color: #f8f8f5;
-  z-index: 2;
+  overflow: hidden;
+}
+
+.specialize-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(6px); /* ✅ blur effect */
+  background-color: rgba(0, 0, 0, 0.4); /* optional tint */
+  z-index: 1;
 }
 
 .specialize-content {
@@ -624,7 +613,7 @@ body {
 .specialize-line {
   flex: 1;
   height: 2px;
-  background-color: var(--red);
+  background-color: white;
 }
 
 .specialize-logo {
@@ -636,7 +625,7 @@ body {
 .specialize-title {
   font-size: 2rem;
   font-weight: 500;
-  color: var(--red);
+  color: #f8f8f5;
   margin-bottom: 50px;
 }
 
