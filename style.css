@@ -456,9 +456,10 @@ body {
 }
 
 .reviews-swiper {
+  position: relative;
   max-width: 700px;
   margin: 0 auto;
-  position: relative;
+  padding: 0 60px; /* spacing for arrows */
 }
 
 .swiper-slide {
@@ -481,7 +482,9 @@ body {
   justify-content: center;
   align-items: flex-start;
   text-align: left;
+  margin: 0 auto;
 }
+
 
 .review-stars {
   color: var(--red);
@@ -505,7 +508,19 @@ body {
 .swiper-button-next,
 .swiper-button-prev {
   color: var(--red);
-  transition: transform 0.2s ease;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  font-size: 2rem;
+}
+
+.swiper-button-prev {
+  left: 0;
+}
+
+.swiper-button-next {
+  right: 0;
 }
 
 .swiper-button-next:hover,
