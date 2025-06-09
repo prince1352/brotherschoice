@@ -507,6 +507,10 @@ body {
   transform: rotateY(180deg);
 }
 
+.card:not(.flipped):hover .card-inner {
+  transform: scale(1.05);
+}
+
 /* Front and Back Faces */
 .card-front,
 .card-back {
@@ -578,6 +582,8 @@ body {
   border: 2px solid transparent;
   border-radius: 6px;
   transition: all 0.3s ease;
+  z-index: 3;
+  margin: 0 auto; /* ✅ centers inside flex or block container */
 }
 
 .specialize-button:hover {
