@@ -472,20 +472,18 @@ body {
 }
 
 .review-card {
-  flex: 1;
-  max-width: 100%;
-  background-color: #fff;
-  border-left: 6px solid var(--red);
+  background-color: var(--yellow); /* Match section background */
+  border-left: none; /* Remove red left border */
   border-radius: 12px;
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
-  padding: 0px 32px;
-  height: 100%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Soft shadow */
+  padding: 0px 24px;
+  height: 100%; /* Or keep as needed */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 0 60px; /* space between card and arrows */
+  margin: 0 auto;
 }
 
 .review-stars {
