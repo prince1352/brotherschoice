@@ -370,7 +370,7 @@ body {
 .featured-products-title {
   font-size: 2rem;
   font-weight: 500;
-  color: white;
+  color: var(--red);
   margin-bottom: 40px;
 }
 
