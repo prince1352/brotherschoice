@@ -38,13 +38,15 @@
 </button>
 
   <!-- Mobile Dropdown Menu -->
+<!-- Mobile Side Menu -->
 <div class="mobile-menu" id="mobileMenu">
-  <li class="menu-item"><a href="/">Home</a></li>
-  <li class="menu-item"><a href="About/">About Us</a></li>
-  <li class="menu-item"><a href="Products/">Products</a></li>
-  <li class="menu-item"><a href="Customers/">Our Customers</a></li>
-  <li class="menu-item"><a href="Contact/">Contact Us</a></li>
+  <a href="/">Home</a>
+  <a href="About/">About Us</a>
+  <a href="Products/">Products</a>
+  <a href="Customers/">Our Customers</a>
+  <a href="Contact/">Contact Us</a>
 </div>
+
 
     <div class="quote-button-wrapper">
       <a href="Contact/" class="quote-button">Get a Free Quote</a>
@@ -355,33 +357,17 @@
   const mobileMenu = document.getElementById('mobileMenu');
   const mobileLinks = mobileMenu.querySelectorAll('a');
 
-  let isOpen = false;
-
-  function closeMenu() {
-    mobileMenu.style.animation = 'slideUp 0.3s ease forwards';
-    setTimeout(() => {
-      mobileMenu.style.display = 'none';
-    }, 300);
-    isOpen = false;
-  }
-
   hamburger.addEventListener('click', () => {
-    if (isOpen) {
-      closeMenu();
-    } else {
-      mobileMenu.style.display = 'flex';
-      mobileMenu.style.animation = 'fadeSlideDown 0.3s ease forwards';
-      isOpen = true;
-    }
+    mobileMenu.classList.toggle('open');
   });
 
   mobileLinks.forEach(link => {
     link.addEventListener('click', () => {
-      closeMenu();
+      mobileMenu.classList.remove('open');
     });
   });
 </script>
-
+  
 <!--  Script Featured Prodcuts -->
 
   <script>
