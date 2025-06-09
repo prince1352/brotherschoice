@@ -553,7 +553,7 @@ body {
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
-  color: #666;
+  color: #333;
   font-size: 24px;
 }
 
