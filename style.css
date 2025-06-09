@@ -475,7 +475,7 @@ body {
   border-radius: 12px;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
   padding: 24px 32px;
-  max-width: 600px;
+  max-width: auto;
   height: 220px;
   display: flex;
   flex-direction: column;
@@ -512,20 +512,15 @@ body {
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 .swiper-button-prev {
-  left: 0;
+  left: 5%;
 }
 
 .swiper-button-next {
-  right: 0;
-}
-
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-  transform: scale(1.25);
+  right: 5%;
 }
 
 
