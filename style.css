@@ -301,25 +301,25 @@ body {
 
 .featured-products-row {
   display: flex;
-  justify-content: center;
-  flex-wrap: nowrap;
   overflow-x: auto;
-  gap: 30px;
   scroll-snap-type: x mandatory;
-  padding-bottom: 10px;
+  gap: 30px;
+  padding: 0 10px;            /* Add horizontal padding */
+  margin: 0 auto;
+  max-width: 100%;
 }
 
 .product-card {
+  min-width: 220px;
+  max-width: 260px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
   background-color: #fafafa;
   border-radius: 8px;
   box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-  min-width: 220px;
-  max-width: 260px;
-  scroll-snap-align: start;
-  flex-shrink: 0;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  overflow: hidden;
+  transition: transform 0.3s ease;
 }
+
 
 .product-card:hover {
   transform: translateY(-8px) scale(1.03);
