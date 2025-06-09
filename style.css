@@ -960,6 +960,93 @@ body {
 }
 
 /* ----------------------------------------------
+            CUSTOMERS SECTION
+------------------------------------------------*/
+
+.customer-section {
+  padding: 80px 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f8f8f5;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.customer-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 60px;
+}
+
+.customer-content.reverse {
+  flex-direction: row-reverse;
+}
+
+.customer-image img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.customer-text {
+  max-width: 600px;
+}
+
+.customer-text h2 {
+  color: var(--red);
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.customer-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.customer-list {
+  list-style: none;
+  padding-left: 0;
+  font-weight: 400;
+}
+
+.customer-list li {
+  margin-bottom: 8px;
+  color: #444;
+}
+
+.customer-button {
+  display: inline-block;
+  margin-top: 10px;
+  background: var(--red);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.customer-button:hover {
+  background: #a00;
+}
+
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* ----------------------------------------------
                  Mobile Transitions
 ------------------------------------------------*/
 
