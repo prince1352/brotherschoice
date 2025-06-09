@@ -457,7 +457,7 @@ body {
 
 .reviews-swiper {
   position: relative;
-  max-width: 700px;
+  max-width: auto;
   margin: 0 auto;
   padding: 0 60px; /* spacing for arrows */
 }
@@ -516,11 +516,11 @@ body {
 }
 
 .swiper-button-prev {
-  right: 5%;
+  left: 5%;
 }
 
 .swiper-button-next {
-  left: 5%;
+  right: 5%;
 }
 
 
