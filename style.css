@@ -399,6 +399,27 @@ body {
   color: #777;
 }
 
+/* Button */
+.featured-products-button {
+  display: inline-block;
+  padding: 14px 32px;
+  background-color: var(--red);
+  color: #f8f8f5;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: none;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.featured-products-button:hover {
+  background-color: transparent;
+  border: 2px solid #f8f8f5;
+  color: #f8f8f5;
+}
+
+
 
 /* ----------------------------------------------
            Why Us Section
