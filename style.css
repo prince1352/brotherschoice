@@ -485,7 +485,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 0 20px; /* space between card and arrows */
+  margin: 0 60px; /* space between card and arrows */
 }
 
 .review-stars {
