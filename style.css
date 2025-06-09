@@ -114,7 +114,7 @@ body {
 }
 
 .quote-button {
-  : var(--red);
+  background-color: var(--red);
   color: #f8f8f5;
   padding: 15px 40px;
   text-decoration: none;
