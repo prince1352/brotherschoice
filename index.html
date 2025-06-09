@@ -99,6 +99,60 @@
   <a href="about.html" class="about-button">About Us</a>
 </section>
 
+<!-- REVIEWS SECTION -->
+<section class="reviews-section">
+  <h2 class="reviews-title">What Our Customers Are Saying</h2>
+
+  <div class="reviews-carousel-wrapper">
+    <button class="carousel-arrow left" onclick="scrollReviews(-1)">&#10094;</button>
+
+    <div class="reviews-carousel" id="reviewsCarousel">
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="review-text">Amazing product quality and fast delivery. We’ve been reordering monthly!</p>
+        <div class="reviewer">– Jaspreet K.</div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="review-text">Super friendly team and great prices. Highly recommend.</p>
+        <div class="reviewer">– Fatima R.</div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="review-text">Top-notch customer service. Everything was fresh and well packed.</p>
+        <div class="reviewer">– Harjot S.</div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="review-text">Love the variety of products. Definitely our go-to supplier now.</p>
+        <div class="reviewer">– Ali M.</div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="review-text">Exceptional value and fast communication. Couldn’t be happier.</p>
+        <div class="reviewer">– Sandeep V.</div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="review-text">Great experience. The frozen products arrived in perfect condition.</p>
+        <div class="reviewer">– Nisha P.</div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="review-text">We switched to Brothers Choice this year — haven’t looked back since.</p>
+        <div class="reviewer">– Rajan D.</div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="review-text">So reliable! I always get my orders on time and with care.</p>
+        <div class="reviewer">– Ayesha Z.</div>
+      </div>
+    </div>
+
+    <button class="carousel-arrow right" onclick="scrollReviews(1)">&#10095;</button>
+  </div>
+</section>
+  
   <!-- WHERE TO FIND US SECTION -->
 <section class="brand-showcase-section">
   <div class="brand-showcase-wrapper">
@@ -276,6 +330,18 @@
     });
 </script>
 
+<!--  Script Reviews Section -->
+
+<script>
+function scrollReviews(direction) {
+  const carousel = document.getElementById('reviewsCarousel');
+  const cardWidth = carousel.querySelector('.review-card').offsetWidth + 30; // card width + gap
+  carousel.scrollBy({
+    left: direction * cardWidth,
+    behavior: 'smooth'
+  });
+}
+</script>
 
 
 </body>
