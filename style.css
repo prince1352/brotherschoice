@@ -307,6 +307,7 @@ body {
   padding: 0 10px;            /* Add horizontal padding */
   margin: 0 auto;
   max-width: 100%;
+  min-height: 300px;
 }
 
 .product-card {
