@@ -345,17 +345,19 @@ body {
   overflow: hidden;
   background: none; /* remove old background */
   z-index: 0;
-}
-
-.featured-products-section::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  backdrop-filter: blur(6px);
-  background-color: rgba(0, 0, 0, 0.4); /* same tint as before */
   background-image: url('images/specialize-background.jpg');
   background-size: cover;
   background-position: center;
+}
+
+.featured-products-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(6px); /* ✅ blur effect */
+  background-color: rgba(0, 0, 0, 0.4); /* optional tint */
   z-index: 1;
 }
 
@@ -368,7 +370,7 @@ body {
 .featured-products-title {
   font-size: 2rem;
   font-weight: 500;
-  color: var(--red);
+  color: white;
   margin-bottom: 40px;
 }
 
@@ -622,7 +624,7 @@ body {
 .specialize-line {
   flex: 1;
   height: 2px;
-  background-color: white;
+  background-color: var(--red);
 }
 
 .specialize-logo {
