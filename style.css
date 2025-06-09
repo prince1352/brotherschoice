@@ -456,10 +456,11 @@ body {
 }
 
 .reviews-swiper {
-  position: relative;
-  max-width: auto;
-  margin: 0 auto;
-  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  max-width: 100%;
 }
 
 .swiper-slide {
@@ -467,6 +468,13 @@ body {
   justify-content: center;
   align-items: center;
   perspective: 1200px;
+}
+
+.review-card-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 0 30px;
 }
 
 .review-card {
@@ -514,9 +522,11 @@ body {
 .swiper-button-prev,
 .swiper-button-next {
   color: var(--red);
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0 20px;
   z-index: 10;
 }
 
