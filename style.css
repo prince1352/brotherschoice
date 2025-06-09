@@ -480,8 +480,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  text-align: center;
+  align-items: center; /* center horizontally */
+  text-align: center;   /* center text */
   margin: 0 auto;
 }
 
