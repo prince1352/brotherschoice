@@ -210,7 +210,7 @@ body {
 .landing-section {
   position: relative;
   width: 100%;
-  min-height: 600px;
+  height: 100vh;
   background: url('images/homepage-background.jpg') no-repeat center center/cover;
   display: flex;
   align-items: center;
@@ -280,6 +280,27 @@ body {
   border: 2px solid #f8f8f5;
   color: #f8f8f5;
 }
+
+/* ----------------------------------------------
+         SWIPER SCROLL ON HOMEPAGE
+------------------------------------------------*/
+.swiper {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  height: 100%;
+}
+
+.swiper-slide {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: stretch; /* Let section fill full height */
+}
+
 /* ----------------------------------------------
          Where to Find Us Section
 ------------------------------------------------*/
@@ -606,6 +627,7 @@ body {
   padding: 100px 10% 80px;
   color: #f8f8f5;
   overflow: hidden;
+  height: 100vh;
 }
 
 .specialize-overlay {
