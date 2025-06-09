@@ -48,51 +48,41 @@
       <a href="contact.html" class="quote-button">Get a Free Quote</a>
     </div>
   </header>
-  
-  
 
-  <!-- Swiper Slide -->
-  <div class="swiper fullpage-swiper">
-  <div class="swiper-wrapper">
-  <div class="swiper-slide">
-  
-    <!-- Landing Section  -->
-      <section class="landing-section">
-        <div class="landing-overlay"></div>
-        <div class="landing-content">
-          <h1 class="landing-title">Brothers Choice Foods</h1>
-          <h2 class="landing-subheading">Your Trusted Distributor for South Asian & Ethnic Grocery Essentials</h2>
-          <p class="landing-location">Proudly Serving Edmonton and Western Canada</p>
-          <a href="#products" class="browse-button">Browse Products</a>
-        </div>
-      </section>
-    </div>
-
-    <!-- Specialization Section -->
-    <div class="swiper-slide">
-      <section class="specialize-section">
-        <div class="specialize-overlay"></div>
-        <div class="specialize-content">
-          <div class="specialize-logo-wrapper">
-            <div class="specialize-line"></div>
-            <img src="images/Logo-W.png" alt="Logo" class="specialize-logo" />
-            <div class="specialize-line"></div>
-          </div>
-          <h2 class="specialize-title">We Specialize In</h2>
-          <div class="specialize-cards">
-            <div class="card" style="background-image: url('images/Card1.jpg');"><span>South Asian Grocery Products</span></div>
-            <div class="card" style="background-image: url('images/Card2.jpg');"><span>Ethnic Food Imports</span></div>
-            <div class="card" style="background-image: url('images/Card3.jpg');"><span>Wholesale Distribution</span></div>
-            <div class="card" style="background-image: url('images/Card4.jpg');"><span>Dry Fruits & Nuts</span></div>
-            <div class="card" style="background-image: url('images/Card5.jpg');"><span>Specialty Beverages</span></div>
-            <div class="card" style="background-image: url('images/Card6.jpg');"><span>Reliable Logistics & Delivery</span></div>
-          </div>
-        </div>
-      </section>
-    </div>
-
+  <!-- Landing Page Section -->
+  <section class="landing-section">
+  <div class="landing-overlay"></div>
+  <div class="landing-content">
+    <h1 class="landing-title">Brothers Choice Foods</h1>
+    <h2 class="landing-subheading">Your Trusted Distributor for South Asian & Ethnic Grocery Essentials</h2>
+    <p class="landing-location">Proudly Serving Edmonton and Western Canada</p>
+    <a href="#products" class="browse-button">Browse Products</a>
   </div>
-</div>
+</section>
+
+   <!-- Specialization Section -->
+  <section class="specialize-section">
+  <div class="specialize-overlay"></div> 
+  <div class="specialize-content">
+    <div class="specialize-logo-wrapper">
+      <div class="specialize-line"></div>
+      <img src="images/Logo-W.png" alt="Logo" class="specialize-logo" />
+      <div class="specialize-line"></div>
+    </div>
+
+    <h2 class="specialize-title">We Specialize In</h2>
+
+    <div class="specialize-cards">
+      <div class="card" style="background-image: url('images/Card1.jpg');"><span>South Asian Grocery Products</span></div>
+      <div class="card" style="background-image: url('images/Card2.jpg');"><span>Ethnic Food Imports</span></div>
+      <div class="card" style="background-image: url('images/Card3.jpg');"><span>Wholesale Distribution</span></div>
+      <div class="card" style="background-image: url('images/Card4.jpg');"><span>Dry Fruits & Nuts</span></div>
+      <div class="card" style="background-image: url('images/Card5.jpg');"><span>Specialty Beverages</span></div>
+      <div class="card" style="background-image: url('images/Card6.jpg');"><span>Reliable Logistics & Delivery</span></div>
+    </div>
+  </div>
+</section>
+
 
  <!-- Featured Products Section -->
 <section class="featured-products-section">
@@ -360,25 +350,6 @@
   },
   loop: true,
 });
-</script>
-
-<script>
-  const swiper = new Swiper('.fullpage-swiper', {
-    direction: 'vertical',
-    mousewheel: true,
-    speed: 1000,
-    effect: 'creative',
-    creativeEffect: {
-      prev: {
-        translate: [0, '-100%', 0],
-        opacity: 0,
-      },
-      next: {
-        translate: [0, '100%', 0],
-        opacity: 0,
-      },
-    },
-  });
 </script>
 
 
