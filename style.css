@@ -284,7 +284,6 @@ body {
 /* ----------------------------------------------
          Where to Find Us Section
 ------------------------------------------------*/
-
 .brand-showcase-section {
   background-color: #f8f8f5;
   padding: 40px 5% 50px;
@@ -292,39 +291,47 @@ body {
   border-bottom: 1px solid #ddd;
 }
 
-.brand-showcase-wrapper {
+.brand-showcase-row {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 30px;
+  flex-wrap: wrap; /* allows it to stack on smaller screens */
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .brand-showcase-text {
+  flex: 0 0 auto;
+  max-width: 280px;
+  text-align: left;
   font-size: 1.25rem;
   font-weight: 500;
   color: var(--red);
-  text-align: center;
+}
+
+.brand-showcase-text h2 {
   margin: 0;
 }
 
 .brand-logo-row {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
-  gap: 90px; /* Increased spacing between logos */
-  max-width: 1100px;
+  gap: 30px 60px;
+  flex: 1;
 }
 
 .brand-logo-row img {
   height: 55px;
+  display: block;
   transition: transform 0.3s ease;
 }
 
 .brand-logo-row img:hover {
   transform: scale(1.15);
 }
-
 
 /* ----------------------------------------------
           Featured Products Section
