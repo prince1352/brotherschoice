@@ -195,8 +195,8 @@
         </div>
       </div>
     </div>
+      <a href="contact.html" class="specialize-button">Contact Brothers Choice Foods for more Information</a>
   </div>
-  <a href="contact.html" class="specialize-button">Contact Brothers Choice Foods for more Information</a>
 </section>
   
 
@@ -424,6 +424,20 @@
   },
   loop: true,
 });
+</script>
+
+<!--  Script Specialize Section -->
+
+<script>
+  document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('click', function () {
+      // Optional: only allow one flipped card at a time
+      document.querySelectorAll('.card').forEach(c => {
+        if (c !== this) c.classList.remove('flipped');
+      });
+      this.classList.toggle('flipped');
+    });
+  });
 </script>
 
 
