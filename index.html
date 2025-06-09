@@ -330,16 +330,17 @@
   
 <script>
   const swiper = new Swiper('.reviews-swiper', {
-    effect: 'flip',
-    flipEffect: {
-      slideShadows: false,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    loop: true,
-  });
+  effect: 'flip',
+  flipEffect: {
+    slideShadows: true, // enable built-in shadow during flip
+    limitRotation: true
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  loop: true,
+});
 </script>
 
 
