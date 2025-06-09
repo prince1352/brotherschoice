@@ -1027,6 +1027,7 @@ body {
   color: var(--red);
   margin-bottom: 60px;
   letter-spacing: 1px;
+  align-text: center;
 }
 
 .supplier-box-row {
