@@ -78,7 +78,6 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  : var(--red);
   opacity: 0;
   transition: opacity 0.3s ease;
   z-index: 0;
@@ -104,7 +103,7 @@ body {
 }
 
 .menu-item:hover a {
-  color: #f8f8f5;
+  color: var(--red);
 }
 
 /* Quote Button */
@@ -296,7 +295,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap; /* allows it to stack on smaller screens */
-  gap: 100px;
+  gap: 120px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -307,7 +306,7 @@ body {
   text-align: left;
   font-size: 1rem;
   font-weight: 400;
-  color: #666;
+  color: #000;
   margin-left: 20px;
 }
 
@@ -391,7 +390,7 @@ body {
 
 .product-info h3 {
   font-size: 1.1rem;
-  color: #666;
+  color: #000;
   margin-bottom: 6px;
 }
 
@@ -451,7 +450,7 @@ body {
 ------------------------------------------------*/
 
 .reviews-section {
-  background-color: var(--yellow);
+  background-color: var(--red);
   padding: 60px 5%;
   text-align: center;
 }
@@ -459,7 +458,7 @@ body {
 .reviews-title {
   font-size: 1.8rem;
   font-weight: 600;
-  color: var(--red);
+  color: white;
   margin-bottom: 40px;
 }
 
@@ -478,7 +477,7 @@ body {
 }
 
 .review-card {
-  background-color: var(--yellow); /* Match section background */
+  background-color: var(--red); /* Match section background */
   padding: 10px 24px;
   height: 100%; /* Or keep as needed */
   display: flex;
@@ -490,7 +489,7 @@ body {
 }
 
 .review-stars {
-  color: var(--red);
+  color: var(--yellow);
   font-size: 1.5rem;
   margin-bottom: 14px;
   text-align: center;
@@ -501,7 +500,7 @@ body {
   font-size: 1.15rem;
   line-height: 1.6;
   margin-bottom: 16px;
-  color: #333;
+  color: white;
   text-align: center;
 
 }
@@ -516,7 +515,7 @@ body {
 
 .swiper-button-prev,
 .swiper-button-next {
-  color: var(--red);
+  color: #666;
   font-size: 2rem;
   background: none;
   border: none;
@@ -529,7 +528,7 @@ body {
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
-  color: var(--red);
+  color: #666;
   font-size: 24px;
 }
 
@@ -809,7 +808,7 @@ body {
 
 .map-button:hover {
   background-color: transparent;
-  color: var(--yellow);
+  color: var(--red);
   border: 2px solid var(--red);
 }
 
