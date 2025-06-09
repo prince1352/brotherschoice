@@ -422,6 +422,180 @@ body {
   color: var(--red);
 }
 
+/* ----------------------------------------------
+         We Specialize In Section
+------------------------------------------------*/
+
+.specialize-section {
+  position: relative;
+  background: url('images/specialize-background.jpg') no-repeat center center/cover;
+  padding: 100px 10% 80px;
+  color: #f8f8f5;
+  overflow: hidden;
+}
+
+.specialize-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.specialize-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+/* Logo Line Row */
+.specialize-logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  gap: 20px;
+}
+
+.specialize-line {
+  flex: 1;
+  height: 2px;
+  background-color: white;
+}
+
+.specialize-logo {
+  height: 60px;
+  width: auto;
+}
+
+/* Section Title */
+.specialize-title {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #f8f8f5;
+  margin-bottom: 50px;
+}
+
+/* Cards Grid */
+.specialize-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 992px) {
+  .specialize-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .specialize-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Flip Card Container */
+.card {
+  perspective: 1000px;
+  height: 240px;
+  cursor: pointer;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s ease;
+  transform-style: preserve-3d;
+}
+
+.card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Front and Back Faces */
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+  padding: 20px;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Front Face */
+.card-front {
+  background-size: cover;
+  background-position: center;
+  color: #f8f8f5;
+  font-size: 1.1rem;
+  font-weight: 500;
+  z-index: 2;
+}
+
+.card-front::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.card-front span {
+  z-index: 2;
+  position: relative;
+}
+
+/* Back Face */
+.card-back {
+  background-color: var(--red);
+  color: #fff;
+  transform: rotateY(180deg);
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-back h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.card-back p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  padding: 0 10px;
+}
+
+/* Button (if you keep one in the section) */
+.specialize-button {
+  display: inline-block;
+  padding: 14px 32px;
+  background-color: var(--red);
+  color: #f8f8f5;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: none;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.specialize-button:hover {
+  background-color: transparent;
+  border: 2px solid #f8f8f5;
+  color: #f8f8f5;
+}
 
 
 /* ----------------------------------------------
@@ -596,125 +770,6 @@ body {
   background: rgba(0, 0, 0, 0.25);
 }
 
-
-/* ----------------------------------------------
-         We Specialize In Section
-------------------------------------------------*/
-
-.specialize-section {
-  position: relative;
-  background: url('images/specialize-background.jpg') no-repeat center center/cover;
-  padding: 100px 10% 80px;
-  color: #f8f8f5;
-  overflow: hidden;
-}
-
-.specialize-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  backdrop-filter: blur(6px); /* ✅ blur effect */
-  background-color: rgba(0, 0, 0, 0.4); /* optional tint */
-  z-index: 1;
-}
-
-.specialize-content {
-  position: relative;
-  z-index: 2;
-  text-align: center;
-}
-
-/* Logo Line Row */
-.specialize-logo-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 30px;
-  gap: 20px;
-}
-
-.specialize-line {
-  flex: 1;
-  height: 2px;
-  background-color: white;
-}
-
-.specialize-logo {
-  height: 60px;
-  width: auto;
-}
-
-/* Section Title */
-.specialize-title {
-  font-size: 2rem;
-  font-weight: 500;
-  color: #f8f8f5;
-  margin-bottom: 50px;
-}
-
-/* Cards Grid */
-.specialize-cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  margin-bottom: 50px;
-}
-
-.card {
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  height: 240px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  transition: transform 0.3s ease;
-  border-radius: 6px;
-}
-
-.card span {
-  color: #f8f8f5;
-  font-size: 1.1rem;
-  font-weight: 500;
-  text-align: center;
-  padding: 0 15px;
-  z-index: 2;
-}
-
-.card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.4); /* dark overlay for readability */
-  z-index: 1;
-}
-
-.card:hover {
-  transform: scale(1.05); /* ✅ zoom on hover */
-}
-
-/* Button */
-.specialize-button {
-  display: inline-block;
-  padding: 14px 32px;
-  background-color: var(--red);
-  color: #f8f8f5;
-  font-size: 1.1rem;
-  font-weight: 500;
-  text-decoration: none;
-  border: 2px solid transparent;
-  border-radius: 6px;
-  transition: all 0.3s ease;
-}
-
-.specialize-button:hover {
-  background-color: transparent;
-  border: 2px solid #f8f8f5;
-  color: #f8f8f5;
-}
 
 /* ----------------------------------------------
               Contact Section
