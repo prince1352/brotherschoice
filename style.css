@@ -487,17 +487,6 @@ body {
   margin-bottom: 50px;
 }
 
-@media (max-width: 992px) {
-  .specialize-cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .specialize-cards {
-    grid-template-columns: 1fr;
-  }
-}
 
 /* Flip Card Container */
 .card {
