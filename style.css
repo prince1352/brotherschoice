@@ -281,6 +281,51 @@ body {
   border: 2px solid #f8f8f5;
   color: #f8f8f5;
 }
+/* ----------------------------------------------
+         Where to Find Us Section
+------------------------------------------------*/
+.brand-showcase-section {
+  background-color: #f5f5f5;
+  padding: 30px 5%;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.brand-showcase-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.brand-showcase-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
+  text-align: center;
+  margin: 0;
+}
+
+.brand-logo-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1000px;
+}
+
+.brand-logo-row img {
+  height: 50px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: grayscale(100%) brightness(90%);
+}
+
+.brand-logo-row img:hover {
+  transform: scale(1.15);
+  filter: grayscale(0%) brightness(110%);
+}
+
 
 /* ----------------------------------------------
           Featured Products Section
