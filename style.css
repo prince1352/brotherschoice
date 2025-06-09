@@ -326,10 +326,12 @@ body {
   box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
-.product-card picture img {
+.product-card img {
   width: 100%;
-  height: 180px;
-  object-fit: cover;
+  height: 180px;               /* or any fixed height you prefer */
+  object-fit: cover;           /* crop edges to fill the box */
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 .product-info {
