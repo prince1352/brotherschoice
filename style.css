@@ -286,7 +286,7 @@ body {
 ------------------------------------------------*/
 .brand-showcase-section {
   background-color: #f8f8f5;
-  padding: 40px 5% 50px;
+  padding: 60px 5% 60px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
 }
@@ -296,7 +296,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap; /* allows it to stack on smaller screens */
-  gap: 40px;
+  gap: 60px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -319,7 +319,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
-  gap: 30px 60px;
+  gap: 60px 60px;
   flex: 1;
 }
 
