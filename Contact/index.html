@@ -65,20 +65,23 @@
 
   <div class="contact-us-content">
     <div class="contact-us-form-container">
-      <form action="https://formsubmit.co/brotherschoicefoods@gmail.com" method="POST" class="contact-us-form">
-        <!-- Disable CAPTCHA & redirect -->
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="/thankyou.html">
+  <form id="contactFormTwo" action="https://formsubmit.co/ajax/prince52sv@gmail.com" method="POST" class="contact-us-form">
+    <!-- Disable CAPTCHA -->
+    <input type="hidden" name="_captcha" value="false">
 
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="text" name="company" placeholder="Company Name">
-        <input type="email" name="email" placeholder="Your Email" required>
-        <input type="tel" name="phone" placeholder="Phone Number">
-        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="text" name="company" placeholder="Company Name">
+    <input type="email" name="email" placeholder="Your Email" required>
+    <input type="tel" name="phone" placeholder="Phone Number">
+    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
 
-        <button type="submit" class="contact-us-submit-button">Send Message</button>
-      </form>
-    </div>
+    <button type="submit" class="contact-us-submit-button">Send Message</button>
+  </form>
+
+  <div id="formConfirmationTwo" class="thank-you-message" style="display: none;">
+    Thank you! Your message has been sent successfully. A Brothers Choice team member will be reaching out to you shortly
+  </div>
+</div>
 
     <div class="contact-us-info">
       <div class="contact-us-details">
@@ -151,3 +154,34 @@
     });
   });
 </script>
+
+  <!--  Script Contact Us -->
+  
+  <script>
+  document.getElementById("contactFormTwo").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const form = e.target;
+    const confirmation = document.getElementById("formConfirmationTwo");
+
+    fetch(form.action, {
+      method: "POST",
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(Object.fromEntries(new FormData(form)))
+    })
+    .then(response => {
+      if (response.ok) {
+        confirmation.style.display = "flex";
+        form.reset();
+      } else {
+        confirmation.textContent = "There was a problem. Please try again.";
+        confirmation.style.display = "flex";
+      }
+    })
+    .catch(() => {
+      confirmation.textContent = "There was a problem. Please try again.";
+      confirmation.style.display = "flex";
+    });
+  });
+</script>
+
