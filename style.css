@@ -1205,7 +1205,7 @@ body {
 .contact-form textarea {
   width: 100%;
   padding: 12px;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
   border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 1rem;
@@ -1253,6 +1253,10 @@ body {
 .store-promo {
   margin-bottom: 0px;
   margin-top: 10px;
+}
+
+.store-promo {
+  text-align: center;
 }
 
 .contact-map {
