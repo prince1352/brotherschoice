@@ -1207,7 +1207,7 @@ body {
 .contact-us-form textarea {
   width: 100%;
   padding: 12px;
-  margin-bottom: 6px;
+  margin-bottom: 12px;
   border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 1rem;
@@ -1216,16 +1216,19 @@ body {
 .contact-us-submit-button {
   padding: 12px 24px;
   background-color: var(--red);
-  color: #fff;
+  color: #f8f8f5;
   border: none;
   border-radius: 6px;
   font-size: 1rem;
   cursor: pointer;
   transition: background 0.3s ease;
+  width: 100%;
 }
 
 .contact-us-submit-button:hover {
-  background-color: #a8122c;
+  background-color: transparent;
+  color: var(--red);
+  border: 2px solid var(--red);
 }
 
 .contact-us-info {
@@ -1255,14 +1258,21 @@ body {
 .store-promo {
   margin-bottom: 0px;
   margin-top: 10px;
+  text-decoration: none;
+}
+
+.contact-us-details p,
+.contact-us-social p {
+    color: var(--red);
 }
 
 .contact-us-social .social-link {
   display: flex;
   align-items: center;
   gap: 10px; /* space between icon and text */
-  margin-top: 15px;
-  margin-bottom: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
 }
 
 .contact-us-social i {
