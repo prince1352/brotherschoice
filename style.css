@@ -1405,7 +1405,7 @@ body {
 
 /* LEFT SIDEBAR */
 .filter-sidebar {
-  height: 600px; /* approx. 2x product-card height */
+  height: 400px; /* approx. 2x product-card height */
   overflow-y: auto;
   position: sticky;
   top: 180px; /* changed from 100px */
