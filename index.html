@@ -114,8 +114,17 @@
  <!-- Featured Products Section -->
 <section class="featured-products-section">
   <h2 class="featured-products-title">Featured Products</h2>
-  <div class="featured-products-row" id="featuredProducts"></div>
-  <a href="Products/" class="featured-button">Browse the Complete Brothers Choice Product Range</a>
+
+  <!-- Loader -->
+  <div id="featuredProductsLoader" class="featured-products-loader">
+    <div class="spinner"></div>
+  </div>
+
+  <div class="featured-products-row" id="featuredProducts" style="display: none;"></div>
+  
+  <a href="Products/" class="featured-button">
+    Browse the Complete Brothers Choice Product Range
+  </a>
 </section>
 
 <!-- Specialization Section -->
@@ -391,28 +400,35 @@
 
   <script>
   fetch("https://script.google.com/macros/s/AKfycbzOf5ns3Q_MUhVY4YMjd5EbpVusWv6PWzAYHd3bTJxPIb0T-uQX92AEMkoMFRgCdmxM/exec")
-    .then(res => res.json())
-    .then(data => {
-      const container = document.getElementById('featuredProducts');
-      const featured = data.slice(0, 5); // Only show first 5 products
+  .then(res => res.json())
+  .then(data => {
+    const container = document.getElementById('featuredProducts');
+    const loader = document.getElementById('featuredProductsLoader');
+    const featured = data.slice(0, 5); // Only show first 5 products
 
-      featured.forEach(product => {
-        const card = document.createElement('div');
-        card.classList.add('product-card');
+    featured.forEach(product => {
+      const card = document.createElement('div');
+      card.classList.add('product-card');
 
-        card.innerHTML = `
-          <img src="${product["Image URL"]}" alt="${product["Alt Text"] || product["Product Name"]}" loading="lazy">
-          <div class="product-info">
-            <h3>${product["Product Name"]}</h3>
-          </div>
-        `;
+      card.innerHTML = `
+        <img src="${product["Image URL"]}" alt="${product["Alt Text"] || product["Product Name"]}" loading="lazy">
+        <div class="product-info">
+          <h3>${product["Product Name"]}</h3>
+        </div>
+      `;
 
-        container.appendChild(card);
-      });
-    })
-    .catch(err => {
-      console.error("Failed to load featured products:", err);
+      container.appendChild(card);
     });
+
+    // Hide loader and show content
+    loader.style.display = "none";
+    container.style.display = "flex"; // or grid, depending on your layout
+  })
+  .catch(err => {
+    console.error("Failed to load featured products:", err);
+    document.getElementById('featuredProductsLoader').innerHTML = "<p style='text-align:center;'>Unable to load products at this time.</p>";
+  });
+
 </script>
 
 <!--  Script Reviews Section -->
