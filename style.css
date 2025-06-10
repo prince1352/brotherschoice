@@ -361,17 +361,14 @@ body {
 }
 
 .product-card {
-  min-width: 220px;
-  max-width: 260px;
-  flex-shrink: 0;
-  scroll-snap-align: start;
+  flex: 0 1 calc(20% - 30px); /* 5 in a row minus the gap */
+  max-width: 260px;           /* optional safeguard */
   background-color: #fafafa;
   border-radius: 8px;
   box-shadow: 0 6px 12px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
   overflow: hidden;
 }
-
 
 .product-card:hover {
   transform: translateY(-8px) scale(1.03);
