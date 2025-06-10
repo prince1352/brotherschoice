@@ -1094,6 +1094,10 @@ body {
   margin-bottom: 20px;
 }
 
+.supplier-box picture img:hover {
+  transform: scale(1.15);
+}
+
 .supplier-box h3 {
   font-size: 1.3rem;
   font-weight: 600;
