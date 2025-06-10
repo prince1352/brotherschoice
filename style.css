@@ -1089,7 +1089,7 @@ body {
 ------------------------------------------------*/
 
 .wholesale-services-section {
-  padding: 20px 10%;
+  padding: 60px 10%;
 }
 
 .wholesale-services-content {
@@ -1104,6 +1104,7 @@ body {
   flex: 1;
   min-width: 320px;
   max-width: 600px;
+  margin-bottom: 0px
 }
 
 .wholesale-title {
