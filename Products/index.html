@@ -38,7 +38,6 @@
   <span></span>
 </button>
 
-  <!-- Mobile Dropdown Menu -->
 <!-- Mobile Side Menu -->
 <div class="mobile-menu" id="mobileMenu">
   <a href="/brotherschoice/">Home</a>
@@ -53,6 +52,16 @@
       <a href="/brotherschoice/Contact/" class="quote-button">Get a Free Quote</a>
     </div>
   </header>
+
+
+ <!-- Product Title -->
+<section class="pruduct-section">
+  <div class="product-header">
+    <h1 class="product-title">Brothers Choice Products</h1>
+  </div>
+</section>
+
+ <!-- Product Section -->
 
 <section class="product-page-section">
   <div class="product-layout">
@@ -112,20 +121,23 @@
   const productsURL = "https://script.google.com/macros/s/AKfycbz6nbkZih_ZDy3WS1GjdFdXMfuKaJf1u_umX7UONYEavNdDqtqOqrflesQbRuOfO2FW/exec";
   let allProducts = [];
 
+  // Fetch and initialize
   fetch(productsURL)
     .then(res => res.json())
     .then(data => {
-      allProducts = data;
-      renderCategories(data);
-      renderProducts(data);
+      allProducts = [...data].sort((a, b) => a["Product Name"].localeCompare(b["Product Name"]));
+      renderCategories(allProducts);
+      renderProducts(allProducts);
       document.getElementById('productLoader').style.display = 'none';
     });
 
+  // Render sorted categories
   function renderCategories(data) {
     const categorySet = new Set(data.map(item => item["Product Category"]).filter(Boolean));
+    const sortedCategories = [...categorySet].sort((a, b) => a.localeCompare(b));
     const container = document.getElementById("categoryFilters");
 
-    categorySet.forEach(cat => {
+    sortedCategories.forEach(cat => {
       const id = `cat-${cat.replace(/\s+/g, '-')}`;
       const label = document.createElement("label");
       label.className = "checkbox-item";
@@ -137,6 +149,7 @@
     });
   }
 
+  // Render product cards
   function renderProducts(products) {
     const grid = document.getElementById("productGrid");
     grid.innerHTML = "";
@@ -154,6 +167,7 @@
     });
   }
 
+  // Filter logic
   function filterProducts() {
     const searchValue = document.getElementById("productSearch").value.toLowerCase();
     const checkedCategories = Array.from(document.querySelectorAll('#categoryFilters input:checked'))
@@ -165,11 +179,15 @@
       return matchesSearch && matchesCategory;
     });
 
-    renderProducts(filtered);
+    // Sort filtered results alphabetically
+    const sortedFiltered = filtered.sort((a, b) => a["Product Name"].localeCompare(b["Product Name"]));
+    renderProducts(sortedFiltered);
   }
 
+  // Bind input listener
   document.getElementById("productSearch").addEventListener("input", filterProducts);
 </script>
+
 
 
 
