@@ -358,7 +358,8 @@
     }).then(response => {
       if (response.ok) {
         form.reset();
-        thankYouMessage.style.display = "block";
+        form.style.display = "none"; // Hides the form
+        thankYouMessage.style.display = "block"; // Shows thank-you message
       } else {
         alert("There was an error submitting the form. Please try again.");
       }
