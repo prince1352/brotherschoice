@@ -1199,6 +1199,7 @@ body {
 .contact-form-container {
   flex: 1;
   min-width: 300px;
+  margin-bottom: 50px;
 }
 
 .contact-form input,
@@ -1246,21 +1247,6 @@ body {
 .contact-social h3 {
   color: var(--red);
   margin-bottom: 10px;
-}
-
-.products-link-button {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 20px;
-  background-color: var(--red);
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  transition: background 0.3s ease;
-}
-
-.products-link-button:hover {
-  background-color: #a8122c;
 }
 
 /* ----------------------------------------------
