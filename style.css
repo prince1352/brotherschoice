@@ -1405,14 +1405,25 @@ body {
 
 /* LEFT SIDEBAR */
 .filter-sidebar {
-  width: 280px;
-  flex-shrink: 0;
+  height: 600px; /* approx. 2x product-card height */
+  overflow-y: auto;
   position: sticky;
-  top: 100px;
+  top: 0; /* changed from 100px */
   background: #fff;
   padding: 24px;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.filter-sidebar::-webkit-scrollbar {
+  width: 8px;
+}
+.filter-sidebar::-webkit-scrollbar-thumb {
+  background: var(--red);
+  border-radius: 4px;
+}
+.filter-sidebar::-webkit-scrollbar-track {
+  background: #f0f0f0;
 }
 
 .filter-sidebar input[type="text"] {
