@@ -1085,6 +1085,62 @@ body {
 
 
 /* ----------------------------------------------
+   CUSTOMERS PAGE Additional Services Section
+------------------------------------------------*/
+
+.wholesale-services-section {
+  background-color: #ffffff;
+  padding: 100px 10%;
+}
+
+.wholesale-services-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.wholesale-text {
+  flex: 1;
+  min-width: 320px;
+  max-width: 600px;
+}
+
+.wholesale-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--red);
+  margin-bottom: 30px;
+}
+
+.wholesale-text p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #444;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.wholesale-image {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  align-self: stretch;
+}
+
+.wholesale-image picture,
+.wholesale-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+
+
+/* ----------------------------------------------
                  Mobile Transitions
 ------------------------------------------------*/
 
