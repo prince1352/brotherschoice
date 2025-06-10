@@ -54,36 +54,29 @@
     </div>
   </header>
 
-<!-- Products Section -->
-<section class="products-section">
-  <div class="products-container">
-    <!-- Sidebar Filters -->
+<section class="product-page-section">
+  <div class="product-layout">
+    
+    <!-- Left Filter Menu -->
     <aside class="filter-sidebar">
-      <h2 class="filter-title">Search & Filter</h2>
-      
-      <div class="filter-group">
-        <label for="searchInput">Search Products</label>
-        <input type="text" id="searchInput" placeholder="Type product name..." />
-      </div>
-
-      <div class="filter-group">
-        <label>Categories</label>
-        <div id="categoryFilters" class="category-checkboxes">
-          <!-- JS will dynamically populate checkboxes -->
+      <div class="filter-box">
+        <input type="text" id="productSearch" placeholder="Search Products..." />
+        
+        <h3>Categories</h3>
+        <div id="categoryFilters" class="checkbox-list">
+          <!-- Categories will be injected here -->
         </div>
       </div>
     </aside>
 
-    <!-- Product Display -->
-    <div class="products-content">
-      <div id="productsLoader" class="swiper-loader">
-        <div class="swiper-spinner"></div>
+    <!-- Right Products Display -->
+    <div class="product-display-area">
+      <div id="productLoader" class="swiper-loader">
+        <div class="spinner"></div>
       </div>
-
-      <div id="productsGrid" class="products-grid" style="display: none;">
-        <!-- JS will populate product cards here -->
-      </div>
+      <div id="productGrid" class="product-grid"></div>
     </div>
+
   </div>
 </section>
 
@@ -116,89 +109,68 @@
   <!--  Script Products Section -->
 
 <script>
-const productsGrid = document.getElementById("productsGrid");
-const productsLoader = document.getElementById("productsLoader");
-const searchInput = document.getElementById("searchInput");
-const categoryFilters = document.getElementById("categoryFilters");
+  const productsURL = "https://script.google.com/macros/s/AKfycbz6nbkZih_ZDy3WS1GjdFdXMfuKaJf1u_umX7UONYEavNdDqtqOqrflesQbRuOfO2FW/exec";
+  let allProducts = [];
 
-let allProducts = [];
-let selectedCategories = new Set();
-
-// Fetch products from your Apps Script
-fetch("https://script.google.com/macros/s/AKfycbz6nbkZih_ZDy3WS1GjdFdXMfuKaJf1u_umX7UONYEavNdDqtqOqrflesQbRuOfO2FW/exec")
-  .then(res => res.json())
-  .then(data => {
-    allProducts = data;
-    displayProducts(allProducts);
-    populateCategories(allProducts);
-    productsLoader.style.display = "none";
-    productsGrid.style.display = "grid";
-  })
-  .catch(err => {
-    console.error("Failed to load products:", err);
-    productsLoader.innerHTML = "<p>Failed to load products.</p>";
-  });
-
-// Filter products by name and selected categories
-function filterProducts() {
-  const searchTerm = searchInput.value.toLowerCase();
-
-  const filtered = allProducts.filter(product => {
-    const matchesSearch = product["Product Name"].toLowerCase().includes(searchTerm);
-    const matchesCategory = selectedCategories.size === 0 || selectedCategories.has(product["Product Category"]);
-    return matchesSearch && matchesCategory;
-  });
-
-  displayProducts(filtered);
-}
-
-// Dynamically render product cards
-function displayProducts(products) {
-  productsGrid.innerHTML = "";
-
-  products.forEach(product => {
-    const card = document.createElement("div");
-    card.className = "product-card";
-    card.innerHTML = `
-      <img src="${product["Image URL"]}" alt="${product["Alt Text"] || product["Product Name"]}" loading="lazy" />
-      <div class="product-info">
-        <h3>${product["Product Name"]}</h3>
-      </div>
-    `;
-    productsGrid.appendChild(card);
-  });
-}
-
-// Dynamically render category checkboxes
-function populateCategories(products) {
-  const categories = Array.from(new Set(products.map(p => p["Product Category"]))).sort();
-
-  categories.forEach(category => {
-    const label = document.createElement("label");
-    label.className = "checkbox-label";
-    label.innerHTML = `
-      <input type="checkbox" value="${category}" />
-      <span>${category}</span>
-    `;
-    categoryFilters.appendChild(label);
-  });
-
-  // Add event listener to all checkboxes
-  categoryFilters.querySelectorAll("input[type='checkbox']").forEach(checkbox => {
-    checkbox.addEventListener("change", () => {
-      if (checkbox.checked) {
-        selectedCategories.add(checkbox.value);
-      } else {
-        selectedCategories.delete(checkbox.value);
-      }
-      filterProducts();
+  fetch(productsURL)
+    .then(res => res.json())
+    .then(data => {
+      allProducts = data;
+      renderCategories(data);
+      renderProducts(data);
+      document.getElementById('productLoader').style.display = 'none';
     });
-  });
-}
 
-// Search input filter
-searchInput.addEventListener("input", filterProducts);
+  function renderCategories(data) {
+    const categorySet = new Set(data.map(item => item["Product Category"]).filter(Boolean));
+    const container = document.getElementById("categoryFilters");
+
+    categorySet.forEach(cat => {
+      const id = `cat-${cat.replace(/\s+/g, '-')}`;
+      const label = document.createElement("label");
+      label.className = "checkbox-item";
+      label.innerHTML = `
+        <input type="checkbox" value="${cat}" onchange="filterProducts()" id="${id}" />
+        <span>${cat}</span>
+      `;
+      container.appendChild(label);
+    });
+  }
+
+  function renderProducts(products) {
+    const grid = document.getElementById("productGrid");
+    grid.innerHTML = "";
+
+    products.forEach(product => {
+      const card = document.createElement("div");
+      card.className = "product-card";
+      card.innerHTML = `
+        <img src="${product["Image URL"]}" alt="${product["Alt Text"]}" loading="lazy">
+        <div class="product-info">
+          <h3>${product["Product Name"]}</h3>
+        </div>
+      `;
+      grid.appendChild(card);
+    });
+  }
+
+  function filterProducts() {
+    const searchValue = document.getElementById("productSearch").value.toLowerCase();
+    const checkedCategories = Array.from(document.querySelectorAll('#categoryFilters input:checked'))
+      .map(cb => cb.value);
+
+    const filtered = allProducts.filter(p => {
+      const matchesSearch = p["Product Name"].toLowerCase().includes(searchValue);
+      const matchesCategory = checkedCategories.length === 0 || checkedCategories.includes(p["Product Category"]);
+      return matchesSearch && matchesCategory;
+    });
+
+    renderProducts(filtered);
+  }
+
+  document.getElementById("productSearch").addEventListener("input", filterProducts);
 </script>
+
 
 
 
