@@ -1489,7 +1489,7 @@ body {
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
   gap: 30px 40px;
 }
