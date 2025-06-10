@@ -1207,7 +1207,7 @@ body {
 .contact-us-form textarea {
   width: 100%;
   padding: 12px;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
   border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 1rem;
@@ -1261,11 +1261,6 @@ body {
   text-decoration: none;
 }
 
-.contact-us-details p,
-.contact-us-social p {
-    color: var(--red);
-}
-
 .contact-us-social .social-link {
   display: flex;
   align-items: center;
@@ -1302,7 +1297,7 @@ body {
   color: #f8f8f5;
   font-size: 1rem;
   padding: 12px 24px;
-  border: 2px solid transparent;
+  border: 2px solid var(--red);
   border-radius: 6px;
   text-decoration: none;
   transition: all 0.3s ease;
