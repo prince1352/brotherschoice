@@ -1092,10 +1092,11 @@ body {
   object-fit: cover;
   border-radius: 10px;
   margin-bottom: 20px;
+  transition: transform 0.3s ease;
 }
 
 .supplier-box picture img:hover {
-  transform: scale(1.15);
+  transform: scale(1.1);
 }
 
 .supplier-box h3 {
