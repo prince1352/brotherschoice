@@ -834,7 +834,7 @@ body {
   min-width: 300px;
   display: flex;
   flex-direction: column;
-  gap: 26px;
+  gap: 29px;
 }
 
 .form-row {
