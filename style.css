@@ -1207,7 +1207,7 @@ body {
 .contact-us-form textarea {
   width: 100%;
   padding: 12px;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 1rem;
@@ -1272,6 +1272,10 @@ body {
 .contact-us-section a {
   color: var(--red);
   text-decoration: none;
+}
+
+.contact-us-allindia a {
+  color: var(--red);
 }
 
 .contact-us-details p,
