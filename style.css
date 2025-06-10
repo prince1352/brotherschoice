@@ -1246,6 +1246,9 @@ body {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #333;
 }
 
 .contact-us-details h3,
@@ -1259,10 +1262,9 @@ body {
 }
 
 .contact-us-details p,
-.contact-us-social p,
-.store-promo {
+.contact-us-social p {
   margin-bottom: 0px;
-  margin-top: 24px;
+  margin-top: 14px;
   text-decoration: none;
 }
 
@@ -1270,13 +1272,12 @@ body {
   display: flex;
   align-items: center;
   gap: 10px; /* space between icon and text */
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 14px;
   text-decoration: none;
 }
 
 .contact-us-social i {
-  color: #333; /* make icons red */
+  color: #333; /* make icons black */
   font-size: 1.2rem;
 }
 
