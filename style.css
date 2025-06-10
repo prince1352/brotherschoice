@@ -1166,23 +1166,23 @@ body {
 /* ----------------------------------------------
                  Contact Page  
 ------------------------------------------------*/
-.contact-section {
+.contact-us-section {
   padding: 80px 10%;
   background-color: #f8f8f5;
 }
 
-.contact-header {
+.contact-us-header {
   text-align: center;
   margin-bottom: 50px;
 }
 
-.contact-title {
+.contact-us-title {
   font-size: 3rem;
   font-weight: 600;
   color: var(--red);
 }
 
-.contact-subheading {
+.contact-us-subheading {
   max-width: 700px;
   margin: 20px auto 10px;
   font-size: 1.1rem;
@@ -1191,20 +1191,20 @@ body {
   color: #333;
 }
 
-.contact-content {
+.contact-us-content {
   display: flex;
   flex-wrap: wrap;
   gap: 60px;
   justify-content: space-between;
 }
 
-.contact-form-container {
+.contact-us-form-container {
   flex: 1;
   min-width: 300px;
 }
 
-.contact-form input,
-.contact-form textarea {
+.contact-us-form input,
+.contact-us-form textarea {
   width: 100%;
   padding: 12px;
   margin-bottom: 6px;
@@ -1213,7 +1213,7 @@ body {
   font-size: 1rem;
 }
 
-.contact-submit-button {
+.contact-us-submit-button {
   padding: 12px 24px;
   background-color: var(--red);
   color: #fff;
@@ -1224,11 +1224,11 @@ body {
   transition: background 0.3s ease;
 }
 
-.contact-submit-button:hover {
+.contact-us-submit-button:hover {
   background-color: #a8122c;
 }
 
-.contact-info {
+.contact-us-info {
   flex: 1;
   min-width: 280px;
   display: flex;
@@ -1236,28 +1236,28 @@ body {
   gap: 30px;
 }
 
-.contact-details,
-.contact-social,
-.contact-allindia {
+.contact-us-details,
+.contact-us-social,
+.contact-us-allindia {
   background: white;
   padding: 15px;
   border-radius: 10px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
 }
 
-.contact-details h3,
-.contact-social h3 {
+.contact-us-details h3,
+.contact-us-social h3 {
   color: var(--red);
 }
 
-.contact-details p,
-.contact-social p,
+.contact-us-details p,
+.contact-us-social p,
 .store-promo {
   margin-bottom: 0px;
   margin-top: 10px;
 }
 
-.contact-social .social-link {
+.contact-us-social .social-link {
   display: flex;
   align-items: center;
   gap: 10px; /* space between icon and text */
@@ -1265,7 +1265,7 @@ body {
   margin-bottom: 5px;
 }
 
-.contact-social i {
+.contact-us-social i {
   color: #333; /* make icons red */
   font-size: 1.2rem;
 }
@@ -1274,7 +1274,7 @@ body {
   text-align: center;
 }
 
-.contact-map {
+.contact-us-map {
   margin-top: 0px;
   border-radius: 12px;
   overflow: hidden;
@@ -1282,12 +1282,12 @@ body {
   box-sizing: border-box;
 }
 
-.contact-map-button-wrapper {
+.contact-us-map-button-wrapper {
   text-align: center;
   margin: 24px 0 40px;
 }
 
-.contact-map-button {
+.contact-us-map-button {
   background-color: var(--red);
   color: #f8f8f5;
   font-size: 1rem;
@@ -1299,7 +1299,7 @@ body {
   display: inline-block;
 }
 
-.contact-map-button:hover {
+.contact-us-map-button:hover {
   background-color: transparent;
   color: var(--red);
   border: 2px solid var(--red);
