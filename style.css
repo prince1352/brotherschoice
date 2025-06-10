@@ -1032,9 +1032,11 @@ body {
 
 .supplier-box-row {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, 1fr); /* Exactly 2 columns */
   gap: 40px;
   justify-content: center;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .supplier-box {
