@@ -834,7 +834,7 @@ body {
   min-width: 300px;
   display: flex;
   flex-direction: column;
-  gap: 29px;
+  gap: 31px;
 }
 
 .form-row {
@@ -1260,7 +1260,7 @@ body {
 .contact-us-form textarea {
   width: 100%;
   padding: 12px;
-  margin-bottom: 32px;
+  margin-bottom: 34px;
   border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 1rem;
