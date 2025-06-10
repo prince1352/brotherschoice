@@ -53,3 +53,29 @@
       <a href="/brotherschoice/Contact/" class="quote-button">Get a Free Quote</a>
     </div>
   </header>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+  <div class="footer-content">
+    <p>&copy; 2025 Brothers Choice Foods. All rights reserved.</p>
+  </div>
+</footer>
+
+<!--  Script Mobile Menu -->
+  
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const mobileLinks = mobileMenu.querySelectorAll('a');
+
+  hamburger.addEventListener('click', () => {
+    mobileMenu.classList.toggle('open');
+  });
+
+  mobileLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+    });
+  });
+</script>
+
