@@ -1427,7 +1427,12 @@ body {
   }
 
   .product-grid {
-    gap: 10px;
+    gap: 30px 10px;
+  }
+
+  .product-card {
+    margin-right: 20px;
+    margin-left: 0px;
   }
 }}
 
@@ -1494,6 +1499,7 @@ body {
   flex: 1;
   min-width: 0;
   justify-content: center;
+  width: 100%
 }
 
 .product-grid {
