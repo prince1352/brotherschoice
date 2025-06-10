@@ -1421,6 +1421,12 @@ body {
   align-items: flex-start;
 }
 
+@media not all and (min-resolution:.001dpcm) { @media {
+  .product-layout {
+    gap: 30px;
+  }
+}}
+
 /* LEFT SIDEBAR */
 .filter-sidebar {
   height: 400px; /* approx. 2x product-card height */
