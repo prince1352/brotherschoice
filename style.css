@@ -1392,6 +1392,22 @@ body {
                  Products Page 
 ------------------------------------------------*/
 
+.product-section {
+  padding: 80px 10%;
+  background-color: #f8f8f5;
+}
+
+.product-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.product-title {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--red);
+}
+
 .product-page-section {
   background: #f8f8f5;
   padding: 60px 5%;
