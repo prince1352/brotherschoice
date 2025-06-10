@@ -1199,7 +1199,6 @@ body {
 .contact-form-container {
   flex: 1;
   min-width: 300px;
-  margin-bottom: 50px;
 }
 
 .contact-form input,
@@ -1239,7 +1238,7 @@ body {
 .contact-social,
 .contact-allindia {
   background: white;
-  padding: 20px;
+  padding: 15px;
   border-radius: 10px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
 }
@@ -1247,7 +1246,13 @@ body {
 .contact-details h3,
 .contact-social h3 {
   color: var(--red);
-  margin-bottom: 10px;
+}
+
+.contact-details p,
+.contact-social p,
+.store-promo {
+  margin-bottom: 0px;
+  margin-top: 10px;
 }
 
 /* ----------------------------------------------
