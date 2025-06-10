@@ -1257,6 +1257,18 @@ body {
   margin-top: 10px;
 }
 
+.contact-social .social-link {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* space between icon and text */
+  margin-top: 10px;
+}
+
+.contact-social i {
+  color: var(--red); /* make icons red */
+  font-size: 1.2rem;
+}
+
 .store-promo {
   text-align: center;
 }
