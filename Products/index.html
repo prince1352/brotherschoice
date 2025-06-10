@@ -54,31 +54,39 @@
     </div>
   </header>
 
-  <!-- PRODUCTS SECTION -->
-<section class="products-page">
+<!-- Products Section -->
+<section class="products-section">
   <div class="products-container">
+    <!-- Sidebar Filters -->
+    <aside class="filter-sidebar">
+      <h2 class="filter-title">Search & Filter</h2>
+      
+      <div class="filter-group">
+        <label for="searchInput">Search Products</label>
+        <input type="text" id="searchInput" placeholder="Type product name..." />
+      </div>
 
-    <!-- LEFT: FILTER MENU -->
-    <aside class="product-filters">
-      <input type="text" id="productSearch" placeholder="Search products..." />
-      <select id="categoryFilter">
-        <option value="">All Categories</option>
-        <!-- Categories will be populated dynamically -->
-      </select>
+      <div class="filter-group">
+        <label>Categories</label>
+        <div id="categoryFilters" class="category-checkboxes">
+          <!-- JS will dynamically populate checkboxes -->
+        </div>
+      </div>
     </aside>
 
-    <!-- RIGHT: PRODUCT GRID -->
-    <div class="product-grid-wrapper">
-      <div id="productGrid" class="product-grid"></div>
+    <!-- Product Display -->
+    <div class="products-content">
+      <div id="productsLoader" class="swiper-loader">
+        <div class="swiper-spinner"></div>
+      </div>
 
-      <!-- Swiper-style Loading Spinner -->
-      <div class="products-loader" id="productsLoader">
-        <div class="spinner"></div>
+      <div id="productsGrid" class="products-grid" style="display: none;">
+        <!-- JS will populate product cards here -->
       </div>
     </div>
-
   </div>
 </section>
+
 
   <!-- Footer -->
   <footer class="site-footer">
@@ -107,79 +115,90 @@
 
   <!--  Script Products Section -->
 
-  <script>
-  const sheetURL = "https://script.google.com/macros/s/AKfycbz6nbkZih_ZDy3WS1GjdFdXMfuKaJf1u_umX7UONYEavNdDqtqOqrflesQbRuOfO2FW/exec";
+<script>
+const productsGrid = document.getElementById("productsGrid");
+const productsLoader = document.getElementById("productsLoader");
+const searchInput = document.getElementById("searchInput");
+const categoryFilters = document.getElementById("categoryFilters");
 
-  const loader = document.getElementById("productsLoader");
-  const productGrid = document.getElementById("productGrid");
-  const searchInput = document.getElementById("productSearch");
-  const categorySelect = document.getElementById("categoryFilter");
+let allProducts = [];
+let selectedCategories = new Set();
 
-  let allProducts = [];
+// Fetch products from your Apps Script
+fetch("https://script.google.com/macros/s/AKfycbz6nbkZih_ZDy3WS1GjdFdXMfuKaJf1u_umX7UONYEavNdDqtqOqrflesQbRuOfO2FW/exec")
+  .then(res => res.json())
+  .then(data => {
+    allProducts = data;
+    displayProducts(allProducts);
+    populateCategories(allProducts);
+    productsLoader.style.display = "none";
+    productsGrid.style.display = "grid";
+  })
+  .catch(err => {
+    console.error("Failed to load products:", err);
+    productsLoader.innerHTML = "<p>Failed to load products.</p>";
+  });
 
-  // Fetch data from Google Sheets
-  fetch(sheetURL)
-    .then(res => res.json())
-    .then(data => {
-      allProducts = data;
-      populateCategories(data);
-      renderProducts(data);
-    })
-    .catch(err => {
-      console.error("Error loading products:", err);
+// Filter products by name and selected categories
+function filterProducts() {
+  const searchTerm = searchInput.value.toLowerCase();
+
+  const filtered = allProducts.filter(product => {
+    const matchesSearch = product["Product Name"].toLowerCase().includes(searchTerm);
+    const matchesCategory = selectedCategories.size === 0 || selectedCategories.has(product["Product Category"]);
+    return matchesSearch && matchesCategory;
+  });
+
+  displayProducts(filtered);
+}
+
+// Dynamically render product cards
+function displayProducts(products) {
+  productsGrid.innerHTML = "";
+
+  products.forEach(product => {
+    const card = document.createElement("div");
+    card.className = "product-card";
+    card.innerHTML = `
+      <img src="${product["Image URL"]}" alt="${product["Alt Text"] || product["Product Name"]}" loading="lazy" />
+      <div class="product-info">
+        <h3>${product["Product Name"]}</h3>
+      </div>
+    `;
+    productsGrid.appendChild(card);
+  });
+}
+
+// Dynamically render category checkboxes
+function populateCategories(products) {
+  const categories = Array.from(new Set(products.map(p => p["Product Category"]))).sort();
+
+  categories.forEach(category => {
+    const label = document.createElement("label");
+    label.className = "checkbox-label";
+    label.innerHTML = `
+      <input type="checkbox" value="${category}" />
+      <span>${category}</span>
+    `;
+    categoryFilters.appendChild(label);
+  });
+
+  // Add event listener to all checkboxes
+  categoryFilters.querySelectorAll("input[type='checkbox']").forEach(checkbox => {
+    checkbox.addEventListener("change", () => {
+      if (checkbox.checked) {
+        selectedCategories.add(checkbox.value);
+      } else {
+        selectedCategories.delete(checkbox.value);
+      }
+      filterProducts();
     });
+  });
+}
 
-  // Populate unique categories
-  function populateCategories(data) {
-    const categories = [...new Set(data.map(p => p["Product Category"]).filter(Boolean))];
-    categories.forEach(cat => {
-      const option = document.createElement("option");
-      option.value = cat;
-      option.textContent = cat;
-      categorySelect.appendChild(option);
-    });
-  }
-
-  // Render products to grid
-  function renderProducts(products) {
-    loader.style.display = "none";
-    productGrid.innerHTML = "";
-
-    if (products.length === 0) {
-      productGrid.innerHTML = "<p style='text-align:center; width:100%'>No products found.</p>";
-      return;
-    }
-
-    products.forEach(product => {
-      const card = document.createElement("div");
-      card.className = "product-card";
-      card.innerHTML = `
-        <img src="${product["Image URL"]}" alt="${product["Alt Text"]}" loading="lazy" />
-        <div class="product-info">
-          <h3>${product["Product Name"]}</h3>
-        </div>
-      `;
-      productGrid.appendChild(card);
-    });
-  }
-
-  // Filter logic
-  function filterProducts() {
-    const searchValue = searchInput.value.toLowerCase();
-    const selectedCategory = categorySelect.value;
-
-    const filtered = allProducts.filter(p => {
-      const matchesSearch = p["Product Name"].toLowerCase().includes(searchValue);
-      const matchesCategory = !selectedCategory || p["Product Category"] === selectedCategory;
-      return matchesSearch && matchesCategory;
-    });
-
-    renderProducts(filtered);
-  }
-
-  // Add event listeners
-  searchInput.addEventListener("input", filterProducts);
-  categorySelect.addEventListener("change", filterProducts);
+// Search input filter
+searchInput.addEventListener("input", filterProducts);
 </script>
+
 
 
