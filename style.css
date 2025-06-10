@@ -1423,7 +1423,11 @@ body {
 
 @media not all and (min-resolution:.001dpcm) { @media {
   .product-layout {
-    gap: 30px;
+    gap: 10px;
+  }
+
+  .product-grid {
+    gap: 10px;
   }
 }}
 
