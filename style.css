@@ -1517,6 +1517,7 @@ body {
 .product-info h3 {
   font-size: 1.1rem;
   color: #333;
+  align-text: center;
 }
 
 /* Loader */
