@@ -1096,7 +1096,7 @@ body {
 }
 
 .supplier-box picture img:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .supplier-box h3 {
