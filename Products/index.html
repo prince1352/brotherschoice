@@ -54,6 +54,32 @@
     </div>
   </header>
 
+  <!-- PRODUCTS SECTION -->
+<section class="products-page">
+  <div class="products-container">
+
+    <!-- LEFT: FILTER MENU -->
+    <aside class="product-filters">
+      <input type="text" id="productSearch" placeholder="Search products..." />
+      <select id="categoryFilter">
+        <option value="">All Categories</option>
+        <!-- Categories will be populated dynamically -->
+      </select>
+    </aside>
+
+    <!-- RIGHT: PRODUCT GRID -->
+    <div class="product-grid-wrapper">
+      <div id="productGrid" class="product-grid"></div>
+
+      <!-- Swiper-style Loading Spinner -->
+      <div class="products-loader" id="productsLoader">
+        <div class="spinner"></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
   <!-- Footer -->
   <footer class="site-footer">
   <div class="footer-content">
@@ -78,4 +104,82 @@
     });
   });
 </script>
+
+  <!--  Script Products Section -->
+
+  <script>
+  const sheetURL = "https://script.google.com/macros/s/AKfycbz6nbkZih_ZDy3WS1GjdFdXMfuKaJf1u_umX7UONYEavNdDqtqOqrflesQbRuOfO2FW/exec";
+
+  const loader = document.getElementById("productsLoader");
+  const productGrid = document.getElementById("productGrid");
+  const searchInput = document.getElementById("productSearch");
+  const categorySelect = document.getElementById("categoryFilter");
+
+  let allProducts = [];
+
+  // Fetch data from Google Sheets
+  fetch(sheetURL)
+    .then(res => res.json())
+    .then(data => {
+      allProducts = data;
+      populateCategories(data);
+      renderProducts(data);
+    })
+    .catch(err => {
+      console.error("Error loading products:", err);
+    });
+
+  // Populate unique categories
+  function populateCategories(data) {
+    const categories = [...new Set(data.map(p => p["Product Category"]).filter(Boolean))];
+    categories.forEach(cat => {
+      const option = document.createElement("option");
+      option.value = cat;
+      option.textContent = cat;
+      categorySelect.appendChild(option);
+    });
+  }
+
+  // Render products to grid
+  function renderProducts(products) {
+    loader.style.display = "none";
+    productGrid.innerHTML = "";
+
+    if (products.length === 0) {
+      productGrid.innerHTML = "<p style='text-align:center; width:100%'>No products found.</p>";
+      return;
+    }
+
+    products.forEach(product => {
+      const card = document.createElement("div");
+      card.className = "product-card";
+      card.innerHTML = `
+        <img src="${product["Image URL"]}" alt="${product["Alt Text"]}" loading="lazy" />
+        <div class="product-info">
+          <h3>${product["Product Name"]}</h3>
+        </div>
+      `;
+      productGrid.appendChild(card);
+    });
+  }
+
+  // Filter logic
+  function filterProducts() {
+    const searchValue = searchInput.value.toLowerCase();
+    const selectedCategory = categorySelect.value;
+
+    const filtered = allProducts.filter(p => {
+      const matchesSearch = p["Product Name"].toLowerCase().includes(searchValue);
+      const matchesCategory = !selectedCategory || p["Product Category"] === selectedCategory;
+      return matchesSearch && matchesCategory;
+    });
+
+    renderProducts(filtered);
+  }
+
+  // Add event listeners
+  searchInput.addEventListener("input", filterProducts);
+  categorySelect.addEventListener("change", filterProducts);
+</script>
+
 
