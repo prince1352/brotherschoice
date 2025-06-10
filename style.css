@@ -1274,8 +1274,8 @@ body {
   text-decoration: none;
 }
 
-.contact-us-allindia a {
-  color: var(--red)!important;
+.allindia-link strong {
+  color: var(--red) !important;
   font-weight: bold;
   text-decoration: none;
 }
