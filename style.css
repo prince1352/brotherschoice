@@ -1262,6 +1262,7 @@ body {
   align-items: center;
   gap: 10px; /* space between icon and text */
   margin-top: 15px;
+  margin-bottom: 5px;
 }
 
 .contact-social i {
