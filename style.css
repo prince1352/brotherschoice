@@ -1393,8 +1393,9 @@ body {
 ------------------------------------------------*/
 
 .product-section {
-  padding: 100px 10% 80px;
+  padding: 120px 10% 0px;
   background-color: #f8f8f5;
+  margin-bottom: 0px;
 }
 
 .product-header {
