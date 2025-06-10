@@ -1416,7 +1416,9 @@ body {
 }
 
 .filter-sidebar::-webkit-scrollbar {
-  width: 8px;
+  width: 5px;
+  height: 200px;
+
 }
 .filter-sidebar::-webkit-scrollbar-thumb {
   background: var(--red);
@@ -1433,6 +1435,13 @@ body {
   border: 1px solid #ccc;
   border-radius: 8px;
   font-size: 1rem;
+}
+
+.filter-box h3 {
+  margin-bottom: 14px; /* Adjust for desired gap */
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--red);
 }
 
 .checkbox-list {
@@ -1456,12 +1465,14 @@ body {
 .product-display-area {
   flex: 1;
   min-width: 0;
+  justify-content: center;
 }
 
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 30px;
+  gap: 25px;
+  justify-content: center;
 }
 
 /* Product Card */
