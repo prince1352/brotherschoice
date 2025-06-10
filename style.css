@@ -1255,6 +1255,12 @@ body {
   margin-top: 10px;
 }
 
+.contact-map {
+  margin-top: 60px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
 /* ----------------------------------------------
                  Mobile Transitions
 ------------------------------------------------*/
