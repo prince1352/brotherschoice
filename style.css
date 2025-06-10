@@ -1395,7 +1395,7 @@ body {
 .product-section {
   padding: 120px 10% 0px;
   background-color: #f8f8f5;
-  margin-bottom: 0px;
+  margin-bottom: 40px;
 }
 
 .product-header {
@@ -1411,12 +1411,12 @@ body {
 
 .product-page-section {
   background: #f8f8f5;
-  padding: 60px 5%;
+  padding: 20px 5% 60px;
 }
 
 .product-layout {
   display: flex;
-  gap: 80px;
+  gap: 100px;
   align-items: flex-start;
 }
 
@@ -1488,7 +1488,7 @@ body {
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 30px 50px;
+  gap: 30px 40px;
   justify-content: center;
 }
 
