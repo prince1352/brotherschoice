@@ -1277,7 +1277,6 @@ body {
 .contact-us-allindia a {
   color: var(--red)!important;
   font-weight: bold;
-  cursor: pointer;
   text-decoration: none;
 }
 
