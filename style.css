@@ -1266,7 +1266,7 @@ body {
 }
 
 .contact-social i {
-  color: var(--red); /* make icons red */
+  color: #333; /* make icons red */
   font-size: 1.2rem;
 }
 
