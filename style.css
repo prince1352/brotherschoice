@@ -796,7 +796,7 @@ body {
   text-decoration: none;
 }
 
-.footer-contact-form {
+.contact-form {
   flex: 2.2;
   min-width: 300px;
   display: flex;
@@ -815,8 +815,8 @@ body {
   min-width: 140px;
 }
 
-.footer-contact-form input,
-.footer-contact-form textarea {
+.contact-form input,
+.contact-form textarea {
   width: 100%;
   padding: 14px 18px;
   border: 1px solid #ccc;
@@ -827,15 +827,15 @@ body {
   background-color: #f9f9f9;
 }
 
-.footer-contact-form input:focus,
-.footer-contact-form textarea:focus {
+.contact-form input:focus,
+.contact-form textarea:focus {
   outline: none;
   border-color: var(--red);
   box-shadow: 0 0 0 2px rgba(208, 28, 65, 0.15);
   background-color: #f8f8f5;
 }
 
-.footer-contact-form textarea {
+.contact-form textarea {
   resize: vertical;
   min-height: 120px;
 }
