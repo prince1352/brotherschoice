@@ -1246,8 +1246,21 @@ body {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
-  font-size: 1.1rem;
+}
+
+.contact-us-details p,
+.contact-us-social p,
+.contact-us-allindia p {
+  font-size: 1rem;
   font-weight: 300;
+  color: #333;
+}
+
+.contact-us-details p strong,
+.contact-us-social p strong,
+.contact-us-allindia p strong {
+  font-size: 1rem;
+  font-weight: 400;
   color: #333;
 }
 
