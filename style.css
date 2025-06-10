@@ -1513,12 +1513,13 @@ body {
 
 .product-info {
   padding: 16px;
+  text-align: center;
 }
 
 .product-info h3 {
   font-size: 1.1rem;
   color: #333;
-  align-text: center;
+  text-align: center;
 }
 
 /* Loader */
