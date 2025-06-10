@@ -1084,6 +1084,30 @@ body {
   line-height: 1.7;
 }
 
+.supplier-button {
+  display: inline-block;
+  padding: 14px 32px;
+  background-color: var(--red);
+  color: #f8f8f5;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: none;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  margin-top: 50px;
+}
+
+.supplier-button:hover {
+  background-color: transparent;
+  border: 2px solid var(--red);
+  color: var(--red);
+}
+
+.supplier-button-wrapper {
+  text-align: center;
+  width: 100%;
+}
 
 /* ----------------------------------------------
    CUSTOMERS PAGE Additional Services Section
