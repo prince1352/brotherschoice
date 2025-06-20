@@ -463,46 +463,38 @@ body {
   transition: transform 0.3s ease;
 }
 
-/* Override default arrow visuals */
-.swiper-button-prev::after,
-.swiper-button-next::after {
-  display: none;
-}
-
-/* Button base styles */
 .swiper-button-prev,
 .swiper-button-next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 10;
   width: 40px;
   height: 40px;
   background: white;
   color: var(--red);
+  font-size: 24px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  border-radius: 50%;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  font-size: 20px;
-  transition: transform 0.3s ease;
+  z-index: 10;
 }
 
-/* Positioning */
+/* Positioning relative to swiper wrapper */
 .swiper-button-prev {
-  left: -150px;
+  left: 0;
 }
 
 .swiper-button-next {
-  right: -150px;
+  right: 0;
 }
 
-/* Hover effect */
-.swiper-button-prev:hover,
-.swiper-button-next:hover {
-  transform: translateY(-50%) scale(1.1);
+/* Remove default Swiper arrow visuals */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
 }
 
 
