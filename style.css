@@ -341,7 +341,7 @@ body {
 
 .featured-products-section {
   background-color: #f8f8f5;
-  padding: 60px 5% 80px;
+  padding: 60px 11% 80px;
   text-align: center;
 }
 
@@ -422,7 +422,7 @@ body {
 
 
 .featured-swiper-wrapper {
-  padding: 0 78vw;      
+  padding: 0 11vw;      
   overflow: hidden;
   box-sizing: border-box;
 }
