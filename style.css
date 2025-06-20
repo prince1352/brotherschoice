@@ -422,7 +422,7 @@ body {
 
 
 .featured-swiper-wrapper {
-  padding: 0 11vw;      
+  padding: 0 78vw;      
   overflow: hidden;
   box-sizing: border-box;
 }
@@ -435,9 +435,6 @@ body {
   box-sizing: border-box;
 }
 
-.swiper-wrapper {
-  box-sizing: border-box;
-}
 
 .swiper-slide {
   max-width: 78vw;          
