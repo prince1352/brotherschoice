@@ -415,11 +415,14 @@ body {
 
 .featured-swiper {
   width: 100%;
+  max-width: 1000px;  /* prevent stretching on large screens */
+  margin: 0 auto;     /* center the slider */
   padding: 40px 0;
 }
 
 .swiper-slide {
-  width: 260px;
+  width: 260px;       /* fixed size for one slide */
+  max-width: 60vw;    /* responsive fallback */
 }
 
 .product-card {
@@ -453,6 +456,8 @@ body {
 .featured-swiper:hover .swiper {
   pointer-events: none;
 }
+
+
 
 /* ----------------------------------------------
          We Specialize In Section
