@@ -422,11 +422,9 @@ body {
 
 
 .featured-swiper-wrapper {
-  padding: 0 11vw;          /* 5vw margins on each side = 90vw total swiper space */
+  padding: 0 11vw;      
   overflow: hidden;
   box-sizing: border-box;
-  background-color: #f8f8f5;
-  z-index: 9999;
 }
 
 
@@ -442,7 +440,7 @@ body {
 }
 
 .swiper-slide {
-  width: 100%;           /* 3 cards = 90vw, with 10vw margin */
+  width: 78%;          
 }
 
 
