@@ -453,10 +453,11 @@
   loopedSlides: 16,
   loop: true,
   slidesPerView: auto, // lets us control width via CSS
-  autoplay: {
-    delay: 3500,
-    disableOnInteraction: true,
-  },
+autoplay: {
+  delay: 3500,
+  disableOnInteraction: false, // 🔄 allows resume
+  pauseOnMouseEnter: true      // optional: pause on hover
+},
   coverflowEffect: {
     rotate: 30,
     stretch: 0,
