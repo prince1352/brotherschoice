@@ -421,8 +421,8 @@ body {
 }
 
 .swiper-slide {
-  width: 260px;       /* fixed size for one slide */
-  max-width: 40vw;    /* responsive fallback */
+  width: 200px;       /* fixed size for one slide */
+  max-width: 20vw;    /* responsive fallback */
 }
 
 /* 
@@ -436,7 +436,7 @@ body {
 */
 
 .product-card {
-  height: 320px;        /* increase height */
+  height: 500px;        /* increase height */
   background-color: #fafafa;
   border-radius: 10px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
