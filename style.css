@@ -483,12 +483,11 @@ body {
   z-index: 20;
 }
 
-/* Positioning relative to swiper wrapper */
-.swiper-button-prev {
-  left: -100px;
+.featured-products-section .swiper-button-prev {
+  left: -100px; 
 }
 
-.swiper-button-next {
+.featured-products-section .swiper-button-next {
   right: -100px;
 }
 
