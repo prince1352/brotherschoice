@@ -445,29 +445,30 @@
 
         // Initialize Swiper
        new Swiper('.swiper-container', {
-  effect: 'coverflow',
-  grabCursor: true,
-  centeredSlides: true,
-  spaceBetween: 30,
-  loop: true,
-  slidesPerView: 1, // lets us control width via CSS
-autoplay: {
-  delay: 3500,
-  disableOnInteraction: false, // 🔄 allows resume
-  pauseOnMouseEnter: true      // optional: pause on hover
-},
-  coverflowEffect: {
-    rotate: 30,
-    stretch: 0,
-    depth: 100,
-    modifier: 1,
-    slideShadows: true,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
+         effect: 'coverflow',
+         grabCursor: true,
+         centeredSlides: true,
+         spaceBetween: 30,
+         loop: true,
+         speed: 500,
+         slidesPerView: 1, // lets us control width via CSS
+         autoplay: {
+           delay: 2000,
+           disableOnInteraction: false, // 🔄 allows resume
+           pauseOnMouseEnter: true      // optional: pause on hover
+             },
+         coverflowEffect: {
+           rotate: 30,
+           stretch: 0,
+           depth: 100,
+           modifier: 1,
+           slideShadows: true,
+         },
+         navigation: {
+           nextEl: '.swiper-button-next',
+           prevEl: '.swiper-button-prev',
+         },
+       });
       })
       .catch(err => {
         console.error("Failed to load featured products:", err);
