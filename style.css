@@ -427,7 +427,7 @@ body {
 
 
 .featured-swiper {
-  width: 100%;
+  width: 30vw;
   margin: 0 auto;
   padding: 40px 0;
   box-sizing: border-box;
@@ -438,7 +438,7 @@ body {
 }
 
 .swiper-slide {
-  width: 30vw;             /* 3 cards = 90vw, with 10vw margin */
+  width: 100%;           /* 3 cards = 90vw, with 10vw margin */
 }
 
 
