@@ -419,10 +419,14 @@ body {
 }
 
 
+.featured-swiper-wrapper {
+  padding: 0 10vw;        /* creates 10vw space on both sides */
+  box-sizing: border-box;
+}
+
 .featured-swiper {
-  width: 80vw;          /* takes up 50% of the screen width */
-  margin: 0 auto;       /* center horizontally */
-  padding: 40px 0;
+  width: 100%;
+  max-width: 100%;
 }
 
 .swiper-slide {
