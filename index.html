@@ -448,11 +448,10 @@
        new Swiper('.swiper-container', {
   effect: 'coverflow',
   grabCursor: true,
-  centeredSlides: false,
+  centeredSlides: true,
   spaceBetween: 30,
-  loopedSlides: 16,
   loop: true,
-  slidesPerView: auto, // lets us control width via CSS
+  slidesPerView: 1, // lets us control width via CSS
 autoplay: {
   delay: 3500,
   disableOnInteraction: false, // 🔄 allows resume
