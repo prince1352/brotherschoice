@@ -466,7 +466,7 @@ body {
 .swiper-button-prev,
 .swiper-button-next {
   position: absolute;
-  top: 52%;
+  top: 50%;
   transform: translateY(-50%);
   z-index: 10;
   width: 40px;
