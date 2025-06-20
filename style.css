@@ -466,14 +466,14 @@ body {
 .featured-products-section .swiper-button-prev,
 .featured-products-section .swiper-button-next {
   position: absolute;
-  top: 50%;
+  top: 48%;
   width: 60px;
   height: 60px;
   background-color: white;
   color: var(--red);
   font-size: 46px;
   border-radius: 50%;
-  border: none;
+  border: 2px solid var(--red);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   display: flex;
   justify-content: center;
@@ -485,11 +485,15 @@ body {
 }
 
 .swiper-button-prev:hover {
-  transform: scale(1.1);
+  background-color: var(--red);
+  color: white;
+  border: 2px solid transparent;
 }
 
 .swiper-button-next:hover {
-  transform: scale(1.1);
+  background-color: var(--red);
+  color: white;
+  border: 2px solid transparent;
 }
 
 .swiper-button-prev::after,
