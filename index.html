@@ -124,8 +124,8 @@
  <!-- Featured Products Swiper -->
  <div class="featured-swiper-button-prev">‹</div>
   <div class="featured-swiper-wrapper">
-  <div class="swiper-container featured-swiper">
-    <div class="swiper-wrapper" id="featuredProducts"></div>
+  <div class="featured-swiper-container featured-swiper">
+    <div class="featured-swiper-wrapper" id="featuredProducts"></div>
   </div>
 </div>
   <div class="featured-swiper-button-next">›</div>
@@ -413,7 +413,7 @@
     const sheetURL = "https://script.google.com/macros/s/AKfycbzOf5ns3Q_MUhVY4YMjd5EbpVusWv6PWzAYHd3bTJxPIb0T-uQX92AEMkoMFRgCdmxM/exec";
     const loader = document.getElementById('featuredProductsLoader');
     const wrapper = document.getElementById('featuredProducts');
-    const swiperContainer = document.querySelector('.swiper-container');
+    const swiperContainer = document.querySelector('.featured-swiper-container');
 
     // Show loader initially
     loader.style.display = 'flex';
@@ -444,7 +444,7 @@
         swiperContainer.style.display = "block";
 
         // Initialize Swiper
-       new Swiper('.swiper-container', {
+       new Swiper('.featured-swiper-container', {
          effect: 'coverflow',
          grabCursor: true,
          centeredSlides: true,
