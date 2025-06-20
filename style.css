@@ -347,10 +347,10 @@ body {
 }
 
 .featured-products-title {
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: 2.2rem;
+  font-weight: 600;
   color: var(--red);
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .featured-product-card img:hover {
@@ -463,8 +463,8 @@ body {
   transition: transform 0.3s ease;
 }
 
-.featured-products-section .swiper-button-prev,
-.featured-products-section .swiper-button-next {
+.featured-products-section .featured-swiper-button-prev,
+.featured-products-section .featured-swiper-button-next {
   position: absolute;
   top: 48%;
   width: 60px;
@@ -484,20 +484,20 @@ body {
   transition: transform 0.3s ease;
 }
 
-.swiper-button-prev:hover {
+.featured-swiper-button-prev:hover {
   background-color: var(--red);
   color: white;
   border: 2px solid transparent;
 }
 
-.swiper-button-next:hover {
+.featured-swiper-button-next:hover {
   background-color: var(--red);
   color: white;
   border: 2px solid transparent;
 }
 
-.swiper-button-prev::after,
-.swiper-button-next::after {
+.featured-swiper-button-prev::after,
+.featured-swiper-button-next::after {
   display: none; /* Remove Swiper's default arrow icons */
 }
 
@@ -553,8 +553,8 @@ body {
 
 /* Section Title */
 .specialize-title {
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: 2.2rem;
+  font-weight: 600;
   color: #f8f8f5;
   margin-bottom: 50px;
 }
@@ -709,8 +709,8 @@ body {
 
 .why-title {
   color: var(--red);
-  font-size: 1.8rem;
-  font-weight: 500;
+  font-size: 2.2rem;
+  font-weight: 600;
   margin-bottom: 20px;
 }
 
@@ -755,7 +755,7 @@ body {
 }
 
 .reviews-title {
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   font-weight: 600;
   color: white;
   margin-bottom: 40px;
@@ -873,7 +873,8 @@ body {
 }
 
 .contact-info h2 {
-  font-size: 2rem;
+  font-size: 2.2rem;
+  font-weight: 600;
   color: var(--red);
   margin-bottom: 20px;
 }
