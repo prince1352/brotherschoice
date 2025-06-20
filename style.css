@@ -457,7 +457,7 @@ body {
 .featured-product-card {
   width: 100%;             /* full width of slide */
   aspect-ratio: 10 / 11;     /* adjusts height based on width */
-  background-color: #fafafa;
+  background-color: white;
   border-radius: 10px;
   overflow: hidden;
   display: flex;
@@ -470,7 +470,8 @@ body {
   width: 70%;
   object-fit: contain;
   object-position: center;
-  background-color: #fff;
+  background-color: white;
+  margin: auto;
 }
 
 .swiper-button-next,
