@@ -472,7 +472,7 @@ body {
   height: 60px;
   background-color: white;
   color: var(--red);
-  font-size: 32px;
+  font-size: 46px;
   border-radius: 50%;
   border: none;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -481,9 +481,17 @@ body {
   align-items: center;
   cursor: pointer;
   z-index: 20;
-  margin: 0 60px;
+  margin: 0 30px;
+  transition: transform 0.3s ease;
 }
 
+.swiper-button-prev:hover {
+  transform: scale(1.1);
+}
+
+.swiper-button-next:hover {
+  transform: scale(1.1);
+}
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
