@@ -122,12 +122,14 @@
   </div>
 
  <!-- Featured Products Swiper -->
-<div class="swiper-container featured-swiper" style="display: none;">
-  <div class="swiper-wrapper" id="featuredProducts"></div>
+<div class="featured-swiper-wrapper">
+  <div class="swiper-container featured-swiper">
+    <div class="swiper-wrapper" id="featuredProducts"></div>
 
-  <!-- Navigation Arrows -->
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
+    <!-- Arrows -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
 </div>
   
   <a href="Products/" class="featured-button">
@@ -446,7 +448,8 @@
        new Swiper('.swiper-container', {
   effect: 'coverflow',
   grabCursor: true,
-  centeredSlides: true,
+  centeredSlides: false,
+  spaceBetween: 30,
   loop: true,
   slidesPerView: 3, // lets us control width via CSS
   autoplay: {
