@@ -442,17 +442,6 @@ body {
   max-width: 78vw;          
 }
 
-
-/* 
-.product-card {
-  background-color: #fafafa;
-  border-radius: 10px;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-  overflow: hidden;
-}
-*/
-
 .featured-product-card {
   width: 100%;             /* full width of slide */
   aspect-ratio: 14 / 15;     /* adjusts height based on width */
@@ -477,26 +466,34 @@ body {
 .swiper-button-prev,
 .swiper-button-next {
   position: absolute;
-  top: 55%;
+  top: 52%;
   transform: translateY(-50%);
   z-index: 10;
   width: 40px;
   height: 40px;
   background: white;
-  border-radius: 50%;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  color: var(--red);
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
 .swiper-button-prev {
-  left: -50px; /* or adjust as needed */
+  left: -100px; /* or adjust as needed */
+}
+
+.swiper-button-prev:hover {
+  transform: scale(1.1);
 }
 
 .swiper-button-next {
-  right: -50px; /* or adjust as needed */
+  right: -100px; /* or adjust as needed */
+}
+
+.swiper-button-next:hover {
+  transform: scale(1.1);
 }
 
 .featured-swiper:hover .swiper {
