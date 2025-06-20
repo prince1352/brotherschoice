@@ -357,10 +357,16 @@ body {
   box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
+.product-info {
+  flex-grow: 1;
+  padding: 12px;
+  text-align: center;
+}
+
 .product-info h3 {
-  font-size: 1.1rem;
+  font-size: 1rem;
+  margin: 0;
   color: #333;
-  margin-bottom: 6px;
 }
 
 .product-info p {
@@ -414,16 +420,13 @@ body {
 
 
 .featured-swiper {
-  width: 100%;
-  max-width: 660px;     /* adjust to control total swiper width */
-  margin: 0 auto;         /* centers the swiper in the page */
-  padding: 40px 20px;     /* optional: vertical + horizontal inner spacing */
-  box-sizing: border-box;
+  width: 50vw;          /* takes up 50% of the screen width */
+  margin: 0 auto;       /* center horizontally */
+  padding: 40px 0;
 }
 
 .swiper-slide {
-  width: 220px;       /* fixed size for one slide */
-  max-width: 25vw;    /* responsive fallback */
+  width: auto;      
 }
 
 /* 
@@ -437,29 +440,24 @@ body {
 */
 
 .product-card {
-  height: 400px;        /* increase height */
-  background-color: #fafafa;
-  border-radius: 10px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  overflow: hidden;
+  height: 380px;                   /* adjust as needed */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
+  background-color: #fafafa;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 .product-card img {
+  height: 260px;                   /* image height portion */
   width: 100%;
-  height: 320px;
-  object-fit: contain;    /* show the full image, may leave space around it */
+  object-fit: contain;            /* show full image without cropping */
   object-position: center;
+  background-color: #fff;         /* optional: fills space around image */
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-}
-
-.product-info {
-  padding: 16px;
-  text-align: center;
 }
 
 .swiper-button-next,
