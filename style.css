@@ -420,7 +420,7 @@ body {
 
 
 .featured-swiper {
-  width: 50vw;          /* takes up 50% of the screen width */
+  width: 80vw;          /* takes up 50% of the screen width */
   margin: 0 auto;       /* center horizontally */
   padding: 40px 0;
 }
