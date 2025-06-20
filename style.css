@@ -422,14 +422,15 @@ body {
 
 
 .featured-swiper-wrapper {
-  padding: 0 15vw;          /* 5vw margins on each side = 90vw total swiper space */
+  padding: 0 11vw;          /* 5vw margins on each side = 90vw total swiper space */
   overflow: hidden;
   box-sizing: border-box;
+  background-color: #f8f8f5;
 }
 
 
 .featured-swiper {
-  width: 27vw;
+  width: 26vw;
   margin: 0 auto;
   padding: 40px 0;
   box-sizing: border-box;
