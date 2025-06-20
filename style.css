@@ -466,13 +466,13 @@ body {
 .swiper-button-prev,
 .swiper-button-next {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 50% !important;
+  transform: translateY(-50%) !important;
   z-index: 10;
-  width: 40px;
-  height: 40px;
+  width: 40px !important;
+  height: 40px !important;
   background: white;
-  color: var(--red);
+  color: var(--red) !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -481,7 +481,7 @@ body {
 }
 
 .swiper-button-prev {
-  left: -100px; /* or adjust as needed */
+  left: -100px !important; /* or adjust as needed */
 }
 
 .swiper-button-prev:hover {
@@ -489,7 +489,7 @@ body {
 }
 
 .swiper-button-next {
-  right: -100px; /* or adjust as needed */
+  right: -100px !important; /* or adjust as needed */
 }
 
 .swiper-button-next:hover {
