@@ -358,9 +358,11 @@ body {
 }
 
 .product-info {
-  flex-grow: 1;
-  padding: 12px;
+  height: 60px;          
   text-align: center;
+  padding: 12px 8px;
+  background: #fff;
+  flex-shrink: 0;
 }
 
 .product-info h3 {
@@ -465,7 +467,7 @@ body {
 
 .product-card img {
   height: 100%;             /* 70% of card height */
-  width: 90%;
+  width: 70%;
   object-fit: contain;
   object-position: center;
   background-color: #fff;
