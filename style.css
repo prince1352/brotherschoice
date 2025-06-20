@@ -463,38 +463,38 @@ body {
   transition: transform 0.3s ease;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
+.featured-products-section .swiper-button-prev,
+.featured-products-section .swiper-button-next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   width: 40px;
   height: 40px;
-  background: white;
+  background-color: white;
   color: var(--red);
   font-size: 24px;
   border-radius: 50%;
+  border: none;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  z-index: 10;
+  z-index: 20;
 }
 
 /* Positioning relative to swiper wrapper */
 .swiper-button-prev {
-  left: 0;
+  left: -100px;
 }
 
 .swiper-button-next {
-  right: 0;
+  right: -100px;
 }
 
-/* Remove default Swiper arrow visuals */
 .swiper-button-prev::after,
 .swiper-button-next::after {
-  display: none;
+  display: none; /* Remove Swiper's default arrow icons */
 }
 
 
