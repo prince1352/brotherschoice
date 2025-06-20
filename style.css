@@ -422,7 +422,7 @@ body {
 
 
 .featured-swiper-wrapper {
-  padding: 0 10vw;          /* 5vw margins on each side = 90vw total swiper space */
+  padding: 0 11vw;          /* 5vw margins on each side = 90vw total swiper space */
   overflow: hidden;
   box-sizing: border-box;
 }
