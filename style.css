@@ -420,13 +420,17 @@ body {
 
 
 .featured-swiper-wrapper {
-  padding: 0 10vw;        /* creates 10vw space on both sides */
+  padding: 0 10vw;         /* creates left/right margins */
+  overflow: hidden;        /* hides slides that try to escape */
   box-sizing: border-box;
 }
 
 .featured-swiper {
   width: 100%;
-  max-width: 100%;
+}
+
+.swiper-wrapper {
+  box-sizing: border-box;
 }
 
 .swiper-slide {
