@@ -420,13 +420,14 @@ body {
 
 
 .featured-swiper-wrapper {
-  padding: 0 15vw;         /* creates left/right margins */
-  overflow: hidden;        /* hides slides that try to escape */
+  padding: 0 5vw;          /* 5vw margins on each side = 90vw total swiper space */
+  overflow: hidden;
   box-sizing: border-box;
 }
 
+
 .featured-swiper {
-  width: 30vw;
+  width: 100%;
   margin: 0 auto;
   padding: 40px 0;
   box-sizing: border-box;
@@ -437,8 +438,9 @@ body {
 }
 
 .swiper-slide {
-  width: auto;      
+  width: 30vw;             /* 3 cards = 90vw, with 10vw margin */
 }
+
 
 /* 
 .product-card {
@@ -451,24 +453,22 @@ body {
 */
 
 .product-card {
-  height: 380px;                   /* adjust as needed */
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  width: 100%;             /* full width of slide */
+  aspect-ratio: 3 / 5;     /* adjusts height based on width */
   background-color: #fafafa;
   border-radius: 10px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 .product-card img {
-  height: 260px;                   /* image height portion */
+  height: 70%;             /* 70% of card height */
   width: 100%;
-  object-fit: contain;            /* show full image without cropping */
+  object-fit: contain;
   object-position: center;
-  background-color: #fff;         /* optional: fills space around image */
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  background-color: #fff;
 }
 
 .swiper-button-next,
