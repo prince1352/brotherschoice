@@ -464,7 +464,7 @@ body {
 }
 
 .product-card img {
-  height: 70%;             /* 70% of card height */
+  height: 90%;             /* 70% of card height */
   width: 100%;
   object-fit: contain;
   object-position: center;
