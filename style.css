@@ -422,9 +422,10 @@ body {
 
 .swiper-slide {
   width: 260px;       /* fixed size for one slide */
-  max-width: 60vw;    /* responsive fallback */
+  max-width: 40vw;    /* responsive fallback */
 }
 
+/* 
 .product-card {
   background-color: #fafafa;
   border-radius: 10px;
@@ -432,10 +433,23 @@ body {
   transition: transform 0.3s ease;
   overflow: hidden;
 }
+*/
+
+.product-card {
+  height: 320px;        /* increase height */
+  background-color: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
 .product-card img {
   width: 100%;
-  height: 200px;
+  height: 300px;
   object-fit: cover;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
