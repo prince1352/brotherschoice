@@ -467,7 +467,6 @@ body {
 .featured-products-section .swiper-button-next {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
   width: 60px;
   height: 60px;
   background-color: white;
