@@ -422,14 +422,14 @@ body {
 
 
 .featured-swiper-wrapper {
-  padding: 0 5vw;          /* 5vw margins on each side = 90vw total swiper space */
+  padding: 0 10vw;          /* 5vw margins on each side = 90vw total swiper space */
   overflow: hidden;
   box-sizing: border-box;
 }
 
 
 .featured-swiper {
-  width: 30vw;
+  width: 27vw;
   margin: 0 auto;
   padding: 40px 0;
   box-sizing: border-box;
@@ -456,7 +456,7 @@ body {
 
 .featured-product-card {
   width: 100%;             /* full width of slide */
-  aspect-ratio: 10 / 11;     /* adjusts height based on width */
+  aspect-ratio: 14 / 15;     /* adjusts height based on width */
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
@@ -467,7 +467,7 @@ body {
 
 .featured-product-card img {
   height: 100%;             /* 70% of card height */
-  width: 70%;
+  width: 80%;
   object-fit: contain;
   object-position: center;
   background-color: white;
