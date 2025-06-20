@@ -492,11 +492,11 @@ body {
 
 /* Positioning */
 .swiper-button-prev {
-  left: -60px;
+  left: -150px;
 }
 
 .swiper-button-next {
-  right: -60px;
+  right: -150px;
 }
 
 /* Hover effect */
