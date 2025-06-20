@@ -465,23 +465,23 @@ body {
 
 .swiper-button-prev,
 .swiper-button-next {
-  position: absolute;
+  position: absolute !important;
   top: 50% !important;
   transform: translateY(-50%) !important;
-  z-index: 10;
+  z-index: 10 !important;
   width: 40px !important;
   height: 40px !important;
-  background: white;
+  background: white !important;
   color: var(--red) !important;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition: transform 0.3s ease;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  cursor: pointer !important;
+  transition: transform 0.3s ease !important;
 }
 
 .swiper-button-prev {
-  left: -100px !important; /* or adjust as needed */
+  left: -100px !important;
 }
 
 .swiper-button-prev:hover {
@@ -489,17 +489,12 @@ body {
 }
 
 .swiper-button-next {
-  right: -100px !important; /* or adjust as needed */
+  right: -100px !important;
 }
 
 .swiper-button-next:hover {
   transform: scale(1.1);
 }
-
-.featured-swiper:hover .swiper {
-  pointer-events: none;
-}
-
 
 
 /* ----------------------------------------------
