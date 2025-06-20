@@ -426,7 +426,10 @@ body {
 }
 
 .featured-swiper {
-  width: 100%;
+  width: 25vw;
+  margin: 0 auto;
+  padding: 40px 0;
+  box-sizing: border-box;
 }
 
 .swiper-wrapper {
