@@ -415,14 +415,15 @@ body {
 
 .featured-swiper {
   width: 100%;
-  max-width: 1000px;  /* prevent stretching on large screens */
-  margin: 0 auto;     /* center the slider */
-  padding: 40px 0;
+  max-width: 1000px;     /* adjust to control total swiper width */
+  margin: 0 auto;         /* centers the swiper in the page */
+  padding: 40px 20px;     /* optional: vertical + horizontal inner spacing */
+  box-sizing: border-box;
 }
 
 .swiper-slide {
-  width: 200px;       /* fixed size for one slide */
-  max-width: 20vw;    /* responsive fallback */
+  width: 220px;       /* fixed size for one slide */
+  max-width: 25vw;    /* responsive fallback */
 }
 
 /* 
@@ -436,7 +437,7 @@ body {
 */
 
 .product-card {
-  height: 500px;        /* increase height */
+  height: 400px;        /* increase height */
   background-color: #fafafa;
   border-radius: 10px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
@@ -449,7 +450,7 @@ body {
 
 .product-card img {
   width: 100%;
-  height: 300px;
+  height: 320px;
   object-fit: cover;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
