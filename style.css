@@ -463,37 +463,46 @@ body {
   transition: transform 0.3s ease;
 }
 
+/* Override default arrow visuals */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
+
+/* Button base styles */
 .swiper-button-prev,
 .swiper-button-next {
-  position: absolute !important;
-  top: 50% !important;
-  transform: translateY(-50%) !important;
-  z-index: 10 !important;
-  width: 40px !important;
-  height: 40px !important;
-  background: white !important;
-  color: var(--red) !important;
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-  cursor: pointer !important;
-  transition: transform 0.3s ease !important;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  background: white;
+  color: var(--red);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+  transition: transform 0.3s ease;
 }
 
+/* Positioning */
 .swiper-button-prev {
-  left: -100px !important;
-}
-
-.swiper-button-prev:hover {
-  transform: scale(1.1);
+  left: -60px;
 }
 
 .swiper-button-next {
-  right: -100px !important;
+  right: -60px;
 }
 
+/* Hover effect */
+.swiper-button-prev:hover,
 .swiper-button-next:hover {
-  transform: scale(1.1);
+  transform: translateY(-50%) scale(1.1);
 }
 
 
