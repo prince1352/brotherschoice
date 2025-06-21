@@ -341,7 +341,7 @@ body {
 
 .featured-products-section {
   background-color: #f8f8f5;
-  padding: 60px 5% 80px;
+  padding: 50px 5% 60px;
   text-align: center;
   position: relative;
 }
@@ -350,7 +350,7 @@ body {
   font-size: 2.2rem;
   font-weight: 600;
   color: var(--red);
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .featured-product-card img:hover {
@@ -388,7 +388,7 @@ body {
   border: 2px solid transparent;
   border-radius: 6px;
   transition: all 0.3s ease;
-  margin-top: 50px;
+  margin-top: 60px;
   align-items: center;
 }
 
@@ -460,17 +460,16 @@ body {
   transition: transform 0.3s ease;
 }
 
-.swiper-button-prev .featured-swiper-button-prev::after,
-.swiper-button-next .featured-swiper-button-next::after {
-  color: #333;
-  font-size: 36px;
+.featured-swiper-button-prev::after,
+.featured-swiper-button-next::after {
+  content: ''; /* required if not already set */
+  font-size: 46px;
   position: absolute;
   top: 48%;
   width: 60px;
   height: 60px;
   background-color: white;
   color: var(--red);
-  font-size: 46px;
   border-radius: 50%;
   border: 2px solid var(--red);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -483,13 +482,8 @@ body {
   transition: transform 0.3s ease;
 }
 
-.swiper-button-prev .featured-swiper-button-prev:hover {
-  background-color: var(--red);
-  color: white;
-  border: 2px solid transparent;
-}
-
-.swiper-button-next .featured-swiper-button-next:hover {
+.featured-swiper-button-prev:hover::after,
+.featured-swiper-button-next:hover::after {
   background-color: var(--red);
   color: white;
   border: 2px solid transparent;
