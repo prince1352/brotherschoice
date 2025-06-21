@@ -748,20 +748,20 @@ body {
          Reviews Section
 ------------------------------------------------*/
 
-.reviews-section {
+.review-section {
   background-color: var(--red);
   padding: 60px 5%;
   text-align: center;
 }
 
-.reviews-title {
+.review-title {
   font-size: 2.2rem;
   font-weight: 600;
   color: white;
   margin-bottom: 40px;
 }
 
-.reviews-swiper {
+.review-swiper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -813,8 +813,8 @@ body {
 
 }
 
-.reviews-button-prev,
-.reviews-button-next {
+.review-button-prev,
+.review-button-next {
   color: #333;
   font-size: 2rem;
   background: none;
@@ -826,17 +826,17 @@ body {
   transform: translateY(-50%);
 }
 
-.reviews-button-prev::after,
-.reviews-button-next::after {
+.review-button-prev::after,
+.review-button-next::after {
   color: #333;
   font-size: 24px;
 }
 
-.reviews-button-prev {
+.review-button-prev {
   left: 0; /* Position just outside the card */
 }
 
-.reviews-button-next {
+.review-button-next {
   right: 0; /* Position just outside the card */
 }
 
