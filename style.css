@@ -421,7 +421,7 @@ body {
 }
 
 
-.swiper-container .featured-swiper-container {
+.featured-swiper-wrapper {
   max-width: calc((26vw * 3) + (30px * 2));
   overflow: hidden;
   box-sizing: border-box;
