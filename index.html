@@ -414,8 +414,8 @@
 <script>
   document.addEventListener("DOMContentLoaded", () => {
     const sheetURL = "https://script.google.com/macros/s/AKfycbzOf5ns3Q_MUhVY4YMjd5EbpVusWv6PWzAYHd3bTJxPIb0T-uQX92AEMkoMFRgCdmxM/exec";
-    const loader = document.getElementById('featuredProductsLoader');
-    const wrapper = document.getElementById('featuredProducts');
+    const loader = document.getElementById('.featuredProductsLoader');
+    const wrapper = document.getElementById('.featuredProducts');
     const swiperContainer = document.querySelector('.featured-swiper-container');
 
     loader.style.display = 'flex';
@@ -427,7 +427,7 @@
 
         featured.forEach(product => {
           const slide = document.createElement('div');
-          slide.classList.add('featured-swiper-slide');
+          slide.classList.add('.featured-swiper-slide');
 
           slide.innerHTML = `
             <div class="featured-product-card">
@@ -451,7 +451,7 @@
           spaceBetween: 30,
           loop: true,
           speed: 500,
-          slidesPerView: 1,
+          slidesPerView: 3,
           autoplay: {
             delay: 2000,
             disableOnInteraction: false,
