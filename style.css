@@ -826,8 +826,8 @@ body {
   transform: translateY(-50%);
 }
 
-.swiper-button-next .review-button-prev::after,
-.swiper-button-prev .review-button-next::after {
+.swiper-button-next.review-swiper-button-next::after,
+.swiper-button-prev.review-swiper-button-prev::after {
   color: #333;
   font-size: 24px;
 }
