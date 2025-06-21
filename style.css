@@ -463,11 +463,6 @@ body {
 .featured-swiper-button-prev::after,
 .featured-swiper-button-next::after {
   content: ''; /* required if not already set */
-  font-size: 36px;
-  position: absolute;
-  top: 40%;
-  width: 60px;
-  height: 60px;
   background-color: white;
   color: var(--red);
   border-radius: 50%;
@@ -480,6 +475,17 @@ body {
   z-index: 20;
   margin: 0 30px;
   transition: transform 0.3s ease;
+}
+
+.featured-swiper-button-prev,
+.featured-swiper-button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 60px;
+  height: 60px;
+  font-size: 36px;
 }
 
 .featured-swiper-button-prev::after {
