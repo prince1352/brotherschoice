@@ -38,14 +38,15 @@ body {
   width: 100%;
   background-color: #f8f8f5;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  display: flex;
-  align-items: center; /* ✅ center everything vertically */
-  justify-content: space-between;
   padding: 0 50px;
   position: sticky; /* ✅ keeps it on screen */
   top: 0;            /* ✅ stick to top edge */
   z-index: 999;      /* ✅ stay above other elements */
   height: 90px; /* ✅ fixed height for perfect alignment */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 /* Logo */
