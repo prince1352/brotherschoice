@@ -231,6 +231,8 @@ body {
   justify-content: flex-start;
   padding: 0 10%;
   overflow: hidden;
+  margin-top: -90px; /* same as header height */
+  padding-top: 90px; /* offset content inside */
 }
 
 .landing-overlay {
