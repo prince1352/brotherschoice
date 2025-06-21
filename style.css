@@ -768,7 +768,7 @@ body {
   position: relative;
 }
 
-.review-swiper-slide {
+.review-section .swiper-slide {
   flex-grow: 1;
   display: flex;
   justify-content: center;
