@@ -761,28 +761,24 @@ body {
   margin-bottom: 40px;
 }
 
-.reviews-swiper-container {
-  position: relative;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.reviews-swiper-wrapper {
+.reviews-swiper {
   display: flex;
-  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
-.reviews-swiper-slide {
-  flex: 0 0 100%;
+.swiper-slide .review-swiper-slide{
+  flex-grow: 1;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .review-card {
-  background-color: var(--red);
+  background-color: var(--red); /* Match section background */
   padding: 10px 24px;
-  height: 100%;
+  height: 100%; /* Or keep as needed */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -795,6 +791,8 @@ body {
   color: var(--yellow);
   font-size: 1.5rem;
   margin-bottom: 14px;
+  text-align: center;
+
 }
 
 .review-text {
@@ -804,6 +802,7 @@ body {
   color: white;
   text-align: center;
   width: 80%;
+
 }
 
 .review-author {
@@ -811,31 +810,38 @@ body {
   font-size: 1rem;
   color: #333;
   text-align: center;
+
 }
 
-.reviews-button-prev,
-.reviews-button-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+.swiper-button-prev .review-button-prev,
+.swiper-button-next .review-button-next{
   color: #333;
   font-size: 2rem;
   background: none;
   border: none;
   cursor: pointer;
   z-index: 10;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.reviews-button-prev {
-  left: 0;
+.swiper-button-next .review-button-prev::after,
+.swiper-button-prev .review-button-next::after {
+  color: #333;
+  font-size: 24px;
 }
 
-.reviews-button-next {
-  right: 0;
+.swiper-button-prev .review-button-prev{
+  left: 0; /* Position just outside the card */
 }
 
-.swiper-slide-shadow-left,
-.swiper-slide-shadow-right {
+.swiper-button-next .review-button-next{
+  right: 0; /* Position just outside the card */
+}
+
+.swiper-slide-shadow-left .review-swiper-slide-shadow-left,
+.swiper-slide-shadow-right .review-swiper-slide-shadow-right{
   background-image: linear-gradient(to left, rgba(0, 0, 0, 0.15), transparent);
   background: rgba(0, 0, 0, 0.25);
 }
