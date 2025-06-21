@@ -82,7 +82,7 @@ body {
   display: flex;
   justify-content: center; /* ✅ Center content */
   align-items: center;
-  gap: 50px; /* ✅ Even spacing between items */
+  gap: auto; /* ✅ Even spacing between items */
   margin: 0;
   padding: 0;
   width: 100%; /* ✅ Fill all available space */
