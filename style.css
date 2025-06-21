@@ -48,7 +48,6 @@ body {
   background-color: rgba(248, 248, 245, 0.6); /* semi-transparent sand color */
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  transition: background-color 0.3s ease, backdrop-filter 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Logo */
@@ -122,6 +121,7 @@ body {
   height: 100%;
   font-size: 1.2rem;
   color: #000;
+  transition: color 0.3s ease, transform 0.3s ease; /* ✅ add color transition */
 }
 
 .menu-item:hover a {
@@ -227,7 +227,7 @@ body {
 .landing-section {
   position: relative;
   width: 100%;
-  min-height: 700px;
+  min-height: 650px;
   background: url('images/homepage-background.jpg') no-repeat center center/cover;
   display: flex;
   align-items: center;
@@ -1098,13 +1098,15 @@ body {
 .customers-landing-section {
   position: relative;
   width: 100%;
-  min-height: 600px;
+  min-height: 650px;
   background: url('images/customers/customers-background.jpg') no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   padding: 0 10%;
   overflow: hidden;
+  margin-top: -90px;
+  padding-top: 90px;
 }
 
 .customers-landing-overlay {
