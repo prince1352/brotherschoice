@@ -137,11 +137,10 @@ body {
 
 .menu-item:hover a {
   transform: scale(1.1);
-  color: var(--red);
 }
 
 .main-header.scrolled .menu-item:hover a {
-  transform: scale(0);
+  transform: scale(1);
   color: var(--red);
 }
 
@@ -191,6 +190,19 @@ body {
   color: var(--red);
   border-color: var(--red);
 }
+
+.nav-underline {
+  margin-top: 12px;
+  height: 1px;
+  width: 80%;
+  background-color: #f8f8f5;
+  opacity: 0.2;
+}
+
+.main-header.scrolled .nav-underline {
+  opacity: 0;
+}
+
 
 
 /* ----------------------------------------------
