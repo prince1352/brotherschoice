@@ -463,9 +463,9 @@ body {
 .featured-swiper-button-prev::after,
 .featured-swiper-button-next::after {
   content: ''; /* required if not already set */
-  font-size: 46px;
+  font-size: 36px;
   position: absolute;
-  top: 48%;
+  top: 40%;
   width: 60px;
   height: 60px;
   background-color: white;
@@ -480,6 +480,14 @@ body {
   z-index: 20;
   margin: 0 30px;
   transition: transform 0.3s ease;
+}
+
+.featured-swiper-button-prev::after {
+  left: -20px;
+}
+
+.featured-swiper-button-next::after {
+  right: -20px;
 }
 
 .featured-swiper-button-prev:hover::after,
