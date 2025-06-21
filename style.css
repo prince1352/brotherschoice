@@ -337,7 +337,7 @@ body {
 
 /* ----------------------------------------------
           Featured Products Section
-------------------------------------------------*/
+------------------------------------------------
 
 .featured-products-section {
   background-color: #f8f8f5;
@@ -376,7 +376,7 @@ body {
   color: #777;
 }
 
-/* Button */
+
 .featured-button {
   display: inline-block;
   padding: 14px 32px;
@@ -402,7 +402,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 300px; /* adjust to match your card height */
+  height: 300px;
 }
 
 .spinner {
@@ -443,8 +443,8 @@ body {
 }
 
 .featured-product-card {
-  width: 100%;             /* full width of slide */
-  aspect-ratio: 14 / 15;     /* adjusts height based on width */
+  width: 100%;             
+  aspect-ratio: 14 / 15;     
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
@@ -454,7 +454,7 @@ body {
 }
 
 .featured-product-card img {
-  height: 100%;             /* 70% of card height */
+  height: 100%;         
   width: 80%;
   object-fit: contain;
   object-position: center;
