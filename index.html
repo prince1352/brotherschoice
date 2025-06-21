@@ -256,13 +256,12 @@
 </section>
   
 <!-- REVIEWS SECTION -->
-<section class="review-section">
-  <h2 class="review-title">What Our Customers Are Saying</h2>
+<section class="reviews-section">
+  <h2 class="reviews-title">What Our Customers Are Saying</h2>
 
-  <div class="swiper review-swiper">
-    
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
+  <div class="reviews-swiper-container">
+    <div class="reviews-swiper-wrapper">
+      <div class="reviews-swiper-slide">
         <div class="review-card">
           <div class="review-stars">★★★★★</div>
           <p class="review-text">Excellent service. There was a huge variety of whole sale products available at a great price. My order was completed very fast and the whole process was easy to go through! Highly recommend!!!</p>
@@ -270,7 +269,7 @@
         </div>
       </div>
 
-      <div class="review-swiper-slide">
+      <div class="reviews-swiper-slide">
         <div class="review-card">
           <div class="review-stars">★★★★★</div>
           <p class="review-text">It was a great experience dealing for a bulk order with timely service and great price. Thanks!!!!</p>
@@ -278,7 +277,7 @@
         </div>
       </div>
 
-      <div class="review-swiper-slide">
+      <div class="reviews-swiper-slide">
         <div class="review-card">
           <div class="review-stars">★★★★★</div>
           <p class="review-text">I recently ordered from Brothers Choice and had a really great experience. Their prices are awesome, making it easy to stock up. Everyone I spoke with was super friendly and helpful. I would definitely recommend Brothers Choice if you’re looking for a good place to buy wholesale food!</p>
@@ -286,7 +285,7 @@
         </div>
       </div>
 
-      <div class="review-swiper-slide">
+      <div class="reviews-swiper-slide">
         <div class="review-card">
           <div class="review-stars">★★★★★</div>
           <p class="review-text">Fantastic local supplier with excellent prices and dependable delivery.</p>
@@ -294,12 +293,11 @@
         </div>
       </div>
     </div>
-    
-    <div class="swiper-button-next review-button-next"></div>
-    <div class="swiper-button-prev review-button-prev"></div>
+
+    <div class="reviews-button-prev"></div>
+    <div class="reviews-button-next"></div>
   </div>
 </section>
-
   
     <!-- Contact Form -->
 <section class="contact-section">
@@ -479,19 +477,19 @@
 <!--  Script Reviews Section -->
   
 <script>
-  const swiper = new Swiper('.review-swiper', {
-  effect: 'flip',
-  speed: 1000,
-  flipEffect: {
-    slideShadows: true, // enable built-in shadow during flip
-    limitRotation: true
-  },
-  navigation: {
-    nextEl: '.review-button-next',
-    prevEl: '.review-button-prev'
-  },
-  loop: true,
-});
+  new Swiper('.reviews-swiper-container', {
+    effect: 'flip',
+    speed: 1000,
+    loop: true,
+    navigation: {
+      nextEl: '.reviews-button-next',
+      prevEl: '.reviews-button-prev'
+    },
+    flipEffect: {
+      slideShadows: true,
+      limitRotation: true
+    }
+  });
 </script>
 
 <!--  Script Specialize Section -->
