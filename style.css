@@ -136,6 +136,12 @@ body {
 }
 
 .menu-item:hover a {
+  transform: scale(1.1);
+  color: var(--red);
+}
+
+.main-header.scrolled .menu-item:hover a {
+  transform: scale(0);
   color: var(--red);
 }
 
