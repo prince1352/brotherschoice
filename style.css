@@ -158,21 +158,29 @@ body {
 }
 
 .quote-button:hover {
-  background-color: #f8f8f5;
+  background-color: transparent;
   color: var(--red);
   border-color: var(--red);
 }
 
 .main-header.scrolled .quote-button {
   background-color: var(--red);
-  color: transparent;
+  color: #f8f8f5;
   border-color: var(--red);
   border: 2px solid var(--red);
+  position: relative;
+  z-index: 9999;
 }
 
 .main-header.scrolled .menu-item a {
   color: #000;
   text-shadow: none;
+}
+
+.main-header.scrolled .quote-button:hover {
+  background-color: transparent;
+  color: var(--red);
+  border-color: var(--red);
 }
 
 
