@@ -47,6 +47,7 @@ body {
   align-items: center;
   justify-content: space-between;
   transition: background-color var(--transition-speed), box-shadow var(--transition-speed);
+  border-bottom: 1px solid var(--red);
 }
 
 .main-header.scrolled {
@@ -190,20 +191,6 @@ body {
   color: var(--red);
   border-color: var(--red);
 }
-
-.nav-underline {
-  margin-top: 90px;
-  height: 1px;
-  width: 80%;
-  background-color: var(--red);
-  opacity: 0.4;
-}
-
-.main-header.scrolled .nav-underline {
-  opacity: 0;
-}
-
-
 
 /* ----------------------------------------------
                  Mobile Header
