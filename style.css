@@ -478,7 +478,7 @@ body {
   position: absolute;
   width: 60px;
   height: 60px;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .featured-swiper-button-prev,
@@ -487,6 +487,7 @@ body {
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
+  font-size: 2rem;
 }
 
 .featured-swiper-button-prev::after {
