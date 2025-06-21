@@ -79,14 +79,15 @@ body {
 .main-nav ul {
   list-style: none;
   display: flex;
-  justify-content: space-between; /* spread items evenly */
+  justify-content: center; /* ✅ Center content */
   align-items: center;
-  height: 100%;
+  gap: 50px; /* ✅ Even spacing between items */
   margin: 0;
+  padding: 0;
+  width: 100%; /* ✅ Fill all available space */
 }
 
 .menu-item {
-  flex-grow: 1; /* Let each item expand equally */
   display: flex;
   justify-content: center;
   align-items: center;
