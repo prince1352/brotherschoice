@@ -337,7 +337,7 @@ body {
 
 /* ----------------------------------------------
           Featured Products Section
-------------------------------------------------
+------------------------------------------------*/
 
 .featured-products-section {
   background-color: #f8f8f5;
@@ -421,7 +421,7 @@ body {
 }
 
 
-.featured-swiper-wrapper {
+.swiper-wrapper .featured-swiper-wrapper {
   max-width: calc((26vw * 3) + (30px * 2));
   overflow: hidden;
   box-sizing: border-box;
@@ -438,7 +438,7 @@ body {
 }
 
 
-.swiper-slide {
+.swiper-slide .featured-swiper-slide{
   max-width: 78vw;          
 }
 
@@ -463,8 +463,8 @@ body {
   transition: transform 0.3s ease;
 }
 
-.featured-products-section .featured-swiper-button-prev,
-.featured-products-section .featured-swiper-button-next {
+.swiper-button-prev .featured-swiper-button-prev,
+.swiper-button-next .featured-swiper-button-next {
   position: absolute;
   top: 48%;
   width: 60px;
@@ -484,21 +484,21 @@ body {
   transition: transform 0.3s ease;
 }
 
-.featured-swiper-button-prev:hover {
+.swiper-button-prev .featured-swiper-button-prev:hover {
   background-color: var(--red);
   color: white;
   border: 2px solid transparent;
 }
 
-.featured-swiper-button-next:hover {
+.swiper-button-next .featured-swiper-button-next:hover {
   background-color: var(--red);
   color: white;
   border: 2px solid transparent;
 }
 
-.featured-swiper-button-prev::after,
-.featured-swiper-button-next::after {
-  display: none; /* Remove Swiper's default arrow icons */
+.swiper-button-prev .featured-swiper-button-prev::after,
+.swiper-button-next .featured-swiper-button-next::after {
+  display: none;
 }
 
 
