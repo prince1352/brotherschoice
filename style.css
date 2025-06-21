@@ -260,7 +260,7 @@ body {
 .landing-section {
   position: relative;
   width: 100%;
-  min-height: 600px;
+  min-height: 700px;
   background: url('images/homepage-background.jpg') no-repeat center center/cover;
   display: flex;
   align-items: center;
