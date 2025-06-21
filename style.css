@@ -54,6 +54,7 @@ body {
   display: flex;
   align-items: center;
   transition: transform 0.3s ease;
+  margin-right: 50px;
 }
 
 .logo-link:hover {
@@ -73,16 +74,6 @@ body {
   height: 100%;
 }
 
-.main-nav i {
-  color: var(--red);
-  font-size: 1.1rem;
-  display: inline-block;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.main-nav a:hover i {
-  transform: scale(1.1);
-}
 
 .main-nav ul {
   list-style: none;
@@ -136,6 +127,7 @@ body {
 .quote-button-wrapper {
   display: flex;
   align-items: center;
+  margin-left: 50px;
 }
 
 .quote-button {
