@@ -80,7 +80,7 @@ body {
 .main-nav ul {
   list-style: none;
   display: flex;
-  justify-content: space-between; /* Distribute items across full width */
+  justify-content: space-evenly; /* Distribute items across full width */
   align-items: center;
   margin: 0;
   padding: 0;
