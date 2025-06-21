@@ -47,7 +47,6 @@ body {
   align-items: center;
   justify-content: space-between;
   transition: background-color var(--transition-speed), box-shadow var(--transition-speed);
-  color: white;
 }
 
 .main-header.scrolled {
@@ -94,6 +93,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%; /* ✅ Fill all available space */
+  color: white;
 }
 
 .menu-item {
@@ -157,6 +157,26 @@ body {
   background-color: #f8f8f5;
   color: var(--red);
   border-color: var(--red);
+}
+
+.main-header.scrolled .quote-button {
+  background-color: transparent;
+  color: var(--red);
+  border-color: var(--red);
+}
+
+.main-header.scrolled .quote-button:hover {
+  background-color: var(--red);
+  color: #f8f8f5;
+}
+
+.main-header.scrolled .menu-item a {
+  color: #000;
+  text-shadow: none;
+}
+
+.main-header.scrolled .menu-item a:hover {
+  color: var(--red);
 }
 
 /* ----------------------------------------------
