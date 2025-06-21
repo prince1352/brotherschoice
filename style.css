@@ -813,8 +813,8 @@ body {
 
 }
 
-.swiper-button-prev,
-.swiper-button-next {
+.reviews-button-prev,
+.reviews-button-next {
   color: #333;
   font-size: 2rem;
   background: none;
@@ -826,17 +826,17 @@ body {
   transform: translateY(-50%);
 }
 
-.swiper-button-next::after,
-.swiper-button-prev::after {
+.reviews-button-prev::after,
+.reviews-button-next::after {
   color: #333;
   font-size: 24px;
 }
 
-.swiper-button-prev {
+.reviews-button-prev {
   left: 0; /* Position just outside the card */
 }
 
-.swiper-button-next {
+.reviews-button-next {
   right: 0; /* Position just outside the card */
 }
 
