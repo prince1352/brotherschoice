@@ -478,7 +478,7 @@ body {
   position: absolute;
   width: 60px;
   height: 60px;
-  font-size: 36px !important;
+  font-size: 30px !important;
 }
 
 .featured-swiper-button-prev,
@@ -491,11 +491,11 @@ body {
 }
 
 .featured-swiper-button-prev::after {
-  left: -20px;
+  left: 0px;
 }
 
 .featured-swiper-button-next::after {
-  right: -20px;
+  right: 0px;
 }
 
 .featured-swiper-button-prev:hover::after,
