@@ -45,7 +45,7 @@ body {
   position: sticky; /* ✅ keeps it on screen */
   top: 0;            /* ✅ stick to top edge */
   z-index: 999;      /* ✅ stay above other elements */
-  height: 120px; /* ✅ fixed height for perfect alignment */
+  height: 90px; /* ✅ fixed height for perfect alignment */
 }
 
 /* Logo */
@@ -53,6 +53,7 @@ body {
   display: flex;
   align-items: center;
   transition: transform 0.3s ease;
+  left: 0px;
 }
 
 .logo-link:hover {
@@ -60,7 +61,7 @@ body {
 }
 
 .logo {
-  height: 90px;
+  height: 60px;
   width: auto;
 }
 
@@ -129,13 +130,14 @@ body {
 .quote-button {
   background-color: var(--red);
   color: #f8f8f5;
-  padding: 15px 40px;
+  padding: 10px 24px;
   text-decoration: none;
   font-weight: var(--font-light);
   border: 2px solid var(--red);
   border-radius: 6px;
   transition: all 0.3s ease;
-  font-size: 1.375rem;
+  font-size: 1.2rem;
+  right: 0px;
 }
 
 .quote-button:hover {
