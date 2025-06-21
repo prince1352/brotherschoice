@@ -80,13 +80,13 @@ body {
 .main-nav ul {
   list-style: none;
   display: flex;
-  justify-content: center; /* ✅ Center content */
+  justify-content: space-between; /* Distribute items across full width */
   align-items: center;
-  gap: auto; /* ✅ Even spacing between items */
   margin: 0;
   padding: 0;
-  width: 100%; /* ✅ Fill all available space */
+  width: 100%;
 }
+
 
 .menu-item {
   display: flex;
