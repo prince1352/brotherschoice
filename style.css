@@ -191,18 +191,12 @@ body {
   border-color: var(--red);
 }
 
-.nav-wrapper {
-  display: flex;
-  align-items: center;
-  padding: 80px 0 1px;
-}
-
 .nav-underline {
-  margin-top: 12px;
+  margin-top: 90px;
   height: 1px;
   width: 80%;
   background-color: var(--red);
-  opacity: 0.2;
+  opacity: 0.4;
 }
 
 .main-header.scrolled .nav-underline {
