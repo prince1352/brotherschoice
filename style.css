@@ -428,19 +428,12 @@ body {
   margin: 0 auto;
 }
 
-
-.featured-swiper {
-  
-}
-
-
-.swiper-slide .featured-swiper-slide{
+.featured-swiper-slide{
   width: 26vw;
-  margin: 0 auto;
-  padding: 40px 0;
-  box-sizing: border-box;
-  max-width: 390px;          
-}
+  max-width: 390px;
+  display: flex;
+  justify-content: center;
+}    
 
 .featured-product-card {
   width: 100%;             
