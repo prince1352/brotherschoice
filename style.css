@@ -53,7 +53,6 @@ body {
   display: flex;
   align-items: center;
   transition: transform 0.3s ease;
-  left: 0px;
 }
 
 .logo-link:hover {
@@ -80,7 +79,7 @@ body {
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.main-nav i: {
+.main-nav a:hover i {
   transform: scale(1.1);
 }
 
@@ -148,7 +147,6 @@ body {
   border-radius: 6px;
   transition: all 0.3s ease;
   font-size: 1.2rem;
-  right: 0px;
 }
 
 .quote-button:hover {
