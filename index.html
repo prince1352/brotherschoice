@@ -121,16 +121,16 @@
   </div>
 
   <!-- Custom Navigation Arrows -->
-  <div class="featured-swiper-button-prev">‹</div>
-
+   <div class="swiper-button-prev featured-swiper-button-prev"></div>
+  
   <!-- Swiper Carousel -->
-  <div class="featured-swiper-wrapper">
-    <div class="featured-swiper-container">
+  <div class="swiper-wrapper featured-swiper-wrapper">
+    <div class="swiper-container featured-swiper-container">
       <div class="swiper-wrapper" id="featuredProducts"></div>
     </div>
   </div>
 
-  <div class="featured-swiper-button-next">›</div>
+   <div class="swiper-button-next featured-swiper-button-next"></div>
 
   <!-- Explore More Button -->
   <a href="Products/" class="featured-button">
@@ -426,7 +426,7 @@
 
         featured.forEach(product => {
           const slide = document.createElement('div');
-          slide.classList.add('swiper-slide');
+          slide.classList.add('swiper-slide featured-swiper-slide');
 
           slide.innerHTML = `
             <div class="featured-product-card">
