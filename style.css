@@ -421,11 +421,15 @@ body {
 }
 
 
-.featured-swiper-wrapper {
+.featured-swiper-container {
   max-width: calc((26vw * 3) + (30px * 2));
   overflow: hidden;
   box-sizing: border-box;
   margin: 0 auto;
+}
+
+.featured-swiper-wrapper {
+  display: flex;
 }
 
 .featured-swiper-slide{
