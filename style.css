@@ -1479,7 +1479,7 @@ body {
 
 .product-top-section {
   background-color: var(--red);
-  height: 60vh;
+  height: 70vh;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -1519,7 +1519,7 @@ body {
   border-radius: 24px; /* squircle shape */
   border: 2px solid var(--yellow);
   background-color: transparent;
-  color: black;
+  color: #f8f8f5;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
