@@ -1484,8 +1484,8 @@ body {
 }
 
 .product-header {
-  text-align: center;
-  margin-bottom: 0px;
+  text-align: left;
+  padding: 20px 0 20px;
 }
 
 .product-title {
@@ -1512,7 +1512,7 @@ body {
   overflow-y: auto;
   position: sticky;
   top: 180px; /* changed from 100px */
-  background: #fff;
+  background-color: var(--red);
   padding: 24px;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.05);
@@ -1569,6 +1569,7 @@ body {
   flex: 1;
   min-width: 0;
   justify-content: center;
+  top: 90px;
 }
 
 .product-grid {
