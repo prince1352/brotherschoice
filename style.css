@@ -557,19 +557,13 @@ body {
 /* Each Logo */
 .logo-item {
   position: absolute;
-  width: 120px;
-  height: auto;
+  left: 0;
+  top: 0;
+  transform: translate(var(--x), var(--y));
   transition: transform 0.3s ease, z-index 0.3s ease;
   will-change: transform;
   pointer-events: auto;
   cursor: pointer;
-}
-
-/* Position using custom properties */
-.logo-item {
-  left: 0;
-  top: 0;
-  transform: translate(var(--x), var(--y));
 }
 
 /* Logo Image */
