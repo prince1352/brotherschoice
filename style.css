@@ -1494,6 +1494,17 @@ body {
   color: var(--red);
 }
 
+.product-intro {
+  max-width: 800px;
+  margin: 0 auto 60px;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #555;
+  text-align: center;
+  line-height: 1.7;
+}
+
+
 .product-page-section {
   background: #f8f8f5;
   padding: 20px 5% 60px;
