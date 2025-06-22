@@ -581,12 +581,24 @@ body {
 /* INDIVIDUAL LOGOS */
 picture.logo.brand {
   position: absolute;
-  width: 100px;
+  width: 80px; /* Adjust this value to your liking (try 60px–100px range) */
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   opacity: 0;
   transform: scale(0.8);
   transition: all 1s ease;
 }
 
+/* Ensure inner image fills the <picture> element */
+picture.logo.brand img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* VISIBLE STATE */
 picture.logo.brand.show-logo {
   opacity: 1;
   transform: scale(1);
