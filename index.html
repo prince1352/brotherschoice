@@ -634,7 +634,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const xOffset = (currentX / factor);
       const yOffset = (currentY / factor);
 
-      logo.style.transform = `translate(calc(var(--x) + ${xOffset}px), calc(var(--y) + ${yOffset}px)) scale(1)`;
+      logo.style.transform = `translate(calc(var(--x) + ${xOffset}px), calc(var(--y) + ${yOffset}px))`;
     });
 
     requestAnimationFrame(animateParallax);
