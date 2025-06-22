@@ -53,45 +53,29 @@
     </div>
   </header>
 
- <!-- Product Title -->
-<section class="product-section">
-  <div class="product-header">
-    <h1 class="product-title">Brothers Choice Products</h1>
-      <p class="product-intro">
+<!-- PRODUCTS PAGE -->
+<section class="product-top-section">
+  <div class="product-top-content">
+    <h1 class="product-page-title">Brothers Choice</h1>
+    <p class="product-page-description">
       Explore a selection of our top products below. For our full catalog or specific inquiries, feel free to contact us directly.
     </p>
-  </div>
-</section>
 
- <!-- Product Section -->
-
-<section class="product-page-section">
-  <div class="product-layout">
-    
-    <!-- Left Filter Menu -->
-    <aside class="filter-sidebar">
-      <div class="filter-box">
-        <input type="text" id="productSearch" placeholder="Search Products..." />
-        
-        <h3>Categories</h3>
-        <div id="categoryFilters" class="checkbox-list">
-          <!-- Categories will be injected here -->
-        </div>
-      </div>
-    </aside>
-
-    <!-- Right Products Display -->
-    <div class="product-display-area">
-      <div id="productLoader" class="swiper-loader">
-        <div class="spinner"></div>
-      </div>
-      <div id="productGrid" class="product-grid"></div>
+    <!-- Categories (with default "All") -->
+    <div id="categoryButtons" class="category-button-group">
+      <!-- Buttons will be injected via JavaScript -->
     </div>
-
   </div>
 </section>
 
+<!-- Product Grid Section -->
+<section class="product-main-section">
+  <div id="productLoader" class="swiper-loader">
+    <div class="spinner"></div>
+  </div>
 
+  <div id="productGrid" class="product-grid"></div>
+</section>
 
   <!-- Footer -->
   <footer class="site-footer">
@@ -123,8 +107,9 @@
 <script>
   const productsURL = "https://script.google.com/macros/s/AKfycbz6nbkZih_ZDy3WS1GjdFdXMfuKaJf1u_umX7UONYEavNdDqtqOqrflesQbRuOfO2FW/exec";
   let allProducts = [];
+  let activeCategory = "All";
 
-  // Fetch and initialize
+  // Fetch products on load
   fetch(productsURL)
     .then(res => res.json())
     .then(data => {
@@ -134,62 +119,76 @@
       document.getElementById('productLoader').style.display = 'none';
     });
 
-  // Render sorted categories
-  function renderCategories(data) {
-    const categorySet = new Set(data.map(item => item["Product Category"]).filter(Boolean));
-    const sortedCategories = [...categorySet].sort((a, b) => a.localeCompare(b));
-    const container = document.getElementById("categoryFilters");
+  // Render category buttons
+  function renderCategories(products) {
+    const categorySet = new Set(products.map(p => p["Product Category"]).filter(Boolean));
+    const sortedCategories = [...categorySet].sort();
+    const container = document.getElementById("categoryButtons");
 
+    // Create "All" button first
+    const allBtn = document.createElement("button");
+    allBtn.className = "category-btn active";
+    allBtn.textContent = "All";
+    allBtn.addEventListener("click", () => handleCategoryClick("All"));
+    container.appendChild(allBtn);
+
+    // Other dynamic category buttons
     sortedCategories.forEach(cat => {
-      const id = `cat-${cat.replace(/\s+/g, '-')}`;
-      const label = document.createElement("label");
-      label.className = "checkbox-item";
-      label.innerHTML = `
-        <input type="checkbox" value="${cat}" onchange="filterProducts()" id="${id}" />
-        <span>${cat}</span>
-      `;
-      container.appendChild(label);
+      const btn = document.createElement("button");
+      btn.className = "category-btn";
+      btn.textContent = cat;
+      btn.addEventListener("click", () => handleCategoryClick(cat));
+      container.appendChild(btn);
     });
   }
 
-  // Render product cards
+  // Handle category click
+  function handleCategoryClick(category) {
+    activeCategory = category;
+
+    // Toggle active styles
+    const buttons = document.querySelectorAll(".category-btn");
+    buttons.forEach(btn => {
+      if (btn.textContent === category) {
+        btn.classList.add("active");
+      } else {
+        btn.classList.remove("active");
+      }
+    });
+
+    const filtered = category === "All"
+      ? allProducts
+      : allProducts.filter(p => p["Product Category"] === category);
+
+    renderProducts(filtered);
+  }
+
+  // Render product grid
   function renderProducts(products) {
     const grid = document.getElementById("productGrid");
     grid.innerHTML = "";
 
     products.forEach(product => {
+      const wrapper = document.createElement("div");
+      wrapper.className = "product-wrapper";
+
       const card = document.createElement("div");
       card.className = "product-card";
       card.innerHTML = `
         <img src="${product["Image URL"]}" alt="${product["Alt Text"]}" loading="lazy">
-        <div class="product-info">
-          <h3>${product["Product Name"]}</h3>
-        </div>
       `;
-      grid.appendChild(card);
+
+      const name = document.createElement("p");
+      name.className = "product-name";
+      name.textContent = product["Product Name"];
+
+      wrapper.appendChild(card);
+      wrapper.appendChild(name);
+      grid.appendChild(wrapper);
     });
   }
-
-  // Filter logic
-  function filterProducts() {
-    const searchValue = document.getElementById("productSearch").value.toLowerCase();
-    const checkedCategories = Array.from(document.querySelectorAll('#categoryFilters input:checked'))
-      .map(cb => cb.value);
-
-    const filtered = allProducts.filter(p => {
-      const matchesSearch = p["Product Name"].toLowerCase().includes(searchValue);
-      const matchesCategory = checkedCategories.length === 0 || checkedCategories.includes(p["Product Category"]);
-      return matchesSearch && matchesCategory;
-    });
-
-    // Sort filtered results alphabetically
-    const sortedFiltered = filtered.sort((a, b) => a["Product Name"].localeCompare(b["Product Name"]));
-    renderProducts(sortedFiltered);
-  }
-
-  // Bind input listener
-  document.getElementById("productSearch").addEventListener("input", filterProducts);
 </script>
+
 
 
 
