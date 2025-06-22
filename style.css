@@ -1512,7 +1512,7 @@ body {
   overflow-y: auto;
   position: sticky;
   top: 180px; /* changed from 100px */
-  background-color: var(--red);
+  background: var(--red);
   padding: 24px;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.05);
@@ -1569,7 +1569,7 @@ body {
   flex: 1;
   min-width: 0;
   justify-content: center;
-  top: 90px;
+  magin-top: -90px;
 }
 
 .product-grid {
