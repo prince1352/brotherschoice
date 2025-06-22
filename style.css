@@ -559,7 +559,9 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  transform: translate(var(--x), var(--y));
+  width: clamp(70px, 8vw, 120px);
+  height: auto;
+  transform: translate(0, 0); /* initial, overwritten by JS */
   transition: transform 0.3s ease, z-index 0.3s ease;
   will-change: transform;
   pointer-events: auto;
