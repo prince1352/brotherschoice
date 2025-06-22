@@ -1,6 +1,7 @@
 :root {
   --red: #d01c41;
   --yellow: #ffcf91;
+  --offwhite: #f8f8f5;
   --font-light: 300;
   --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
@@ -22,7 +23,7 @@ body {
   font-family: var(--font-family);
   font-weight: 400;
   line-height: 1.5;
-  background-color: #f8f8f5;
+  background-color: var(--offwhite);
   color: #333;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -138,7 +139,7 @@ body {
 
 .quote-button {
   background-color: var(--red);
-  color: #f8f8f5;
+  color: var(--offwhite);
   padding: 10px 24px;
   text-decoration: none;
   font-weight: var(--font-light);
@@ -276,7 +277,7 @@ body {
 .landing-title,
 .landing-subheading,
 .landing-location {
-  color: #f8f8f5;
+  color: var(--offwhite);
   text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.9);
   font-weight: 400;
 }
@@ -285,7 +286,7 @@ body {
   display: inline-block;
   padding: 14px 32px;
   background-color: var(--red);
-  color: #f8f8f5;
+  color: var(--offwhite);
   font-size: 1.1rem;
   font-weight: 500;
   text-decoration: none;
@@ -296,15 +297,15 @@ body {
 
 .browse-button:hover {
   background-color: transparent;
-  border: 2px solid #f8f8f5;
-  color: #f8f8f5;
+  border: 2px solid var(--offwhite);
+  color: var(--offwhite);
 }
 
 /* ----------------------------------------------
          Where to Find Us Section
 ------------------------------------------------*/
 .brand-showcase-section {
-  background-color: #f8f8f5;
+  background-color: var(--offwhite);
   padding: 40px 2% 40px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
@@ -359,7 +360,7 @@ body {
 ------------------------------------------------*/
 
 .featured-products-section {
-  background-color: #f8f8f5;
+  background-color: var(--offwhite);
   padding: 50px 5% 60px;
   text-align: center;
   position: relative;
@@ -400,7 +401,7 @@ body {
   display: inline-block;
   padding: 14px 32px;
   background-color: var(--red);
-  color: #f8f8f5;
+  color: var(--offwhite);
   font-size: 1.1rem;
   font-weight: 500;
   text-decoration: none;
@@ -532,7 +533,7 @@ body {
   position: relative;
   background: url('images/specialize-background.jpg') no-repeat center center/cover;
   padding: 100px 10% 80px;
-  color: #f8f8f5;
+  color: var(--offwhite);
   overflow: hidden;
 }
 
@@ -577,7 +578,7 @@ body {
 .specialize-title {
   font-size: 2.2rem;
   font-weight: 600;
-  color: #f8f8f5;
+  color: var(--offwhite);
   margin-bottom: 50px;
 }
 
@@ -633,7 +634,7 @@ body {
 .card-front {
   background-size: cover;
   background-position: center;
-  color: #f8f8f5;
+  color: var(--offwhite);
   font-size: 1.1rem;
   font-weight: 500;
   z-index: 2;
@@ -677,7 +678,7 @@ body {
   display: inline-block;
   padding: 14px 32px;
   background-color: var(--red);
-  color: #f8f8f5;
+  color: var(--offwhite);
   font-size: 1.1rem;
   font-weight: 500;
   text-decoration: none;
@@ -690,8 +691,8 @@ body {
 
 .specialize-button:hover {
   background-color: transparent;
-  border: 2px solid #f8f8f5;
-  color: #f8f8f5;
+  border: 2px solid var(--offwhite);
+  color: var(--offwhite);
 }
 
 
@@ -704,7 +705,7 @@ body {
   flex-wrap: wrap;
   align-items: stretch;
   padding: 0;
-  background-color: #f8f8f5;
+  background-color: var(--offwhite);
 }
 
 .why-image {
@@ -749,7 +750,7 @@ body {
   display: inline-block;
   padding: 14px 32px;
   background-color: var(--red);
-  color: #f8f8f5;
+  color: var(--offwhite);
   font-size: 1.1rem;
   font-weight: 500;
   text-decoration: none;
@@ -873,7 +874,7 @@ body {
 ------------------------------------------------*/
 
 .contact-section {
-  background-color: #f8f8f5;
+  background-color: var(--offwhite);
   padding: 60px 10% 10px;
   border-top: 1px solid #eee;
 }
@@ -953,7 +954,7 @@ body {
   outline: none;
   border-color: var(--red);
   box-shadow: 0 0 0 2px rgba(208, 28, 65, 0.15);
-  background-color: #f8f8f5;
+  background-color: var(--offwhite);
 }
 
 .contact-form textarea {
@@ -965,7 +966,7 @@ body {
   width: 100%;
   align-self: stretch;
   background-color: var(--red);
-  color: #f8f8f5;
+  color: var(--offwhite);
   border: 2px solid transparent;
   border-radius: 6px;
   padding: 14px 32px;
@@ -1004,7 +1005,7 @@ body {
 
 .map-button {
   background-color: var(--red);
-  color: #f8f8f5;
+  color: var(--offwhite);
   font-size: 1rem;
   padding: 12px 24px;
   border: 2px solid transparent;
@@ -1140,7 +1141,7 @@ body {
 
 .customers-landing-title,
 .customers-landing-location {
-  color: #f8f8f5;
+  color: var(--offwhite);
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
   font-weight: 400;
 }
@@ -1150,7 +1151,7 @@ body {
 ------------------------------------------------*/
 
 .grocery-supplier-section {
-  background-color: #f8f8f5;
+  background-color: var(--offwhite);
   padding: 80px 8% 80px;
   text-align: center;
 }
@@ -1226,7 +1227,7 @@ body {
   display: inline-block;
   padding: 14px 32px;
   background-color: var(--red);
-  color: #f8f8f5;
+  color: var(--offwhite);
   font-size: 1.1rem;
   font-weight: 500;
   text-decoration: none;
@@ -1306,7 +1307,7 @@ body {
 ------------------------------------------------*/
 .contact-us-section {
   padding: 80px 10%;
-  background-color: #f8f8f5;
+  background-color: var(--offwhite);
 }
 
 .contact-us-header {
@@ -1354,7 +1355,7 @@ body {
 .contact-us-submit-button {
   padding: 12px 24px;
   background-color: var(--red);
-  color: #f8f8f5;
+  color: var(--offwhite);
   border: none;
   border-radius: 6px;
   font-size: 1rem;
@@ -1457,7 +1458,7 @@ body {
 
 .contact-us-map-button {
   background-color: var(--red);
-  color: #f8f8f5;
+  color: var(--offwhite);
   font-size: 1rem;
   padding: 12px 24px;
   border: 2px solid var(--red);
@@ -1493,14 +1494,14 @@ body {
 }
 
 .product-page-title {
-  color: #f8f8f5;
+  color: var(--offwhite);
   font-size: 3.5rem;
   font-weight: 700;
   margin: 0 0 20px 0;
 }
 
 .product-page-description {
-  color: #f8f8f5;
+  color: var(--offwhite);
   font-size: 1.1rem;
   font-weight: 300;
   max-width: 600px;
@@ -1521,7 +1522,7 @@ body {
   border-radius: 24px; /* squircle shape */
   border: 2px solid var(--yellow);
   background-color: transparent;
-  color: #f8f8f5;
+  color: var(--offwhite);
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
