@@ -1479,7 +1479,7 @@ body {
 
 .product-top-section {
   background-color: var(--red);
-  height: 75vh;
+  height: 60vh;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -1519,7 +1519,7 @@ body {
   border-radius: 24px; /* squircle shape */
   border: 2px solid var(--yellow);
   background-color: transparent;
-  color: var(--yellow);
+  color: black;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -1536,7 +1536,7 @@ body {
 
 /* Product Main Section */
 .product-main-section {
-  background-color: var(--sand);
+  background-color: #f8f8f5;
   padding: 100px 8% 60px;
   margin-top: -150px; /* overlap red background */
   position: relative;
