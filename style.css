@@ -1479,7 +1479,7 @@ body {
 
 .product-top-section {
   background-color: var(--red);
-  height: 65vh;
+  height: 75vh;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
