@@ -360,7 +360,7 @@ body {
 ------------------------------------------------*/
 
 .featured-products-section {
-  background-color: var(--offwhite);
+  background-color: #f1eee9;
   padding: 50px 5% 60px;
   text-align: center;
   position: relative;
@@ -557,7 +557,7 @@ body {
 .logo-cloud-grid {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 30px;
   padding: 0 5%;
 }
 
@@ -1231,8 +1231,20 @@ body {
 
 .grocery-supplier-section {
   background-color: var(--offwhite);
-  padding: 80px 8% 80px;
+  padding: 80px 8% 40px;
   text-align: center;
+}
+
+.restaurant-supplier-section {
+  background-color: #f1eee9;
+  padding: 40px 8% 40px;
+  text-align: center;
+}
+
+.wholesale-services-section {
+  background-color: var(--offwhite);
+  padding: 40 8% 60px;
+  text-align: left;
 }
 
 .supplier-title {
