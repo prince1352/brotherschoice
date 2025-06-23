@@ -548,7 +548,6 @@ body {
   padding: 60px 5%;
   background-color: var(--sand);
   text-align: center;
-   position: relative;
   z-index: 1;
 }
 
