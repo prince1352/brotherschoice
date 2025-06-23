@@ -369,7 +369,7 @@ body {
 .featured-products-title {
   font-size: 2.5rem;
   font-weight: 700;
-  color: black;
+  color: var(--red);
   margin-bottom: 30px;
 }
 
@@ -483,8 +483,8 @@ body {
 .featured-swiper-button-prev::after,
 .featured-swiper-button-next::after {
   content: ''; /* required if not already set */
-  background-color: white;
-  color: var(--red);
+  background-color: var(--red);
+  color: var(--yellow);
   border-radius: 50%;
   border: 2px solid var(--red);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -520,9 +520,9 @@ body {
 
 .featured-swiper-button-prev:hover::after,
 .featured-swiper-button-next:hover::after {
-  background-color: var(--red);
-  color: white;
-  border: 2px solid transparent;
+  background-color: transparent;
+  color: red;
+  border: 2px solid var(--red);
 }
 
 /* ----------------------------------------------
