@@ -38,7 +38,7 @@ body {
 .main-header {
   width: 100%;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  padding: 0 50px;
+  padding: 0 clamp(20px, 4vw, 50px);
   position: sticky;
   top: 0;
   z-index: 999;
@@ -65,7 +65,7 @@ body {
 }
 
 .logo {
-  height: 70px;
+  height: clamp(50px, 5vw, 70px);
   width: auto;
 }
 
