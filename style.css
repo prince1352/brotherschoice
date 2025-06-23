@@ -140,13 +140,13 @@ body {
 .quote-button {
   background-color: var(--red);
   color: var(--offwhite);
-  padding: 10px 24px;
+  padding: clamp(8px, 1.5vw, 12px) clamp(16px, 3vw, 24px);
   text-decoration: none;
   font-weight: var(--font-light);
   border: 2px solid transparent;
   border-radius: 6px;
   transition: all 0.3s ease;
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 1.1vw, 1.2rem);
   position: relative;
   z-index: 9999;
   box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.5);
