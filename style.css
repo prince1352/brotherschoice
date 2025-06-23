@@ -919,7 +919,7 @@ body {
   max-width: 280px;
   text-align: left;
   font-size: clamp(0.9rem, 1vw, 1.1rem);
-  font-weight: 250;
+  font-weight: 400;
   color: #333;
   margin-left: 10px;
 }
@@ -938,9 +938,10 @@ body {
 }
 
 .brand-logo-row img {
-  height: clamp(25px, 4vw, 40px);
-  flex-shrink: 1; 
-  display: block;
+  width: clamp(60px, 10vw, 140px); /* ✅ scales with screen width */
+  aspect-ratio: 4 / 1;             /* ✅ keeps logos from growing too tall */
+  height: auto;                    /* ✅ prevents forced height growth */
+  flex-shrink: 1;                  /* ✅ allows shrinking if space is tight */
   transition: transform 0.3s ease;
 }
 
