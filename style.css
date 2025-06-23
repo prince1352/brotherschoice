@@ -360,7 +360,7 @@ body {
 ------------------------------------------------*/
 
 .featured-products-section {
-  background-color: var(--yellow);
+  background-color: var(--offwhite);
   padding: 50px 5% 60px;
   text-align: center;
   position: relative;
@@ -483,8 +483,8 @@ body {
 .featured-swiper-button-prev::after,
 .featured-swiper-button-next::after {
   content: ''; /* required if not already set */
-  background-color: var(--red);
-  color: var(--yellow);
+  background-color: var(--offwhite);
+  color: var(--red);
   border-radius: 50%;
   border: 2px solid var(--red);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -520,8 +520,8 @@ body {
 
 .featured-swiper-button-prev:hover::after,
 .featured-swiper-button-next:hover::after {
-  background-color: transparent;
-  color: red;
+  background-color: var(--red);
+  color: var(--offwhite);
   border: 2px solid var(--red);
 }
 
