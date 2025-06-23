@@ -77,6 +77,14 @@
   <div id="productGrid" class="product-grid"></div>
 </section>
 
+  <!-- Pop-Up-Card -->
+  <div id="productModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <img id="modalImage" src="" alt="Product" />
+  </div>
+</div>
+
   <!-- Footer -->
   <footer class="site-footer">
   <div class="footer-content">
@@ -189,8 +197,39 @@
   }
 </script>
 
+  <!--  Script Product Image Pop-up -->
 
+  <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const modal = document.getElementById("productModal");
+  const modalImg = document.getElementById("modalImage");
+  const closeBtn = document.querySelector(".close-btn");
 
+  document.addEventListener("click", function (e) {
+    const img = e.target.closest(".product-card img");
+    if (img) {
+      modalImg.src = img.src;
+      modal.style.display = "flex";
+      document.body.style.overflow = "hidden";
+    }
+  });
+
+  closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+    document.body.style.overflow = "auto";
+  });
+
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+      document.body.style.overflow = "auto";
+    }
+  });
+});
+</script>
+
+</body>
+</html>
 
 
 
