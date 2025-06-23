@@ -360,16 +360,16 @@ body {
 ------------------------------------------------*/
 
 .featured-products-section {
-  background-color: #f1eee9;
+  background-color: var(--yellow);
   padding: 50px 5% 60px;
   text-align: center;
   position: relative;
 }
 
 .featured-products-title {
-  font-size: 2.2rem;
-  font-weight: 600;
-  color: var(--red);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: black;
   margin-bottom: 30px;
 }
 
@@ -415,7 +415,7 @@ body {
 .featured-button:hover {
   background-color: transparent;
   border: 2px solid var(--red);
-  color: var(--red);
+  color: black;
 }
 
 .featured-products-loader {
