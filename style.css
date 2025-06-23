@@ -569,6 +569,15 @@ body {
   flex: 1;
 }
 
+.logo-row2 {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 30px;
+  flex: 1;
+  padding: 0px 10%;
+}
+
 .logo-final-row {
   justify-content: center;
 }
