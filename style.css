@@ -297,8 +297,8 @@ body {
 
 .browse-button:hover {
   background-color: transparent;
-  border: 2px solid var(--offwhite);
-  color: var(--offwhite);
+  border: 2px solid var(--red);
+  color: var(--red);
 }
 
 /* ----------------------------------------------
