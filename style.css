@@ -916,7 +916,7 @@ body {
 
 .brand-showcase-text {
   flex: 0 1 clamp(180px, 20%, 280px); /* ✅ allows shrinking before wrap */
-  min-width: 160px; 
+  min-width: 260px; 
   text-align: left;
   font-size: clamp(0.9rem, 1vw, 1.1rem);
   font-weight: 400;
