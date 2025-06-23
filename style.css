@@ -981,15 +981,12 @@ body {
 .brand-showcase-text {
   flex: 0 1 clamp(180px, 20%, 280px);
   text-align: left;
-  font-size: clamp(0.9rem, 1vw, 1.1rem);
+  font-size: clamp(0.75rem, 0.9vw, 1.1rem); /* ⬅️ lower min size for flexibility */
   font-weight: 400;
   color: #333;
   margin-left: 10px;
   white-space: normal;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;       /* 🔒 limit to 2 lines */
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+  line-height: 1.2;  /* Optional: tighten spacing to reduce wrap */
 }
 
 .brand-showcase-text h2 {
