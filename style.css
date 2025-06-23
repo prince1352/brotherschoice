@@ -908,20 +908,21 @@ body {
   display: flex;
   justify-content: top;
   align-items: center;
-  flex-wrap: wrap; /* allows it to stack on smaller screens */
-  gap: 30px;
+  flex-wrap: nowrap;
+  gap: clamp(20px, 2vw, 40px);
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .brand-showcase-text {
-  flex: 0 0 auto;
-  max-width: 280px;
+  flex: 0 1 clamp(180px, 20%, 280px); /* ✅ allows shrinking before wrap */
+  min-width: 160px; 
   text-align: left;
   font-size: clamp(0.9rem, 1vw, 1.1rem);
   font-weight: 400;
   color: #333;
   margin-left: 10px;
+  white-space: normal;
 }
 
 .brand-showcase-text h2 {
