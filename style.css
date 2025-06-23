@@ -228,7 +228,7 @@ body {
 .landing-section {
   position: relative;
   width: 100%;
-  min-height: 650px;
+  min-height: 700px;
   background: url('images/homepage-background.jpg') no-repeat center center/cover;
   display: flex;
   align-items: center;
@@ -533,6 +533,7 @@ body {
   padding: 60px 5%;
   background-color: var(--sand);
   text-align: center;
+  border-bottom: 1px solid #ddd;
 }
 
 .logo-cloud-header {
