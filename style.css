@@ -1681,6 +1681,7 @@ body {
   color: var(--offwhite);
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
+  z-index: 10;
 }
 
 .category-btn:hover {
@@ -1695,6 +1696,7 @@ body {
 
 .category-spacer {
   height: clamp(80px, 12vh, 160px);
+  z-index: 2;
 }
 
 /* Product Main Section */
