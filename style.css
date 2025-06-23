@@ -1692,11 +1692,15 @@ body {
   color: black;
 }
 
+.category-spacer {
+  height: clamp(80px, 12vh, 160px);
+}
+
 /* Product Main Section */
 .product-main-section {
   background-color: transparent;
   padding: 100px 8% 60px;
-  margin-top: calc(-24.27vh); /* overlap red background */
+  margin-top: calc(-25vh); /* overlap red background */
   position: relative;
   z-index: 2;
 }
