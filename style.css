@@ -558,7 +558,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  padding: 0 10%;
+  padding: 0 5%;
 }
 
 .logo-row {
@@ -575,8 +575,8 @@ body {
 
 /* Logo Cards */
 .logo-wrapper {
-  width: 140px;
-  height: 140px;
+  width: 120px;
+  height: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
