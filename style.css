@@ -918,7 +918,7 @@ body {
   flex: 0 0 auto;
   max-width: 280px;
   text-align: left;
-  font-size: 0.8rem;
+  font-size: clamp(0.9rem, 1vw, 1.1rem);
   font-weight: 250;
   color: #333;
   margin-left: 10px;
@@ -933,12 +933,12 @@ body {
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
-  gap: 40px 40px;
+  gap: clamp(20px, 2.5vw, 40px);
   flex: 1;
 }
 
 .brand-logo-row img {
-  height: 25px;
+  height: clamp(25px, 2.5vw, 40px);
   display: block;
   transition: transform 0.3s ease;
 }
