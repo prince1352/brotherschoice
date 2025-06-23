@@ -530,8 +530,8 @@ body {
 ------------------------------------------------*/
 
 .logo-cloud-section {
-  background-color: var(--offwhite);
-  padding: 100px 10%;
+  padding: 80px 5%;
+  background-color: var(--sand);
   text-align: center;
 }
 
@@ -558,15 +558,15 @@ body {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  align-items: center;
 }
 
 .logo-row {
   display: flex;
-  gap: 40px;
   justify-content: center;
+  gap: 40px;
   flex-wrap: wrap;
 }
+
 
 .logo-final-row {
   justify-content: center;
@@ -581,17 +581,13 @@ body {
 }
 
 .logo-wrapper img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: contain;
-  transition: transform 0.3s ease, filter 0.3s ease;
+  max-height: 60px;
+  transition: transform 0.3s ease;
 }
 
 /* Hover Effect */
 .logo-wrapper:hover img {
-  transform: scale(1.1);
-  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
+  transform: scale(1.05);
 }
 
 /* ----------------------------------------------
