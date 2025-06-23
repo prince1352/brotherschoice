@@ -916,14 +916,17 @@ body {
 }
 
 .brand-showcase-text {
-  flex: 0 1 clamp(180px, 20%, 280px); /* ✅ allows shrinking before wrap */
+  flex: 0 1 clamp(180px, 20%, 280px);
   text-align: left;
   font-size: clamp(0.9rem, 1vw, 1.1rem);
   font-weight: 400;
   color: #333;
   margin-left: 10px;
   white-space: normal;
-  max-height: 70px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;       /* 🔒 limit to 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .brand-showcase-text h2 {
