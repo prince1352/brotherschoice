@@ -902,7 +902,6 @@ body {
   padding: 40px 2% 40px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  max-height: 150px;
 }
 
 .brand-showcase-row {
@@ -924,6 +923,7 @@ body {
   color: #333;
   margin-left: 10px;
   white-space: normal;
+  max-height: 70px;
 }
 
 .brand-showcase-text h2 {
