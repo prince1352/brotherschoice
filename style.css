@@ -441,7 +441,7 @@ body {
 .featured-button:hover {
   background-color: transparent;
   border: 2px solid var(--red);
-  color: black;
+  color: var(--red);
 }
 
 .featured-products-loader {
@@ -522,9 +522,9 @@ body {
   margin: 0 30px;
   transition: transform 0.3s ease;
   position: absolute;
-  width: clamp(40px, 4vw, 60px);
-  height: clamp(40px, 4vw, 60px);
-  font-size: clamp(20px, 2vw, 30px) !important;
+  width: clamp(30px, 4vw, 60px);
+  height: clamp(30px, 4vw, 60px);
+  font-size: clamp(15px, 2vw, 30px) !important;
 }
 
 .featured-swiper-button-prev,
@@ -602,8 +602,8 @@ body {
 
 /* Section Title */
 .specialize-title {
-  font-size: 2.2rem;
-  font-weight: 600;
+  font-size: clamp(2rem, 3vw, 2.5rem);
+  font-weight: 700;
   color: var(--offwhite);
   margin-bottom: 50px;
 }
@@ -611,8 +611,8 @@ body {
 /* Cards Grid */
 .specialize-cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: clamp(20px, 2vw, 30px);
   margin-bottom: 50px;
 }
 
@@ -620,7 +620,7 @@ body {
 /* Flip Card Container */
 .card {
   perspective: 1000px;
-  height: 240px;
+  height: clamp(220px, 25vw, 280px);
   cursor: pointer;
 }
 
@@ -689,12 +689,12 @@ body {
 }
 
 .card-back h3 {
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 1.2vw, 1.2rem);
   margin-bottom: 10px;
 }
 
 .card-back p {
-  font-size: 0.9rem;
+  font-size: clamp(0.85rem, 1vw, 0.95rem);
   line-height: 1.4;
   padding: 0 10px;
 }
@@ -702,10 +702,10 @@ body {
 /* Button (if you keep one in the section) */
 .specialize-button {
   display: inline-block;
-  padding: 14px 32px;
+  padding: clamp(10px, 1.5vw, 14px) clamp(20px, 3vw, 32px);
   background-color: var(--red);
   color: var(--offwhite);
-  font-size: 1.1rem;
+  font-size: clamp(1rem, 1.1vw, 1.1rem);
   font-weight: 500;
   text-decoration: none;
   border: 2px solid transparent;
