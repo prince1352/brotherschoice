@@ -933,15 +933,13 @@ body {
   justify-content: flex-start;
   align-items: center;
   flex-wrap: nowrap;
-  gap: clamp(20px, 2.5vw, 40px);
+  gap: clamp(10px, 2.5vw, 30px);
   flex: 1;
 }
 
 .brand-logo-row img {
-  width: clamp(60px, 10vw, 140px); /* ✅ scales with screen width */
-  aspect-ratio: 4 / 1;             /* ✅ keeps logos from growing too tall */
-  height: auto;                    /* ✅ prevents forced height growth */
-  flex-shrink: 1;                  /* ✅ allows shrinking if space is tight */
+  height: clamp(25px, 2.5vw, 30px);
+  display: block;
   transition: transform 0.3s ease;
 }
 
