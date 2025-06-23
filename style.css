@@ -530,7 +530,7 @@ body {
 ------------------------------------------------*/
 
 .logo-cloud-section {
-  padding: 80px 5%;
+  padding: 60px 5%;
   background-color: var(--sand);
   text-align: center;
 }
@@ -549,7 +549,7 @@ body {
 .logo-cloud-subtitle {
   font-size: 1.1rem;
   color: #444;
-  max-width: 700px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -584,8 +584,8 @@ body {
 
 /* Logo Cards */
 .logo-wrapper {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -601,7 +601,7 @@ body {
 
 /* Hover Effect */
 .logo-wrapper:hover img {
-  transform: scale(1.05);
+  transform: scale(1.2);
 }
 
 /* ----------------------------------------------
