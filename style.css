@@ -366,6 +366,12 @@ body {
   position: relative;
   border-radius: 16px 16px 0 0;
   box-shadow: 0 -12px 30px rgba(0, 0, 0, 0.05);
+  top: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
 }
 
 .featured-products-title {
@@ -533,11 +539,12 @@ body {
   z-index: 5;
 }*/
 
-.featured-wrapper {
+
+.distributor-featured-wrapper {
   position: relative;
-  z-index: 2;
-  background: #fff; /* Ensure it covers the previous section */
+  overflow: hidden;
 }
+
 
 
 /* ----------------------------------------------
@@ -549,6 +556,7 @@ body {
   background-color: var(--sand);
   text-align: center;
   z-index: 1;
+  position: relative;
 }
 
 .logo-cloud-header {
