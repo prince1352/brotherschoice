@@ -533,6 +533,17 @@ body {
   z-index: 5;
 }
 
+.logo-cloud-section {
+  position: relative;
+  z-index: 1;
+}
+
+.featured-wrapper {
+  position: relative;
+  z-index: 2;
+  background: #fff; /* Ensure it covers the previous section */
+}
+
 
 /* ----------------------------------------------
         Distributor Section
