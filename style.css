@@ -364,6 +364,8 @@ body {
   padding: 50px 5% 60px;
   text-align: center;
   position: relative;
+  border-radius: 16px 16px 0 0;
+  box-shadow: 0 -12px 30px rgba(0, 0, 0, 0.05);
 }
 
 .featured-products-title {
@@ -524,6 +526,13 @@ body {
   color: var(--offwhite);
   border: 2px solid var(--red);
 }
+
+.pull-up {
+  margin-top: -60px;
+  position: relative;
+  z-index: 5;
+}
+
 
 /* ----------------------------------------------
         Distributor Section
