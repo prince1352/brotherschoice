@@ -933,7 +933,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   flex-wrap: nowrap;
-  gap: clamp(10px, 2.5vw, 30px);
+  gap: clamp(10px, 2.5vw, 40px);
   flex: 1;
 }
 
