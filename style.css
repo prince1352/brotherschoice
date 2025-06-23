@@ -586,7 +586,6 @@ body {
 .logo-wrapper {
   position: relative; /* ← Add this */
   width: 100px;
-  height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -609,7 +608,7 @@ body {
 
 .logo-wrapper img {
   max-width: 100%;
-  max-height: 100%;
+  max-height: auto;
   object-fit: contain;
   transition: transform 0.3s ease;
 }
