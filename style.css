@@ -579,9 +579,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 12px;
-  background: #fff;
-  border-radius: 12px;
   transition: transform 0.3s ease;
 }
 
