@@ -364,12 +364,6 @@ body {
   padding: 50px 5% 60px;
   text-align: center;
   position: relative;
-  border-radius: 16px 16px 0 0;
-  box-shadow: 0 -12px 30px rgba(0, 0, 0, 0.05);
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .featured-products-title {
@@ -531,20 +525,6 @@ body {
   border: 2px solid var(--red);
 }
 
-/*.pull-up {
-  margin-top: -60px;
-  position: relative;
-  z-index: 5;
-}*/
-
-
-.distributor-featured-wrapper {
-  position: relative;
-  overflow: hidden;
-}
-
-
-
 /* ----------------------------------------------
         Distributor Section
 ------------------------------------------------*/
@@ -552,9 +532,6 @@ body {
 .logo-cloud-section {
   padding: 60px 5%;
   background-color: var(--sand);
-  text-align: center;
-  z-index: 1;
-  position: relative;
 }
 
 .logo-cloud-header {
