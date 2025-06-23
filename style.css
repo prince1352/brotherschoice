@@ -361,8 +361,8 @@ body {
 
 /* Logo Cards */
 .logo-wrapper {
-  width: clamp(80px, 7vw, 110px);
-  height: clamp(80px, 7vw, 110px);
+  width: clamp(80px, 7.5vw, 150px);
+  height: clamp(80px, 7.5vw, 150px);
   display: flex;
   align-items: center;
   justify-content: center;
