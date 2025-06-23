@@ -527,16 +527,11 @@ body {
   border: 2px solid var(--red);
 }
 
-.pull-up {
+/*.pull-up {
   margin-top: -60px;
   position: relative;
   z-index: 5;
-}
-
-.logo-cloud-section {
-  position: relative;
-  z-index: 1;
-}
+}*/
 
 .featured-wrapper {
   position: relative;
@@ -553,6 +548,8 @@ body {
   padding: 60px 5%;
   background-color: var(--sand);
   text-align: center;
+   position: relative;
+  z-index: 1;
 }
 
 .logo-cloud-header {
