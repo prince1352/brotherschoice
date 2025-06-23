@@ -11,8 +11,7 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
 
   
 </head>
@@ -69,7 +68,6 @@
 </section>
 
 <!-- DISTRIBUTOR Section -->
-<div class="distributor-featured-wrapper">
 <section class="logo-cloud-section">
   <div class="logo-cloud-header">
     <h2 class="logo-cloud-title">Trusted Brand Partners</h2>
@@ -211,7 +209,6 @@
     Explore More of Our Top Products
   </a>
 </section>
-   </div>
 
     <!-- WHERE TO FIND US SECTION -->
 <section class="brand-showcase-section">
@@ -644,21 +641,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 </script>
   
-  <!--  Script FEATURED-DISTRIBUTOR Section -->
-
-  <script>
-  gsap.registerPlugin(ScrollTrigger);
-
-  ScrollTrigger.create({
-    trigger: ".distributor-featured-wrapper",
-    start: "top top",
-    end: "bottom+=100% top",
-    pin: ".logo-cloud-section",
-    pinSpacing: false,
-    anticipatePin: 1
-  });
-</script>
-
 
 </body>
 </html>
