@@ -1122,15 +1122,19 @@ body {
   align-items: center;
   justify-content: center;
   gap: clamp(40px, 6vw, 80px);
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .founder-image picture img {
- width: clamp(260px, 30vw, 350px);
+  width: clamp(260px, 30vw, 350px);
   width: 100%;
   border-radius: 16px;
   box-shadow: 0 8px 24px rgba(255, 255, 255, 0.15);
   object-fit: cover;
+}
+
+.founder-image {
+  flex-shrink: 0;
 }
 
 .founder-text {
