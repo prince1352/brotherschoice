@@ -1433,24 +1433,22 @@ body {
   justify-content: space-between;
 }
 
-.contact-us-fields {
-  display: flex;
-  flex-direction: column;
-  gap: clamp(16px, 2.5vh, 28px); /* controlled spacing */
-  flex-grow: 1;
-}
-
-.contact-us-form input,
-.contact-us-form textarea {
+.contact-us-form input {
   width: 100%;
-  padding: clamp(10px, 1.5vh, 14px);
+  padding: 12px;
   margin-bottom: clamp(20px, 3vh, 33px);
   border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 1rem;
 }
 
-.contact-us-form input {
+.contact-us-form textarea {
+  width: 100%;
+  padding: clamp(20px, 1.5vh, 60px);
+  margin-bottom: clamp(20px, 3vh, 33px);
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
   height: 100%;
   display: flex;
   flex-direction: column;
