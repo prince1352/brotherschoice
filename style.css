@@ -1114,7 +1114,7 @@ body {
 ------------------------------------------------*/
 
 .founder-section {
-  padding: clamp(60px, 8vw, 100px) clamp(5%, 10vw, 15%);
+  padding: 60px clamp(5%, 10vw, 15%);
 }
 
 .founder-content {
