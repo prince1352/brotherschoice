@@ -1196,6 +1196,7 @@ body {
   font-size: clamp(2.8rem, 6vw, 4.5rem);
   font-weight: 900;
   margin-bottom: 20px;
+  white-space: nowrap;
 }
 
 .customers-landing-location {
@@ -1330,7 +1331,7 @@ body {
 ------------------------------------------------*/
 
 .wholesale-services-section {
-  padding: 80px 10% 30px;
+  padding: 60px 10% 40px;
 }
 
 .wholesale-services-content {
@@ -1384,7 +1385,7 @@ body {
                  Contact Page  
 ------------------------------------------------*/
 .contact-us-section {
-  padding: 80px 10%;
+  padding: 80px clamp(6%, 8vw, 10%);
   background-color: var(--offwhite);
 }
 
@@ -1394,7 +1395,7 @@ body {
 }
 
 .contact-us-title {
-  font-size: 3rem;
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
   font-weight: 600;
   color: var(--red);
 }
@@ -1402,7 +1403,7 @@ body {
 .contact-us-subheading {
   max-width: 700px;
   margin: 20px auto 10px;
-  font-size: 1.1rem;
+  font-size: clamp(1rem, 1.5vw, 1.1rem);
   line-height: 1.7;
   font-weight: 300;
   color: #333;
@@ -1424,19 +1425,19 @@ body {
 .contact-us-form textarea {
   width: 100%;
   padding: 12px;
-  margin-bottom: 33px;
+  margin-bottom: clamp(20px, 3vh, 33px);
   border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 1rem;
 }
 
 .contact-us-submit-button {
-  padding: 12px 24px;
+  padding: clamp(12px, 1.5vw, 16px) clamp(24px, 3vw, 32px);
   background-color: var(--red);
   color: var(--offwhite);
   border: none;
   border-radius: 6px;
-  font-size: 1rem;
+  font-size: clamp(1rem, 1.2vw, 1.1rem);
   cursor: pointer;
   transition: background 0.3s ease;
   width: 100%;
@@ -1468,7 +1469,7 @@ body {
 .contact-us-details p,
 .contact-us-social p,
 .contact-us-allindia p {
-  font-size: 1rem;
+font-size: clamp(0.95rem, 1vw, 1.1rem);
   font-weight: 300;
   color: #333;
 }
@@ -1476,7 +1477,7 @@ body {
 .contact-us-details p strong,
 .contact-us-social p strong,
 .contact-us-allindia p strong {
-  font-size: 1rem;
+  font-size: clamp(0.95rem, 1vw, 1.1rem);
   font-weight: 700;
   color: #333;
 }
@@ -1525,8 +1526,12 @@ body {
   margin-top: 0px;
   border-radius: 12px;
   overflow: hidden;
-  padding: 0 10%;
+  padding: 0 clamp(6%, 8vw, 10%);
   box-sizing: border-box;
+}
+
+.contact-us-map iframe {
+  height: clamp(300px, 35vh, 450px);
 }
 
 .contact-us-map-button-wrapper {
@@ -1537,8 +1542,8 @@ body {
 .contact-us-map-button {
   background-color: var(--red);
   color: var(--offwhite);
-  font-size: 1rem;
-  padding: 12px 24px;
+  font-size: clamp(1rem, 1.2vw, 1.1rem);
+  padding: clamp(12px, 1.5vw, 16px) clamp(24px, 3vw, 32px);
   border: 2px solid var(--red);
   border-radius: 6px;
   text-decoration: none;
