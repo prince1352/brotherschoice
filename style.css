@@ -1790,9 +1790,18 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
 
   .mobile-home-icon {
     left: 20px;
-    width: 26px;
-    height: 18px;
   }
+
+  .mobile-home-icon i {
+    transition: transform 0.3s ease, color 0.3s ease;
+    font-size: 1.4rem;
+    color: var(--yellow);
+}
+
+  .mobile-home-icon i:hover {
+    transform: scale(1.1);
+    color: var(--red);
+}
 
   .hamburger-menu-icon {
     right: 20px;
@@ -1802,6 +1811,7 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
     flex-direction: column;
     justify-content: space-between;
     transition: transform 0.3s ease, color 0.3s ease;
+    color: var(--yellow);
   }
 
   .hamburger-menu-icon span {
@@ -1851,15 +1861,11 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
   }
 
   .mobile-menu a {
-    color: #000;
+    color: var(--red);
     font-size: 1.1rem;
     font-weight: 400;
     text-decoration: none;
     transition: color 0.3s ease;
-  }
-
-  .mobile-menu a:hover {
-    color: var(--red);
   }
 
   body.menu-open {
@@ -1875,16 +1881,6 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
     visibility: visible;
   }
 
-.mobile-home-icon a,
-.hamburger-menu-icon {
-  transition: transform 0.3s ease, color 0.3s ease;
-  color: var(--red)
-}
-
-.mobile-home-icon a:hover,
-.hamburger-menu-icon:hover {
-  transform: scale(1.15);
-}
   
 }
 
