@@ -1410,7 +1410,8 @@ body {
 }
 
 .contact-us-content {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   flex-wrap: wrap;
   gap: 60px;
   justify-content: space-between;
