@@ -1773,6 +1773,7 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
   .main-header {
     justify-content: center;
     padding: 0 40px;
+    height: 80px;
   }
 
   .logo-link {
