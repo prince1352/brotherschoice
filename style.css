@@ -1843,13 +1843,13 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
     box-shadow: -6px 0 16px rgba(0, 0, 0, 0.1);
     border-left: 1px solid #e0dcd2;
     z-index: 10001;
-    padding: 80px 30px;
+    padding: 20px 20px;
     display: flex;
     flex-direction: column;
     gap: 24px;
     transition: right 0.3s ease;
     background: linear-gradient(to bottom, var(--offwhite), #f0e9dd);
-
+    overflow-y: auto;
   }
 
   .mobile-menu ul {
@@ -1886,17 +1886,17 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .mobile-menu-logo {
-  height: 40px;
+  height: 50px;
   width: auto;
 }
 
 /* Close Button */
 .mobile-close-button {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   color: var(--red);
   cursor: pointer;
   transition: transform 0.3s ease, color 0.3s ease;
@@ -1910,10 +1910,11 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
 /* Connect Subtitle */
 .mobile-connect-title {
   font-size: 1rem;
-  font-weight: 600;
-  color: #000;
-  margin-top: 30px;
-  margin-bottom: 20px;
+  font-weight: 700;
+  color: var(--red);
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-top: 1px solid #ddd;
 }
 
 /* Connect Links */
