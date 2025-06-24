@@ -1773,7 +1773,7 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
   .main-header {
     justify-content: center;
     padding: 0 40px;
-    height: 80px;
+    height: 70px;
   }
 
   .logo-link {
@@ -1847,7 +1847,7 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
     padding: 20px 20px 0;
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 24px 0 12px;
     transition: right 0.3s ease;
     background: var(--offwhite);
     overflow-y: auto;
@@ -1928,7 +1928,7 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
 .mobile-connect-links {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 18px 0 12px;
 }
 
 .connect-link {
