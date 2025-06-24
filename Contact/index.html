@@ -30,25 +30,6 @@
     <li class="menu-item"><a href="/brotherschoice/Contact/">Contact Us</a></li>
   </ul>
 </nav>
-
-    <!-- Hamburger Icon (only visible on mobile) -->
-<button class="hamburger" id="hamburger" aria-label="Toggle menu">
-  <span></span>
-  <span></span>
-  <span></span>
-</button>
-
-  <!-- Mobile Dropdown Menu -->
-<!-- Mobile Side Menu -->
-<div class="mobile-menu" id="mobileMenu">
-  <a href="/brotherschoice/">Home</a>
-  <a href="/brotherschoice/About/">About Us</a>
-  <a href="/brotherschoice/Products/">Products</a>
-  <a href="/brotherschoice/Customers/">Our Customers</a>
-  <a href="/brotherschoice/Contact/">Contact Us</a>
-</div>
-
-
     <div class="quote-button-wrapper">
       <a href="/brotherschoice/Contact/" class="quote-button">Get a Free Quote</a>
     </div>
@@ -137,24 +118,6 @@
     <p>&copy; 2025 Brothers Choice Foods. All rights reserved.</p>
   </div>
 </footer>
-
-<!--  Script Mobile Menu -->
-  
-<script>
-  const hamburger = document.getElementById('hamburger');
-  const mobileMenu = document.getElementById('mobileMenu');
-  const mobileLinks = mobileMenu.querySelectorAll('a');
-
-  hamburger.addEventListener('click', () => {
-    mobileMenu.classList.toggle('open');
-  });
-
-  mobileLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      mobileMenu.classList.remove('open');
-    });
-  });
-</script>
 
   <!--  Script Contact Us -->
   
