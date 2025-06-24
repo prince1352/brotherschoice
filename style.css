@@ -1410,7 +1410,7 @@ body {
 }
 
 .contact-us-content {
-  display: grid;
+  display: flex;
   flex-wrap: wrap;
   gap: 60px;
   justify-content: space-between;
