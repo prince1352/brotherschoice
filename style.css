@@ -1335,7 +1335,7 @@ body {
 
 .wholesale-services-content {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   gap: 60px;
   flex-wrap: wrap;
@@ -1369,7 +1369,6 @@ body {
   min-width: 400px;
   max-width: 500px;
   max-height: 620px:
-  align-self: stretch;
 }
 
 .wholesale-image picture,
