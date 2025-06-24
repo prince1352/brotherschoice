@@ -1920,7 +1920,7 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
   font-size: 1.2rem;
   font-weight: 600;
   color: black;
-  padding: 20px 0px 0px;
+  padding: 20px 0px;
   border-top: 1px solid #ddd;
 }
 
@@ -1928,7 +1928,7 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
 .mobile-connect-links {
   display: flex;
   flex-direction: column;
-  gap: 20px 0 20px;
+  margin-bottom: 20px;
 }
 
 .connect-link {
