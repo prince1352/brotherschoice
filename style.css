@@ -580,26 +580,6 @@ body {
   text-align: center;
 }
 
-/* Logo Line Row */
-.specialize-logo-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 30px;
-  gap: 20px;
-}
-
-.specialize-line {
-  flex: 1;
-  height: 2px;
-  background-color: white;
-}
-
-.specialize-logo {
-  height: 60px;
-  width: auto;
-}
-
 /* Section Title */
 .specialize-title {
   font-size: clamp(2rem, 3vw, 2.5rem);
@@ -620,7 +600,7 @@ body {
 /* Flip Card Container */
 .card {
   perspective: 1000px;
-  height: clamp(220px, 25vw, 280px);
+  height: clamp(220px, 24vw, 270px);
   cursor: pointer;
 }
 
