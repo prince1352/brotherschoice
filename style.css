@@ -1857,10 +1857,11 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
     list-style: none;
     padding: 0;
     margin-bottom: 0;
+    gap: 20px;
   }
 
   .mobile-menu li {
-    margin-bottom: 20px;
+    margin-bottom: 0;
   }
 
   .mobile-menu a {
@@ -1889,7 +1890,7 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
   justify-content: space-between;
   align-items: center;
   margin-bottom: 0;
-  padding: 0;
+  padding: 0 0 20px;
 }
 
 .mobile-menu-title {
@@ -1928,7 +1929,7 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
 .mobile-connect-links {
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
+  gap: 20px;
 }
 
 .connect-link {
