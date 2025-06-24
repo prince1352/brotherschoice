@@ -1772,7 +1772,7 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
 
   .main-header {
     justify-content: center;
-    padding: 0 20px;
+    padding: 0 40px;
   }
 
   .logo-link {
@@ -1795,12 +1795,11 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
   .mobile-home-icon i {
     transition: transform 0.3s ease, color 0.3s ease;
     font-size: 1.4rem;
-    color: var(--yellow);
+    color: var(--red);
 }
 
   .mobile-home-icon i:hover {
     transform: scale(1.1);
-    color: var(--red);
 }
 
   .hamburger-menu-icon {
