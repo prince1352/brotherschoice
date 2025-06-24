@@ -1366,8 +1366,9 @@ body {
 
 .wholesale-image {
   flex: 1;
-  min-width: 300px;
+  min-width: 400px;
   max-width: 500px;
+  max-height: 620px:
   align-self: stretch;
 }
 
