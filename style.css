@@ -1754,7 +1754,7 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
 
 
 /* ----------------------------------------------
-                MOBILE HEADER
+                MOBILE MENU
 ------------------------------------------------*/
 
 @media (max-width: 1000px) {
@@ -1840,14 +1840,16 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
     right: -300px;
     height: 100vh;
     width: 260px;
-    background-color: var(--offwhite);
-    box-shadow: -4px 0 12px rgba(0, 0, 0, 0.2);
+    box-shadow: -6px 0 16px rgba(0, 0, 0, 0.1);
+    border-left: 1px solid #e0dcd2;
     z-index: 10001;
     padding: 80px 30px;
     display: flex;
     flex-direction: column;
     gap: 24px;
     transition: right 0.3s ease;
+    background: linear-gradient(to bottom, var(--offwhite), #f0e9dd);
+
   }
 
   .mobile-menu ul {
@@ -1879,6 +1881,67 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
     opacity: 1;
     visibility: visible;
   }
+
+  .mobile-menu-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.mobile-menu-logo {
+  height: 40px;
+  width: auto;
+}
+
+/* Close Button */
+.mobile-close-button {
+  font-size: 1.5rem;
+  color: var(--red);
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.mobile-close-button:hover {
+  transform: scale(1.2);
+  color: #b80238;
+}
+
+/* Connect Subtitle */
+.mobile-connect-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+/* Connect Links */
+.mobile-connect-links {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.connect-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.connect-link i {
+  font-size: 1.1rem;
+  color: var(--red);
+  min-width: 20px;
+}
+
+.connect-link:hover {
+  color: var(--red);
+}
 
   
 }
