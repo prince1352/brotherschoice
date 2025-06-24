@@ -23,7 +23,7 @@
       <img src="/brotherschoice/images/Logo-W.png" alt="Company Logo" class="logo" />
     </a>
 
-  <!-- Desktop Navigation (hidden on mobile) -->
+  <!-- Desktop Navigation Menu -->
 <nav class="main-nav desktop-nav">
   <ul>
     <li class="menu-item"><a href="/brotherschoice/">Home</a></li>
@@ -35,7 +35,31 @@
 </nav>
     <div class="quote-button-wrapper">
       <a href="/brotherschoice/Contact/" class="quote-button">Get a Free Quote</a>
-    </div>    
+    </div>
+
+
+  <!-- Mobile Navigation Menu -->
+<div class="mobile-home-icon">
+  <a href="/brotherschoice/">
+    <i class="fas fa-home"></i>
+  </a>
+</div>
+
+<div class="hamburger-menu-icon" id="hamburgerToggle">
+  <span></span><span></span><span></span>
+</div>
+
+<div class="mobile-overlay" id="mobileOverlay"></div>
+<nav class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="/brotherschoice/">Home</a></li>
+    <li><a href="/brotherschoice/About/">About Us</a></li>
+    <li><a href="/brotherschoice/Products/">Products</a></li>
+    <li><a href="/brotherschoice/Customers/">Our Customers</a></li>
+    <li><a href="/brotherschoice/Contact/">Contact Us</a></li>
+  </ul>
+</nav>
+
   </header>
 
   <!-- Landing Page Section -->
@@ -637,6 +661,23 @@ document.addEventListener("DOMContentLoaded", () => {
     duration: 800, // default duration for animations
     easing: 'ease-out', // smooth easing
   });
+</script>
+
+    <!--  Script Mobile Menu -->
+
+  <script>
+  const hamburger = document.getElementById("hamburgerToggle");
+  const mobileMenu = document.getElementById("mobileMenu");
+  const mobileOverlay = document.getElementById("mobileOverlay");
+
+  function toggleMenu() {
+    mobileMenu.classList.toggle("open");
+    mobileOverlay.classList.toggle("show");
+    document.body.classList.toggle("menu-open");
+  }
+
+  hamburger.addEventListener("click", toggleMenu);
+  mobileOverlay.addEventListener("click", toggleMenu);
 </script>
   
 
