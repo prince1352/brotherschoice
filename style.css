@@ -1539,6 +1539,7 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
   overflow: hidden;
   padding: 0 clamp(6%, 8vw, 10%);
   box-sizing: border-box;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .contact-us-map iframe {
