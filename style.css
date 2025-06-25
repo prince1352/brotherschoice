@@ -1975,43 +1975,114 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
 ------------------------------------------------*/
 @media (max-width: 768px) {
   .landing-section {
-    flex-direction: column;
-    justify-content: center;
-    padding: 100px 8% 60px;
-    min-height: 100vh;
-    text-align: center;
-    background-position: center;
-    background-size: cover;
-  }
+  position: relative;
+  width: 100%;
+  min-height: clamp(500px, 85vh, 900px);
+  background: url('images/homepage-background.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 clamp(6%, 8vw, 10%);
+  overflow: hidden;
+  margin-top: -90px;
+  padding-top: 90px;
+}
 
-  .landing-content {
-    max-width: 100%;
-    padding: 0;
-  }
+.landing-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, var(--yellow) 0%, transparent 100%);
+  z-index: 1;
+}
 
-  .landing-title {
-    font-size: 2rem; /* Fixed size for better control on small screens */
-    margin-bottom: 16px;
-  }
+.landing-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  max-width: none;
+}
 
-  .landing-subheading {
-    font-size: 1.2rem;
-    margin-bottom: 12px;
-  }
+.landing-title {
+  font-size: clamp(2.5rem, 4.5vw, 4rem);
+  font-weight: 900;
+  margin-bottom: 20px;
+  white-space: nowrap;
+}
 
-  .landing-location {
-    font-size: 1rem;
-    margin-bottom: 24px;
-  }
+.landing-subheading {
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  font-weight: var(--font-light);
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
 
-  .browse-button {
-    padding: 12px 24px;
-    font-size: 1rem;
+.landing-location {
+  font-size: clamp(1rem, 1.6vw, 1.3rem);
+  font-weight: var(--font-light);
+  margin-bottom: 30px;
+  white-space: nowrap;
+}
+
+.landing-title,
+.landing-subheading,
+.landing-location {
+  color: var(--offwhite);
+  text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.9);
+  font-weight: 400;
+}
+
+.browse-button {
+  display: inline-block;
+  padding: clamp(10px, 1.5vw, 14px) clamp(20px, 3vw, 32px);
+  color: var(--offwhite);
+  background-color: var(--red);
+  font-size: clamp(1rem, 1.1vw, 1.1rem);
+  font-weight: 500;
+  text-decoration: none;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  border-radius: 6px;
+}
+
+.browse-button:hover {
+  background-color: transparent;
+  border: 2px solid var(--red);
+  color: var(--red);
+}
+
+/* ----------------------------------------------
+   Mobile Optimization (768px and below)
+------------------------------------------------*/
+@media (max-width: 768px) {
+  .landing-section {
+    padding: 0 clamp(4%, 6vw, 8%);
+    padding-top: 90px;
   }
 
   .landing-overlay {
-    background: linear-gradient(to bottom, var(--yellow) 0%, transparent 80%);
+    background: rgba(255, 207, 145, 0.7); /* --yellow with 70% opacity */
   }
+
+  .landing-title {
+    font-size: clamp(1.8rem, 6vw, 2.8rem);
+  }
+
+  .landing-subheading {
+    font-size: clamp(1rem, 4.5vw, 1.4rem);
+  }
+
+  .landing-location {
+    font-size: clamp(0.9rem, 4vw, 1.2rem);
+  }
+
+  .browse-button {
+    font-size: clamp(0.95rem, 3.5vw, 1rem);
+    padding: clamp(8px, 3vw, 12px) clamp(16px, 5vw, 28px);
+  }
+  
 }
 
 
