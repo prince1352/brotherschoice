@@ -1981,9 +1981,9 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
   }
 
   .landing-title {
-    font-size: clamp(1.8rem, 6vw, 2.4rem);
+    font-size: clamp(1.8rem, 6vw, 2.6rem);
     color: var(--red);
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -2002,8 +2002,8 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
   }
 
   .browse-button {
-    font-size: clamp(0.9rem, 3.5vw, 1rem);
-    padding: clamp(8px, 2vw, 12px) clamp(16px, 4vw, 24px);
+    font-size: clamp(0.9rem, 3.5vw, 1.1rem);
+    padding: clamp(8px, 2.5vw, 14px) clamp(16px, 4.5vw, 28px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     border: none;
     background-color: var(--red);
@@ -2014,6 +2014,10 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
   .browse-button:active {
     transform: scale(0.96);
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  }
+
+   .landing-overlay {
+    background: linear-gradient(to bottom, var(--yellow) 0%, transparent 100%);
   }
 }
 
