@@ -550,6 +550,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const loader = document.getElementById('featuredProductsLoader');
   const wrapper = document.getElementById('featuredProducts');
   const swiperContainer = document.querySelector('.featured-swiper-container');
+  const isMobile = window.innerWidth <= 768;
 
   loader.style.display = 'flex';
 
@@ -573,7 +574,34 @@ document.addEventListener("DOMContentLoaded", () => {
 
       loader.style.display = "none";
       swiperContainer.style.display = "block";
+      
+      if (isMobile) {
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('.featured-swiper-slide');
+        const totalSlides = slides.length;
 
+        const updateSlidePosition = () => {
+          wrapper.style.transform = `translateX(-${currentIndex * 70}vw)`;
+        };
+
+        // Auto-scroll every 2.5s
+        setInterval(() => {
+          currentIndex = (currentIndex + 1) % totalSlides;
+          updateSlidePosition();
+        }, 2500);
+
+        // Manual control
+        document.querySelector('.featured-swiper-button-next').addEventListener('click', () => {
+          currentIndex = (currentIndex + 1) % totalSlides;
+          updateSlidePosition();
+        });
+
+        document.querySelector('.featured-swiper-button-prev').addEventListener('click', () => {
+          currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+          updateSlidePosition();
+        });
+      } else {
+        
       new Swiper('.featured-swiper-container', {
         effect: 'coverflow',
         grabCursor: true,
