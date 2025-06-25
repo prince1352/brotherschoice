@@ -1994,7 +1994,7 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
 
   .featured-swiper-container {
     max-width: 100%;
-    padding: 0 5%;
+    padding: 0 10%;
   }
 
   .featured-swiper-slide {
