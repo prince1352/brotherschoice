@@ -2032,32 +2032,13 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
     padding: 40px clamp(3%, 4vw, 5%) 50px;
   }
 
-  .featured-swiper-container {
-    max-width: 100%;
-    padding: 0 50px; /* ensures room for arrows without overlap */
-  }
-
-  .featured-swiper-slide {
-    width: 100% !important;
-    max-width: 100%;
-  }
-
-
-
-
 
 .featured-swiper-container {
-  max-width: calc((26vw) + (30px * 2));
-  overflow: hidden;
-  box-sizing: border-box;
-  margin: 0 auto;
+  max-width: calc((70vw) + (30px * 2));
 }
 
 .featured-swiper-slide{
-  width: 26vw;
-  max-width: 390px;
-  display: flex;
-  justify-content: center;
+  width: 70vw;
 }    
 
 
