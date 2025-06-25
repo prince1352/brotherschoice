@@ -1991,25 +1991,6 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
           MOBILE FEATURED PRODUCTS SECTION
 ------------------------------------------------*/
 
-  .featured-swiper-container {
-    max-width: 100%;
-    overflow: hidden;
-    padding: 0 15vw; /* creates space for buttons on left and right 
-  }
-
-  .featured-swiper-wrapper {
-    display: flex;
-    transition: transform 0.5s ease;
-  }
-
-  .featured-swiper-slide {
-    width: 70vw !important;
-    max-width: 70vw;
-    flex: 0 0 70vw;
-    display: flex;
-    justify-content: center;
-  }
-*/
     
   .featured-swiper-button-prev,
   .featured-swiper-button-next {
