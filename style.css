@@ -1991,7 +1991,44 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
           MOBILE FEATURED PRODUCTS SECTION
 ------------------------------------------------*/
 
-    
+
+  .featured-swiper-container {
+    max-width: 100%;
+    padding: 0 5%;
+  }
+
+  .featured-swiper-slide {
+    width: 80vw !important; /* Ensures it’s wide but leaves space for centering */
+    max-width: 360px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .featured-product-card {
+    width: 100%;
+    aspect-ratio: 14 / 15;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin: auto;
+  }
+
+  .featured-product-card img {
+    width: 80%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    margin: auto;
+    transition: transform 0.3s ease;
+  }
+
+  .featured-product-info h3 {
+    font-size: 1rem;
+  }
+  
   .featured-swiper-button-prev,
   .featured-swiper-button-next {
     top: 50%;
