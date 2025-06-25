@@ -1978,51 +1978,6 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
 ------------------------------------------------*/
 @media (max-width: 768px) {
 
-  /*
- .landing-section {
-    padding: 0 clamp(2%, 5vw, 4%);
-    padding-top: 90px;
-    min-height: clamp(500px, 90vh, 1000px);
-  }
-
-  .landing-title {
-    font-size: clamp(2rem, 6vw, 2.8rem);
-    color: var(--red);
-    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  .landing-subheading {
-    font-size: clamp(1rem, 4.5vw, 1.2rem);
-    color: var(--offwhite);
-    text-shadow: 3px 3px 10px rgba(0, 0, 0, 1);
-  }
-
-  .landing-location {
-    font-size: clamp(0.9rem, 4vw, 1.1rem);
-    color: var(--offwhite);
-    text-shadow: 3px 3px 10px rgba(0, 0, 0, 1);
-  }
-
-  .browse-button {
-    font-size: clamp(0.9rem, 3.5vw, 1.1rem);
-    padding: clamp(8px, 2.5vw, 14px) clamp(16px, 4.5vw, 28px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    border: none;
-    background-color: var(--red);
-    color: var(--offwhite);
-    transition: transform 0.1s ease, box-shadow 0.1s ease;
-  }
-
-  .browse-button:active {
-    transform: scale(0.96);
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
-  }
-
-*/
-
    .landing-overlay {
      background-color: rgba(255, 255, 255, 0.1); /* Light tint to enhance blur */
      backdrop-filter: blur(4px);
@@ -2039,7 +1994,7 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
   .featured-swiper-container {
     max-width: 100%;
     overflow: hidden;
-    padding: 0 15vw; /* creates space for buttons on left and right */
+    padding: 0 15vw; /* creates space for buttons on left and right 
   }
 
   .featured-swiper-wrapper {
@@ -2054,7 +2009,8 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
     display: flex;
     justify-content: center;
   }
-
+*/
+    
   .featured-swiper-button-prev,
   .featured-swiper-button-next {
     top: 50%;
