@@ -1993,7 +1993,7 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
 
 
  .featured-swiper-container {
-  max-width: 78vw;
+  max-width: calc((78vw) + (30px * 2));
   min-width: 78vw;
   overflow: hidden;
   box-sizing: border-box;
