@@ -1989,20 +1989,7 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
 }
 
 .landing-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   background: linear-gradient(to bottom, var(--yellow) 0%, transparent 80%);
-  z-index: 1;
-}
-
-.landing-content {
-  position: relative;
-  z-index: 2;
-  color: white;
-  max-width: none;
 }
 
 .landing-title {
@@ -2025,7 +2012,6 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
   margin-bottom: 30px;
 }
 
-.landing-title,
 .landing-subheading,
 .landing-location {
   color: var(--offwhite);
@@ -2047,40 +2033,10 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
 }
 
 .browse-button:hover {
-  background-color: transparent;
+  background-color: var(--red);
   border: 2px solid var(--red);
-  color: var(--red);
+  color: var(--offwhite);
 }
-
-/* ----------------------------------------------
-   Mobile Optimization (768px and below)
-------------------------------------------------*/
-@media (max-width: 768px) {
-  .landing-section {
-    padding: 0 clamp(4%, 6vw, 8%);
-    padding-top: 90px;
-  }
-
-  .landing-overlay {
-    background: rgba(255, 207, 145, 0.7); /* --yellow with 70% opacity */
-  }
-
-  .landing-title {
-    font-size: clamp(1.8rem, 6vw, 2.8rem);
-  }
-
-  .landing-subheading {
-    font-size: clamp(1rem, 4.5vw, 1.4rem);
-  }
-
-  .landing-location {
-    font-size: clamp(0.9rem, 4vw, 1.2rem);
-  }
-
-  .browse-button {
-    font-size: clamp(0.95rem, 3.5vw, 1rem);
-    padding: clamp(8px, 3vw, 12px) clamp(16px, 5vw, 28px);
-  }
   
 }
 
