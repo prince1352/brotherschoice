@@ -1984,21 +1984,26 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
      -webkit-backdrop-filter: blur(4px);  
    }
 
+}
 
+
+
+/* ----------------------------------------------
+         Mobile Transitions @ 500px
+------------------------------------------------*/
 
 
 /* ----------------------------------------------
           MOBILE FEATURED PRODUCTS SECTION
 ------------------------------------------------*/
 
-
+@media (max-width: 500px) {
  .featured-swiper-container {
    max-width: 78vw;
    align-items: center;
    justify-content: center;
+   max-width: 280px;
 }
-
-
 
 .featured-swiper-slide{
   width: 78vw;
