@@ -1974,70 +1974,47 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
                 MOBILE LANDING SECTION
 ------------------------------------------------*/
 @media (max-width: 768px) {
-  .landing-section {
-  position: relative;
-  width: 100%;
-  min-height: clamp(500px, 85vh, 900px);
-  background: url('images/homepage-background.jpg') no-repeat center center/cover;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 0 clamp(6%, 8vw, 10%);
-  overflow: hidden;
-  margin-top: -90px;
-  padding-top: 90px;
-}
+ .landing-section {
+    padding: 0 clamp(4%, 5vw, 6%);
+    padding-top: 90px;
+    min-height: clamp(500px, 90vh, 1000px);
+  }
 
-.landing-overlay {
-  background: linear-gradient(to bottom, var(--yellow) 0%, transparent 80%);
-}
+  .landing-title {
+    font-size: clamp(1.8rem, 6vw, 2.4rem);
+    color: var(--red);
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 
-.landing-title {
-  font-size: clamp(2.5rem, 4.5vw, 4rem);
-  font-weight: 900;
-  margin-bottom: 20px;
-  white-space: nowrap;
-  color: var(--red);
-}
+  .landing-subheading {
+    font-size: clamp(1rem, 4.5vw, 1.4rem);
+    color: var(--offwhite);
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 1);
+  }
 
-.landing-subheading {
-  font-size: clamp(1.2rem, 2vw, 1.6rem);
-  font-weight: var(--font-light);
-  margin-bottom: 10px;
-}
+  .landing-location {
+    font-size: clamp(0.9rem, 4vw, 1.2rem);
+    color: var(--offwhite);
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 1);
+  }
 
-.landing-location {
-  font-size: clamp(1rem, 1.6vw, 1.3rem);
-  font-weight: var(--font-light);
-  margin-bottom: 30px;
-}
+  .browse-button {
+    font-size: clamp(0.9rem, 3.5vw, 1rem);
+    padding: clamp(8px, 2vw, 12px) clamp(16px, 4vw, 24px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border: none;
+    background-color: var(--red);
+    color: var(--offwhite);
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+  }
 
-.landing-subheading,
-.landing-location {
-  color: var(--offwhite);
-  text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.9);
-  font-weight: 400;
-}
-
-.browse-button {
-  display: inline-block;
-  padding: clamp(10px, 1.5vw, 14px) clamp(20px, 3vw, 32px);
-  color: var(--offwhite);
-  background-color: var(--red);
-  font-size: clamp(1rem, 1.1vw, 1.1rem);
-  font-weight: 500;
-  text-decoration: none;
-  border: 2px solid transparent;
-  transition: all 0.3s ease;
-  border-radius: 6px;
-}
-
-.browse-button:hover {
-  background-color: var(--red);
-  border: 2px solid var(--red);
-  color: var(--offwhite);
-}
-  
+  .browse-button:active {
+    transform: scale(0.96);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  }
 }
 
 
