@@ -2019,8 +2019,9 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
    .landing-overlay {
      background-color: rgba(255, 255, 255, 0.1); /* Light tint to enhance blur */
      backdrop-filter: blur(4px);
-     -webkit-backdrop-filter: blur(4px);  }
-}
+     -webkit-backdrop-filter: blur(4px);  
+   }
+
 
 
 
@@ -2034,11 +2035,11 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
 
 
 .featured-swiper-container {
-  min-width: calc((70vw) + (30px * 2));
+  width: calc((70vw) + (30px * 2));
 }
 
 .featured-swiper-slide{
-  min-width: 70vw;
+  width: 70vw;
 }    
 
 
@@ -2076,6 +2077,7 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
     right: 10px;
   }
 
+  }
 
 
 
