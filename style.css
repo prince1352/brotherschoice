@@ -1994,6 +1994,8 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
 
  .featured-swiper-container {
   max-width: calc((78vw) + (30px * 2));
+   align-items: center;
+   justify-content: center;
 }
 
 
