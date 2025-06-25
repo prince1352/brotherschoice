@@ -1997,16 +1997,18 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
           MOBILE FEATURED PRODUCTS SECTION
 ------------------------------------------------*/
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
  .featured-swiper-container {
    max-width: 78vw;
    align-items: center;
    justify-content: center;
-   max-width: 280px;
 }
 
 .featured-swiper-slide{
   width: 78vw;
+  max-width: 280px;
+  align-items: center;
+  justify-content: center;
 }    
   
   .featured-product-info h3 {
