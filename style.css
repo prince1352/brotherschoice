@@ -1992,39 +1992,25 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
 ------------------------------------------------*/
 
 
-  .featured-swiper-container {
-    max-width: 100%;
-    padding: 0 10%;
-  }
+ .featured-swiper-container {
+  max-width: 76vw;
+  min-width: 76vw;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
 
-  .featured-swiper-slide {
-    width: 80vw !important; /* Ensures it’s wide but leaves space for centering */
-    max-width: 360px;
-    display: flex;
-    justify-content: center;
-  }
+.featured-swiper-wrapper {
+  display: flex;
+}
 
-  .featured-product-card {
-    width: 100%;
-    aspect-ratio: 14 / 15;
-    border-radius: 10px;
-    overflow: hidden;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    margin: auto;
-  }
-
-  .featured-product-card img {
-    width: 80%;
-    height: 100%;
-    object-fit: contain;
-    object-position: center;
-    margin: auto;
-    transition: transform 0.3s ease;
-  }
-
+.featured-swiper-slide{
+  width: 78vw;
+  max-width: 390px;
+  display: flex;
+  justify-content: center;
+}    
+  
   .featured-product-info h3 {
     font-size: 1rem;
   }
