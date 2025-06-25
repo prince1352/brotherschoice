@@ -2042,11 +2042,36 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
     max-width: 100%;
   }
 
-  .featured-product-card {
-    width: 100%;
-    margin: 0 auto;
-    aspect-ratio: 14 / 15;
-  }
+
+
+
+
+.featured-swiper-container {
+  max-width: calc((26vw) + (30px * 2));
+  overflow: hidden;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.featured-swiper-slide{
+  width: 26vw;
+  max-width: 390px;
+  display: flex;
+  justify-content: center;
+}    
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   .featured-swiper-button-prev,
   .featured-swiper-button-next {
