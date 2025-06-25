@@ -2024,5 +2024,52 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
 
 
 
+/* ----------------------------------------------
+          MOBILE FEATURED PRODUCTS SECTION
+------------------------------------------------*/
+
+  .featured-products-section {
+    padding: 40px clamp(3%, 4vw, 5%) 50px;
+  }
+
+  .featured-swiper-container {
+    max-width: 100%;
+    padding: 0 50px; /* ensures room for arrows without overlap */
+  }
+
+  .featured-swiper-slide {
+    width: 100% !important;
+    max-width: 100%;
+  }
+
+  .featured-product-card {
+    width: 100%;
+    margin: 0 auto;
+    aspect-ratio: 14 / 15;
+  }
+
+  .featured-swiper-button-prev,
+  .featured-swiper-button-next {
+    transform: translateY(-50%);
+    z-index: 20;
+  }
+
+  .featured-swiper-button-prev::after,
+  .featured-swiper-button-next::after {
+    margin: 0;
+    width: 40px;
+    height: 40px;
+    font-size: 20px !important;
+  }
+
+  .featured-swiper-button-prev {
+    left: 10px;
+  }
+
+  .featured-swiper-button-next {
+    right: 10px;
+  }
+
+
 
 
