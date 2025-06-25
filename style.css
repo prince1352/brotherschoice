@@ -1994,7 +1994,7 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, var(--yellow) 0%, transparent 100%);
+  background: linear-gradient(to bottom, var(--yellow) 0%, transparent 80%);
   z-index: 1;
 }
 
@@ -2010,20 +2010,19 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
   font-weight: 900;
   margin-bottom: 20px;
   white-space: nowrap;
+  color: var(--red);
 }
 
 .landing-subheading {
   font-size: clamp(1.2rem, 2vw, 1.6rem);
   font-weight: var(--font-light);
   margin-bottom: 10px;
-  white-space: nowrap;
 }
 
 .landing-location {
   font-size: clamp(1rem, 1.6vw, 1.3rem);
   font-weight: var(--font-light);
   margin-bottom: 30px;
-  white-space: nowrap;
 }
 
 .landing-title,
