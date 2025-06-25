@@ -201,21 +201,24 @@ body {
 }
 
 .landing-title {
-  font-size: clamp(2.5rem, 4.5vw, 4rem);
+  font-size: clamp(2rem, 4vw, 4rem);
   font-weight: 900;
   margin-bottom: 20px;
+  white-space: nowrap;
 }
 
 .landing-subheading {
-  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  font-size: clamp(0.9rem, 2vw, 1.6rem);
   font-weight: var(--font-light);
   margin-bottom: 10px;
+  white-space: nowrap;
 }
 
 .landing-location {
- font-size: clamp(1rem, 1.6vw, 1.3rem);
+ font-size: clamp(0.8rem, 1.6vw, 1.3rem);
   font-weight: var(--font-light);
   margin-bottom: 30px;
+  white-space: nowrap;
 }
 
 .landing-title,
@@ -1972,10 +1975,10 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
 
 /* ----------------------------------------------
                 MOBILE LANDING SECTION
-------------------------------------------------*/
+------------------------------------------------
 @media (max-width: 768px) {
  .landing-section {
-    padding: 0 clamp(3%, 5vw, 5%);
+    padding: 0 clamp(2%, 5vw, 4%);
     padding-top: 90px;
     min-height: clamp(500px, 90vh, 1000px);
   }
@@ -2016,6 +2019,8 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
   }
 
+*/
+
    .landing-overlay {
      background-color: rgba(255, 255, 255, 0.1); /* Light tint to enhance blur */
      backdrop-filter: blur(4px);
@@ -2035,11 +2040,11 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
 
 
 .featured-swiper-container {
-  width: calc((70vw) + (30px * 2));
+  min-width: 70vw;
 }
 
 .featured-swiper-slide{
-  width: 70vw;
+  min-width: 70vw;
 }    
 
 
