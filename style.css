@@ -1955,5 +1955,66 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
 }
 
 
+/* ----------------------------------------------
+         Mobile Transitions @ 768px
+------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------
+                MOBILE LANDING SECTION
+------------------------------------------------*/
+@media (max-width: 768px) {
+  .landing-section {
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px 8% 60px;
+    min-height: 100vh;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .landing-content {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .landing-title {
+    font-size: 2rem; /* Fixed size for better control on small screens */
+    margin-bottom: 16px;
+  }
+
+  .landing-subheading {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+  }
+
+  .landing-location {
+    font-size: 1rem;
+    margin-bottom: 24px;
+  }
+
+  .browse-button {
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
+
+  .landing-overlay {
+    background: linear-gradient(to bottom, var(--yellow) 0%, transparent 80%);
+  }
+}
+
+
+
 
 
