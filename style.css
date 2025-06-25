@@ -2036,52 +2036,44 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
           MOBILE FEATURED PRODUCTS SECTION
 ------------------------------------------------*/
 
-  .featured-products-section {
-    padding: 40px clamp(3%, 4vw, 5%) 50px;
+  .featured-swiper-container {
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0 15vw; /* creates space for buttons on left and right */
   }
 
+  .featured-swiper-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
 
-.featured-swiper-container {
-  min-width: 70vw;
-  max-width: 70vw;
-}
-
-.featured-swiper-slide{
-  min-width: 70vw;
-}    
-
-
-
-
-
-
-
-
-
-
-
-
-
+  .featured-swiper-slide {
+    width: 70vw !important;
+    max-width: 70vw;
+    flex: 0 0 70vw;
+    display: flex;
+    justify-content: center;
+  }
 
   .featured-swiper-button-prev,
   .featured-swiper-button-next {
+    top: 50%;
     transform: translateY(-50%);
-    z-index: 20;
+    z-index: 10;
   }
 
   .featured-swiper-button-prev::after,
   .featured-swiper-button-next::after {
-    margin: 0;
-    width: 40px;
-    height: 40px;
-    font-size: 20px !important;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
-  .featured-swiper-button-prev {
+  .featured-swiper-button-prev::after {
     left: 10px;
   }
 
-  .featured-swiper-button-next {
+  .featured-swiper-button-next::after {
     right: 10px;
   }
 
