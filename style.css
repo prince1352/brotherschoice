@@ -1983,7 +1983,7 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
   .landing-title {
     font-size: clamp(2rem, 6vw, 2.8rem);
     color: var(--red);
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -2017,8 +2017,9 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
   }
 
    .landing-overlay {
-    background: linear-gradient(to bottom, var(--yellow) 0%, transparent 100%);
-  }
+     background-color: rgba(255, 255, 255, 0.1); /* Light tint to enhance blur */
+     backdrop-filter: blur(10px);
+     -webkit-backdrop-filter: blur(10px);  }
 }
 
 
