@@ -2006,7 +2006,6 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
 
 .featured-swiper-slide{
   width: 78vw;
-  max-width: 280px;
 }    
   
   .featured-product-info h3 {
