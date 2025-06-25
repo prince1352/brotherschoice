@@ -1975,8 +1975,10 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
 
 /* ----------------------------------------------
                 MOBILE LANDING SECTION
-------------------------------------------------
+------------------------------------------------*/
 @media (max-width: 768px) {
+
+  /*
  .landing-section {
     padding: 0 clamp(2%, 5vw, 4%);
     padding-top: 90px;
@@ -2041,6 +2043,7 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
 
 .featured-swiper-container {
   min-width: 70vw;
+  max-width: 70vw;
 }
 
 .featured-swiper-slide{
