@@ -551,120 +551,53 @@ document.addEventListener("DOMContentLoaded", () => {
   const wrapper = document.getElementById('featuredProducts');
   const swiperContainer = document.querySelector('.featured-swiper-container');
 
-  let currentIndex = 0;
-  let totalSlides = 0;
-  let resizeSwiperInstance = null;
-  let featuredData = [];
-
-  const renderMobileLayout = () => {
-    wrapper.innerHTML = "";
-    featuredData.forEach(product => {
-      const slide = document.createElement('div');
-      slide.classList.add('swiper-slide', 'featured-swiper-slide');
-      slide.innerHTML = `
-        <div class="featured-product-card">
-          <img src="${product["Image URL"]}" alt="${product["Alt Text"] || product["Product Name"]}" loading="lazy">
-          <div class="featured-product-info">
-            <h3>${product["Product Name"]}</h3>
-          </div>
-        </div>
-      `;
-      wrapper.appendChild(slide);
-    });
-
-    const slides = document.querySelectorAll('.featured-swiper-slide');
-    totalSlides = slides.length;
-
-    const updateSlidePosition = () => {
-      wrapper.style.transform = `translateX(-${currentIndex * 70}vw)`;
-    };
-
-    // Auto-scroll
-    if (window.autoScrollInterval) clearInterval(window.autoScrollInterval);
-    window.autoScrollInterval = setInterval(() => {
-      currentIndex = (currentIndex + 1) % totalSlides;
-      updateSlidePosition();
-    }, 2500);
-
-    document.querySelector('.featured-swiper-button-next').onclick = () => {
-      currentIndex = (currentIndex + 1) % totalSlides;
-      updateSlidePosition();
-    };
-
-    document.querySelector('.featured-swiper-button-prev').onclick = () => {
-      currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-      updateSlidePosition();
-    };
-  };
-
-  const renderDesktopSwiper = () => {
-    wrapper.innerHTML = "";
-    featuredData.forEach(product => {
-      const slide = document.createElement('div');
-      slide.classList.add('swiper-slide', 'featured-swiper-slide');
-      slide.innerHTML = `
-        <div class="featured-product-card">
-          <img src="${product["Image URL"]}" alt="${product["Alt Text"] || product["Product Name"]}" loading="lazy">
-          <div class="featured-product-info">
-            <h3>${product["Product Name"]}</h3>
-          </div>
-        </div>
-      `;
-      wrapper.appendChild(slide);
-    });
-
-    if (resizeSwiperInstance) resizeSwiperInstance.destroy(true, true);
-    resizeSwiperInstance = new Swiper('.featured-swiper-container', {
-      effect: 'coverflow',
-      grabCursor: true,
-      centeredSlides: false,
-      spaceBetween: 30,
-      loop: true,
-      speed: 500,
-      slidesPerView: 3,
-      autoplay: {
-        delay: 2000,
-        disableOnInteraction: false,
-        pauseOnMouseEnter: true
-      },
-      coverflowEffect: {
-        rotate: 30,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows: true
-      },
-      navigation: {
-        nextEl: '.featured-swiper-button-next',
-        prevEl: '.featured-swiper-button-prev',
-      }
-    });
-  };
-
-  const handleRender = (isMobile) => {
-    if (isMobile) {
-      renderMobileLayout();
-    } else {
-      renderDesktopSwiper();
-    }
-  };
-
-  // Fetch Data
   loader.style.display = 'flex';
+
   fetch(sheetURL)
-    .then(res => res.json())
+    .then(response => response.json())
     .then(data => {
-      featuredData = data.slice(0, 10);
-      loader.style.display = 'none';
-      swiperContainer.style.display = 'block';
+      const featured = data.slice(0, 10);
+      featured.forEach(product => {
+        const slide = document.createElement('div');
+        slide.classList.add('swiper-slide', 'featured-swiper-slide');
+        slide.innerHTML = `
+          <div class="featured-product-card">
+            <img src="${product["Image URL"]}" alt="${product["Alt Text"] || product["Product Name"]}" loading="lazy">
+            <div class="featured-product-info">
+              <h3>${product["Product Name"]}</h3>
+            </div>
+          </div>
+        `;
+        wrapper.appendChild(slide);
+      });
 
-      const isMobileInitial = window.innerWidth <= 768;
-      handleRender(isMobileInitial);
+      loader.style.display = "none";
+      swiperContainer.style.display = "block";
 
-      // Set up responsive listener
-      const mediaQuery = window.matchMedia('(max-width: 768px)');
-      mediaQuery.addEventListener('change', (e) => {
-        handleRender(e.matches);
+      new Swiper('.featured-swiper-container', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: false,
+        spaceBetween: 30,
+        loop: true,
+        speed: 500,
+        slidesPerView: 3,
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true
+        },
+        coverflowEffect: {
+          rotate: 30,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true
+        },
+        navigation: {
+          nextEl: '.featured-swiper-button-next',
+          prevEl: '.featured-swiper-button-prev',
+        }
       });
     })
     .catch(err => {
