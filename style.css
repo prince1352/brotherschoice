@@ -1975,7 +1975,7 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
 ------------------------------------------------*/
 @media (max-width: 768px) {
  .landing-section {
-    padding: 0 clamp(4%, 5vw, 6%);
+    padding: 0 clamp(3%, 5vw, 5%);
     padding-top: 90px;
     min-height: clamp(500px, 90vh, 1000px);
   }
@@ -1990,13 +1990,13 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
   }
 
   .landing-subheading {
-    font-size: clamp(1rem, 4.5vw, 1.4rem);
+    font-size: clamp(1rem, 4.5vw, 1.2rem);
     color: var(--offwhite);
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 1);
   }
 
   .landing-location {
-    font-size: clamp(0.9rem, 4vw, 1.2rem);
+    font-size: clamp(0.9rem, 4vw, 1.1rem);
     color: var(--offwhite);
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 1);
   }
@@ -2018,8 +2018,8 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
 
    .landing-overlay {
      background-color: rgba(255, 255, 255, 0.1); /* Light tint to enhance blur */
-     backdrop-filter: blur(10px);
-     -webkit-backdrop-filter: blur(10px);  }
+     backdrop-filter: blur(4px);
+     -webkit-backdrop-filter: blur(4px);  }
 }
 
 
