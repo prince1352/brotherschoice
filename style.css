@@ -1747,24 +1747,8 @@ font-size: clamp(0.9rem, 1vw, 1.1rem);
   }
 }
 
-
 /* ----------------------------------------------
-         Mobile Transitions @ 1000px
-------------------------------------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-/* ----------------------------------------------
-                MOBILE MENU
+            MOBILE MENU @ 1000px
 ------------------------------------------------*/
 
 @media (max-width: 1000px) {
@@ -1964,7 +1948,7 @@ font-size: clamp(0.9rem, 1vw, 1.1rem);
 
 
 /* ----------------------------------------------
-         Mobile Why Us Section
+         Mobile Why Us Section @ 1000px
 ------------------------------------------------*/
 
   .why-section.split-layout {
@@ -2013,7 +1997,7 @@ font-size: clamp(0.9rem, 1vw, 1.1rem);
 
 
 /* ----------------------------------------------
-         Mobile Where to Find Us Section
+     Mobile Where to Find Us Section @ 1000px
 ------------------------------------------------*/
 
     .brand-showcase-row {
@@ -2041,7 +2025,7 @@ font-size: clamp(0.9rem, 1vw, 1.1rem);
 
 
 /* ----------------------------------------------
-         Mobile About Founder Section
+    Mobile About Founder Section @ 1000px
 ------------------------------------------------*/
 
     .founder-content {
@@ -2075,8 +2059,9 @@ font-size: clamp(0.9rem, 1vw, 1.1rem);
 
 }
 
+
 /* ----------------------------------------------
-         Mobile CONTACT PAGE
+         Mobile CONTACT PAGE @ 850px
 ------------------------------------------------*/
 @media (max-width: 850px) {
    .contact-us-content {
@@ -2104,22 +2089,7 @@ font-size: clamp(0.9rem, 1vw, 1.1rem);
 
 
 /* ----------------------------------------------
-         Mobile Transitions @ 768px
-------------------------------------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-/* ----------------------------------------------
-                MOBILE LANDING SECTION
+        MOBILE LANDING SECTION @ 768px
 ------------------------------------------------*/
 @media (max-width: 768px) {
 
@@ -2131,7 +2101,7 @@ font-size: clamp(0.9rem, 1vw, 1.1rem);
 
 
 /* ----------------------------------------------
-                MOBILE CONTACTS SECTION
+        MOBILE CONTACTS SECTION @ 768px
 ------------------------------------------------*/
   
    .contact-container {
@@ -2171,7 +2141,7 @@ font-size: clamp(0.9rem, 1vw, 1.1rem);
 
 
 /* ----------------------------------------------
-         Mobile Customers Page
+         Mobile Customers Page @ 768px
 ------------------------------------------------*/
   .customers-landing-title {
   white-space: wrap;
@@ -2207,16 +2177,22 @@ font-size: clamp(0.9rem, 1vw, 1.1rem);
   }
 
 
+/* ----------------------------------------------
+         Mobile Products Page @ 768px
+------------------------------------------------*/
+
+  .product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40%, 1fr)); /* stays 2 cols */
+  gap: clamp(20px, 3vw, 40px);
+  max-width: 1400px;
+  margin: 0 auto;
+}
 
 }
 
 /* ----------------------------------------------
-         Mobile Transitions @ 500px
-------------------------------------------------*/
-
-
-/* ----------------------------------------------
-          MOBILE FEATURED PRODUCTS SECTION
+      MOBILE FEATURED PRODUCTS SECTION  @ 500px
 ------------------------------------------------*/
 
 @media (max-width: 500px) {
