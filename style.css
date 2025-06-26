@@ -221,10 +221,15 @@ body {
   white-space: nowrap;
 }
 
-.landing-title,
+.landing-title {
+  color: var(--offwhite);
+  text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.9);
+  font-weight: 400;
+}
+
 .landing-subheading,
 .landing-location {
-  color: var(--offwhite);
+  color: var(--red);
   text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.9);
   font-weight: 400;
 }
