@@ -10,18 +10,19 @@
   rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+   <link
   
 </head>
 <body>
 
-  <!-- Header -->
+ <!-- Header -->
   <header class="main-header">
     <a href="/brotherschoice/" class="logo-link">
       <img src="/brotherschoice/images/Logo-W.png" alt="Company Logo" class="logo" />
     </a>
 
-  <!-- Desktop Navigation (hidden on mobile) -->
+  <!-- Desktop Navigation Menu -->
 <nav class="main-nav desktop-nav">
   <ul>
     <li class="menu-item"><a href="/brotherschoice/">Home</a></li>
@@ -34,7 +35,59 @@
     <div class="quote-button-wrapper">
       <a href="/brotherschoice/Contact/" class="quote-button">Get a Free Quote</a>
     </div>
-  </header>
+    
+<!-- Home Icon and Hamburger Menu -->
+<div class="mobile-home-icon">
+  <a href="/brotherschoice/">
+    <i class="fas fa-home"></i>
+  </a>
+</div>
+
+<div class="hamburger-menu-icon" id="hamburgerToggle">
+  <span></span><span></span><span></span>
+</div>
+
+</header>
+  
+<!-- Mobile Navigation Menu -->
+<nav class="mobile-menu" id="mobileMenu">
+<div class="mobile-menu-top">
+ <h3 class="mobile-menu-title">Navigation</h3>
+  <div class="mobile-close-button" onclick="toggleMenu()">✕</div>
+</div>
+
+<ul>
+  <li><a href="/brotherschoice/">Home</a></li>
+  <li><a href="/brotherschoice/About/">About Us</a></li>
+  <li><a href="/brotherschoice/Products/">Products</a></li>
+  <li><a href="/brotherschoice/Customers/">Our Customers</a></li>
+  <li><a href="/brotherschoice/Contact/">Contact Us</a></li>
+</ul>
+
+<h3 class="mobile-connect-title">Connect With Us</h3>
+
+<!-- Contact Links Section -->
+<div class="mobile-connect-links">
+  <a href="tel:+17804379400" class="connect-link">
+    <i class="fas fa-phone-alt"></i>
+    <span>Phone</span>
+  </a>
+  <a href="mailto:brotherschoicefoods@gmail.com" class="connect-link">
+    <i class="fas fa-envelope"></i>
+    <span>Email</span>
+  </a>
+  <a href="https://instagram.com/brotherschoicefoods" class="connect-link" target="_blank">
+    <i class="fab fa-instagram"></i>
+    <span>Instagram</span>
+  </a>
+  <a href="https://www.facebook.com/p/Brothers-Choice-Foods-100064270173354/" class="connect-link" target="_blank">
+    <i class="fab fa-facebook-f"></i>
+    <span>Facebook</span>
+  </a>
+</div>
+</nav>
+
+  <div class="mobile-overlay" id="mobileOverlay"></div>
 
  <!-- Landing Page Section -->
   <section class="customers-landing-section">
@@ -345,6 +398,7 @@
   const swiper = new Swiper('.reviews-swiper', {
   effect: 'flip',
   speed: 1000,
+  autoHeight: true,
   flipEffect: {
     slideShadows: true, // enable built-in shadow during flip
     limitRotation: true
@@ -355,4 +409,21 @@
   },
   loop: true,
 });
+</script>
+
+     <!--  Script Mobile Menu -->
+
+  <script>
+  const hamburger = document.getElementById("hamburgerToggle");
+  const mobileMenu = document.getElementById("mobileMenu");
+  const mobileOverlay = document.getElementById("mobileOverlay");
+
+  function toggleMenu() {
+    mobileMenu.classList.toggle("open");
+    mobileOverlay.classList.toggle("show");
+    document.body.classList.toggle("menu-open");
+  }
+
+  hamburger.addEventListener("click", toggleMenu);
+  mobileOverlay.addEventListener("click", toggleMenu);
 </script>
