@@ -1359,8 +1359,8 @@ body {
 
 .wholesale-text {
   flex: 1;
-  min-width: 500px;
-  max-width: clamp(500px, 60vw, 600px);
+  min-width: 700px;
+  max-width: clamp(500px, 60vw, 800px);
   margin-bottom: 0px
 }
 
@@ -1382,7 +1382,6 @@ body {
 }
 
 .wholesale-image {
-  flex: 1;
   min-width: 300px;
   max-width: 400px;
   max-height: 500px:
