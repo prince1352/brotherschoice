@@ -1521,13 +1521,6 @@ font-size: clamp(0.9rem, 1vw, 1.1rem);
   color: #333;
 }
 
-.contact-us-details p,
-.contact-us-social p,
-contact-us-details p strong,
-.contact-us-social p strong, {
-  white-space: nowrap;
-}
-
 
 .contact-us-details h3,
 .contact-us-social h3 {
@@ -1684,13 +1677,22 @@ contact-us-details p strong,
   z-index: 2;
 }
 
-/* Product Grid */
+/* Product Grid 
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: clamp(30px, 3vw, 40px);
-  max-width: 1400px; /* max width that fits 4 cards */
+  max-width: 1400px; 
+  margin: 0 auto;*/
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(48%, 1fr)); /* stays 2 cols */
+  gap: clamp(20px, 3vw, 40px);
+  max-width: 1400px;
   margin: 0 auto;
+}
+
 }
 
 /* Product Card Container */
@@ -1724,7 +1726,7 @@ contact-us-details p strong,
 /* Product Name */
 .product-name {
   margin-top: clamp(8px, 1vh, 16px);
-  font-size: clamp(0.9rem, 1vw, 1.1rem);
+ font-size: clamp(0.85rem, 0.9vw, 1rem);
   color: #333;
   text-align: center;
 }
