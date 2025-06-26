@@ -2153,6 +2153,29 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
 
 }
 
+  .wholesale-services-content {
+    flex-wrap: wrap; /* allow content to stack */
+    justify-content: center;
+  }
+
+  .wholesale-image {
+    display: none; /* hide image on mobile */
+  }
+
+  .wholesale-text {
+    max-width: 100%;
+    min-width: auto;
+    text-align: center; /* optional: center text on small screens */
+  }
+
+  .wholesale-title {
+    white-space: normal; /* allow title to wrap if needed */
+    text-align: center;
+  }
+
+  .wholesale-text p {
+    text-align: center;
+  }
 
 
 
