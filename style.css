@@ -1355,6 +1355,7 @@ body {
   justify-content: space-between;
   gap: 60px;
   flex-wrap: nowrap;
+  min-width: 700px;
 }
 
 .wholesale-text {
@@ -1363,6 +1364,8 @@ body {
   max-width: clamp(600px, 60vw, 800px);
   margin-bottom: 0px
   font-size: clamp(1rem, 2vw, 1.1rem);
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .wholesale-title {
@@ -1381,6 +1384,8 @@ body {
   color: #444;
   font-weight: 300;
   margin-bottom: 20px;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .wholesale-image {
