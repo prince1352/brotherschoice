@@ -2079,6 +2079,7 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
     display: flex;
     flex-direction: column;
     gap: 40px;
+    align-items: center;
   }
 
   .contact-us-info {
@@ -2092,7 +2093,7 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
   .contact-us-info,
   .contact-us-form-container {
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
   }
   
 }
