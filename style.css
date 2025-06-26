@@ -608,6 +608,7 @@ body {
   max-width: 1250px; /* max width for 3 cards */
   margin-left: auto;
   margin-right: auto;
+  justify-items: center;
 }
 
 
