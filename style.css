@@ -1365,7 +1365,7 @@ body {
 }
 
 .wholesale-title {
-  font-size: clamp(1.6rem, 2.5vw, 2.3rem);
+  font-size: clamp(1.3rem, 2.5vw, 2.3rem);
   font-weight: 700;
   color: var(--red);
   margin-bottom: 30px;
