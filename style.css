@@ -1354,8 +1354,7 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 60px;
-  flex-wrap: nowrap;
-  min-width: 700px;
+  flex-wrap: wrap;
 }
 
 .wholesale-text {
@@ -1364,8 +1363,6 @@ body {
   max-width: clamp(600px, 60vw, 800px);
   margin-bottom: 0px
   font-size: clamp(1rem, 2vw, 1.1rem);
-  white-space: nowrap;
-  overflow: hidden;
 }
 
 .wholesale-title {
@@ -1373,8 +1370,6 @@ body {
   font-weight: 700;
   color: var(--red);
   margin-bottom: 30px;
-  white-space: nowrap; /* ✅ prevents line break */
-  overflow: hidden;
 }
 
 
