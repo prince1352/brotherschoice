@@ -1978,7 +1978,7 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
   }
 
   .why-image {
-    width: 90%;
+    width: 60%;
     max-width: 600px;
     margin-bottom: 30px;
     border-radius: 20px;
