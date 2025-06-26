@@ -1382,9 +1382,9 @@ body {
 
 .wholesale-image {
   flex: 1;
-  min-width: 400px;
-  max-width: 500px;
-  max-height: 620px:
+  min-width: 300px;
+  max-width: 400px;
+  max-height: 500px:
 }
 
 .wholesale-image picture,
