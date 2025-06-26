@@ -1677,21 +1677,13 @@ font-size: clamp(0.9rem, 1vw, 1.1rem);
   z-index: 2;
 }
 
-/* Product Grid 
+/* Product Grid */
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: clamp(30px, 3vw, 40px);
   max-width: 1400px; 
-  margin: 0 auto;*/
-
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(40%, 1fr)); /* stays 2 cols */
-  gap: clamp(20px, 3vw, 40px);
-  max-width: 1400px;
   margin: 0 auto;
-}
 
 }
 
