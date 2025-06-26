@@ -788,7 +788,7 @@ body {
 
 .reviews-section {
   background-color: var(--red);
-  padding: 60px 5%;
+  padding: 40px 5% 40px;
   text-align: center;
 }
 
@@ -796,7 +796,7 @@ body {
   font-size: clamp(1.8rem, 2.5vw, 2.2rem);
   font-weight: 600;
   color: white;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .reviews-swiper {
