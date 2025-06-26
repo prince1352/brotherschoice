@@ -1352,7 +1352,7 @@ body {
 .wholesale-services-content {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 60px;
   flex-wrap: nowrap;
 }
@@ -1374,7 +1374,7 @@ body {
 
 
 .wholesale-text p {
-  font-size: clamp(0.95rem, 1vw, 1.05rem);
+  font-size: clamp(0.95rem, 1.2vw, 1.05rem);
   line-height: 1.8;
   color: #444;
   font-weight: 300;
