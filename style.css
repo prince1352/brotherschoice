@@ -613,7 +613,7 @@ body {
 /* Flip Card Container */
 .card {
   perspective: 1000px;
-  height: clamp(220px, 24vw, 270px);
+  height: clamp(220px, 24vw, 250px);
   cursor: pointer;
 }
 
