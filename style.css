@@ -2078,11 +2078,12 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
     align-items: center;
     text-align: center;
     padding: 0;
+     gap: clamp(15px, 2vw, 30px); /* Half the original gap */
   }
 
   .contact-info {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 
   .contact-info h2 {
