@@ -316,7 +316,8 @@ body {
 }
 
 
-.logo-wrapper img {
+.logo-wrapper img,
+.logo-wrapper picture {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
