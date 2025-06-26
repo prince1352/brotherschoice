@@ -1360,7 +1360,7 @@ body {
 .wholesale-text {
   flex: 1;
   min-width: 700px;
-  max-width: clamp(500px, 60vw, 800px);
+  max-width: clamp(500px, 60vw, 700px);
   margin-bottom: 0px
 }
 
