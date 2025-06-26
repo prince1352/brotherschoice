@@ -1263,7 +1263,7 @@ body {
 
 .supplier-box-row {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
   gap: clamp(30px, 4vw, 60px);
   justify-content: center;
   max-width: 900px;
@@ -1288,12 +1288,8 @@ body {
   transition: transform 0.3s ease;
 }
 
-.supplier-box picture img:hover {
-  transform: scale(1.05);
-}
-
 .supplier-box h3 {
-  font-size: 1.3rem;
+  font-size: clamp(1.1rem, 2.2vw, 1.3rem);
   font-weight: 600;
   color: #222;
   margin-bottom: 12px;
@@ -1301,7 +1297,7 @@ body {
 }
 
 .supplier-box p {
-  font-size: 1rem;
+  font-size: clamp(0.9rem, 1.8vw, 1rem);
   color: #444;
   line-height: 1.6;
   font-weight: 300;
@@ -1357,7 +1353,7 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 60px;
-  flex-wrap: wrap;
+  flex-wrap: no-wrap;
 }
 
 .wholesale-text {
@@ -2143,8 +2139,27 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
     margin-top: 20px;
   }
 
+
+/* ----------------------------------------------
+         Mobile Customers Page
+------------------------------------------------*/
+  .customers-landing-title {
+  white-space: wrap;
 }
 
+.customers-landing-location {
+  white-space: wrap;
+
+}
+
+.supplier-box-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+}
 
 /* ----------------------------------------------
          Mobile Transitions @ 500px
