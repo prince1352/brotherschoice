@@ -1359,8 +1359,8 @@ body {
 
 .wholesale-text {
   flex: 1;
-  min-width: 800px;
-  max-width: clamp(600px, 60vw, 800px);
+  min-width: 700px;
+  max-width: clamp(500px, 60vw, 600px);
   margin-bottom: 0px
 }
 
