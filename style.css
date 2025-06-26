@@ -816,7 +816,7 @@ body {
 .review-card {
   background-color: var(--red); /* Match section background */
   padding: 10px clamp(5%, 5vw, 24px);
-  height: 100%; /* Or keep as needed */
+  height: auto; /* Or keep as needed */
   display: flex;
   flex-direction: column;
   justify-content: center;
