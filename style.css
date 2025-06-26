@@ -1346,7 +1346,7 @@ body {
 ------------------------------------------------*/
 
 .wholesale-services-section {
-  padding: 60px 10% 40px;
+  padding: 60px 8% 40px;
 }
 
 .wholesale-services-content {
@@ -1359,7 +1359,7 @@ body {
 
 .wholesale-text {
   flex: 1;
-  min-width: 420px;
+  min-width: 370px;
   max-width: clamp(600px, 60vw, 800px);
   margin-bottom: 0px
 }
