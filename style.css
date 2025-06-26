@@ -1268,6 +1268,7 @@ body {
   justify-content: center;
   max-width: 900px;
   margin: 0 auto;
+  justify-items: center;
 }
 
 .supplier-box {
@@ -1353,7 +1354,7 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 60px;
-  flex-wrap: no-wrap;
+  flex-wrap: nowrap;
 }
 
 .wholesale-text {
@@ -1369,10 +1370,13 @@ body {
   font-weight: 700;
   color: var(--red);
   margin-bottom: 30px;
+  white-space: nowrap; /* ✅ prevents line break */
+  overflow: hidden;
 }
 
+
 .wholesale-text p {
-  font-size: 1.05rem;
+  font-size: clamp(0.95rem, 1.6vw, 1.05rem);
   line-height: 1.8;
   color: #444;
   font-weight: 300;
@@ -2152,11 +2156,7 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
 
 }
 
-.supplier-box-row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 
 
 }
