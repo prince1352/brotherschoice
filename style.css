@@ -1359,13 +1359,13 @@ body {
 
 .wholesale-text {
   flex: 1;
-  min-width: 500px;
+  min-width: 400px;
   max-width: clamp(500px, 60vw, 700px);
   margin-bottom: 0px
 }
 
 .wholesale-title {
-  font-size: clamp(1.8rem, 2.5vw, 2.3rem);
+  font-size: clamp(1.6rem, 2.5vw, 2.3rem);
   font-weight: 700;
   color: var(--red);
   margin-bottom: 30px;
@@ -1374,7 +1374,7 @@ body {
 
 
 .wholesale-text p {
-  font-size: clamp(0.95rem, 1.2vw, 1.05rem);
+  font-size: clamp(0.85rem, 1.2vw, 1.05rem);
   line-height: 1.8;
   color: #444;
   font-weight: 300;
@@ -1382,7 +1382,7 @@ body {
 }
 
 .wholesale-image {
-  min-width: 300px;
+  min-width: 200px;
   max-width: 400px;
   max-height: 500px:
 }
