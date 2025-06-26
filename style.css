@@ -2088,6 +2088,12 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
   .contact-us-form-container {
     order: 2;
   }
+
+  .contact-us-info,
+  .contact-us-form-container {
+    width: 100%;
+    max-width: 400px;
+  }
   
 }
 
