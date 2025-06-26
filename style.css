@@ -1400,7 +1400,7 @@ body {
                  Contact Page  
 ------------------------------------------------*/
 .contact-us-section {
-  padding: 80px clamp(6%, 8vw, 10%);
+  padding: 60px clamp(6%, 8vw, 10%);
   background-color: var(--offwhite);
 }
 
@@ -1410,7 +1410,7 @@ body {
 }
 
 .contact-us-title {
-  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  font-size: clamp(2.3rem, 4vw, 3.5rem);
   font-weight: 600;
   color: var(--red);
 }
@@ -1508,7 +1508,7 @@ body {
 .contact-us-details p,
 .contact-us-social p,
 .contact-us-allindia p {
-font-size: clamp(0.95rem, 1vw, 1.1rem);
+font-size: clamp(0.9rem, 1vw, 1.1rem);
   font-weight: 300;
   color: #333;
 }
@@ -1516,10 +1516,18 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
 .contact-us-details p strong,
 .contact-us-social p strong,
 .contact-us-allindia p strong {
-  font-size: clamp(0.95rem, 1vw, 1.1rem);
+  font-size: clamp(0.9rem, 1vw, 1.1rem);
   font-weight: 700;
   color: #333;
 }
+
+.contact-us-details p,
+.contact-us-social p,
+contact-us-details p strong,
+.contact-us-social p strong, {
+  white-space: nowrap;
+}
+
 
 .contact-us-details h3,
 .contact-us-social h3 {
@@ -2071,10 +2079,12 @@ font-size: clamp(0.95rem, 1vw, 1.1rem);
     text-align: center;
   }
 
+}
+
 /* ----------------------------------------------
          Mobile CONTACT PAGE
 ------------------------------------------------*/
-
+@media (max-width: 850px) {
    .contact-us-content {
     display: flex;
     flex-direction: column;
