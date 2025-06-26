@@ -949,6 +949,7 @@ body {
   flex: 1;
 }
 
+.brand-logo-row picture,
 .brand-logo-row img {
   height: clamp(25px, 2.5vw, 30px);
   display: block;
