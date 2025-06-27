@@ -1196,6 +1196,21 @@ body {
   text-decoration: underline;
 }
 
+.footer-links,
+.footer-social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.footer-social-links {
+  margin-top: 5px;
+}
+
 
 /* ----------------------------------------------
             ABOUT PAGE ABOUT SECTION
