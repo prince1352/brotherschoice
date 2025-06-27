@@ -21,8 +21,8 @@
   <link rel="manifest" href="/manifest.json" />
 
   <!-- Icons -->
-  <link rel="icon" type="image/png" sizes="32x32" href="/brotherschoice/images/Logo-W.png" />
-  <link rel="apple-touch-icon" href="/brotherschoice/images/Logo-W.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/Logo-W.png" />
+  <link rel="apple-touch-icon" href="images/Logo-W.png" />
 
   <!-- Theme & Security -->
   <meta name="theme-color" content="#d01c41" />
@@ -54,6 +54,7 @@
   <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
   <link rel="preconnect" href="https://script.google.com" crossorigin />
   <link rel="preconnect" href="https://www.googleapis.com" crossorigin />
+  <link rel="preconnect" href="https://brotherschoicefoods.com" crossorigin>
 
   <link rel="dns-prefetch" href="//fonts.googleapis.com" />
   <link rel="dns-prefetch" href="//cdn.jsdelivr.net" />
@@ -63,38 +64,154 @@
 
   <!-- Preload Critical Assets -->
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" as="style" />
-  <link rel="preload" href="/brotherschoice/images/Logo-W.png" as="image" />
+  <link rel="preload" href="images/Logo-W.png" as="image" />
 
   <!-- Structured Data: Business Info -->
-  <script type="application/ld+json">
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "WholesaleStore",
-  "name": "Brothers Choice Foods",
-  "image": "https://www.brotherschoicefoods.com/images/Logo-W.png",
-  "url": "https://www.brotherschoicefoods.com",
-  "logo": "https://www.brotherschoicefoods.com/images/Logo-W.png",
-  "telephone": "+1-780-437-9400",
-  "email": "brotherschoicefoods@gmail.com",
-  "description": "Brothers Choice Foods is a wholesale distributor of South Asian and Indian grocery products in Edmonton, Alberta. We serve grocery stores, restaurants, and food service businesses across Western Canada.",
-  "foundingDate": "2015",
-  "currenciesAccepted": "CAD",
-  "paymentAccepted": "Cash, Credit Card, Interac",
-  "priceRange": "$$",
-  "openingHours": [
-    "Mo-Fr 08:00-17:00"
-  ],
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "3932 101 Street NW",
-    "addressLocality": "Edmonton",
-    "addressRegion": "AB",
-    "postalCode": "T6E 0A5",
-    "addressCountry": "CA"
-  },
-  "sameAs": [
-    "https://www.instagram.com/brotherschoicefoods",
-    "https://www.facebook.com/p/Brothers-Choice-Foods-100064270173354/"
+  "@graph": [
+    {
+      "@type": "WholesaleStore",
+      "@id": "https://www.brotherschoicefoods.com/#store",
+      "name": "Brothers Choice Foods",
+      "mainEntityOfPage": "https://www.brotherschoicefoods.com",
+      "image": "https://www.brotherschoicefoods.com/images/Logo-W.png",
+      "url": "https://www.brotherschoicefoods.com",
+      "logo": "https://www.brotherschoicefoods.com/images/Logo-W.png",
+      "telephone": "+1-780-437-9400",
+      "email": "brotherschoicefoods@gmail.com",
+      "description": "Brothers Choice Foods is a wholesale distributor of South Asian and Indian grocery products in Edmonton, Alberta. We serve grocery stores, restaurants, and food service businesses across Western Canada.",
+      "foundingDate": "2015",
+      "currenciesAccepted": "CAD",
+      "paymentAccepted": "Cash, Credit Card, Interac",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3932 101 Street NW",
+        "addressLocality": "Edmonton",
+        "addressRegion": "AB",
+        "postalCode": "T6E 0A5",
+        "addressCountry": "CA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 53.469539,
+        "longitude": -113.5134308
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "08:00",
+        "closes": "17:00"
+      },
+      "sameAs": [
+        "https://www.instagram.com/brotherschoicefoods",
+        "https://www.facebook.com/p/Brothers-Choice-Foods-100064270173354/"
+      ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://www.brotherschoicefoods.com/#featured",
+      "name": "South Asian Wholesale Grocery Products",
+      "image": "https://www.brotherschoicefoods.com/images/Card1.jpg",
+      "description": "A curated selection of wholesale South Asian products including lentils, daal, paneer, flour, dairy, and frozen items.",
+      "brand": {
+        "@type": "Organization",
+        "name": "Brothers Choice Foods"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Prince V."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Excellent service. Great product variety and pricing. Fast and easy process!"
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Taranjit K."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Smooth bulk order experience with timely service and great price."
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Munvir V."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Amazing experience. Friendly staff, affordable wholesale food, and great service!"
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Navraj T."
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Fantastic local supplier with excellent prices and dependable delivery."
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": 4
+      }
+    },
+    {
+      "@type": "ContactPoint",
+      "telephone": "+1-780-437-9400",
+      "contactType": "Customer Service",
+      "areaServed": "CA",
+      "availableLanguage": ["English", "Punjabi"],
+      "email": "brotherschoicefoods@gmail.com"
+    },
+    {
+      "@type": "Place",
+      "@id": "https://www.brotherschoicefoods.com/#location",
+      "name": "Brothers Choice Foods Edmonton",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 53.469539,
+        "longitude": -113.5134308
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3932 101 Street NW",
+        "addressLocality": "Edmonton",
+        "addressRegion": "AB",
+        "postalCode": "T6E 0A5",
+        "addressCountry": "CA"
+      }
+    }
   ]
 }
 </script>
@@ -156,92 +273,113 @@
 
 <body>
 
- <!-- Header -->
-  <header class="main-header">
-    <a href="/brotherschoice/" class="logo-link">
-      <img src="/brotherschoice/images/Logo-W.png" alt="Company Logo" class="logo" />
-    </a>
-
-  <!-- Desktop Navigation Menu -->
-<nav class="main-nav desktop-nav">
-  <ul>
-    <li class="menu-item"><a href="/brotherschoice/">Home</a></li>
-    <li class="menu-item"><a href="/brotherschoice/About/">About Us</a></li>
-    <li class="menu-item"><a href="/brotherschoice/Products/">Products</a></li>
-    <li class="menu-item"><a href="/brotherschoice/Customers/">Our Customers</a></li>
-    <li class="menu-item"><a href="/brotherschoice/Contact/">Contact Us</a></li>
-  </ul>
-</nav>
-    <div class="quote-button-wrapper">
-      <a href="/brotherschoice/Contact/" class="quote-button">Get a Free Quote</a>
-    </div>
-    
-<!-- Home Icon and Hamburger Menu -->
-<div class="mobile-home-icon">
-  <a href="/brotherschoice/">
-    <i class="fas fa-home"></i>
+ <!-- SEO + Accessibility Optimized Header -->
+<header class="main-header" role="banner" itemscope itemtype="https://schema.org/Organization" itemid="#header-org">
+  <a href="" class="logo-link" itemprop="url">
+    <img src="images/Logo-W.png" alt="Brothers Choice Foods - South Asian Wholesale Distributor Logo" class="logo" itemprop="logo" />
   </a>
-</div>
 
-<div class="hamburger-menu-icon" id="hamburgerToggle">
-  <span></span><span></span><span></span>
-</div>
+  <!-- Desktop Navigation -->
+  <nav class="main-nav desktop-nav" role="navigation" aria-label="Primary Navigation">
+    <ul>
+      <li class="menu-item"><a href="/" aria-current="page">Home</a></li>
+      <li class="menu-item"><a href="About/">About Us</a></li>
+      <li class="menu-item"><a href="Products/">Products</a></li>
+      <li class="menu-item"><a href="Customers/">Our Customers</a></li>
+      <li class="menu-item"><a href="Contact/">Contact Us</a></li>
+    </ul>
+  </nav>
 
-</header>
-  
-<!-- Mobile Navigation Menu -->
-<nav class="mobile-menu" id="mobileMenu">
-<div class="mobile-menu-top">
- <h3 class="mobile-menu-title">Navigation</h3>
-  <div class="mobile-close-button" onclick="toggleMenu()">✕</div>
-</div>
-
-<ul>
-  <li><a href="/brotherschoice/">Home</a></li>
-  <li><a href="/brotherschoice/About/">About Us</a></li>
-  <li><a href="/brotherschoice/Products/">Products</a></li>
-  <li><a href="/brotherschoice/Customers/">Our Customers</a></li>
-  <li><a href="/brotherschoice/Contact/">Contact Us</a></li>
-</ul>
-
-<h3 class="mobile-connect-title">Connect With Us</h3>
-
-<!-- Contact Links Section -->
-<div class="mobile-connect-links">
-  <a href="tel:+17804379400" class="connect-link">
-    <i class="fas fa-phone-alt"></i>
-    <span>Phone</span>
-  </a>
-  <a href="mailto:brotherschoicefoods@gmail.com" class="connect-link">
-    <i class="fas fa-envelope"></i>
-    <span>Email</span>
-  </a>
-  <a href="https://instagram.com/brotherschoicefoods" class="connect-link" target="_blank">
-    <i class="fab fa-instagram"></i>
-    <span>Instagram</span>
-  </a>
-  <a href="https://www.facebook.com/p/Brothers-Choice-Foods-100064270173354/" class="connect-link" target="_blank">
-    <i class="fab fa-facebook-f"></i>
-    <span>Facebook</span>
-  </a>
-</div>
-</nav>
-
-  <div class="mobile-overlay" id="mobileOverlay"></div>
-
-  <!-- Landing Page Section -->
-  <section class="landing-section">
-  <div class="landing-overlay"></div>
-  <div class="landing-content">
-    <h1 class="landing-title">Brothers Choice Foods</h1>
-    <h2 class="landing-subheading">Your Trusted Distributor for South Asian Products</h2>
-    <p class="landing-location">Proudly Serving Edmonton and Western Canada</p>
-    <a href="Products/" class="browse-button">Browse Products</a>
+  <!-- Call to Action Button -->
+  <div class="quote-button-wrapper">
+    <a href="Contact/" class="quote-button" role="button">Get a Free Quote</a>
   </div>
-</section>
 
+  <!-- Mobile Home Shortcut -->
+  <div class="mobile-home-icon">
+    <a href="/" aria-label="Home">
+      <i class="fas fa-home" aria-hidden="true"></i>
+    </a>
+  </div>
+
+  <!-- Hamburger Menu Icon with aria-controls -->
+  <div class="hamburger-menu-icon" id="hamburgerToggle"
+       role="button"
+       tabindex="0"
+       aria-label="Toggle Navigation Menu"
+       aria-controls="mobileMenu"
+       aria-expanded="false">
+    <span></span><span></span><span></span>
+  </div>
+</header>
+
+<!-- Mobile Navigation Menu -->
+<nav class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile Navigation" hidden>
+  <div class="mobile-menu-top">
+    <h3 class="mobile-menu-title">Navigation</h3>
+    <div class="mobile-close-button"
+         onclick="toggleMenu()"
+         role="button"
+         tabindex="0"
+         aria-label="Close Menu"
+         aria-controls="mobileMenu"
+         aria-expanded="true">
+      ✕
+    </div>
+  </div>
+
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="About/">About Us</a></li>
+    <li><a href="Products/">Products</a></li>
+    <li><a href="Customers/">Our Customers</a></li>
+    <li><a href="Contact/">Contact Us</a></li>
+  </ul>
+
+  <h3 class="mobile-connect-title">Connect With Us</h3>
+
+  <div class="mobile-connect-links">
+    <a href="tel:+17804379400" class="connect-link" itemprop="telephone">
+      <i class="fas fa-phone-alt" aria-hidden="true"></i>
+      <span>Phone</span>
+    </a>
+    <a href="mailto:brotherschoicefoods@gmail.com" class="connect-link" itemprop="email">
+      <i class="fas fa-envelope" aria-hidden="true"></i>
+      <span>Email</span>
+    </a>
+    <a href="https://instagram.com/brotherschoicefoods" class="connect-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+      <i class="fab fa-instagram" aria-hidden="true"></i>
+      <span>Instagram</span>
+    </a>
+    <a href="https://www.facebook.com/p/Brothers-Choice-Foods-100064270173354/" class="connect-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+      <i class="fab fa-facebook-f" aria-hidden="true"></i>
+      <span>Facebook</span>
+    </a>
+  </div>
+</nav>
+
+<!-- Mobile Overlay -->
+<div class="mobile-overlay" id="mobileOverlay" tabindex="-1" aria-hidden="true"></div>
+
+<main role="main" id="mainContent">
+
+<!-- Landing Page Section -->
+  <section class="landing-section" id="landing-section" role="region" aria-label="Welcome Section" itemscope itemtype="https://schema.org/WebPageElement" itemid="#landing-section">
+    <div class="landing-overlay"></div>
+    <div class="landing-content">
+      <h1 class="landing-title" itemprop="headline">Brothers Choice Foods</h1>
+      <h2 class="landing-subheading" itemprop="description">Your Trusted Distributor for South Asian Grocery Products</h2>
+      <p class="landing-location">Proudly Serving Edmonton and All of Western Canada</p>
+      
+      <a href="/brotherschoice/Products/" class="browse-button" role="button">
+        Browse Products
+      </a>
+    </div>
+  </section>
+
+  
 <!-- DISTRIBUTOR Section -->
-<section class="logo-cloud-section">
+<section class="logo-cloud-section" id="distributor-section" role="region" aria-label="Our Brand Partners">
   <div class="logo-cloud-header">
     <h2 class="logo-cloud-title">Trusted Brand Partners</h2>
     <p class="logo-cloud-subtitle">
@@ -250,433 +388,548 @@
   </div>
 
   <div class="logo-cloud-grid">
-    <!-- Row 1 - 5 logos -->
+    
+    <!-- Row 1 -->
     <div class="logo-row">
-      <div class="logo-wrapper" data-aos="zoom-in-up" data-aos-delay="0">
+      <div class="logo-wrapper" data-name="Brothers Choice" aria-label="Brand: Brothers Choice" data-aos="zoom-in-up" data-aos-delay="0">
         <picture>
-          <source srcset="/brotherschoice/images/distributors/brand1.webp" type="image/webp" />
-          <img src="/brotherschoice/images/distributors/brand1.png" alt="Brand 1 Logo" loading="lazy" />
+          <source srcset="images/distributors/brand1.webp" type="image/webp">
+          <img src="images/distributors/brand1.png" alt="Brothers Choice Logo" loading="lazy">
         </picture>
       </div>
-      <div class="logo-wrapper" data-aos="zoom-in-up" data-aos-delay="100">
+      <div class="logo-wrapper" data-name="Nanak Foods" aria-label="Brand: Nanak Foods" data-aos="zoom-in-up" data-aos-delay="100">
         <picture>
-          <source srcset="/brotherschoice/images/distributors/brand2.webp" type="image/webp" />
-          <img src="/brotherschoice/images/distributors/brand2.png" alt="Brand 2 Logo" loading="lazy" />
+          <source srcset="images/distributors/brand2.webp" type="image/webp">
+          <img src="images/distributors/brand2.png" alt="Nanak Foods Logo" loading="lazy">
         </picture>
       </div>
-      <div class="logo-wrapper" data-aos="zoom-in-up" data-aos-delay="200">
+      <div class="logo-wrapper" data-name="Eastern Foods" aria-label="Brand: Eastern Foods" data-aos="zoom-in-up" data-aos-delay="200">
         <picture>
-          <source srcset="/brotherschoice/images/distributors/brand3.webp" type="image/webp" />
-          <img src="/brotherschoice/images/distributors/brand3.png" alt="Brand 3 Logo" loading="lazy" />
+          <source srcset="images/distributors/brand3.webp" type="image/webp">
+          <img src="images/distributors/brand3.png" alt="Eastern Foods Logo" loading="lazy">
         </picture>
       </div>
-      <div class="logo-wrapper" data-aos="zoom-in-up" data-aos-delay="300">
+      <div class="logo-wrapper" data-name="Haldirams" aria-label="Brand: Haldirams" data-aos="zoom-in-up" data-aos-delay="300">
         <picture>
-          <source srcset="/brotherschoice/images/distributors/brand4.webp" type="image/webp" />
-          <img src="/brotherschoice/images/distributors/brand4.png" alt="Brand 4 Logo" loading="lazy" />
+          <source srcset="images/distributors/brand4.webp" type="image/webp">
+          <img src="images/distributors/brand4.png" alt="Haldirams Logo" loading="lazy">
         </picture>
       </div>
-      <div class="logo-wrapper" data-aos="zoom-in-up" data-aos-delay="400">
+      <div class="logo-wrapper" data-name="Sher" aria-label="Brand: Sher" data-aos="zoom-in-up" data-aos-delay="400">
         <picture>
-          <source srcset="/brotherschoice/images/distributors/brand5.webp" type="image/webp" />
-          <img src="/brotherschoice/images/distributors/brand5.png" alt="Brand 5 Logo" loading="lazy" />
+          <source srcset="images/distributors/brand5.webp" type="image/webp">
+          <img src="images/distributors/brand5.png" alt="Sher Logo" loading="lazy">
         </picture>
       </div>
     </div>
 
-    <!-- Row 2 - 4 logos -->
+    <!-- Row 2 -->
     <div class="logo-row2">
-      <div class="logo-wrapper" data-aos="zoom-in-up" data-aos-delay="100">
+      <div class="logo-wrapper" data-name="Red Label" aria-label="Brand: Red Label" data-aos="zoom-in-up" data-aos-delay="100">
         <picture>
-          <source srcset="/brotherschoice/images/distributors/brand6.webp" type="image/webp" />
-          <img src="/brotherschoice/images/distributors/brand6.png" alt="Brand 6 Logo" loading="lazy" />
+          <source srcset="images/distributors/brand6.webp" type="image/webp">
+          <img src="images/distributors/brand6.png" alt="Red Label Logo" loading="lazy">
         </picture>
       </div>
-      <div class="logo-wrapper" data-aos="zoom-in-up" data-aos-delay="200">
+      <div class="logo-wrapper" data-name="Maharani" aria-label="Brand: Maharani" data-aos="zoom-in-up" data-aos-delay="200">
         <picture>
-          <source srcset="/brotherschoice/images/distributors/brand7.webp" type="image/webp" />
-          <img src="/brotherschoice/images/distributors/brand7.png" alt="Brand 7 Logo" loading="lazy" />
+          <source srcset="images/distributors/brand7.webp" type="image/webp">
+          <img src="images/distributors/brand7.png" alt="Maharani Logo" loading="lazy">
         </picture>
       </div>
-      <div class="logo-wrapper" data-aos="zoom-in-up" data-aos-delay="300">
+      <div class="logo-wrapper" data-name="MDH" aria-label="Brand: MDH" data-aos="zoom-in-up" data-aos-delay="300">
         <picture>
-          <source srcset="/brotherschoice/images/distributors/brand8.webp" type="image/webp" />
-          <img src="/brotherschoice/images/distributors/brand8.png" alt="Brand 8 Logo" loading="lazy" />
+          <source srcset="images/distributors/brand8.webp" type="image/webp">
+          <img src="images/distributors/brand8.png" alt="MDH Logo" loading="lazy">
         </picture>
       </div>
-      <div class="logo-wrapper" data-aos="zoom-in-up" data-aos-delay="400">
+      <div class="logo-wrapper" data-name="Lal Qilla Brand" aria-label="Brand: Lal Qilla" data-aos="zoom-in-up" data-aos-delay="400">
         <picture>
-          <source srcset="/brotherschoice/images/distributors/brand9.webp" type="image/webp" />
-          <img src="/brotherschoice/images/distributors/brand9.png" alt="Brand 9 Logo" loading="lazy" />
+          <source srcset="images/distributors/brand9.webp" type="image/webp">
+          <img src="images/distributors/brand9.png" alt="Lal Qilla Logo" loading="lazy">
         </picture>
       </div>
     </div>
 
-    <!-- Row 3 - 5 logos -->
+    <!-- Row 3 -->
     <div class="logo-row">
-      <div class="logo-wrapper" data-aos="zoom-in-up" data-aos-delay="100">
+      <div class="logo-wrapper" data-name="Kozhi Kodens" aria-label="Brand: Kozhi Kodens" data-aos="zoom-in-up" data-aos-delay="100">
         <picture>
-          <source srcset="/brotherschoice/images/distributors/brand10.webp" type="image/webp" />
-          <img src="/brotherschoice/images/distributors/brand10.png" alt="Brand 10 Logo" loading="lazy" />
+          <source srcset="images/distributors/brand10.webp" type="image/webp">
+          <img src="images/distributors/brand10.png" alt="Kozhi Kodens Logo" loading="lazy">
         </picture>
       </div>
-      <div class="logo-wrapper" data-aos="zoom-in-up" data-aos-delay="200">
+      <div class="logo-wrapper" data-name="Chhedas" aria-label="Brand: Chhedas" data-aos="zoom-in-up" data-aos-delay="200">
         <picture>
-          <source srcset="/brotherschoice/images/distributors/brand11.webp" type="image/webp" />
-          <img src="/brotherschoice/images/distributors/brand11.png" alt="Brand 11 Logo" loading="lazy" />
+          <source srcset="images/distributors/brand11.webp" type="image/webp">
+          <img src="images/distributors/brand11.png" alt="Chhedas Logo" loading="lazy">
         </picture>
       </div>
-      <div class="logo-wrapper" data-aos="zoom-in-up" data-aos-delay="300">
+      <div class="logo-wrapper" data-name="Parle" aria-label="Brand: Parle" data-aos="zoom-in-up" data-aos-delay="300">
         <picture>
-          <source srcset="/brotherschoice/images/distributors/brand12.webp" type="image/webp" />
-          <img src="/brotherschoice/images/distributors/brand12.png" alt="Brand 12 Logo" loading="lazy" />
+          <source srcset="images/distributors/brand12.webp" type="image/webp">
+          <img src="images/distributors/brand12.png" alt="Parle Logo" loading="lazy">
         </picture>
       </div>
-      <div class="logo-wrapper" data-aos="zoom-in-up" data-aos-delay="400">
+      <div class="logo-wrapper" data-name="Maggi" aria-label="Brand: Maggi" data-aos="zoom-in-up" data-aos-delay="400">
         <picture>
-          <source srcset="/brotherschoice/images/distributors/brand13.webp" type="image/webp" />
-          <img src="/brotherschoice/images/distributors/brand13.png" alt="Brand 13 Logo" loading="lazy" />
+          <source srcset="images/distributors/brand13.webp" type="image/webp">
+          <img src="images/distributors/brand13.png" alt="Maggi Logo" loading="lazy">
         </picture>
       </div>
-      <div class="logo-wrapper" data-aos="zoom-in-up" data-aos-delay="500">
+      <div class="logo-wrapper" data-name="Ghar Se" aria-label="Brand: Ghar Se" data-aos="zoom-in-up" data-aos-delay="500">
         <picture>
-          <source srcset="/brotherschoice/images/distributors/brand14.webp" type="image/webp" />
-          <img src="/brotherschoice/images/distributors/brand14.png" alt="Brand 14 Logo" loading="lazy" />
+          <source srcset="images/distributors/brand14.webp" type="image/webp">
+          <img src="images/distributors/brand14.png" alt="Ghar Se Logo" loading="lazy">
         </picture>
       </div>
     </div>
 
-    <!-- Row 4 - Final centered logo -->
+    <!-- Final Centered -->
     <div class="logo-row logo-final-row">
-      <div class="logo-wrapper" data-aos="zoom-in-up" data-aos-delay="100">
+      <div class="logo-wrapper" data-name="And Many More" aria-label="Brand: And Many More" data-aos="zoom-in-up" data-aos-delay="100">
         <picture>
-          <source srcset="/brotherschoice/images/distributors/brand15.webp" type="image/webp" />
-          <img src="/brotherschoice/images/distributors/brand15.png" alt="And many more" loading="lazy" />
+          <source srcset="images/distributors/brand15.webp" type="image/webp">
+          <img src="images/distributors/brand15.png" alt="And Many More" loading="lazy">
         </picture>
       </div>
     </div>
+
   </div>
 </section>
 
+
 <!-- FEATURED PRODUCTS SECTION -->
-<section class="featured-products-section pull-up">
+<section id="featured-products" class="featured-products-section pull-up" role="region" aria-label="Featured South Asian Grocery Products">
   <h2 class="featured-products-title">Featured Products</h2>
 
   <!-- Loader -->
-  <div id="featuredProductsLoader" class="featured-products-loader">
-    <div class="spinner"></div>
+  <div id="featuredProductsLoader" class="featured-products-loader" role="status" aria-live="polite">
+    <div class="spinner" aria-hidden="true"></div>
+    <span class="visually-hidden">Loading featured products...</span>
   </div>
 
   <!-- Navigation Arrows -->
-  <div class="swiper-button-prev featured-swiper-button-prev"></div>
+  <div class="swiper-button-prev featured-swiper-button-prev" aria-label="Previous Product"></div>
 
   <!-- Swiper Container -->
-  <div class="swiper-container featured-swiper-container">
-    <div class="swiper-wrapper featured-swiper-wrapper" id="featuredProducts"></div>
+  <div class="swiper-container featured-swiper-container" aria-label="Swipe through featured products">
+    <div class="swiper-wrapper featured-swiper-wrapper" id="featuredProducts">
+    </div>
   </div>
 
-  <div class="swiper-button-next featured-swiper-button-next"></div>
+  <!-- Next Arrow -->
+  <div class="swiper-button-next featured-swiper-button-next" aria-label="Next Product"></div>
 
-  <!-- Button -->
-  <a href="Products/" class="featured-button">
+  <!-- CTA Button -->
+  <a href="/brotherschoice/Products/" class="featured-button" aria-label="Explore More of Our Top Products">
     Explore More of Our Top Products
   </a>
 </section>
-  
- <!-- Pop-Up-Card -->
-  <div id="productModal" class="modal">
+
+<!-- Pop-Up Product Modal -->
+<div id="productModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
   <div class="modal-content">
-    <span class="close-btn">&times;</span>
-    <img id="modalImage" src="" alt="Product" />
+    <button class="close-btn" aria-label="Close product preview">&times;</button>
+    <img id="modalImage" src="" alt="Product Image Enlarged" />
+    <p id="modalTitle" class="visually-hidden">Product Preview</p>
   </div>
 </div>
 
-<!-- Specialization Section -->
-<section class="specialize-section">
-  <div class="specialize-overlay"></div>
+<!-- SPECIALIZATION SECTION -->
+<section id="specializations" class="specialize-section" role="region" aria-label="Brothers Choice Foods Specializations">
+  <div class="specialize-overlay" aria-hidden="true"></div>
   <div class="specialize-content">
 
     <h2 class="specialize-title">We Specialize In</h2>
 
-    <div class="specialize-cards">
+    <div class="specialize-cards" itemscope itemtype="https://schema.org/ItemList">
 
-<!-- Card 1 -->
-<div class="card">
-  <div class="card-inner">
-    <div class="card-front">
-      <picture>
-        <source srcset="images/Card1.webp" type="image/webp" />
-        <img src="images/Card1.jpg" alt="South Asian Grocery Products" />
-      </picture>
-      <span>South Asian Grocery Products</span>
-    </div>
-    <div class="card-back">
-      <h3>South Asian Grocery Products</h3>
-      <p>We provide a full range of authentic South Asian staples, snacks, and packaged goods for retail and wholesale.</p>
-    </div>
-  </div>
-</div>
+      <!-- Card 1 -->
+      <div class="card" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" data-name="South Asian Grocery Products" aria-label="South Asian Grocery Products">
+        <meta itemprop="position" content="1" />
+        <div class="card-inner">
+          <div class="card-front">
+            <picture>
+              <source srcset="images/Card1.webp" type="image/webp" />
+              <img src="images/Card1.jpg" alt="South Asian grocery staples and packaged goods" loading="lazy" itemprop="image" />
+            </picture>
+            <span itemprop="name">South Asian Grocery Products</span>
+          </div>
+          <div class="card-back">
+            <h3>South Asian Grocery Products</h3>
+            <p itemprop="description">Authentic staples, snacks, and packaged goods for retail and wholesale.</p>
+          </div>
+        </div>
+      </div>
 
-<!-- Card 2 -->
-<div class="card">
-  <div class="card-inner">
-    <div class="card-front">
-      <picture>
-        <source srcset="images/Card2.webp" type="image/webp" />
-        <img src="images/Card2.jpg" alt="Dairy Products" />
-      </picture>
-      <span>Dairy Products</span>
-    </div>
-    <div class="card-back">
-      <h3>Dairy Products</h3>
-      <p>From everyday essentials to traditional delicacies, our dairy selection includes fresh Dahi (yogurt), creamy Paneer, rich Badam Milk, and authentic Khoa.</p>
-    </div>
-  </div>
-</div>
+      <!-- Card 2 -->
+      <div class="card" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" data-name="Dairy Products" aria-label="Dairy Products">
+        <meta itemprop="position" content="2" />
+        <div class="card-inner">
+          <div class="card-front">
+            <picture>
+              <source srcset="images/Card2.webp" type="image/webp" />
+              <img src="images/Card2.jpg" alt="Fresh Dahi, Paneer, Badam Milk, and Khoa" loading="lazy" itemprop="image" />
+            </picture>
+            <span itemprop="name">Dairy Products</span>
+          </div>
+          <div class="card-back">
+            <h3>Dairy Products</h3>
+            <p itemprop="description">Fresh Dahi (yogurt), creamy Paneer, rich Badam Milk, and authentic Khoa.</p>
+          </div>
+        </div>
+      </div>
 
-<!-- Card 3 -->
-<div class="card">
-  <div class="card-inner">
-    <div class="card-front">
-      <picture>
-        <source srcset="images/Card5.webp" type="image/webp" />
-        <img src="images/Card5.jpg" alt="Frozen Products" />
-      </picture>
-      <span>Frozen Products</span>
-    </div>
-    <div class="card-back">
-      <h3>Frozen Products</h3>
-      <p>Our frozen range offers convenience without compromising on quality. We carry a wide variety of frozen vegetables, fish, authentic Indian desserts, and traditional sweets.</p>
-    </div>
-  </div>
-</div>
+      <!-- Card 3 -->
+      <div class="card" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" data-name="Frozen Products" aria-label="Frozen Products">
+        <meta itemprop="position" content="3" />
+        <div class="card-inner">
+          <div class="card-front">
+            <picture>
+              <source srcset="images/Card5.webp" type="image/webp" />
+              <img src="images/Card5.jpg" alt="Frozen vegetables, fish, Indian desserts, and sweets" loading="lazy" itemprop="image" />
+            </picture>
+            <span itemprop="name">Frozen Products</span>
+          </div>
+          <div class="card-back">
+            <h3>Frozen Products</h3>
+            <p itemprop="description">Frozen vegetables, fish, Indian desserts, and sweets—ready for kitchens and stores.</p>
+          </div>
+        </div>
+      </div>
 
-<!-- Card 4 -->
-<div class="card">
-  <div class="card-inner">
-    <div class="card-front">
-      <picture>
-        <source srcset="images/Card4.webp" type="image/webp" />
-        <img src="images/Card4.jpg" alt="Dry Lentils & Nuts" />
-      </picture>
-      <span>Dry Lentils & Nuts</span>
-    </div>
-    <div class="card-back">
-      <h3>Dry Lentils & Nuts</h3>
-      <p>Premium quality dry lentils and nuts — packed fresh and ready for shelf or kitchen use.</p>
-    </div>
-  </div>
-</div>
+      <!-- Card 4 -->
+      <div class="card" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" data-name="Dry Lentils & Nuts" aria-label="Dry Lentils and Nuts">
+        <meta itemprop="position" content="4" />
+        <div class="card-inner">
+          <div class="card-front">
+            <picture>
+              <source srcset="images/Card4.webp" type="image/webp" />
+              <img src="images/Card4.jpg" alt="Premium lentils and nuts for bulk and retail" loading="lazy" itemprop="image" />
+            </picture>
+            <span itemprop="name">Dry Lentils & Nuts</span>
+          </div>
+          <div class="card-back">
+            <h3>Dry Lentils & Nuts</h3>
+            <p itemprop="description">Premium dry lentils and nuts—freshly packed for retailers and homes alike.</p>
+          </div>
+        </div>
+      </div>
 
-<!-- Card 5 -->
-<div class="card">
-  <div class="card-inner">
-    <div class="card-front">
-      <picture>
-        <source srcset="images/Card3.webp" type="image/webp" />
-        <img src="images/Card3.jpg" alt="Wholesale Distribution" />
-      </picture>
-      <span>Wholesale Distribution</span>
-    </div>
-    <div class="card-back">
-      <h3>Wholesale Distribution</h3>
-      <p>Reliable bulk distribution to grocery chains, independent retailers, and food service businesses.</p>
-    </div>
-  </div>
-</div>
+      <!-- Card 5 -->
+      <div class="card" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" data-name="Wholesale Distribution" aria-label="Wholesale Distribution">
+        <meta itemprop="position" content="5" />
+        <div class="card-inner">
+          <div class="card-front">
+            <picture>
+              <source srcset="images/Card3.webp" type="image/webp" />
+              <img src="images/Card3.jpg" alt="Wholesale distribution to grocery and food service" loading="lazy" itemprop="image" />
+            </picture>
+            <span itemprop="name">Wholesale Distribution</span>
+          </div>
+          <div class="card-back">
+            <h3>Wholesale Distribution</h3>
+            <p itemprop="description">Bulk distribution to grocers, independent shops, and food service providers.</p>
+          </div>
+        </div>
+      </div>
 
-<!-- Card 6 -->
-<div class="card">
-  <div class="card-inner">
-    <div class="card-front">
-      <picture>
-        <source srcset="images/Card6.webp" type="image/webp" />
-        <img src="images/Card6.jpg" alt="Reliable Logistics & Delivery" />
-      </picture>
-      <span>Reliable Logistics & Delivery</span>
-    </div>
-    <div class="card-back">
-      <h3>Reliable Logistics & Delivery</h3>
-      <p>Our distribution network ensures prompt, accurate deliveries to clients across Western Canada.</p>
-    </div>
-  </div>
-</div>
+      <!-- Card 6 -->
+      <div class="card" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" data-name="Reliable Logistics & Delivery" aria-label="Reliable Logistics and Delivery">
+        <meta itemprop="position" content="6" />
+        <div class="card-inner">
+          <div class="card-front">
+            <picture>
+              <source srcset="images/Card6.webp" type="image/webp" />
+              <img src="images/Card6.jpg" alt="Logistics network and timely delivery across Western Canada" loading="lazy" itemprop="image" />
+            </picture>
+            <span itemprop="name">Reliable Logistics & Delivery</span>
+          </div>
+          <div class="card-back">
+            <h3>Reliable Logistics & Delivery</h3>
+            <p itemprop="description">Efficient delivery and logistics across Edmonton and Western Canada.</p>
+          </div>
+        </div>
+      </div>
     </div>
 
+    <!-- CTA Button -->
     <div class="specialize-button-container">
-    <a href="Contact/" class="specialize-button">Contact Brothers Choice Foods for more Information</a>
+      <a href="/brotherschoice/Contact/" class="specialize-button" aria-label="Contact Brothers Choice Foods for more information">
+        Contact Brothers Choice Foods for more Information
+      </a>
     </div>
+
+  </div>
 </section>
+
   
 
-<!-- Why Us Section -->
-  
-<section class="why-section split-layout">
-  <div class="why-image">
+<!-- WHY BROTHERS CHOICE SECTION -->
+<section id="why-brothers-choice" class="why-section split-layout" role="region" aria-label="Why Choose Brothers Choice Foods">
+  <div class="why-image" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
     <picture>
-      <source srcset="images/why-photo.webp" type="image/webp">
-      <img src="images/why-photo.jpg" alt="Why Brothers Choice" />
+      <source srcset="images/why-photo.webp" type="image/webp" />
+      <img src="images/why-photo.jpg" alt="Delivery truck with Brothers Choice Foods branding" loading="lazy" itemprop="url" />
     </picture>
+    <meta itemprop="caption" content="Brothers Choice Foods delivery service" />
   </div>
-  <div class="why-text">
-    <h2 class="why-title">Why Brothers Choice?</h2>
-    <p class="why-description">
-      At Brothers Choice Foods, we’re proud to be a trusted distributor for retailers and restaurants across Western Canada, specializing in high-quality South Asian and ethnic grocery products. With deep community roots, reliable delivery from our Edmonton base, and a commitment to competitive pricing, we make it easy for businesses to access authentic ingredients their customers love. Our personalized service and industry knowledge ensure you get what you need, on time and hassle-free.
+
+  <div class="why-text" itemscope itemtype="https://schema.org/AboutPage">
+    <h2 class="why-title" itemprop="name">Why Brothers Choice?</h2>
+    <p class="why-description" itemprop="description">
+      At Brothers Choice Foods, we’re proud to be a trusted distributor for retailers and restaurants across Western Canada. We specialize in high-quality South Asian and ethnic grocery products. With deep community roots, reliable delivery from our Edmonton base, and competitive pricing, we make it easy for businesses to access the authentic ingredients their customers love. Our personalized service and industry knowledge ensure you get what you need, on time and hassle-free.
     </p>
-    <a href="About/" class="about-button">About Us</a>
+    <a href="/brotherschoice/About/" class="about-button" aria-label="Learn more about Brothers Choice Foods">
+      About Us
+    </a>
   </div>
 </section>
+
   
-<!-- REVIEWS SECTION -->
-<section class="reviews-section">
-  <h2 class="reviews-title">What Our Customers Are Saying</h2>
+<!-- CUSTOMER REVIEWS SECTION -->
+<section id="customer-reviews" class="reviews-section" role="region" aria-label="Customer Testimonials and Reviews" itemscope itemtype="https://schema.org/Product">
+  <meta itemprop="name" content="Brothers Choice Foods - Wholesale South Asian Products" />
+  <meta itemprop="description" content="What our satisfied customers say about Brothers Choice Foods. Read real reviews about our wholesale service, delivery, and pricing." />
+  <h2 class="reviews-title" itemprop="review">What Our Customers Are Saying</h2>
 
   <div class="swiper reviews-swiper">
-    
- <div class="swiper-wrapper review-swiper-wrapper">
-      <div class="swiper-slide review-swiper-slide">
+    <div class="swiper-wrapper review-swiper-wrapper">
+
+      <!-- Review 1 -->
+      <div class="swiper-slide review-swiper-slide" itemscope itemprop="review" itemtype="https://schema.org/Review">
         <div class="review-card">
-          <div class="review-stars">★★★★★</div>
-          <p class="review-text">Excellent service. There was a huge variety of whole sale products available at a great price. My order was completed very fast and the whole process was easy to go through! Highly recommend!!!</p>
-          <p class="review-author">– Prince V.</p>
+          <div class="review-stars" aria-label="5 star review" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+            ★★★★★
+            <meta itemprop="ratingValue" content="5" />
+            <meta itemprop="bestRating" content="5" />
+            <meta itemprop="worstRating" content="1" />
+          </div>
+          <p class="review-text" itemprop="reviewBody">Excellent service. Huge variety of wholesale products at great prices. My order was completed quickly and the process was easy. Highly recommend!</p>
+          <p class="review-author" itemprop="author">– Prince V.</p>
         </div>
       </div>
 
-      <div class="swiper-slide review-swiper-slide">
+      <!-- Review 2 -->
+      <div class="swiper-slide review-swiper-slide" itemscope itemprop="review" itemtype="https://schema.org/Review">
         <div class="review-card">
-          <div class="review-stars">★★★★★</div>
-          <p class="review-text">It was a great experience dealing for a bulk order with timely service and great price. Thanks!!!!</p>
-          <p class="review-author">– Taranjit K.</p>
+          <div class="review-stars" aria-label="5 star review" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+            ★★★★★
+            <meta itemprop="ratingValue" content="5" />
+            <meta itemprop="bestRating" content="5" />
+            <meta itemprop="worstRating" content="1" />
+          </div>
+          <p class="review-text" itemprop="reviewBody">Great experience placing a bulk order—timely service and competitive pricing. Thanks!</p>
+          <p class="review-author" itemprop="author">– Taranjit K.</p>
         </div>
       </div>
 
-      <div class="swiper-slide review-swiper-slide">
+      <!-- Review 3 -->
+      <div class="swiper-slide review-swiper-slide" itemscope itemprop="review" itemtype="https://schema.org/Review">
         <div class="review-card">
-          <div class="review-stars">★★★★★</div>
-          <p class="review-text">I recently ordered from Brothers Choice and had a really great experience. Their prices are awesome, making it easy to stock up. Everyone I spoke with was super friendly and helpful. I would definitely recommend Brothers Choice if you’re looking for a good place to buy wholesale food!</p>
-          <p class="review-author">– Munvir V.</p>
+          <div class="review-stars" aria-label="5 star review" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+            ★★★★★
+            <meta itemprop="ratingValue" content="5" />
+            <meta itemprop="bestRating" content="5" />
+            <meta itemprop="worstRating" content="1" />
+          </div>
+          <p class="review-text" itemprop="reviewBody">Amazing experience with Brothers Choice! Great pricing and super friendly team. Perfect for wholesale food needs.</p>
+          <p class="review-author" itemprop="author">– Munvir V.</p>
         </div>
       </div>
 
-      <div class="swiper-slide review-swiper-slide">
+      <!-- Review 4 -->
+      <div class="swiper-slide review-swiper-slide" itemscope itemprop="review" itemtype="https://schema.org/Review">
         <div class="review-card">
-          <div class="review-stars">★★★★★</div>
-          <p class="review-text">Fantastic local supplier with excellent prices and dependable delivery.</p>
-          <p class="review-author">– Navraj T.</p>
+          <div class="review-stars" aria-label="5 star review" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+            ★★★★★
+            <meta itemprop="ratingValue" content="5" />
+            <meta itemprop="bestRating" content="5" />
+            <meta itemprop="worstRating" content="1" />
+          </div>
+          <p class="review-text" itemprop="reviewBody">Fantastic local supplier with dependable delivery and excellent prices.</p>
+          <p class="review-author" itemprop="author">– Navraj T.</p>
         </div>
       </div>
     </div>
-    
-    <div class="swiper-button-next review-swiper-button-next"></div>
-    <div class="swiper-button-prev review-swiper-button-prev"></div>
+
+    <!-- Arrows -->
+    <div class="swiper-button-next review-swiper-button-next" aria-label="Next customer review"></div>
+    <div class="swiper-button-prev review-swiper-button-prev" aria-label="Previous customer review"></div>
   </div>
 </section>
 
-      <!-- WHERE TO FIND US SECTION -->
-<section class="brand-showcase-section">
+
+<!-- WHERE TO FIND US SECTION -->
+<section class="brand-showcase-section" id="where-to-find-us" aria-labelledby="brandShowcaseHeading" role="region" data-name="Where to Find Us">
   <div class="brand-showcase-row">
     <div class="brand-showcase-text">
-      <h2>Find Brothers Choice Products at:</h2>
+      <h2 id="brandShowcaseHeading">Find Brothers Choice Products at:</h2>
     </div>
-    <div class="brand-logo-row">
-  <a href="Customers/" aria-label="Retail Partner 1">
-    <picture>
-      <source srcset="images/brands/logo1.webp" type="image/webp">
-      <img src="images/brands/logo1.png" alt="Retail Partner 1" />
-    </picture>
-  </a>
-  <a href="Customers/" aria-label="Retail Partner 2">
-    <picture>
-      <source srcset="images/brands/logo2.webp" type="image/webp">
-      <img src="images/brands/logo2.png" alt="Retail Partner 2" />
-    </picture>
-  </a>
-  <a href="Customers/" aria-label="Retail Partner 3">
-    <picture>
-      <source srcset="images/brands/logo3.webp" type="image/webp">
-      <img src="images/brands/logo3.png" alt="Retail Partner 3" />
-    </picture>
-  </a>
-  <a href="Customers/" aria-label="Retail Partner 4">
-    <picture>
-      <source srcset="images/brands/logo4.webp" type="image/webp">
-      <img src="images/brands/logo4.png" alt="Retail Partner 4" />
-    </picture>
-  </a>
-  <a href="Customers/" aria-label="Retail Partner 5">
-    <picture>
-      <source srcset="images/brands/logo5.webp" type="image/webp">
-      <img src="images/brands/logo5.png" alt="Retail Partner 5" />
-    </picture>
-  </a>
-  <a href="Customers/" aria-label="Retail Partner 6">
-    <picture>
-      <source srcset="images/brands/logo6.webp" type="image/webp">
-      <img src="images/brands/logo6.png" alt="Retail Partner 6" />
-    </picture>
-  </a>
-</div>
+
+    <ul class="brand-logo-row" role="list">
+      <li role="listitem">
+        <a href="Customers/" aria-label="Retail Partner 1">
+          <picture>
+            <source srcset="images/brands/logo1.webp" type="image/webp" />
+            <img src="images/brands/logo1.png" alt="Retail Partner 1 Logo" loading="lazy" />
+          </picture>
+        </a>
+      </li>
+      <li role="listitem">
+        <a href="Customers/" aria-label="Retail Partner 2">
+          <picture>
+            <source srcset="images/brands/logo2.webp" type="image/webp" />
+            <img src="images/brands/logo2.png" alt="Retail Partner 2 Logo" loading="lazy" />
+          </picture>
+        </a>
+      </li>
+      <li role="listitem">
+        <a href="Customers/" aria-label="Retail Partner 3">
+          <picture>
+            <source srcset="images/brands/logo3.webp" type="image/webp" />
+            <img src="images/brands/logo3.png" alt="Retail Partner 3 Logo" loading="lazy" />
+          </picture>
+        </a>
+      </li>
+      <li role="listitem">
+        <a href="Customers/" aria-label="Retail Partner 4">
+          <picture>
+            <source srcset="images/brands/logo4.webp" type="image/webp" />
+            <img src="images/brands/logo4.png" alt="Retail Partner 4 Logo" loading="lazy" />
+          </picture>
+        </a>
+      </li>
+      <li role="listitem">
+        <a href="Customers/" aria-label="Retail Partner 5">
+          <picture>
+            <source srcset="images/brands/logo5.webp" type="image/webp" />
+            <img src="images/brands/logo5.png" alt="Retail Partner 5 Logo" loading="lazy" />
+          </picture>
+        </a>
+      </li>
+      <li role="listitem">
+        <a href="Customers/" aria-label="Retail Partner 6">
+          <picture>
+            <source srcset="images/brands/logo6.webp" type="image/webp" />
+            <img src="images/brands/logo6.png" alt="Retail Partner 6 Logo" loading="lazy" />
+          </picture>
+        </a>
+      </li>
+    </ul>
   </div>
 </section>
+
   
-    <!-- Contact Form -->
-<section class="contact-section">
+<!-- CONTACT SECTION -->
+<section class="contact-section" id="contact" aria-label="Contact Section">
   <div class="contact-container">
 
     <!-- Left Column: Contact Info -->
     <div class="contact-info">
-      <h2>Contact Us</h2>
-      <p><strong>Address:</strong><br>3932 101 Street<br>Edmonton, AB, Canada</p>
-      <p><strong>Phone:</strong><br><a href="tel:+17804379400" class="contact-link">(780) 437-9400</a></p>
-      <p><strong>Email:</strong><br><a href="mailto:brotherschoicefoods@gmail.com">brotherschoicefoods@gmail.com</a></p>
-      <p><strong>Hours:</strong><br>Monday - Friday<br>8am - 5pm</p>
+      <h2 id="contactHeading">Contact Us</h2>
+
+      <p><strong>Address:</strong><br>
+        3932 101 Street<br>Edmonton, AB, Canada
+      </p>
+
+      <p><strong>Phone:</strong><br>
+        <a href="tel:+17804379400" class="contact-link" aria-label="Call Brothers Choice Foods">(780) 437-9400</a>
+      </p>
+
+      <p><strong>Email:</strong><br>
+        <a href="mailto:brotherschoicefoods@gmail.com" aria-label="Email Brothers Choice Foods">
+          brotherschoicefoods@gmail.com
+        </a>
+      </p>
+
+      <p><strong>Hours:</strong><br>
+        <time itemprop="openingHours" datetime="Mo-Fr 08:00-17:00">
+          Monday – Friday, 8:00 AM – 5:00 PM
+        </time>
+      </p>
+
+      <p>
+        <a href="https://maps.google.com/?q=3932+101+Street+NW,+Edmonton,+AB" 
+           target="_blank" rel="noopener" aria-label="View location on Google Maps">
+          View on Google Maps
+        </a>
+      </p>
     </div>
 
-    <!-- Right Column: Form -->
-<form class="contact-form" id="contactForm" action="https://formsubmit.co/ajax/brotherschoicefoods@gmail.com" method="POST">
-  <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_template" value="table">
+    <!-- Right Column: Contact Form -->
+    <form class="contact-form" id="contactForm"
+          action="https://formsubmit.co/ajax/brotherschoicefoods@gmail.com"
+          method="POST" role="form" aria-labelledby="contactHeading">
 
-  <div class="form-row">
-    <input type="text" name="name" placeholder="Your Name" required />
-    <input type="text" name="company" placeholder="Company Name" />
-  </div>
-  <div class="form-row">
-    <input type="email" name="email" placeholder="Email Address" required />
-    <input type="tel" name="phone" placeholder="Phone Number" />
-  </div>
-  <textarea name="message" placeholder="How can we help?" required></textarea>
-  <button type="submit">Submit</button>
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
 
-</form>
+      <div class="form-row">
+        <input type="text" name="name" placeholder="Your Name" required aria-label="Your Name" />
+        <input type="text" name="company" placeholder="Company Name" aria-label="Company Name" />
+      </div>
+      <div class="form-row">
+        <input type="email" name="email" placeholder="Email Address" required aria-label="Email Address" />
+        <input type="tel" name="phone" placeholder="Phone Number" aria-label="Phone Number" />
+      </div>
+      <textarea name="message" placeholder="How can we help?" required aria-label="Message"></textarea>
+      <button type="submit" aria-label="Submit Contact Form">Submit</button>
+    </form>
 
-<div id="thankYouMessage" style="display: none;" class="thank-you-message">
-  <p>Thank you! Your message has been sent successfully. A Brothers Choice team member will be reaching out to you shortly.</p>
-</div>
+    <div id="thankYouMessage" style="display: none;" class="thank-you-message" role="status" aria-live="polite">
+      <p>Thank you! Your message has been sent successfully. A Brothers Choice team member will be reaching out to you shortly.</p>
+    </div>
 
-  <!-- Full Width Map Underneath -->
- <!-- Map FULL WIDTH -->
-<div class="map-container">
-  <iframe
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24098.23064646069!2d-113.5134308!3d53.4695394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a022c2ae11b495%3A0x5ef01260c5d688ec!2s3932%20101%20St%20NW%2C%20Edmonton%2C%20AB%20T6E%200A5%2C%20Canada!5e0!3m2!1sen!2sca!4v1716562924694!5m2!1sen!2sca"
-  width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-  referrerpolicy="no-referrer-when-downgrade">
-</iframe>
-</div>
+    <!-- Embedded Google Map -->
+    <div class="map-container" aria-hidden="true">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24098.23064646069!2d-113.5134308!3d53.4695394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a022c2ae11b495%3A0x5ef01260c5d688ec!2s3932%20101%20St%20NW%2C%20Edmonton%2C%20AB%20T6E%200A5%2C%20Canada!5e0!3m2!1sen!2sca!4v1716562924694!5m2!1sen!2sca"
+        width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Brothers Choice Foods Google Map Location">
+      </iframe>
+    </div>
 
-<!-- Get Directions button OUTSIDE map-container -->
-<div class="map-button-wrapper">
-  <a class="map-button" href="https://www.google.com/maps/dir//3932+101+Street,+Edmonton,+AB" target="_blank">
-    Get Directions
-  </a>
-</div>
+    <!-- Get Directions Button -->
+    <div class="map-button-wrapper">
+      <a class="map-button" href="https://www.google.com/maps/dir//3932+101+Street,+Edmonton,+AB"
+         target="_blank" rel="noopener" aria-label="Get directions to Brothers Choice Foods">
+        Get Directions
+      </a>
+    </div>
+
   </div>
 </section>
+
+
+</main>
+
   
 <!-- Footer -->
-  <footer class="site-footer">
+<footer class="site-footer" role="contentinfo" aria-label="Website Footer">
   <div class="footer-content">
-    <p>&copy; 2025 Brothers Choice Foods. All rights reserved.</p>
+
+    <!-- Footer Navigation -->
+    <nav class="footer-nav" aria-label="Footer Navigation">
+      <ul class="footer-links">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/About/">About Us</a></li>
+        <li><a href="/Products/">Products</a></li>
+        <li><a href="/Customers/">Customers</a></li>
+        <li><a href="/Contact/">Contact</a></li>
+        <li><a href="https://www.instagram.com/brotherschoicefoods" target="_blank" rel="noopener noreferrer" aria-label="Instagram – opens in a new tab">Instagram</a></li>
+        <li><a href="https://www.facebook.com/p/Brothers-Choice-Foods-100064270173354/" target="_blank" rel="noopener noreferrer" aria-label="Facebook – opens in a new tab">Facebook</a></li>
+      </ul>
+    </nav>
+
+    <!-- Legal + Sitemap -->
+    <div class="footer-legal">
+      <p>&copy; 2025 <strong>Brothers Choice Foods</strong>. All rights reserved.</p>
+      <p><a href="/sitemap.xml" aria-label="View XML Sitemap">Sitemap</a></p>
+    </div>
+
   </div>
 </footer>
   
@@ -869,20 +1122,37 @@ document.addEventListener("DOMContentLoaded", () => {
 
     <!--  Script Mobile Menu -->
 
-  <script>
+ <script>
   const hamburger = document.getElementById("hamburgerToggle");
   const mobileMenu = document.getElementById("mobileMenu");
   const mobileOverlay = document.getElementById("mobileOverlay");
 
   function toggleMenu() {
+    const isExpanded = hamburger.getAttribute("aria-expanded") === "true";
+    
+    // Toggle classes
     mobileMenu.classList.toggle("open");
     mobileOverlay.classList.toggle("show");
     document.body.classList.toggle("menu-open");
+
+    // Update ARIA attribute
+    hamburger.setAttribute("aria-expanded", !isExpanded);
+    mobileMenu.hidden = isExpanded;
   }
 
+  // Click handlers
   hamburger.addEventListener("click", toggleMenu);
   mobileOverlay.addEventListener("click", toggleMenu);
+
+  // Keyboard accessibility: Enter or Space toggles menu
+  hamburger.addEventListener("keydown", function (e) {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault(); // Prevent scrolling with spacebar
+      toggleMenu();
+    }
+  });
 </script>
+
   
 
 </body>
