@@ -545,6 +545,12 @@ body {
   cursor: pointer;
   transition: transform 0.2s ease;
   z-index: 10000;
+  border: none;
+  background: none;
+}
+
+.close-btn:focus {
+  outline: none;
 }
 
 .close-btn:hover {
