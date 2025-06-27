@@ -1215,6 +1215,27 @@ body {
   margin-top: 5px;
 }
 
+.footer-social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.footer-social-links li a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: var(--red); /* or your preferred brand color */
+  transition: color 0.3s ease;
+}
+
+.footer-social-links li a:hover {
+  color: var(--yellow); /* hover color */
+  text-decoration: underline;
+}
+
 
 /* ----------------------------------------------
             ABOUT PAGE ABOUT SECTION
