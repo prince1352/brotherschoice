@@ -968,6 +968,10 @@ body {
   transform: scale(1.15);
 }
 
+.brand-logo-row li {
+  list-style: none; /* ensures no bullets */
+}
+
 /* ----------------------------------------------
               Contact Section
 ------------------------------------------------*/
