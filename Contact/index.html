@@ -2,174 +2,316 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Homepage</title>
-  <link rel="stylesheet" href="/brotherschoice/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-   <link
 
+  <!-- Primary SEO -->
+  <title>Contact Us | Brothers Choice Foods</title>
+  <meta name="description" content="Get in touch with Brothers Choice Foods, your trusted wholesale supplier of South Asian groceries, dairy, and frozen products in Edmonton and across Western Canada." />
+  <meta name="keywords" content="Brothers Choice, Wholesale Supplier, Contact, South Asian Food Distributor, Indian Grocery Wholesale, Edmonton Wholesale, Grocery Supplier" />
+  <meta name="author" content="Brothers Choice Foods" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.brotherschoicefoods.com/Contact/" />
+  <link rel="alternate" hreflang="en-ca" href="https://www.brotherschoicefoods.com/Contact/" />
+
+  <!-- Social Sharing -->
+  <meta property="og:title" content="Contact Us | Brothers Choice Foods" />
+  <meta property="og:description" content="Reach out to Brothers Choice Foods for product inquiries, wholesale orders, and business partnerships. Serving Edmonton and Western Canada." />
+  <meta property="og:image" content="https://www.brotherschoicefoods.com/images/Logo-W.png" />
+  <meta property="og:url" content="https://www.brotherschoicefoods.com/Contact/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Brothers Choice Foods" />
+  <meta property="og:locale" content="en_CA" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact Us | Brothers Choice Foods" />
+  <meta name="twitter:description" content="Wholesale grocery and food supply contact page for Brothers Choice Foods in Edmonton, Alberta." />
+  <meta name="twitter:image" content="https://www.brotherschoicefoods.com/images/Logo-W.png" />
+
+  <!-- Icons and PWA -->
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="icon" href="/images/Logo-W.png" type="image/png" sizes="192x192" />
+  <link rel="apple-touch-icon" href="/images/Logo-W.png" sizes="180x180" />
+  <link rel="shortcut icon" href="/images/Logo-W.png" type="image/png" />
+  <meta name="theme-color" content="#d01c41" />
+  <meta name="referrer" content="no-referrer-when-downgrade" />
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+
+  <!-- Geo Targeting -->
+  <meta name="geo.region" content="CA-AB" />
+  <meta name="geo.placename" content="Edmonton" />
+  <meta name="geo.position" content="53.4695394;-113.5134308" />
+  <meta name="ICBM" content="53.4695394, -113.5134308" />
+
+  <!-- Structured Data: Local Business -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Brothers Choice Foods",
+    "image": "https://www.brotherschoicefoods.com/images/Logo-W.png",
+    "url": "https://www.brotherschoicefoods.com",
+    "telephone": "+1-780-437-9400",
+    "email": "brotherschoicefoods@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "3932 101 Street",
+      "addressLocality": "Edmonton",
+      "addressRegion": "AB",
+      "postalCode": "T6E 0A5",
+      "addressCountry": "CA"
+    },
+    "openingHours": "Mo-Fr 08:00-17:00",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 53.4695394,
+      "longitude": -113.5134308
+    },
+    "sameAs": [
+      "https://www.instagram.com/brotherschoicefoods/",
+      "https://www.facebook.com/p/Brothers-Choice-Foods-100064270173354/"
+    ]
+  }
+  </script>
+
+  <!-- Preconnect & DNS Prefetch -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+  <link rel="preconnect" href="https://brotherschoicefoods.com" crossorigin />
+
+  <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
+
+  <!-- Preload Critical Assets -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" as="style" />
+  <link rel="preload" href="/images/Logo-W.png" as="image" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
 </head>
+
 <body>
 
  <!-- Header -->
-  <header class="main-header">
-    <a href="/brotherschoice/" class="logo-link">
-      <img src="/brotherschoice/images/Logo-W.png" alt="Company Logo" class="logo" />
-    </a>
+<header class="main-header" role="banner" aria-label="Main Site Header">
+  <a href="/" class="logo-link" aria-label="Go to homepage">
+    <img src="/images/Logo-W.png" alt="Brothers Choice Foods Logo" class="logo" />
+  </a>
 
   <!-- Desktop Navigation Menu -->
-<nav class="main-nav desktop-nav">
-  <ul>
-    <li class="menu-item"><a href="/brotherschoice/">Home</a></li>
-    <li class="menu-item"><a href="/brotherschoice/About/">About Us</a></li>
-    <li class="menu-item"><a href="/brotherschoice/Products/">Products</a></li>
-    <li class="menu-item"><a href="/brotherschoice/Customers/">Our Customers</a></li>
-    <li class="menu-item"><a href="/brotherschoice/Contact/">Contact Us</a></li>
-  </ul>
-</nav>
-    <div class="quote-button-wrapper">
-      <a href="/brotherschoice/Contact/" class="quote-button">Get a Free Quote</a>
-    </div>
-    
-<!-- Home Icon and Hamburger Menu -->
-<div class="mobile-home-icon">
-  <a href="/brotherschoice/">
-    <i class="fas fa-home"></i>
-  </a>
-</div>
+  <nav class="main-nav desktop-nav" role="navigation" aria-label="Main Navigation">
+    <ul>
+      <li class="menu-item"><a href="/" aria-label="Navigate to Home">Home</a></li>
+      <li class="menu-item"><a href="/About/" aria-label="Navigate to About Us">About Us</a></li>
+      <li class="menu-item"><a href="/Products/" aria-label="View Products">Products</a></li>
+      <li class="menu-item"><a href="/Customers/" aria-label="See Our Customers">Our Customers</a></li>
+      <li class="menu-item"><a href="/Contact/" aria-label="Contact Brothers Choice Foods">Contact Us</a></li>
+    </ul>
+  </nav>
 
-<div class="hamburger-menu-icon" id="hamburgerToggle">
-  <span></span><span></span><span></span>
-</div>
+  <!-- Quote Button -->
+  <div class="quote-button-wrapper">
+    <a href="/Contact/" class="quote-button" aria-label="Request a free quote from Brothers Choice Foods">Get a Free Quote</a>
+  </div>
 
+  <!-- Home Icon and Hamburger Menu (Mobile) -->
+  <div class="mobile-home-icon">
+    <a href="/" aria-label="Return to homepage">
+      <i class="fas fa-home" aria-hidden="true"></i>
+    </a>
+  </div>
+
+  <div class="hamburger-menu-icon" id="hamburgerToggle" role="button" tabindex="0" aria-label="Toggle mobile menu" aria-expanded="false">
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+  </div>
 </header>
+
   
 <!-- Mobile Navigation Menu -->
-<nav class="mobile-menu" id="mobileMenu">
-<div class="mobile-menu-top">
- <h3 class="mobile-menu-title">Navigation</h3>
-  <div class="mobile-close-button" onclick="toggleMenu()">✕</div>
-</div>
+<nav class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile Navigation Menu">
+  <div class="mobile-menu-top">
+    <h3 class="mobile-menu-title" id="mobileMenuTitle">Navigation</h3>
+    <button class="mobile-close-button" onclick="toggleMenu()" aria-label="Close menu">✕</button>
+  </div>
 
-<ul>
-  <li><a href="/brotherschoice/">Home</a></li>
-  <li><a href="/brotherschoice/About/">About Us</a></li>
-  <li><a href="/brotherschoice/Products/">Products</a></li>
-  <li><a href="/brotherschoice/Customers/">Our Customers</a></li>
-  <li><a href="/brotherschoice/Contact/">Contact Us</a></li>
-</ul>
+  <ul aria-labelledby="mobileMenuTitle">
+    <li><a href="/" aria-label="Navigate to Home">Home</a></li>
+    <li><a href="/About/" aria-label="Navigate to About Us">About Us</a></li>
+    <li><a href="/Products/" aria-label="Browse Products">Products</a></li>
+    <li><a href="/Customers/" aria-label="Explore Customer Types">Our Customers</a></li>
+    <li><a href="/Contact/" aria-label="Contact Brothers Choice Foods">Contact Us</a></li>
+  </ul>
 
-<h3 class="mobile-connect-title">Connect With Us</h3>
+  <h3 class="mobile-connect-title" id="mobileConnectTitle">Connect With Us</h3>
 
-<!-- Contact Links Section -->
-<div class="mobile-connect-links">
-  <a href="tel:+17804379400" class="connect-link">
-    <i class="fas fa-phone-alt"></i>
-    <span>Phone</span>
-  </a>
-  <a href="mailto:brotherschoicefoods@gmail.com" class="connect-link">
-    <i class="fas fa-envelope"></i>
-    <span>Email</span>
-  </a>
-  <a href="https://instagram.com/brotherschoicefoods" class="connect-link" target="_blank">
-    <i class="fab fa-instagram"></i>
-    <span>Instagram</span>
-  </a>
-  <a href="https://www.facebook.com/p/Brothers-Choice-Foods-100064270173354/" class="connect-link" target="_blank">
-    <i class="fab fa-facebook-f"></i>
-    <span>Facebook</span>
-  </a>
-</div>
+  <!-- Contact Links Section -->
+  <div class="mobile-connect-links" aria-labelledby="mobileConnectTitle">
+    <a href="tel:+17804379400" class="connect-link" aria-label="Call Brothers Choice Foods">
+      <i class="fas fa-phone-alt" aria-hidden="true"></i>
+      <span>Phone</span>
+    </a>
+    <a href="mailto:brotherschoicefoods@gmail.com" class="connect-link" aria-label="Email Brothers Choice Foods">
+      <i class="fas fa-envelope" aria-hidden="true"></i>
+      <span>Email</span>
+    </a>
+    <a href="https://instagram.com/brotherschoicefoods" class="connect-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Instagram - opens in new tab">
+      <i class="fab fa-instagram" aria-hidden="true"></i>
+      <span>Instagram</span>
+    </a>
+    <a href="https://www.facebook.com/p/Brothers-Choice-Foods-100064270173354/" class="connect-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Facebook - opens in new tab">
+      <i class="fab fa-facebook-f" aria-hidden="true"></i>
+      <span>Facebook</span>
+    </a>
+  </div>
 </nav>
 
-  <div class="mobile-overlay" id="mobileOverlay"></div>
+<!-- Mobile Menu Overlay -->
+<div class="mobile-overlay" id="mobileOverlay" aria-hidden="true"></div>
 
-  <!-- Contact Section -->
+<main id="main-content" role="main">
+  
 
-<section class="contact-us-section">
+<!-- CONTACT SECTION -->
+<section class="contact-us-section" id="contact" role="region" aria-labelledby="contact-heading">
   <div class="contact-us-header">
-    <h2 class="contact-us-title">Contact Brothers Choice</h2>
+    <h2 class="contact-us-title" id="contact-heading">Contact Brothers Choice</h2>
     <p class="contact-us-subheading">
       Whether you're ready to place an order, have a product inquiry, or just want to learn more about our wholesale offerings, we're here to help.
     </p>
   </div>
 
   <div class="contact-us-content">
+    <!-- Contact Form -->
     <div class="contact-us-form-container">
-  <form id="contactFormTwo" action="https://formsubmit.co/ajax/brotherschoicefoods@gmail.com" method="POST" class="contact-us-form">
-    <!-- Disable CAPTCHA -->
-    <input type="hidden" name="_captcha" value="false">
-    
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="text" name="company" placeholder="Company Name">
-    <input type="email" name="email" placeholder="Your Email" required>
-    <input type="tel" name="phone" placeholder="Phone Number">
-    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <form id="contactFormTwo" action="https://formsubmit.co/ajax/brotherschoicefoods@gmail.com" method="POST" class="contact-us-form" aria-labelledby="contact-heading">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="name" placeholder="Your Name" required aria-label="Your Name">
+        <input type="text" name="company" placeholder="Company Name" aria-label="Company Name">
+        <input type="email" name="email" placeholder="Your Email" required aria-label="Your Email">
+        <input type="tel" name="phone" placeholder="Phone Number" aria-label="Phone Number">
+        <textarea name="message" placeholder="Your Message" rows="5" required aria-label="Your Message"></textarea>
+        <button type="submit" class="contact-us-submit-button" aria-label="Send Message">Send Message</button>
+      </form>
 
-    <button type="submit" class="contact-us-submit-button">Send Message</button>
-  </form>
+      <div id="formConfirmationTwo" class="thank-you-message" style="display: none;" role="status" aria-live="polite">
+        Thank you! Your message has been sent successfully. A Brothers Choice team member will be reaching out to you shortly.
+      </div>
+    </div>
 
-  <div id="formConfirmationTwo" class="thank-you-message" style="display: none;">
-    Thank you! Your message has been sent successfully. A Brothers Choice team member will be reaching out to you shortly
-  </div>
-</div>
+    <!-- Contact Info -->
+    <div class="contact-us-info" itemscope itemtype="https://schema.org/LocalBusiness">
+      <meta itemprop="name" content="Brothers Choice Foods" />
+      <meta itemprop="image" content="https://www.brotherschoicefoods.com/images/Logo-W.png" />
+      <meta itemprop="url" content="https://www.brotherschoicefoods.com" />
 
-    <div class="contact-us-info">
       <div class="contact-us-details">
         <h3>Business Information</h3>
-        <p><strong>Address:</strong> 3932 101 Street, Edmonton, AB, Canada</p>
-        <p><strong>Phone:</strong> <a href="tel:+17804379400">(780) 437-9400</a></p>
-        <p><strong>Email:</strong> <a href="mailto:brotherschoicefoods@gmail.com">brotherschoicefoods@gmail.com</a></p>
-        <p><strong>Hours:</strong> Monday - Friday, 8am - 5pm</p>
+        <p><strong>Address:</strong>
+          <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+            <span itemprop="streetAddress">3932 101 Street</span>, 
+            <span itemprop="addressLocality">Edmonton</span>, 
+            <span itemprop="addressRegion">AB</span>, 
+            <span itemprop="addressCountry">CA</span>
+          </span>
+        </p>
+        <p><strong>Phone:</strong> 
+          <a href="tel:+17804379400" itemprop="telephone">(780) 437-9400</a>
+        </p>
+        <p><strong>Email:</strong> 
+          <a href="mailto:brotherschoicefoods@gmail.com" itemprop="email">brotherschoicefoods@gmail.com</a>
+        </p>
+        <p><strong>Hours:</strong>
+          <time itemprop="openingHours" datetime="Mo-Fr 08:00-17:00">Monday - Friday, 8am - 5pm</time>
+        </p>
+        <meta itemprop="geo" itemscope itemtype="https://schema.org/GeoCoordinates" />
+        <meta itemprop="latitude" content="53.4695394" />
+        <meta itemprop="longitude" content="-113.5134308" />
       </div>
 
- <div class="contact-us-social">
-  <h3>Connect with Us</h3>
-  <div class="social-link">
-    <i class="fab fa-instagram" aria-hidden="true"></i>
-    <a href="https://www.instagram.com/brotherschoicefoods/" target="_blank">Instagram</a>
-  </div>
-  <div class="social-link">
-    <i class="fab fa-facebook" aria-hidden="true"></i>
-    <a href="https://www.facebook.com/p/Brothers-Choice-Foods-100064270173354/" target="_blank">Facebook</a>
-  </div>
-</div>
-      
+      <!-- Social Media -->
+      <div class="contact-us-social">
+        <h3>Connect with Us</h3>
+        <div class="social-link">
+          <i class="fab fa-instagram" aria-hidden="true"></i>
+          <a href="https://www.instagram.com/brotherschoicefoods/" target="_blank" rel="noopener" aria-label="Follow us on Instagram">Instagram</a>
+        </div>
+        <div class="social-link">
+          <i class="fab fa-facebook" aria-hidden="true"></i>
+          <a href="https://www.facebook.com/p/Brothers-Choice-Foods-100064270173354/" target="_blank" rel="noopener" aria-label="Follow us on Facebook">Facebook</a>
+        </div>
+      </div>
+
+      <!-- Store Promo -->
       <div class="contact-us-allindia">
-      <p class="store-promo">
-  You can also find our products in-store at 
-  <a class="allindia-link" href="https://maps.google.com/?q=All+India+Super+Market+Edmonton" target="_blank" rel="noopener">
-    <strong>All India Super Market</strong>
-  </a>
-  located right here in Edmonton!
-</p>
-      
+        <p class="store-promo">
+          You can also find our products in-store at 
+          <a class="allindia-link" href="https://maps.google.com/?q=All+India+Super+Market+Edmonton" target="_blank" rel="noopener" aria-label="Find All India Super Market on Google Maps">
+            <strong>All India Super Market</strong>
+          </a>
+          located right here in Edmonton!
+        </p>
+      </div>
     </div>
   </div>
 </section>
 
+<!-- Embedded Google Map -->
 <div class="contact-us-map">
-    <iframe
-      src="https://www.google.com/maps?q=3932+101+Street,+Edmonton,+AB,+Canada&output=embed"
-      width="100%" height="400" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy">
-    </iframe>
-  </div>
+  <iframe
+    src="https://www.google.com/maps?q=3932+101+Street,+Edmonton,+AB,+Canada&output=embed"
+    width="100%" height="400" style="border:0; border-radius: 12px;"
+    allowfullscreen="" loading="lazy"
+    aria-hidden="true"
+    title="Map showing the location of Brothers Choice Foods at 3932 101 Street, Edmonton, Alberta">
+  </iframe>
+</div>
 
+<!-- Get Directions Button -->
 <div class="contact-us-map-button-wrapper">
-  <a class="contact-us-map-button" href="https://www.google.com/maps/dir//3932+101+Street,+Edmonton,+AB" target="_blank">
+  <a class="contact-us-map-button" href="https://www.google.com/maps/dir//3932+101+Street,+Edmonton,+AB" target="_blank" rel="noopener" aria-label="Open directions to Brothers Choice Foods on Google Maps">
     Get Directions
   </a>
 </div>
+
   
+</main>
+
 <!-- Footer -->
-  <footer class="site-footer">
+<footer class="site-footer" role="contentinfo" aria-label="Website Footer">
   <div class="footer-content">
-    <p>&copy; 2025 Brothers Choice Foods. All rights reserved.</p>
+    
+    <!-- Footer Navigation -->
+    <nav class="footer-nav" aria-label="Footer Navigation">
+      <!-- Primary Links -->
+      <ul class="footer-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/About/">About Us</a></li>
+        <li><a href="/Products/">Products</a></li>
+        <li><a href="/Customers/">Our Customers</a></li>
+        <li><a href="/Contact/">Contact Us</a></li>
+      </ul>
+
+      <!-- Social Links on Separate Line -->
+      <ul class="footer-social-links">
+        <li>
+          <a href="https://www.instagram.com/brotherschoicefoods" target="_blank" rel="noopener noreferrer" aria-label="Instagram – opens in a new tab">Instagram</a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/p/Brothers-Choice-Foods-100064270173354/" target="_blank" rel="noopener noreferrer" aria-label="Facebook – opens in a new tab">Facebook</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Legal -->
+    <div class="footer-legal">
+      <p>&copy; 2025 Brothers Choice Foods. All rights reserved.</p>
+      <p><a href="/sitemap.xml" aria-label="View XML Sitemap">Sitemap</a></p>
+    </div>
   </div>
 </footer>
 
