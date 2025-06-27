@@ -572,7 +572,6 @@ body {
   padding: 80px 5% 60px;
   color: var(--offwhite);
   overflow: hidden;
-  text-align: center;
 }
 
 .specialize-overlay {
@@ -710,7 +709,14 @@ body {
   padding: 0 10px;
 }
 
-/* Button (if you keep one in the section) */
+.specialize-button-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  position: relative;
+  z-index: 2;
+}
+
 .specialize-button {
   padding: clamp(10px, 1.5vw, 14px) clamp(20px, 3vw, 32px);
   background-color: var(--red);
