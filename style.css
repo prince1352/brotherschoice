@@ -1142,16 +1142,58 @@ body {
 ------------------------------------------------*/
 
 .site-footer {
-  background-color: #f8f8f8;
-  color: #333;
-  text-align: center;
-  padding: 20px 10px;
+  background-color: #1a1a1a;
+  color: #f8f8f5;
+  padding: 40px 6% 30px;
   font-size: 0.95rem;
-  border-top: 1px solid #e0e0e0;
+  line-height: 1.6;
 }
 
-.site-footer p {
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-nav {
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
   margin: 0;
+}
+
+.footer-links li a {
+  color: #f8f8f5;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-weight: 300;
+}
+
+.footer-links li a:hover {
+  color: #ffcf91; /* Use your yellow accent */
+}
+
+.footer-legal {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+.footer-legal a {
+  color: #ffcf91;
+  text-decoration: none;
+  transition: text-decoration 0.3s ease;
+}
+
+.footer-legal a:hover {
+  text-decoration: underline;
 }
 
 
