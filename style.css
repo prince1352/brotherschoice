@@ -485,11 +485,11 @@ body {
 }
 
 .featured-swiper-button-prev::after {
-  right: 0px;
+  left: 10px;
 }
 
 .featured-swiper-button-next::after {
-  left: 0px;
+  right: 10px;
 }
 
 .featured-swiper-button-prev:hover::after,
