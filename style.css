@@ -2229,6 +2229,10 @@ font-size: clamp(0.9rem, 1vw, 1.1rem);
   .featured-product-info h3 {
     font-size: 1rem;
   }
+
+  .featured-products-section {
+  padding: 50px 2% 60px;
+}
   
 
   }
