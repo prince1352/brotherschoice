@@ -572,7 +572,7 @@ body {
   padding: 80px 5% 60px;
   color: var(--offwhite);
   overflow: hidden;
-  justify-items: center;
+  text-align: center;
 }
 
 .specialize-overlay {
