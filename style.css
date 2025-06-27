@@ -893,11 +893,11 @@ body {
 }
 
 .swiper-button-prev .review-button-prev{
-  left: 0; /* Position just outside the card */
+  right: 10px; /* Position just outside the card */
 }
 
 .swiper-button-next .review-button-next{
-  right: 0; /* Position just outside the card */
+  left: 10px; /* Position just outside the card */
 }
 
 .swiper-slide-shadow-left .review-swiper-slide-shadow-left,
