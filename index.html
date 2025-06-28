@@ -72,10 +72,41 @@
   <link rel="preload" href="images/Logo-W.png" as="image" />
 
   <!-- Structured Data: Business Info -->
-  <script type="application/ld+json">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-    "@context": "https://schema.org",
-    "@graph": [
+      "@type": "Organization",
+      "@id": "https://www.brotherschoicefoods.com/#organization",
+      "name": "Brothers Choice Foods",
+      "url": "https://www.brotherschoicefoods.com",
+      "logo": "https://www.brotherschoicefoods.com/images/Logo-W.png",
+      "sameAs": [
+        "https://www.instagram.com/brotherschoicefoods/",
+        "https://www.facebook.com/p/Brothers-Choice-Foods-100064270173354/"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-780-437-9400",
+        "contactType": "Customer Service",
+        "areaServed": "CA"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.brotherschoicefoods.com/#website",
+      "url": "https://www.brotherschoicefoods.com",
+      "name": "Brothers Choice Foods",
+      "publisher": {
+        "@id": "https://www.brotherschoicefoods.com/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.brotherschoicefoods.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
     {
       "@type": "WholesaleStore",
       "@id": "https://www.brotherschoicefoods.com/#store",
@@ -107,11 +138,7 @@
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday"
+          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"
         ],
         "opens": "08:00",
         "closes": "17:00"
@@ -134,54 +161,26 @@
       "review": [
         {
           "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Prince V."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
+          "author": { "@type": "Person", "name": "Prince V." },
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
           "reviewBody": "Excellent service. Great product variety and pricing. Fast and easy process!"
         },
         {
           "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Taranjit K."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
+          "author": { "@type": "Person", "name": "Taranjit K." },
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
           "reviewBody": "Smooth bulk order experience with timely service and great price."
         },
         {
           "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Munvir V."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
+          "author": { "@type": "Person", "name": "Munvir V." },
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
           "reviewBody": "Amazing experience. Friendly staff, affordable wholesale food, and great service!"
         },
         {
           "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Navraj T."
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
+          "author": { "@type": "Person", "name": "Navraj T." },
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
           "reviewBody": "Fantastic local supplier with excellent prices and dependable delivery."
         }
       ],
@@ -190,14 +189,6 @@
         "ratingValue": "5",
         "reviewCount": 4
       }
-    },
-    {
-      "@type": "ContactPoint",
-      "telephone": "+1-780-437-9400",
-      "contactType": "Customer Service",
-      "areaServed": "CA",
-      "availableLanguage": ["English", "Punjabi"],
-      "email": "brotherschoicefoods@gmail.com"
     },
     {
       "@type": "Place",
