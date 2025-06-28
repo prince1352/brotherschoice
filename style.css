@@ -177,7 +177,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 0 clamp(6%, 8vw, 10%);
+  padding: 0 clamp(4%, 6vw, 10%);
   overflow: hidden;
   margin-top: -90px; /* same as header height */
   padding-top: 90px; /* offset content inside */
@@ -208,7 +208,7 @@ body {
 }
 
 .landing-subheading {
-  font-size: clamp(0.8rem, 2vw, 1.6rem);
+  font-size: clamp(0.9rem, 2vw, 1.6rem);
   font-weight: var(--font-light);
   margin-bottom: 10px;
   white-space: nowrap;
@@ -2341,6 +2341,18 @@ font-size: clamp(0.9rem, 1vw, 1.1rem);
     .contact-info {
     text-align: center;
   }
+
+  .landing-title {
+  white-space: wrap;
+}
+
+.landing-subheading {
+  white-space: wrap;
+}
+
+.landing-location {
+  white-space: wrap;
+}
   
 
   }
