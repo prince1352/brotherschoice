@@ -49,6 +49,13 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebSite",
+      "@id": "https://www.brotherschoicefoods.com/#website",
+      "url": "https://www.brotherschoicefoods.com/",
+      "name": "Brothers Choice Foods",
+      "description": "Wholesale importer and distributor of South Asian grocery products for retailers, restaurants, and food service providers in Western Canada."
+    },
+    {
       "@type": "CollectionPage",
       "@id": "https://www.brotherschoicefoods.com/Customers/#collectionpage",
       "url": "https://www.brotherschoicefoods.com/Customers/",
@@ -125,7 +132,11 @@
               "ratingValue": "5",
               "bestRating": "5"
             },
-            "reviewBody": "We've been sourcing our South Asian grocery products from Brothers Choice Foods for over three years, and they’ve never let us down."
+            "reviewBody": "We've been sourcing our South Asian grocery products from Brothers Choice Foods for over three years, and they’ve never let us down.",
+            "itemReviewed": {
+              "@type": "Service",
+              "name": "Wholesale Distribution for Grocery and Restaurants"
+            }
           },
           {
             "@type": "Review",
@@ -138,7 +149,11 @@
               "ratingValue": "5",
               "bestRating": "5"
             },
-            "reviewBody": "As a busy restaurant, we rely on quality ingredients delivered promptly. Brothers Choice has become our go-to for frozen veggies, paneer, and yogurt. They consistently provide fresh stock and excellent service."
+            "reviewBody": "As a busy restaurant, we rely on quality ingredients delivered promptly. Brothers Choice has become our go-to for frozen veggies, paneer, and yogurt. They consistently provide fresh stock and excellent service.",
+            "itemReviewed": {
+              "@type": "Service",
+              "name": "Wholesale Distribution for Grocery and Restaurants"
+            }
           },
           {
             "@type": "Review",
@@ -151,7 +166,11 @@
               "ratingValue": "5",
               "bestRating": "5"
             },
-            "reviewBody": "We needed a specific brand of flour and unique spices that weren’t available through our regular channels. Brothers Choice not only sourced them quickly, but their pricing saved us money too."
+            "reviewBody": "We needed a specific brand of flour and unique spices that weren’t available through our regular channels. Brothers Choice not only sourced them quickly, but their pricing saved us money too.",
+            "itemReviewed": {
+              "@type": "Service",
+              "name": "Wholesale Distribution for Grocery and Restaurants"
+            }
           },
           {
             "@type": "Review",
@@ -164,7 +183,11 @@
               "ratingValue": "5",
               "bestRating": "5"
             },
-            "reviewBody": "The freshness and quality of the produce we receive from Brothers Choice is outstanding. I 100% recommend them for all your restaurant’s needs!"
+            "reviewBody": "The freshness and quality of the produce we receive from Brothers Choice is outstanding. I 100% recommend them for all your restaurant’s needs!",
+            "itemReviewed": {
+              "@type": "Service",
+              "name": "Wholesale Distribution for Grocery and Restaurants"
+            }
           }
         ]
       }
@@ -172,6 +195,7 @@
   ]
 }
 </script>
+
 
   <!-- Preconnect & DNS Prefetch -->
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
@@ -443,8 +467,9 @@
 
 <!-- CUSTOMER REVIEWS SECTION -->
 <section id="customer-reviews" class="reviews-section" role="region" aria-label="Customer Testimonials and Reviews" itemscope itemtype="https://schema.org/Service">
-  <meta itemprop="serviceType" content="Wholesale Distribution for Grocery and Restaurants" />
+  <meta itemprop="name" content="Wholesale Distribution for Grocery and Restaurants" />
   <meta itemprop="provider" content="Brothers Choice Foods" />
+  <meta itemprop="areaServed" content="Western Canada" />
 
   <h2 class="reviews-title">What Our Customers Are Saying</h2>
 
@@ -453,6 +478,7 @@
 
       <!-- Review 1 -->
       <div class="swiper-slide review-swiper-slide" itemscope itemprop="review" itemtype="https://schema.org/Review">
+        <meta itemprop="itemReviewed" content="Wholesale Distribution for Grocery and Restaurants" />
         <div class="review-card">
           <div class="review-stars" aria-label="5 star review" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
             ★★★★★
@@ -467,6 +493,7 @@
 
       <!-- Review 2 -->
       <div class="swiper-slide review-swiper-slide" itemscope itemprop="review" itemtype="https://schema.org/Review">
+        <meta itemprop="itemReviewed" content="Wholesale Distribution for Grocery and Restaurants" />
         <div class="review-card">
           <div class="review-stars" aria-label="5 star review" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
             ★★★★★
@@ -481,6 +508,7 @@
 
       <!-- Review 3 -->
       <div class="swiper-slide review-swiper-slide" itemscope itemprop="review" itemtype="https://schema.org/Review">
+        <meta itemprop="itemReviewed" content="Wholesale Distribution for Grocery and Restaurants" />
         <div class="review-card">
           <div class="review-stars" aria-label="5 star review" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
             ★★★★★
@@ -495,6 +523,7 @@
 
       <!-- Review 4 -->
       <div class="swiper-slide review-swiper-slide" itemscope itemprop="review" itemtype="https://schema.org/Review">
+        <meta itemprop="itemReviewed" content="Wholesale Distribution for Grocery and Restaurants" />
         <div class="review-card">
           <div class="review-stars" aria-label="5 star review" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
             ★★★★★
