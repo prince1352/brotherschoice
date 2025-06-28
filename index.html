@@ -1007,7 +1007,7 @@
   
 <!--  Script Featured Prodcuts -->
 
-<script>
+<script defer>
 document.addEventListener("DOMContentLoaded", () => {
   const sheetURL = "https://script.google.com/macros/s/AKfycbzOf5ns3Q_MUhVY4YMjd5EbpVusWv6PWzAYHd3bTJxPIb0T-uQX92AEMkoMFRgCdmxM/exec";
   const loader = document.getElementById('featuredProductsLoader');
@@ -1115,21 +1115,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
 <!--  Script Reviews Section -->
   
-<script>
-  const swiper = new Swiper('.reviews-swiper', {
-  effect: 'flip',
-  speed: 1000,
-  autoHeight: true,
-  flipEffect: {
-    slideShadows: true, // enable built-in shadow during flip
-    limitRotation: true
-  },
-  navigation: {
-    nextEl: '.review-swiper-button-next',
-    prevEl: '.review-swiper-button-prev',
-  },
-  loop: true,
-});
+<script defer>
+  window.addEventListener('DOMContentLoaded', () => {
+    const swiper = new Swiper('.reviews-swiper', {
+      effect: 'flip',
+      speed: 1000,
+      autoHeight: true,
+      flipEffect: {
+        slideShadows: true,
+        limitRotation: true
+      },
+      navigation: {
+        nextEl: '.review-swiper-button-next',
+        prevEl: '.review-swiper-button-prev',
+      },
+      loop: true,
+    });
+  });
 </script>
   
 <!--  Script Specialize Section -->
@@ -1152,16 +1154,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
 
-<script>
-  // Initialize AOS animations
-  AOS.init({
-    // Animation will trigger only once per element
-    once: false,
-
-    // Adds delay before animation begins (used in individual data-aos-delay)
-    offset: 80, // triggers when section is ~120px into view
-    duration: 800, // default duration for animations
-    easing: 'ease-out', // smooth easing
+<script defer>
+  window.addEventListener('DOMContentLoaded', () => {
+    AOS.init({
+      once: false,
+      offset: 80,
+      duration: 800,
+      easing: 'ease-out',
+    });
   });
 </script>
 
