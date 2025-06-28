@@ -208,7 +208,7 @@ body {
 }
 
 .landing-subheading {
-  font-size: clamp(0.9rem, 2vw, 1.6rem);
+  font-size: clamp(0.8rem, 2vw, 1.6rem);
   font-weight: var(--font-light);
   margin-bottom: 10px;
   white-space: nowrap;
@@ -2407,18 +2407,18 @@ font-size: clamp(0.9rem, 1vw, 1.1rem);
 }
 
 /* Contact Info */
-.contact-info {
+.contact-info-404 {
   text-align: left;
   font-size: 1rem;
   line-height: 1.7;
   margin-bottom: 30px;
 }
 
-.contact-info p {
+.contact-info-404 p {
   margin-bottom: 10px;
 }
 
-.contact-info i {
+.contact-info-404 i {
   color: var(--red);
   margin-right: 10px;
 }
