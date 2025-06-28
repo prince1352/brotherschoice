@@ -69,6 +69,11 @@ body {
   width: auto;
 }
 
+.logo-link picture {
+  height: clamp(50px, 5vw, 70px);
+  width: auto;
+}
+
 /* Navigation */
 .main-nav {
   display: flex;
