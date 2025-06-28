@@ -52,8 +52,7 @@
       "@type": "WebSite",
       "@id": "https://www.brotherschoicefoods.com/#website",
       "url": "https://www.brotherschoicefoods.com/",
-      "name": "Brothers Choice Foods",
-      "description": "Wholesale importer and distributor of South Asian grocery products for retailers, restaurants, and food service providers in Western Canada."
+      "name": "Brothers Choice Foods"
     },
     {
       "@type": "CollectionPage",
@@ -62,8 +61,8 @@
       "name": "Our Customers | Brothers Choice Foods",
       "description": "Browse our wholesale customer base including grocery chains, restaurants, and food retailers across Western Canada.",
       "isPartOf": {
-        "@type": "WebSite",
-        "@id": "https://www.brotherschoicefoods.com/#website"
+        "@id": "https://www.brotherschoicefoods.com/#website",
+        "@type": "WebSite"
       }
     },
     {
@@ -88,109 +87,65 @@
             "item": "https://www.brotherschoicefoods.com/Customers/"
           }
         ]
-      },
-      "mainEntity": {
-        "@type": "Service",
-        "@id": "https://www.brotherschoicefoods.com/Customers/#service",
-        "name": "Wholesale Distribution for Grocery and Restaurants",
-        "description": "Bulk supply of South Asian grocery products to food service businesses across Western Canada.",
-        "provider": {
-          "@type": "Organization",
-          "name": "Brothers Choice Foods",
-          "url": "https://www.brotherschoicefoods.com"
-        },
-        "serviceType": [
-          "Grocery Store Wholesale",
-          "Restaurant Supply",
-          "Frozen & Dairy Goods",
-          "Fresh Produce",
-          "Dry Grains and Goods"
-        ],
-        "availableChannel": {
-          "@type": "ServiceChannel",
-          "serviceUrl": "https://www.brotherschoicefoods.com/Contact/",
-          "availableLanguage": "English"
-        },
-        "areaServed": {
-          "@type": "Place",
-          "name": "Western Canada"
-        },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "5",
-          "reviewCount": 4
-        },
-        "review": [
-          {
-            "@type": "Review",
-            "author": {
-              "@type": "Person",
-              "name": "Harnoor B."
-            },
-            "reviewRating": {
-              "@type": "Rating",
-              "ratingValue": "5",
-              "bestRating": "5"
-            },
-            "reviewBody": "We've been sourcing our South Asian grocery products from Brothers Choice Foods for over three years, and they’ve never let us down.",
-            "itemReviewed": {
-              "@type": "Service",
-              "name": "Wholesale Distribution for Grocery and Restaurants"
-            }
-          },
-          {
-            "@type": "Review",
-            "author": {
-              "@type": "Person",
-              "name": "Pavan K."
-            },
-            "reviewRating": {
-              "@type": "Rating",
-              "ratingValue": "5",
-              "bestRating": "5"
-            },
-            "reviewBody": "As a busy restaurant, we rely on quality ingredients delivered promptly. Brothers Choice has become our go-to for frozen veggies, paneer, and yogurt. They consistently provide fresh stock and excellent service.",
-            "itemReviewed": {
-              "@type": "Service",
-              "name": "Wholesale Distribution for Grocery and Restaurants"
-            }
-          },
-          {
-            "@type": "Review",
-            "author": {
-              "@type": "Person",
-              "name": "Mona V."
-            },
-            "reviewRating": {
-              "@type": "Rating",
-              "ratingValue": "5",
-              "bestRating": "5"
-            },
-            "reviewBody": "We needed a specific brand of flour and unique spices that weren’t available through our regular channels. Brothers Choice not only sourced them quickly, but their pricing saved us money too.",
-            "itemReviewed": {
-              "@type": "Service",
-              "name": "Wholesale Distribution for Grocery and Restaurants"
-            }
-          },
-          {
-            "@type": "Review",
-            "author": {
-              "@type": "Person",
-              "name": "Binay S."
-            },
-            "reviewRating": {
-              "@type": "Rating",
-              "ratingValue": "5",
-              "bestRating": "5"
-            },
-            "reviewBody": "The freshness and quality of the produce we receive from Brothers Choice is outstanding. I 100% recommend them for all your restaurant’s needs!",
-            "itemReviewed": {
-              "@type": "Service",
-              "name": "Wholesale Distribution for Grocery and Restaurants"
-            }
-          }
-        ]
       }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://www.brotherschoicefoods.com/Customers/#wholesale-product",
+      "name": "Wholesale Distribution Services",
+      "description": "Bulk supply of South Asian grocery products to restaurants and grocery retailers across Western Canada.",
+      "brand": {
+        "@type": "Organization",
+        "name": "Brothers Choice Foods",
+        "url": "https://www.brotherschoicefoods.com"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": 4
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": "Harnoor B.",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "We've been sourcing our South Asian grocery products from Brothers Choice Foods for over three years, and they’ve never let us down."
+        },
+        {
+          "@type": "Review",
+          "author": "Pavan K.",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "As a busy restaurant, we rely on quality ingredients delivered promptly. Brothers Choice has become our go-to for frozen veggies, paneer, and yogurt. They consistently provide fresh stock and excellent service."
+        },
+        {
+          "@type": "Review",
+          "author": "Mona V.",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "We needed a specific brand of flour and unique spices that weren’t available through our regular channels. Brothers Choice not only sourced them quickly, but their pricing saved us money too."
+        },
+        {
+          "@type": "Review",
+          "author": "Binay S.",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "The freshness and quality of the produce we receive from Brothers Choice is outstanding. I 100% recommend them for all your restaurant’s needs!"
+        }
+      ]
     }
   ]
 }
@@ -466,10 +421,12 @@
 </section>
 
 <!-- CUSTOMER REVIEWS SECTION -->
-<section id="customer-reviews" class="reviews-section" role="region" aria-label="Customer Testimonials and Reviews" itemscope itemtype="https://schema.org/Service">
-  <meta itemprop="name" content="Wholesale Distribution for Grocery and Restaurants" />
-  <meta itemprop="provider" content="Brothers Choice Foods" />
-  <meta itemprop="areaServed" content="Western Canada" />
+<section id="customer-reviews" class="reviews-section" role="region" aria-label="Customer Testimonials and Reviews"
+  itemscope itemtype="https://schema.org/Product" itemid="https://www.brotherschoicefoods.com/Customers/#wholesale-product">
+  
+  <meta itemprop="name" content="Wholesale Distribution Services" />
+  <meta itemprop="description" content="Bulk supply of South Asian grocery products to restaurants and grocery retailers across Western Canada." />
+  <meta itemprop="brand" content="Brothers Choice Foods" />
 
   <h2 class="reviews-title">What Our Customers Are Saying</h2>
 
@@ -477,68 +434,80 @@
     <div class="swiper-wrapper review-swiper-wrapper">
 
       <!-- Review 1 -->
-      <div class="swiper-slide review-swiper-slide" itemscope itemprop="review" itemtype="https://schema.org/Review">
-        <meta itemprop="itemReviewed" content="Wholesale Distribution for Grocery and Restaurants" />
+      <div class="swiper-slide review-swiper-slide" itemprop="review" itemscope itemtype="https://schema.org/Review">
         <div class="review-card">
-          <div class="review-stars" aria-label="5 star review" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+          <div class="review-stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
             ★★★★★
             <meta itemprop="ratingValue" content="5" />
             <meta itemprop="bestRating" content="5" />
             <meta itemprop="worstRating" content="1" />
           </div>
-          <p class="review-text" itemprop="reviewBody">We've been sourcing our South Asian grocery products from Brothers Choice Foods for over three years, and they’ve never let us down.</p>
-          <p class="review-author" itemprop="author">– Harnoor B.</p>
+          <p class="review-text" itemprop="reviewBody">
+            We've been sourcing our South Asian grocery products from Brothers Choice Foods for over three years, and they’ve never let us down.
+          </p>
+          <p class="review-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+            <span itemprop="name">Harnoor B.</span>
+          </p>
         </div>
       </div>
 
       <!-- Review 2 -->
-      <div class="swiper-slide review-swiper-slide" itemscope itemprop="review" itemtype="https://schema.org/Review">
-        <meta itemprop="itemReviewed" content="Wholesale Distribution for Grocery and Restaurants" />
+      <div class="swiper-slide review-swiper-slide" itemprop="review" itemscope itemtype="https://schema.org/Review">
         <div class="review-card">
-          <div class="review-stars" aria-label="5 star review" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+          <div class="review-stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
             ★★★★★
             <meta itemprop="ratingValue" content="5" />
             <meta itemprop="bestRating" content="5" />
             <meta itemprop="worstRating" content="1" />
           </div>
-          <p class="review-text" itemprop="reviewBody">As a busy restaurant, we rely on quality ingredients delivered promptly. Brothers Choice has become our go-to for frozen veggies, paneer, and yogurt. They consistently provide fresh stock and excellent service.</p>
-          <p class="review-author" itemprop="author">– Pavan K.</p>
+          <p class="review-text" itemprop="reviewBody">
+            As a busy restaurant, we rely on quality ingredients delivered promptly. Brothers Choice has become our go-to for frozen veggies, paneer, and yogurt. They consistently provide fresh stock and excellent service.
+          </p>
+          <p class="review-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+            <span itemprop="name">Pavan K.</span>
+          </p>
         </div>
       </div>
 
       <!-- Review 3 -->
-      <div class="swiper-slide review-swiper-slide" itemscope itemprop="review" itemtype="https://schema.org/Review">
-        <meta itemprop="itemReviewed" content="Wholesale Distribution for Grocery and Restaurants" />
+      <div class="swiper-slide review-swiper-slide" itemprop="review" itemscope itemtype="https://schema.org/Review">
         <div class="review-card">
-          <div class="review-stars" aria-label="5 star review" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+          <div class="review-stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
             ★★★★★
             <meta itemprop="ratingValue" content="5" />
             <meta itemprop="bestRating" content="5" />
             <meta itemprop="worstRating" content="1" />
           </div>
-          <p class="review-text" itemprop="reviewBody">We needed a specific brand of flour and unique spices that weren’t available through our regular channels. Brothers Choice not only sourced them quickly, but their pricing saved us money too.</p>
-          <p class="review-author" itemprop="author">– Mona V.</p>
+          <p class="review-text" itemprop="reviewBody">
+            We needed a specific brand of flour and unique spices that weren’t available through our regular channels. Brothers Choice not only sourced them quickly, but their pricing saved us money too.
+          </p>
+          <p class="review-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+            <span itemprop="name">Mona V.</span>
+          </p>
         </div>
       </div>
 
       <!-- Review 4 -->
-      <div class="swiper-slide review-swiper-slide" itemscope itemprop="review" itemtype="https://schema.org/Review">
-        <meta itemprop="itemReviewed" content="Wholesale Distribution for Grocery and Restaurants" />
+      <div class="swiper-slide review-swiper-slide" itemprop="review" itemscope itemtype="https://schema.org/Review">
         <div class="review-card">
-          <div class="review-stars" aria-label="5 star review" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+          <div class="review-stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
             ★★★★★
             <meta itemprop="ratingValue" content="5" />
             <meta itemprop="bestRating" content="5" />
             <meta itemprop="worstRating" content="1" />
           </div>
-          <p class="review-text" itemprop="reviewBody">The freshness and quality of the produce we receive from Brothers Choice is outstanding. I 100% recommend them for all your restaurant’s needs!</p>
-          <p class="review-author" itemprop="author">– Binay S.</p>
+          <p class="review-text" itemprop="reviewBody">
+            The freshness and quality of the produce we receive from Brothers Choice is outstanding. I 100% recommend them for all your restaurant’s needs!
+          </p>
+          <p class="review-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+            <span itemprop="name">Binay S.</span>
+          </p>
         </div>
       </div>
 
     </div>
 
-    <!-- Navigation Buttons -->
+    <!-- Swiper Navigation -->
     <div class="swiper-button-next review-swiper-button-next" aria-label="Next customer review"></div>
     <div class="swiper-button-prev review-swiper-button-prev" aria-label="Previous customer review"></div>
   </div>
