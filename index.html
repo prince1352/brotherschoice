@@ -149,47 +149,78 @@
       ]
     },
     {
-      "@type": "Product",
-      "@id": "https://www.brotherschoicefoods.com/#featured",
-      "name": "South Asian Wholesale Grocery Products",
-      "image": "https://www.brotherschoicefoods.com/images/Card1.jpg",
-      "description": "A curated selection of wholesale South Asian products including lentils, daal, paneer, flour, dairy, and frozen items.",
-      "brand": {
-        "@type": "Organization",
-        "name": "Brothers Choice Foods"
+  "@type": "Product",
+  "@id": "https://www.brotherschoicefoods.com/#featured",
+  "name": "South Asian Wholesale Grocery Products",
+  "image": "https://www.brotherschoicefoods.com/images/Card1.jpg",
+  "description": "A curated selection of wholesale South Asian products including lentils, daal, paneer, flour, dairy, and frozen items.",
+  "brand": {
+    "@type": "Organization",
+    "name": "Brothers Choice Foods"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Prince V."
       },
-      "review": [
-        {
-          "@type": "Review",
-          "author": { "@type": "Person", "name": "Prince V." },
-          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-          "reviewBody": "Excellent service. Great product variety and pricing. Fast and easy process!"
-        },
-        {
-          "@type": "Review",
-          "author": { "@type": "Person", "name": "Taranjit K." },
-          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-          "reviewBody": "Smooth bulk order experience with timely service and great price."
-        },
-        {
-          "@type": "Review",
-          "author": { "@type": "Person", "name": "Munvir V." },
-          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-          "reviewBody": "Amazing experience. Friendly staff, affordable wholesale food, and great service!"
-        },
-        {
-          "@type": "Review",
-          "author": { "@type": "Person", "name": "Navraj T." },
-          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-          "reviewBody": "Fantastic local supplier with excellent prices and dependable delivery."
-        }
-      ],
-      "aggregateRating": {
-        "@type": "AggregateRating",
+      "reviewRating": {
+        "@type": "Rating",
         "ratingValue": "5",
-        "reviewCount": 4
-      }
+        "bestRating": "5"
+      },
+      "reviewBody": "Excellent service. Great product variety and pricing. Fast and easy process!"
     },
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Taranjit K."
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "reviewBody": "Smooth bulk order experience with timely service and great price."
+    },
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Munvir V."
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "reviewBody": "Amazing experience. Friendly staff, affordable wholesale food, and great service!"
+    },
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Navraj T."
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "reviewBody": "Fantastic local supplier with excellent prices and dependable delivery."
+    }
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "reviewCount": 4,
+    "itemReviewed": {
+      "@id": "https://www.brotherschoicefoods.com/#featured"
+    }
+  }
+},
     {
       "@type": "Place",
       "@id": "https://www.brotherschoicefoods.com/#location",
@@ -737,16 +768,27 @@
 
   
 <!-- CUSTOMER REVIEWS SECTION -->
-<section id="customer-reviews" class="reviews-section" role="region" aria-label="Customer Testimonials and Reviews" itemscope itemtype="https://schema.org/Product">
-  <meta itemprop="name" content="Brothers Choice Foods - Wholesale South Asian Products" />
-  <meta itemprop="description" content="What our satisfied customers say about Brothers Choice Foods. Read real reviews about our wholesale service, delivery, and pricing." />
-  <h2 class="reviews-title" itemprop="review">What Our Customers Are Saying</h2>
+<section id="customer-reviews" class="reviews-section" role="region" aria-label="Customer Testimonials and Reviews"
+  itemscope itemtype="https://schema.org/Product">
+  
+  <meta itemprop="name" content="South Asian Wholesale Grocery Products" />
+  <meta itemprop="image" content="https://www.brotherschoicefoods.com/images/Card1.jpg" />
+  <meta itemprop="description" content="A curated selection of wholesale South Asian products including lentils, daal, paneer, flour, dairy, and frozen items." />
+  <meta itemprop="url" content="https://www.brotherschoicefoods.com/#featured" />
+
+  <!-- Aggregate Rating -->
+  <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+    <meta itemprop="ratingValue" content="5" />
+    <meta itemprop="reviewCount" content="4" />
+  </div>
+
+  <h2 class="reviews-title">What Our Customers Are Saying</h2>
 
   <div class="swiper reviews-swiper">
     <div class="swiper-wrapper review-swiper-wrapper">
 
       <!-- Review 1 -->
-      <div class="swiper-slide review-swiper-slide" itemscope itemprop="review" itemtype="https://schema.org/Review">
+      <div class="swiper-slide review-swiper-slide" itemprop="review" itemscope itemtype="https://schema.org/Review">
         <div class="review-card">
           <div class="review-stars" aria-label="5 star review" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
             ★★★★★
@@ -754,13 +796,19 @@
             <meta itemprop="bestRating" content="5" />
             <meta itemprop="worstRating" content="1" />
           </div>
-          <p class="review-text" itemprop="reviewBody">Excellent service. Huge variety of wholesale products at great prices. My order was completed quickly and the process was easy. Highly recommend!</p>
-          <p class="review-author" itemprop="author">– Prince V.</p>
+          <p class="review-text" itemprop="reviewBody">
+            Excellent service. Huge variety of wholesale products at great prices. My order was completed quickly and the process was easy. Highly recommend!
+          </p>
+          <p class="review-author">
+            – <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+              <meta itemprop="name" content="Prince V.">Prince V.
+            </span>
+          </p>
         </div>
       </div>
 
       <!-- Review 2 -->
-      <div class="swiper-slide review-swiper-slide" itemscope itemprop="review" itemtype="https://schema.org/Review">
+      <div class="swiper-slide review-swiper-slide" itemprop="review" itemscope itemtype="https://schema.org/Review">
         <div class="review-card">
           <div class="review-stars" aria-label="5 star review" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
             ★★★★★
@@ -768,13 +816,19 @@
             <meta itemprop="bestRating" content="5" />
             <meta itemprop="worstRating" content="1" />
           </div>
-          <p class="review-text" itemprop="reviewBody">Great experience placing a bulk order—timely service and competitive pricing. Thanks!</p>
-          <p class="review-author" itemprop="author">– Taranjit K.</p>
+          <p class="review-text" itemprop="reviewBody">
+            Great experience placing a bulk order—timely service and competitive pricing. Thanks!
+          </p>
+          <p class="review-author">
+            – <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+              <meta itemprop="name" content="Taranjit K.">Taranjit K.
+            </span>
+          </p>
         </div>
       </div>
 
       <!-- Review 3 -->
-      <div class="swiper-slide review-swiper-slide" itemscope itemprop="review" itemtype="https://schema.org/Review">
+      <div class="swiper-slide review-swiper-slide" itemprop="review" itemscope itemtype="https://schema.org/Review">
         <div class="review-card">
           <div class="review-stars" aria-label="5 star review" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
             ★★★★★
@@ -782,13 +836,19 @@
             <meta itemprop="bestRating" content="5" />
             <meta itemprop="worstRating" content="1" />
           </div>
-          <p class="review-text" itemprop="reviewBody">Amazing experience with Brothers Choice! Great pricing and super friendly team. Perfect for wholesale food needs.</p>
-          <p class="review-author" itemprop="author">– Munvir V.</p>
+          <p class="review-text" itemprop="reviewBody">
+            Amazing experience with Brothers Choice! Great pricing and super friendly team. Perfect for wholesale food needs.
+          </p>
+          <p class="review-author">
+            – <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+              <meta itemprop="name" content="Munvir V.">Munvir V.
+            </span>
+          </p>
         </div>
       </div>
 
       <!-- Review 4 -->
-      <div class="swiper-slide review-swiper-slide" itemscope itemprop="review" itemtype="https://schema.org/Review">
+      <div class="swiper-slide review-swiper-slide" itemprop="review" itemscope itemtype="https://schema.org/Review">
         <div class="review-card">
           <div class="review-stars" aria-label="5 star review" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
             ★★★★★
@@ -796,17 +856,24 @@
             <meta itemprop="bestRating" content="5" />
             <meta itemprop="worstRating" content="1" />
           </div>
-          <p class="review-text" itemprop="reviewBody">Fantastic local supplier with dependable delivery and excellent prices.</p>
-          <p class="review-author" itemprop="author">– Navraj T.</p>
+          <p class="review-text" itemprop="reviewBody">
+            Fantastic local supplier with dependable delivery and excellent prices.
+          </p>
+          <p class="review-author">
+            – <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+              <meta itemprop="name" content="Navraj T.">Navraj T.
+            </span>
+          </p>
         </div>
       </div>
     </div>
 
-    <!-- Arrows -->
+    <!-- Swiper Arrows -->
     <div class="swiper-button-next review-swiper-button-next" aria-label="Next customer review"></div>
     <div class="swiper-button-prev review-swiper-button-prev" aria-label="Previous customer review"></div>
   </div>
 </section>
+
 
 
 <!-- WHERE TO FIND US SECTION -->
