@@ -69,7 +69,8 @@
 
   <!-- Preload Critical Assets -->
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" as="style" />
-  <link rel="preload" href="images/Logo-W.png" as="image" />
+  <link rel="preload" href="images/Logo-W.webp" as="image" type="image/webp" fetchpriority="high">
+  <link rel="preload" href="images/Logo-W.png" as="image" type="image/png" fetchpriority="high">
   <link rel="preload" as="image" href="images/homepage-background.webp" type="image/webp" fetchpriority="high">
   <link rel="preload" as="image" href="images/homepage-background.jpg" type="image/jpeg" fetchpriority="high">
 
@@ -289,7 +290,10 @@
  <!-- SEO + Accessibility Optimized Header -->
 <header class="main-header" role="banner" itemscope itemtype="https://schema.org/Organization" itemid="#header-org">
   <a href="" class="logo-link" itemprop="url">
-    <img src="images/Logo-W.png" alt="Brothers Choice Foods - South Asian Wholesale Distributor Logo" class="logo" itemprop="logo" />
+    <picture>
+      <source srcset="images/Logo-W.webp" type="image/webp">
+      <img src="images/Logo-W.png" alt="Brothers Choice Foods - South Asian Wholesale Distributor Logo" class="logo" itemprop="logo" loading="eager" decoding="async" />
+    </picture>
   </a>
 
   <!-- Desktop Navigation -->
